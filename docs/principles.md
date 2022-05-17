@@ -2,7 +2,9 @@
 layout: side-navigation
 order: 3
 title: Principles
-description:
+description: View the agreed engineering principles here
+tags:
+- homepage
 ---
 <!-- {% for page in collections["principles"] %}
 
