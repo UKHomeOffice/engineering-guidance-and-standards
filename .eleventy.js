@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
             organisationLogo: 'royal-arms',
             organisationName: 'Home Office',
             search: {
-                label: 'Search SEGAS',
+                label: 'Search site',
                 indexPath: '/search.json',
                 sitemapPath: '/sitemap'
             }
