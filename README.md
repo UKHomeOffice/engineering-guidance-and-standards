@@ -1,3 +1,7 @@
+---
+eleventyExcludeFromCollections: true
+---
+
 # engineering-guidance-and-standards
  
 This is the home of engineering guidance and standards for the Home Office
