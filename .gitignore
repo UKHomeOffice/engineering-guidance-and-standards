@@ -1,0 +1,7 @@
+coverage
+node_modules/
+public
+npm-debug.log
+.DS_Store
+_site
+/.idea/
