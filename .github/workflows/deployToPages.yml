@@ -15,12 +15,10 @@ jobs:
         uses: TartanLlama/actions-eleventy@v1.3
         with:
           install_dependencies: true
-        env:
-          PATH_PREFIX: /docs-as-code-nunjucks
-      - name: GitHub Pages action
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
         if: github.ref == 'refs/heads/main'
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir:  _site 
-          publish_branch: gh-pages        
+          publish_branch: gh-pages
