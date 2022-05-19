@@ -1,0 +1,26 @@
+name: deployToPages
+ 
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build
+        uses: TartanLlama/actions-eleventy@v1.3
+        with:
+          install_dependencies: true
+        env:
+          PATH_PREFIX: /docs-as-code-nunjucks
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        if: github.ref == 'refs/heads/main'
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir:  _site 
+          publish_branch: gh-pages        
