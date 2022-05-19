@@ -2,7 +2,7 @@
 homepage: true
 layout: product
 title: Engineering Guidance and Standards
-description: Build better applications by working to agreed Home Office engineering principles and standards
+description: Build better applications by working to agreed Home Office engineering principles and standards.
 ---
 <div class="govuk-grid-row">
 {% for item in collections["homepage"] %}
