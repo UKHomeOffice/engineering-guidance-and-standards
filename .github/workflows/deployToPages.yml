@@ -8,17 +8,17 @@ on:
   
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Build
-        uses: TartanLlama/actions-eleventy@v1.3
-        with:
-          install_dependencies: true
+        run: |
+          npm install
+          npm run-script build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.7.3
-        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir:  _site 
-          publish_branch: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public

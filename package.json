@@ -1,4 +1,30 @@
 {
+  "name": "engineering-guidance-and-standards",
+  "version": "2.0.0",
+  "description": "Write documentation using Markdown and publish it using 11ty GOV.UK layout plugin",
+  "keywords": [
+    "guidance",
+    "standards",
+    "home office",
+    "eleventy",
+    "eleventy-plugin"
+  ],
+  "homepage": "",
+  "bugs": {
+    "url": "https://"
+  },
+  "contributors": [
+    {
+      "name": "Rob Johnson"
+    },
+    {
+      "name": "Ed Hamilton"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "eleventy"
+  },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
     "govuk-eleventy-plugin": "^2.0.0"
