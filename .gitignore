@@ -5,3 +5,5 @@ npm-debug.log
 .DS_Store
 _site
 /.idea/
+.dccache
+/.vscode/

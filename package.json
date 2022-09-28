@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "govuk-eleventy-plugin": "^2.0.0"
+    "govuk-eleventy-plugin": "^2.7.2"
   }
 }
