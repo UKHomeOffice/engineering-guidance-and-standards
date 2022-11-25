@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.govuk-header {
+  background-color: #f1f1f1;
+
+  .govuk-header__link, .govuk-header__link:visited {
+    color: #15141A;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .govuk-header__product-name {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .app-site-search__wrapper {
+    margin-top: 0.3em;
+  }
+}
