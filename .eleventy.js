@@ -14,8 +14,8 @@ module.exports = function(eleventyConfig) {
         ogImage: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
         header: {
-            organisationLogo: 'royal-arms',
-            organisationName: 'Home Office',
+            organisationLogo: '<img src="/assets/logos/ho_logo.svg" width="150px" height="36px" alt="Home Office"/>',
+            organisationName: '',
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
@@ -25,7 +25,8 @@ module.exports = function(eleventyConfig) {
         footer: {
             copyright: '© Home Office',
             licence: 'Licensed under the MIT License except where otherwise stated.'
-        }
+        },
+        stylesheets: ['/styles/base.css'],
     })
 
     return {
