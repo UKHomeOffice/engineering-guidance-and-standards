@@ -25,13 +25,15 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "lint:markdown": "markdownlint docs/**/*.md"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
     "govuk-eleventy-plugin": "^2.7.2"
   },
   "devDependencies": {
-    "cypress": "^10.10.0"
+    "cypress": "^10.10.0",
+    "markdownlint-cli": "^0.32.2"
   }
 }
