@@ -9,57 +9,89 @@ tags:
 - general
 ---
 
-Home Office Engineering Principles should follow the recommended
+Home Office Engineering Principles will be written to include each of the 
+components described below, so that their intent and importance are clear.
+Readers will easily understand how to apply these principles in their work.
 
 ---
 
 ## Requirement(s)
 
-- A Principle MUST have a Name
-- A Principle MUST have a Statement
-- A Principle MUST have a Rationale
-- A Principle MUST state the expected Implications and/or Applications of that Principle
-- A Principle MUST show when it was Last Updated
+- [A Principle MUST have a Title](#a-principle-must-have-a-title)
+- [A Principle MUST have a Description](#a-principle-must-have-a-description)
+- [A Principle MUST have a Rationale](#a-principle-must-have-a-rationale)
+- [A Principle MUST state expected Applications and Implications](#a-principle-must-include-applications-and-implications)
+- [A Principle MUST have tags](#a-principle-must-have-tags)
+- [A Principle MUST show when it was Last Updated](#a-principle-must-show-when-it-was-last-updated)
 
 ---
 
-## Rationale
+### A Principle MUST have a Title
 
-Principles will include each of the components as described below, so that 
-intent and implications are clear.
+State the essence of the principle and make it easy to remember. Avoid ambiguous 
+words such as: "support", "open", "consider", and remove unnecessary adjectives 
+and adverbs (fluff). The title must be included as part of the page metadata.
 
-### Name
+```
+layout: side-navigation
+order: 1
+title: Example Software Engineering Principle
+tags:
+- general
+```
 
-State the essence of the principle and make it easy to remember. Specific 
-technology platforms should not be mentioned in the name or statement of a 
-principle. Avoid ambiguous words in the Name and in the Statement such as: 
-"support", "open", "consider", and remove unnecessary adjectives and adverbs 
-(fluff).
+### A Principle MUST have a Description
 
-### Statement
+This description should be no longer than 2 paragraphs. It will be the first
+paragraph in the markdown file following the metadata. The reader should 
+readily discern the answer to the question: "How does this affect me?".
 
-Succinctly and unambiguously communicate the fundamental principle. It is vital
-that the principles statement is unambiguous. The reader should readily discern
-the answer to: "How does this affect me?".
+Succinctly communicate the fundamental principle. It is vital that the 
+description of the principle is unambiguous. Avoid referencing specific 
+technology and platforms, principles will usually span multiple technologies.
 
-### Rationale
+### A Principle MUST have a Rationale
 
 State why the principle is important and why it has been adopted. Highlight the
 technical and business benefits of adhering to the principle. Do not 
 oversimplify or overestimate the merit of the principle.
 
-### Applications and Implications
+The reader should readily discern the answer to: "Why do we do this?"
 
-Highlight ways to apply the principle - approaches, activities and tasks. 
-Then elaborate on the value of that
-If there are implications then you must clear state this.
+### A Principle MUST include Applications and Implications
 
-You do not need to write not a complete set of things to do or enumerate on
-all the implications. It is a list of helpful examples.
+Highlight ways to apply the principle - approaches, activities and tasks - 
+then elaborate on the value of those things. If there are any known negative 
+implications then you must also clearly state these. This could be a bullet 
+point list.
 
-### Last Updated
+You do not need to write a complete set of things to do or enumerate on all of 
+the implications. The reader should have a list of helpful examples of "How 
+can we do this, and what happens if we don't?".
 
-Rather than providing versioning, show the date the principle was last updated.
+### A Principle MUST have Tags
+
+We use tags as a means to link entities in the body of standards. From
+principles, through standards, to patterns and guidance. Tags should be based
+on the relevant domain to achieve this, for example:
+
+- source-management
+- security
+
+Do not create tags based on other attributes of your principle, like 'Draft' or
+'Important'.  All tags must be kebab case i.e. lower case and hyphenated
+between words. These need to be defined in the page metadata and will be
+automatically displayed in the tag section.
+
+```
+tags:
+- principle
+- example-domain
+```
+
+### A Principle MUST show when it was Last Updated
+
+Show the date the principle was last updated.
 
 ---
 
@@ -71,6 +103,6 @@ Rather than providing versioning, show the date the principle was last updated.
 
 ## Last Updated
 
-20/12/2022
+14/03/2023
 
 ---
