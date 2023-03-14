@@ -12,7 +12,7 @@ Systems and applications should be designed so that they can be efficiently deve
 
 ---
 
-## Rationale: Why we do this
+## Rationale
 
 A clear understanding and focus on meeting user and business needs is vital for delivering value for money when designing software solutions. Meeting non-functional requirements at the right time (often earlier) reduces the effort and cost of building secure and performant applications.
 
@@ -20,7 +20,7 @@ Ensuring that there are pragmatic success criteria for what is to be built, how 
 
 ---
 
-## Applications and Implications: How we do it
+## Applications and Implications
 
 - Engage with and understand the needs of your stakeholders. Get their feedback regularly to be assured that you are delivering value
 - Actively manage technical debt and design your implementation so the solution is the right size at the right time
@@ -39,6 +39,6 @@ Ensuring that there are pragmatic success criteria for what is to be built, how 
 
 ## Last Updated
 
-09/03/2023
+14/03/2023
 
 ---
