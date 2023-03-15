@@ -9,6 +9,10 @@ tags:
 - general
 ---
 
+An engineering principle is a goal or property that is foundational to 
+sofware engineering at the Home Office. Principles should be used to guide 
+the behaviour of software engineering teams and evaluate their output.
+
 Home Office engineering principles will be written to include each of the 
 components described below, so that their intent and importance are clear.
 Readers will easily understand how to apply these principles in their work.
@@ -103,6 +107,6 @@ Show the date the principle was last updated.
 
 ## Last Updated
 
-14/03/2023
+15/03/2023
 
 ---
