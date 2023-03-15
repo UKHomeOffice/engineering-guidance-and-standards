@@ -9,7 +9,7 @@ tags:
 - general
 ---
 
-Home Office Engineering Principles will be written to include each of the 
+Home Office engineering principles will be written to include each of the 
 components described below, so that their intent and importance are clear.
 Readers will easily understand how to apply these principles in their work.
 
