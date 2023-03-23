@@ -4,7 +4,7 @@ order: 1
 title: Writing a Standard
 id: SEGAS-00001
 tags:
-- general
+- standard
 ---
 
 To be effective, standards must explicitly state what is expected of
@@ -39,7 +39,7 @@ order: 1
 title: Writing a Standard
 id: SEGAS-00001
 tags:
-- general
+- standard
 ```
 
 ### A Standard MUST have a Title
@@ -91,7 +91,8 @@ automatically displayed in the tag section.
 
 ```
 tags:
-- general
+- standard
+- example-domain
 ```
 
 ### A Standard MUST show when it was Last Updated
@@ -109,6 +110,6 @@ apparent.
 ---
 
 ## Last Updated
-19/01/2023
+09/03/2023
 
 ---
