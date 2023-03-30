@@ -2,12 +2,7 @@
 layout: side-navigation
 order: 5
 title: Patterns
-description: Find patterns that meet our principles and standards
+description: Click an item on the left to start browsing.
 tags:
 - homepage
 ---
-<!-- {% for page in collections["patterns"] %}
-
-* [{{ page.data.title }}]({{ page.url | url }})
-
-{% endfor %} -->
