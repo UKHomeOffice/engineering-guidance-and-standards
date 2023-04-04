@@ -2,7 +2,7 @@
 layout: side-navigation
 order: 5
 title: Patterns
-description: Click an item on the left to start browsing.
+description: Select an item from the left to read more.
 tags:
 - homepage
 ---
