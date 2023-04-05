@@ -1,12 +1,14 @@
 ---
 layout: side-navigation
-order: 3
-title: Design for Success
+order: 1
+title: Design for success
+date: git Last Modified
 tags:
-- principle
-- software-design
-
+- Software design
 ---
+
+Last updated: {{ page.date | postDate }}
+Tags: {{ tags | join(', ') }}
 
 Systems and applications should be designed so that they can be efficiently developed and deliver their intended value. You should have success criteria to measure your designs against.
 
@@ -28,17 +30,5 @@ Ensuring that there are pragmatic success criteria for what is to be built, how 
 - Design for the minimal team - consider existing Home Office engineering capabilities when making technology choices so that iteration and support are achievable without unnecessary overhead
 - Use Wardley maps to inform designs - this will allow you to more confidently identify where you should innovate and where you can consume existing commodity components
 - Keep it simple, but think about extensibility - will your design allow for delivery of potential future needs? Can you use a simpler framework that will allow you to deliver more quickly?
-
----
-
-## Tags
-
-{{ tags | join(', ') }}
-
----
-
-## Last Updated
-
-14/03/2023
 
 ---
