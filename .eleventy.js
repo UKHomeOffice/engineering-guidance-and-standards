@@ -1,4 +1,5 @@
 const govukEleventyPlugin = require('govuk-eleventy-plugin')
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
     // Register the plugin
@@ -28,6 +29,10 @@ module.exports = function(eleventyConfig) {
         },
         stylesheets: ['/styles/base.css'],
     })
+    
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+    });
 
     return {
         dataTemplateEngine: 'njk',

@@ -1,13 +1,14 @@
 ---
 layout: side-navigation
 order: 1
-title: Writing a Principle
+title: Writing a principle
+date: git Last Modified
 id: SEGAS-00002
 tags:
-- standard
-- principle
-- general
 ---
+
+Last updated: {{ page.date | postDate }}
+Tags: {{ tags | join(', ') }}
 
 An engineering principle is a goal or property that is foundational to 
 software engineering at the Home Office. Principles should be used to guide 
@@ -22,16 +23,16 @@ principles in their work.
 
 ## Requirement(s)
 
-- [A Principle MUST have a Title](#a-principle-must-have-a-title)
-- [A Principle MUST have a Description](#a-principle-must-have-a-description)
-- [A Principle MUST have a Rationale](#a-principle-must-have-a-rationale)
-- [A Principle MUST state expected Applications and Implications](#a-principle-must-include-applications-and-implications)
-- [A Principle MUST have tags](#a-principle-must-have-tags)
-- [A Principle MUST show when it was Last Updated](#a-principle-must-show-when-it-was-last-updated)
+- [A principle MUST have a title](#a-principle-must-have-a-title)
+- [A principle MUST have a description](#a-principle-must-have-a-description)
+- [A principle MUST have a rationale](#a-principle-must-have-a-rationale)
+- [A principle MUST state expected applications and implications](#a-principle-must-include-applications-and-implications)
+- [A principle MUST have tags](#a-principle-must-have-tags)
+- [A principle MUST show when it was last updated](#a-principle-must-show-when-it-was-last-updated)
 
 ---
 
-### A Principle MUST have a Title
+### A principle MUST have a title
 
 State the essence of the principle and make it easy to remember. Avoid ambiguous 
 words such as: "support", "open", "consider", and remove unnecessary adjectives 
@@ -40,12 +41,12 @@ and adverbs (fluff). The title must be included as part of the page metadata.
 ```
 layout: side-navigation
 order: 1
-title: Example Software Engineering Principle
+title: Example software engineering principle
 tags:
-- general
+- Example
 ```
 
-### A Principle MUST have a Description
+### A principle MUST have a description
 
 This description should be no longer than 2 paragraphs. It will be the first
 paragraph in the markdown file following the metadata. The reader should 
@@ -55,7 +56,7 @@ Succinctly communicate the fundamental principle. It is vital that the
 description of the principle is unambiguous. Avoid referencing specific 
 technology and platforms, principles will usually span multiple technologies.
 
-### A Principle MUST have a Rationale
+### A principle MUST have a rationale
 
 State why the principle is important and why it has been adopted. Highlight the
 technical and business benefits of adhering to the principle. Do not 
@@ -63,7 +64,7 @@ oversimplify or overestimate the merit of the principle.
 
 The reader should readily discern the answer to: "Why do we do this?"
 
-### A Principle MUST include Applications and Implications
+### A principle MUST include applications and implications
 
 Highlight ways to apply the principle - approaches, activities and tasks - 
 then elaborate on the value of those things. If there are any known negative 
@@ -74,40 +75,30 @@ You do not need to write a complete set of things to do or enumerate on all of
 the implications. The reader should have a list of helpful examples of "How 
 can we do this, and what happens if we don't?".
 
-### A Principle MUST have Tags
+### A principle MUST have tags
 
 We use tags as a means to link entities in the body of standards. From
 principles, through standards, to patterns and guidance. Tags should be based
-on the relevant domain to achieve this, for example:
+on the relevant domain to achieve this.
 
-- source-management
-- security
-
-Do not create tags based on other attributes of your principle, like 'Draft' or
-'Important'.  All tags must be kebab case i.e. lower case and hyphenated
-between words. These need to be defined in the page metadata and will be
-automatically displayed in the tag section.
+Do not create tags based on other attributes of your standard, like 'Draft' or
+'Important'.  All tags must be sentence case i.e. Starts with a capital and
+the rest lower case. These need to be defined in the page metadata and will be
+automatically displayed at the top of the page.
 
 ```
 tags:
-- principle
-- example-domain
+- Source management
+- Security
 ```
 
-### A Principle MUST show when it was Last Updated
+### A principle MUST show when it was last updated
 
-Show the date the principle was last updated.
+Show the date the principle was last updated. This will automatically be 
+generated from the git commit time and shown at the top of the page.  The 
+metadata needs to be set as the following.
 
----
-
-## Tags
-
-{{ tags | join(', ') }}
-
----
-
-## Last Updated
-
-22/03/2023
-
+```
+date: git Last Modified
+```
 ---

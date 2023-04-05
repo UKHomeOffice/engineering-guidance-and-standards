@@ -1,5 +1,5 @@
 module.exports = {
-  tags: ['patterns'],
+  tags: ['Patterns'],
   eleventyComputed: {
     viewSource: data => `./docs${data.page.filePathStem}.md?plain=1`
   },
