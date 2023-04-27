@@ -41,6 +41,7 @@ module.exports = function(eleventyConfig) {
         dir: {
             // Use layouts from the plugin
             layouts: 'node_modules/govuk-eleventy-plugin/layouts'
-        }
+        },
+        pathPrefix: process.env.PATH_PREFIX ?? ''
     }
 };
