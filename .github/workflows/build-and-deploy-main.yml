@@ -21,7 +21,7 @@ jobs:
           npm ci --omit=dev
           npm run build
         env:
-          PATH_PREFIX: /engineering-guidance-and-standards
+          PATH_PREFIX: /engineering-guidance-and-standards/
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v1
         with:
