@@ -11,3 +11,13 @@ describe('Front page loaded test', () => {
     cy.contains('Patterns')
   })
 })
+
+describe('Principles page loaded test', () => {
+  it('finds the principles page listing the current engineering principles', () => {
+    cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
+    // Click on first el containing the principles text
+    cy.contains('Learn about principles').click() 
+    cy.contains('Principles')
+    cy.contains('Select an item from the menu to read more.')
+  })
+})
