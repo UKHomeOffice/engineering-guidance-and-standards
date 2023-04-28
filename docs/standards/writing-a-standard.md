@@ -1,5 +1,5 @@
 ---
-layout: side-navigation
+layout: sub-navigation
 order: 1
 title: Writing a standard
 date: git Last Modified
