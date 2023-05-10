@@ -29,9 +29,9 @@ Ensure that there is a LICENCE or LICENCE.md file in the root of your repository
 
 ### Open source repositories MUST have a licence that adheres to the Open Source Definition
 
-At the Home Office, you should in most cases use [the MIT License](https://mit-license.org/) for open source code.
+At the Home Office, you should in most cases use [the MIT License](https://opensource.org/license/mit/) for open source code.
 
-However, if your code or project is incompatible with the MIT License, you can select a different licence provided it adheres to the Open Source Definition. The Open Source Initiative (OSI) maintains a [list of approved licences that meet the definition](https://opensource.org/licenses/).
+If your code or project is incompatible with the MIT License, you can select a different licence, provided it adheres to the Open Source Definition. The Open Source Initiative (OSI) maintains a [list of approved licences that meet the definition](https://opensource.org/licenses/).
 
 #### Open documentation
 
