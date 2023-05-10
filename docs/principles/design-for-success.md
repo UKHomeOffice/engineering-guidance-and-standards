@@ -1,5 +1,5 @@
 ---
-layout: side-navigation
+layout: sub-navigation
 order: 1
 title: Design for success
 date: git Last Modified
