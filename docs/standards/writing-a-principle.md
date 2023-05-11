@@ -8,7 +8,12 @@ tags:
 ---
 
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+Tags: 
+	{%- for tag in tags | filterTagList %}
+	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	[{{tag}}]({{tagUrl}}){%- if not loop.last %}, {% endif %}
+	{%- endfor %}
+
 
 An engineering principle is a goal or property that is foundational to 
 software engineering at the Home Office. Principles should be used to guide 
