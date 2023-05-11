@@ -28,7 +28,7 @@ describe('Standards tag page loaded test', () => {
     cy.contains('Learn about standards').click() 
     cy.contains('Writing a principle').click()
     cy.get('.app-prose-scope').contains('Standards').click()
-    cy.contains('Pages tagged with “Standards”') // page renders with “ ” chars
+    cy.contains('Pages tagged with \“Standards\”') // page renders with “ ” chars
     cy.contains("Writing a principle")
     cy.contains("See all tags")
   })
