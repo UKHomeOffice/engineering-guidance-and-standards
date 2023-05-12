@@ -27,8 +27,9 @@ describe('Standards tag page loaded test', () => {
     cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
     cy.contains('Learn about standards').click() 
     cy.contains('Writing a principle').click()
-    cy.get('.app-prose-scope').contains('Standards').click()
+    cy.get('.app-prose-scope').contains('Standards').click() // this is the "tag" link
     cy.title().should('include', 'Pages tagged with \"Standards\"')
+    cy.contains('h1', 'Pages tagged with “Standards”') // page renders with “ ” chars
     cy.contains('li', 'Writing a principle')
     cy.contains('See all tags')
   })

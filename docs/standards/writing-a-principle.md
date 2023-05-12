@@ -10,8 +10,8 @@ tags:
 Last updated: {{ page.date | postDate }}
 Tags: 
 	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	[{{tag}}]({{tagUrl}}){%- if not loop.last %}, {% endif %}
+	{%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
+	[{{tag}}]({{ tagUrl }}){%- if not loop.last %}, {% endif %}
 	{%- endfor %}
 
 
