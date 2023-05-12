@@ -7,6 +7,6 @@ layout: sub-navigation
 ---
 
 {% for tag in collections.all | getAllTags | filterTagList %}
-{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+{%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify | title }}/{% endset %}
 - [{{ tag }}]({{ tagUrl }})
 {% endfor %}
