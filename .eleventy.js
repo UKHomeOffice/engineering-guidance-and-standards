@@ -41,6 +41,20 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
     });
 
+    // Used for tag page generation
+    eleventyConfig.addFilter("getAllTags", collection => {
+        let tagSet = new Set();
+        for(let item of collection) {
+            (item.data.tags || []).forEach(tag => tagSet.add(tag));
+        }
+        return Array.from(tagSet);
+    });
+
+    eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+        // Tags in array are ignored, no tag list page is generated for these
+        return (tags || []).filter(tag => ["homepage"].indexOf(tag) === -1);
+    });
+
     return {
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
