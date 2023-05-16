@@ -13,15 +13,15 @@ Tags: {{ tags | join(', ') }}
 
 Open source code repositories maintained by the Home Office must be given an appropriate licence, this explains to users the terms under which that code can be used or modified.
 
-This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-way.cloudapps.digital/manuals/licensing.html#licensing), and is in part based on that content.
+This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-way.cloudapps.digital/manuals/licensing.html#licensing) - it is in part based on that content and follows the same convention on usage of the words 'license' and 'licence'.
 
 ---
 
 ## Requirement(s)
 
-- [Open source repositories MUST contain a licence file](#open-source-repositories-must-contain-a-license.md-file)
-- [Open source repositories MUST have a licence that adheres to the Open Source Definition](#open-source-repositories-must-have-a-license-that-adheres-to-the-open-source-definition)
-- [Open source repositories MUST state Crown Copyright](#open-source-repositories-must-have-an-osi-license)
+- [Open source repositories MUST contain a licence file](#open-source-repositories-must-contain-a-licence-file)
+- [Open source repositories MUST have a licence that adheres to the Open Source Definition](#open-source-repositories-must-have-a-licence-that-adheres-to-the-open-source-definition)
+- [Open source repositories MUST state Crown Copyright](#open-source-repositories-must-state-crown-copyright)
 
 ### Open source repositories MUST contain a licence file
 
