@@ -1,5 +1,5 @@
 ---
-layout: side-navigation
+layout: sub-navigation
 order: 3
 title: Follow zero trust architecture principles
 date: git Last Modified
