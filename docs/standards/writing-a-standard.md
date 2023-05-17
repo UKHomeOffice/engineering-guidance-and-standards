@@ -7,8 +7,10 @@ id: SEGAS-00001
 tags:
 ---
 
+{% import "macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 To be effective, standards must explicitly state what is expected of
 engineering teams. This standard prescribes how all future standards will be

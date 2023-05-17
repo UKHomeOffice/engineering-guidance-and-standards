@@ -1,0 +1,8 @@
+{% macro tags(tagList) %}
+Tags: 
+	{%- for tag in tagList | filterTagList %}
+	{%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify | title }}/{% endset %}
+	[{{tag}}]({{ tagUrl }}){%- if not loop.last %}, {% endif %}
+	{%- endfor %}
+
+{% endmacro %}

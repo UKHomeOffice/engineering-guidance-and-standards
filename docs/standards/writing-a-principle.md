@@ -7,13 +7,10 @@ id: SEGAS-00002
 tags:
 ---
 
-Last updated: {{ page.date | postDate }}
-Tags: 
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify | title }}/{% endset %}
-	[{{tag}}]({{ tagUrl }}){%- if not loop.last %}, {% endif %}
-	{%- endfor %}
+{% import "macros/tags.njk" as pageTag %}
 
+Last updated: {{ page.date | postDate }}
+{{ pageTag.tags(tags)  }}
 
 An engineering principle is a goal or property that is foundational to 
 software engineering at the Home Office. Principles should be used to guide 

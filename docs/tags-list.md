@@ -1,7 +1,7 @@
 ---
 # ensures the tag page does not show in nav bar
 eleventyExcludeFromCollections: true
-title: Tags
+title: All page tags currently in use
 permalink: /tags/
 layout: sub-navigation
 ---
@@ -10,3 +10,4 @@ layout: sub-navigation
 {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify | title }}/{% endset %}
 - [{{ tag }}]({{ tagUrl }})
 {% endfor %}
+
