@@ -7,8 +7,10 @@ id: SEGAS-00002
 tags:
 ---
 
+{% import "_includes/macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 An engineering principle is a goal or property that is foundational to 
 software engineering at the Home Office. Principles should be used to guide 
