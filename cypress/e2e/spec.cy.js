@@ -34,3 +34,38 @@ describe('Standards tag page loaded test', () => {
     cy.contains('See all tags')
   })
 })
+
+describe('All tags page loaded test', () => {
+  it('finds the tag page listing all pages with the "standards" tag', () => {
+    cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
+    cy.contains('Learn about standards').click() 
+    cy.contains('Writing a principle').click()
+    cy.get('.app-prose-scope').contains('Standards').click() // this is the "tag" link
+    cy.title().should('include', 'Pages tagged with \"Standards\"')
+    cy.contains('h1', 'Pages tagged with “Standards”') // page renders with “ ” chars
+    cy.contains('See all tags')
+    
+    // Assert all tags link is functional
+    cy.contains('a', 'all tags').click();
+    cy.title().should('include', 'All page tags currently in use')
+    cy.contains('h1', 'All page tags currently in use')
+  })
+})
+
+describe('Writing a principle link from all pages tagged with standards loaded test', () => {
+  it('finds the tag page listing all pages with the "standards" tag', () => {
+    cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
+    cy.contains('Learn about standards').click() 
+    cy.contains('Writing a principle').click()
+    cy.get('.app-prose-scope').contains('Standards').click() // this is the "tag" link
+    cy.title().should('include', 'Pages tagged with \"Standards\"')
+    cy.contains('h1', 'Pages tagged with “Standards”') // page renders with “ ” chars
+    cy.contains('See all tags')
+    
+    // Assert listing page link is functional
+    cy.contains('li a', 'Writing a principle').click()
+    // Assert page has loaded as expected
+    cy.title().should('include', 'Writing a principle')
+    cy.contains('h1', 'Writing a principle');
+  })
+})

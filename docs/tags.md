@@ -20,7 +20,7 @@ permalink: /tags/{{ tag }}/
 
 {% set postsWithTag = collections[ tag ] %}
 {% for post in postsWithTag | reverse %}
-- [{{post.data.title}}]({{post.url}})
+- [{{post.data.title}}]({{post.url | url}})
 {% endfor %}
 
-See [all tags](/tags).
+See [all tags]({{"/tags/" | url}})
