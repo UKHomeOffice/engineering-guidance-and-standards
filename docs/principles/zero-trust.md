@@ -28,7 +28,8 @@ potential for lateral movement of attackers is increased, layered defence
 provides resilience and visibility is key to effective response.
 
 Following principles of zero trust reduces reliance on individual defences 
-like perimeter network security, mitigates lateral movement and improves Home Office cyber security.
+like perimeter network security, mitigates lateral movement and improves 
+Home Office cyber security.
 
 ---
 
@@ -38,7 +39,8 @@ The [NCSC zero trust design principles](https://www.ncsc.gov.uk/collection/zero-
 these in mind and pay particular attention to:
 
 - Encryption of all data at rest and in transit
-- Implement access policies for interactions across your systems and components. Base these on the principle of least privilege
-- Authentication and authorisation of all connections
-- Monitoring user and agent behaviour
+- Implement access policies for interactions across your systems and components, base these on the principle of least privilege
+- Assume requests against services are untrusted, use authentication and authorisation to prove otherwise
+- Monitor user and agent activity against expected behaviour and health, and maintain traceability of actions
+
 ---
