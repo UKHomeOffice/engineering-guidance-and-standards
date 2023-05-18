@@ -7,7 +7,7 @@ id: SEGAS-00002
 tags:
 ---
 
-{% import "macros/tags.njk" as pageTag %}
+{% import "_includes/macros/tags.njk" as pageTag %}
 
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
