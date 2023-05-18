@@ -38,7 +38,7 @@ services.
 
 ## Applications and Implications
 
-- Use threat modelling techniques to understand the landscape, and identify actors, threats and risks
+- Use threat modelling techniques to understand the landscape and actors. This will help to identify threats and risks against your architecture holistically, including shared capabilities or services
 - Test security features with users to minimise potential negative impacts on user experience
 - Consider the cost vs benefit of proposed controls
 - Implement and contribute to the Home Office engineering security standards by collaborating with security teams
