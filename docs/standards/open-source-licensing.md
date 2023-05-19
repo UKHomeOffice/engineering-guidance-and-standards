@@ -8,8 +8,10 @@ tags:
 - Source management
 ---
 
+{% import "_includes/macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 Open source code repositories maintained by the Home Office must be given an appropriate licence, this explains to users the terms under which that code can be used or modified.
 
@@ -21,7 +23,7 @@ This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-w
 
 - [Open source repositories MUST contain a licence file](#open-source-repositories-must-contain-a-licence-file)
 - [Open source repositories MUST have a licence that adheres to the Open Source Definition](#open-source-repositories-must-have-a-licence-that-adheres-to-the-open-source-definition)
-- [Open source repositories MUST state Crown Copyright](#open-source-repositories-must-state-crown-copyright)
+- [Open source repositories MUST state who owns the copyright](#open-source-repositories-must-state-who-owns-the-copyright)
 
 ### Open source repositories MUST contain a licence file
 
@@ -37,9 +39,9 @@ If your code or project is incompatible with the MIT License, you can select a d
 
 Where repositories produce websites serving documentation, you should make it clear the documentation is licensed under the [Open Government Licence (OGL)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). This is in addition to the LICENCE file, and should be visible on the website, for example contained in the footer.
 
-### Open source repositories MUST state Crown Copyright
+### Open source repositories MUST state who owns the copyright
 
-The Home Office's copyright is Crown Copyright. The copyright notice contained in your LICENCE file should read "Copyright (c) 2022 Crown Copyright (Home Office)".
+The work that civil servants and contractors create for the Home Office is Crown Copyright. To declare this the copyright notice contained in your LICENCE file should read "Copyright (c) 2022 Crown Copyright (Home Office)".
 
 The year should be the year the code was first published. If the code is continually and substantially updated across several years, you can put the years between the first and its most recent update; for example, "2019-2021".
 
