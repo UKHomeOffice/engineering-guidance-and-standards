@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
         },
         footer: {
             copyright: {
-                text: '© Crown Copyright (Home Office)'
+                html: '© <a class="govuk-footer__link" href="https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/LICENCE">Crown Copyright (Home Office)</a>'
             },
         },
         stylesheets: ['/styles/base.css'],
