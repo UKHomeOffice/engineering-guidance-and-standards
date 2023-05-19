@@ -8,8 +8,10 @@ tags:
 - Software design
 ---
 
+{% import "_includes/macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 Proportionate security enables both usable and secure services. Understand 
 the value of the asset you are engineering, and your threat context, and 

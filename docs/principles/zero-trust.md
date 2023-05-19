@@ -9,8 +9,10 @@ tags:
 - Observability
 ---
 
+{% import "_includes/macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 Zero trust architecture replaces implicit network-based trust, instead 
 monitoring, authenticating and authorising across all access requests. 

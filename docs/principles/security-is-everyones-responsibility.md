@@ -8,8 +8,10 @@ tags:
 - Ways of working
 ---
 
+{% import "_includes/macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 All members of the team, not just technical people, should collaborate to 
 consider the security of the application or service they are delivering. 
