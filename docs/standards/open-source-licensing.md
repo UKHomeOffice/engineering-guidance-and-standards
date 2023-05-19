@@ -35,7 +35,7 @@ If your code or project is incompatible with the MIT License, you can select a d
 
 #### Open documentation
 
-Where repositories produce websites serving documentation, you should include the [Open Government Licence (OGL)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) for the documentation. This is in addition to the LICENCE file, and should be visible on the website, for example contained in the footer.
+Where repositories produce websites serving documentation, you should make it clear the documentation is licensed under the [Open Government Licence (OGL)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). This is in addition to the LICENCE file, and should be visible on the website, for example contained in the footer.
 
 ### Open source repositories MUST state Crown Copyright
 
