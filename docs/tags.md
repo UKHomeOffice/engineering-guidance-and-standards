@@ -15,7 +15,7 @@ pagination:
     - tags
 eleventyComputed:
   title: Pages tagged with "{{ tag }}"
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slugify }}/
 ---
 
 {% set postsWithTag = collections[ tag ] %}
