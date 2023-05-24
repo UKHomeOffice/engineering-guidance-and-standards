@@ -43,6 +43,6 @@ Where repositories produce websites serving documentation, you should make it cl
 
 The work that civil servants and contractors create for the Home Office is Crown Copyright. To declare this the copyright notice contained in your LICENCE file should read "Copyright (c) 2022 Crown Copyright (Home Office)".
 
-The year should be the year the code was first published. If the code is continually and substantially updated across several years, you can put the years between the first and its most recent update; for example, "2019-2021".
+The year should be the year the code was first published. If the code is continually and substantially updated across several years, you can put the years between the first and its most recent update; for example, "2019‒2021".
 
 ---
