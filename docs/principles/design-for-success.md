@@ -24,11 +24,11 @@ Ensuring that there are pragmatic success criteria for what is to be built, how 
 
 ## Applications and Implications
 
+There are a number of things that you can do to improve the chances of success with your design:
+
 - Engage with and understand the needs of your users and stakeholders. Get their feedback regularly to be assured that you are delivering value (for example using user research, using prototyping and fast feedback)
 - Actively manage technical debt and design your implementation so the solution is the right size at the right time
 - Build or leverage reusable components and patterns where appropriate
 - Design for the minimal team - consider existing Home Office engineering capabilities when making technology choices so that iteration and support are achievable without unnecessary overhead. Remember that developers are users too.
 - Pick the times when you need to be innovative or 'get something off the shelf'. Wardley maps help you do that more confidently
 - Keep it simple, but think about extensibility - will your design allow for delivery of potential future needs? Can you use a simpler framework that will allow you to deliver more quickly?
-
-_These are guildelines, some may not be applicable, or used in certain circumstances_
