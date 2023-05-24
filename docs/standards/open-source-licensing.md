@@ -15,7 +15,7 @@ Last updated: {{ page.date | postDate }}
 
 Open source code repositories maintained by the Home Office must be given an appropriate licence, this explains to users the terms under which that code can be used or modified.
 
-This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-way.cloudapps.digital/manuals/licensing.html#licensing) - it is in part based on that content and follows the same convention on usage of the words 'license' and 'licence'.
+This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-way.cloudapps.digital/manuals/licensing.html#licensing) - it is in part based on that content, adopts the same convention on usage of the words 'license' and 'licence', and follows the [UK Government Licensing Framework](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/).
 
 ---
 
@@ -33,7 +33,7 @@ Ensure that there is a LICENCE or LICENCE.md file in the root of your repository
 
 At the Home Office, you should in most cases use [the MIT License](https://opensource.org/license/mit/) for open source code.
 
-If your code or project is incompatible with the MIT License, you can select a different licence, provided it adheres to the Open Source Definition. The Open Source Initiative (OSI) maintains a [list of approved licences that meet the definition](https://opensource.org/licenses/).
+If the MIT License is not appropriate for your code or project, you can select a different licence, provided it adheres to the Open Source Definition. The Open Source Initiative (OSI) maintains a [list of approved licences that meet the definition](https://opensource.org/licenses/).
 
 #### Open documentation
 
