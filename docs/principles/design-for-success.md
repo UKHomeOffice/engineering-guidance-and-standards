@@ -7,8 +7,10 @@ tags:
   - Software design
 ---
 
+{% import "_includes/macros/tags.njk" as pageTag %}
+
 Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{{ pageTag.tags(tags)  }}
 
 Systems and applications should be designed so that they can be efficiently developed and deliver their intended value for users. You should have success criteria to measure your designs against.
 
