@@ -28,11 +28,8 @@ module.exports = function(eleventyConfig) {
         },
         footer: {
             copyright: {
-                text: '© Home Office'
+                html: '© <a class="govuk-footer__link" href="https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/LICENCE">Crown Copyright (Home Office)</a>'
             },
-            contentLicence: {
-                text: 'Licensed under the MIT License except where otherwise stated.'
-            }
         },
         stylesheets: ['/styles/base.css'],
     })
