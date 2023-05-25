@@ -1,12 +1,11 @@
 ---
 layout: sub-navigation
 order: 1
-title: Work in the open and be collaborative
+title: Work in the open
 date: git Last Modified
 tags:
 - Ways of working
-- Software Design
-- Collaboration
+- Source management
 ---
 
 Last updated: {{ page.date | postDate }}
@@ -27,10 +26,5 @@ When working collaboratively this will result in better code and better working 
 - Easily discoverable and approved artefacts.
 - Don't hide technical debt
 - Don't rely on implicit product knowledge
-- Pair programming
-- Discuss often
-- Review others code.
-- Request your code be reviewed.
-- Don't be afraid to question or to be questioned
 
 ---
