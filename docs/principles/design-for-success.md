@@ -20,7 +20,7 @@ Systems and applications should be designed so that they can be efficiently deve
 
 A clear understanding and focus on meeting user and business needs is vital for delivering value for money when designing software solutions. Meeting non-functional requirements at the right time (often earlier) reduces the effort and cost of building secure and performant applications.
 
-Ensuring that there are pragmatic success criteria for what is to be built, how and when, makes assurance of design easier, allows for better management of technical debt and carries through to more maintainable solutions
+Ensuring that there are pragmatic and timely success criteria for what is to be built makes testing and assurance of design easier, allows for better management of technical debt and carries through to more maintainable solutions.
 
 ---
 
