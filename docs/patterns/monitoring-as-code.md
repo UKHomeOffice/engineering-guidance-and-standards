@@ -34,4 +34,6 @@ Monitoring-as-code allows platform teams to:
 
 ## Considerations
 
+If you are only charting CPU and memory usage then you won't see the full benefits of this framework, it is better suited to teams that have identified SLI(s) and SLO(s) ahead of time. MaC provides some sensible defaults - it is worth looking through the accompanying [adopting SRE with Service Level Objectives guidance](https://ho-cto.github.io/sre-monitoring-as-code/learn-mac/sre-with-slo/).
+
 ---
