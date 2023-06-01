@@ -22,6 +22,7 @@ Engineers should own the following:
 The description should provide domain context to an engineer and link to product documentation.
 
 Product documentation could include, for example:
+- Information about the team
 - Key stakeholders
 - User research findings
 - Product roadmap
