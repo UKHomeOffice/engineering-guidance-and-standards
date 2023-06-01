@@ -8,23 +8,28 @@ tags:
 - Source management
 ---
 
-Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{% import "_includes/macros/tags.njk" as pageTag %}
 
-Work in the open, providing maximum access and transparency at all times.
+Last updated: {{ page.date | postDate }}
+{{ pageTag.tags(tags)  }}
+
+Work in the open by being transparent and collaborative. Provide maximum access to your work and artefacts, share knowledge and solutions, make collective decisions. Open source your code unless there is a good reason not to.
 
 ---
 
 ## Rationale
 
-When working collaboratively this will result in better code and better working practices.
+The [Home Office DDaT Strategy](https://www.gov.uk/government/publications/home-office-digital-data-and-technology-strategy-2024/home-office-digital-data-and-technology-strategy-2024) advocates working and developing in the open to realise the benefits of shared technology products and to deliver effectively at scale. This is aligned to [point 3 of the Technology Code of Practice](https://www.gov.uk/guidance/be-open-and-use-open-source) and [requirement 12 of the Service Standard](https://www.gov.uk/service-manual/service-standard/point-12-make-new-source-code-open).
+
+Working in the open helps to build institutional memory, shared knowledge and best practice. Sharing code in the open makes it easier for teams to discover patterns and components. This in turn enables reuse and the development of shared technology products, and reduces duplication of effort.
 
 ---
 
 ## Applications and Implications
 
-- Easily discoverable and approved artefacts.
-- Don't hide technical debt
-- Don't rely on implicit product knowledge
+- Make your documentation, artefacts and code easily discoverable for other teams
+- Follow central government and Home Office guidance on open and closed source code
+- Build more secure applications by reducing reliance on 'security by obscurity'
+- Encourage review of work by wider communities, and welcome their feedback and contribution
 
 ---
