@@ -30,6 +30,6 @@ Working in the open helps to build institutional memory, shared knowledge and be
 - Make your documentation, artefacts and code easily discoverable for other teams
 - Follow central government and Home Office guidance on open and closed source code
 - Build more secure applications by reducing reliance on 'security by obscurity'
-- Encourage review of work by wider communities, and welcome their feedback and contribution
+- Encourage reviews of work by wider communities, and welcome feedback and contributions
 
 ---
