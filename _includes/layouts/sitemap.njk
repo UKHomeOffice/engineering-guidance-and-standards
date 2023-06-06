@@ -1,0 +1,42 @@
+{% extends "base.njk" %}
+
+{# Create breadcrumbs manually as sitemap should be excluded from collections #}
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    classes: "govuk-!-display-none-print",
+    items: [{
+      href: options.parentSite.url,
+      text: options.parentSite.name
+    }, {
+      href: options.pathPrefix,
+      text: options.homeKey
+    }]
+  }) if options.parentSite }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {{ appDocumentHeader({
+      title: "Sitemap",
+      description: description
+    }) }}
+
+    {{ appProseScope(content) if content }}
+
+    {% for item in collections.sitemap | eleventyNavigation(options.homeKey) %}
+      <div class="govuk-!-margin-bottom-4">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+          <a class="govuk-link" href="{{ item.url | url | pretty }}">{{ item.title | smart }}</a>
+        </h2>
+        {% if item.excerpt %}
+          <p class="govuk-body">{{ item.excerpt | markdown("inline") | striptags(true) }}</p>
+        {% endif %}
+        {{ collections.sitemap | eleventyNavigation(item.key) | eleventyNavigationToHtml({
+          listClass: "app-contents-list govuk-!-margin-left-4"
+        }) | safe }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

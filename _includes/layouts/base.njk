@@ -1,0 +1,17 @@
+{% extends "layouts/base.njk" %}
+
+{# Feedback #}
+{% set feedbackUrl = "https://www.homeofficesurveys.homeoffice.gov.uk/s/8PDDG2/" %}
+
+{# Components #}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+
+{% block header %}
+  {{ appHeader(options.header) }}
+  <div class="govuk-width-container">
+    {{ govukPhaseBanner({
+      tag: { text: "Alpha" },
+      html: 'This is a new service – your <a class="govuk-link" href="' + feedbackUrl + '">feedback</a> will help us to improve it.'})
+    }}
+  </div>
+{% endblock %}

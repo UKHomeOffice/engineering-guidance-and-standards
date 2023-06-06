@@ -1,0 +1,19 @@
+{% extends "base.njk" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    classes: "govuk-!-display-none-print",
+    items: breadcrumbItems
+  }) if showBreadcrumbs }}
+{% endblock %}
+
+{% block content %}
+  {{ appDocumentHeader({
+    title: title,
+    description: description
+  }) }}
+
+  {{ appProseScope(content) if content }}
+
+  {% include "layouts/shared/related.njk" %}
+{% endblock %}

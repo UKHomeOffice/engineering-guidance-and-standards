@@ -1,0 +1,57 @@
+{% extends "product.njk" %}
+
+{% block main %}
+  {{ xGovukMasthead({
+    title: {
+      html: title | smart
+    } if title,
+    description: {
+      html: description | markdown("inline") | noOrphans
+    } if description,
+    breadcrumbs: {
+      classes: "govuk-!-display-none-print govuk-!-margin-bottom-0",
+      items: breadcrumbItems
+    } if showBreadcrumbs
+  }) }}
+
+  <div class="govuk-width-container">
+    {% block beforeContent %}{% endblock %}
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+    {% block content %}
+      <div class="govuk-grid-row">
+        <section class="govuk-grid-column-two-thirds-from-desktop">
+          {{ appProseScope(content) if content }}
+
+          {% if paginationHeading %}
+            <h2 class="govuk-heading-l govuk-!-font-size-27">
+              {{ paginationHeading }}
+            </h2>
+          {% endif %}
+
+          {{ appDocumentList({
+            headingLevel: 3 if paginationHeading else 2,
+            classes: "app-document-list--large",
+            items: pagination.items
+          }) }}
+
+          {{ govukPagination({
+            previous: {
+              href: pagination.href.previous
+            },
+            next: {
+              href: pagination.href.next
+            },
+            items: pagination | itemsFromPagination
+          }) if pagination.pages.length > 1 }}
+        </section>
+
+        {% if aside or related %}
+          <div class="govuk-grid-column-one-third-from-desktop">
+            {% include "layouts/shared/related.njk" %}
+          </div>
+        {% endif %}
+      </div>
+    {% endblock %}
+    </main>
+  </div>
+{% endblock %}

@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
         },
         stylesheets: ['/styles/base.css'],
     })
-    
+
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
     });
@@ -58,7 +58,7 @@ module.exports = function(eleventyConfig) {
         markdownTemplateEngine: 'njk',
         dir: {
             // Use layouts from the plugin
-            layouts: 'node_modules/@x-govuk/govuk-eleventy-plugin/layouts'
+            includes: '_includes/layouts'
         },
         pathPrefix: _customPathPrefix
     }
