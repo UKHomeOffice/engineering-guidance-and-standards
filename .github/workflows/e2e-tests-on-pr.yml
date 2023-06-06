@@ -1,8 +1,8 @@
 name: e2e-tests-on-pr
- 
-on: 
+
+on:
   pull_request:
-    branches: 
+    branches:
       - main
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
     container: cypress/browsers:node16.16.0-chrome105-ff99-edge
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v4
         with:
