@@ -18,8 +18,9 @@ module.exports = function(eleventyConfig) {
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
         header: {
-            organisationLogo: '<img src="'+ _customPathPrefix +'assets/logos/ho_logo.svg" width="150px" height="36px" alt="Home Office"/>',
-            organisationName: '',
+            organisationLogo: '<img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
+            organisationName: 'Home Office',
+            productName: 'Engineering Guidance and Standards',
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
@@ -33,7 +34,7 @@ module.exports = function(eleventyConfig) {
         },
         stylesheets: ['/styles/base.css'],
     })
-    
+
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
     });

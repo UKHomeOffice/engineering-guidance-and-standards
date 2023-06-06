@@ -11,16 +11,9 @@
 
   .govuk-header__link, .govuk-header__link:visited {
     color: #15141A;
-    display: inline-flex;
-    align-items: center;
   }
 
-  .govuk-header__product-name {
-    display: inline-block;
-    margin-left: 50px;
-  }
-
-  .app-site-search__wrapper {
-    margin-top: 0.3em;
+  .govuk-header__logo img {
+    vertical-align: bottom;
   }
 }
