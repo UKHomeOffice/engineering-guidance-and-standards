@@ -28,8 +28,8 @@ Working in the open helps to build institutional memory, shared knowledge and be
 ## Applications and Implications
 
 - Make your documentation, artefacts and code easily discoverable for other teams
-- Follow central government and Home Office guidance on open and closed source code
-- Build more secure applications by reducing reliance on 'security by obscurity'
+- Follow [central government guidance on open and closed source code](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable), bearing in mind Home Office requirements
+- Build more secure applications by reducing reliance on ['security by obscurity'](https://en.wikipedia.org/wiki/Security_through_obscurity)
 - Encourage reviews of work by wider communities, and welcome feedback and contributions
 
 ---
