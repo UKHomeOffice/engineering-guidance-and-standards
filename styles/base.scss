@@ -16,4 +16,11 @@
   .govuk-header__logo img {
     vertical-align: bottom;
   }
+
+  .app-site-search {
+    @media (max-width: 62.25em) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
 }
