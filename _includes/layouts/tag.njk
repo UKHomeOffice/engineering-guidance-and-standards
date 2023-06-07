@@ -1,24 +1,8 @@
-{% extends "base.njk" %}
+{% extends "layouts/tag.njk" %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
-    classes: "govuk-!-display-none-print",
-    items: breadcrumbItems
-  }) if showBreadcrumbs }}
-{% endblock %}
+  {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+  {{ feedback.phaseBanner() }}
 
-{% block content %}
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    {{ appDocumentHeader({
-      title: title or ("Posts tagged ‘" + tag + "’")
-    }) }}
-
-    {{ appDocumentList({
-      headingLevel: 3 if paginationHeading else 2,
-      classes: "app-document-list--large",
-      items: collections[tag] | reverse
-    }) }}
-  </div>
-</div>
+  {{ super() }}
 {% endblock %}

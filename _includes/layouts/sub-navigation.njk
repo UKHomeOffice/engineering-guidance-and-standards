@@ -1,28 +1,8 @@
-{% extends "base.njk" %}
+{% extends "layouts/sub-navigation.njk" %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
-    classes: "govuk-!-display-none-print",
-    items: breadcrumbItems
-  }) if showBreadcrumbs }}
-{% endblock %}
+  {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+  {{ feedback.phaseBanner() }}
 
-{% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-quarter-from-desktop">
-      {{ xGovukSubNavigation({
-        items: collections.ordered | eleventyNavigation(options.homeKey) | itemsFromNavigation(page.url, { pathPrefix: options.pathPrefix })
-      }) }}
-    </div>
-    <div class="govuk-grid-column-three-quarters-from-desktop">
-      {{ appDocumentHeader({
-        title: title,
-        description: description
-      }) }}
-
-      {{ appProseScope(content) if content }}
-
-      {% include "layouts/shared/related.njk" %}
-    </div>
-  </div>
+  {{ super() }}
 {% endblock %}

@@ -1,19 +1,8 @@
-{% extends "base.njk" %}
+{% extends "layouts/page.njk" %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
-    classes: "govuk-!-display-none-print",
-    items: breadcrumbItems
-  }) if showBreadcrumbs }}
-{% endblock %}
+  {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+  {{ feedback.phaseBanner() }}
 
-{% block content %}
-  {{ appDocumentHeader({
-    title: title,
-    description: description
-  }) }}
-
-  {{ appProseScope(content) if content }}
-
-  {% include "layouts/shared/related.njk" %}
+  {{ super() }}
 {% endblock %}

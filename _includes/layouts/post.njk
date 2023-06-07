@@ -1,45 +1,8 @@
-{% extends "base.njk" %}
+{% extends "layouts/post.njk" %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
-    classes: "govuk-!-display-none-print",
-    items: breadcrumbItems
-  }) if showBreadcrumbs }}
-{% endblock %}
+  {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+  {{ feedback.phaseBanner() }}
 
-{% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-      {{ appDocumentHeader({
-        title: title,
-        date: date,
-        modified: modified,
-        author: author,
-        authors: authors,
-        tags: tags,
-        tagPages: collections.tagPages
-      }) }}
-    </div>
-
-    <div class="govuk-grid-column-two-thirds-from-desktop">
-      {% call appProseScope() %}
-        {% if image -%}
-          <figure>
-            <img src="{{ image.src }}" alt="{{ image.alt }}">
-            {% if image.caption -%}
-            <figcaption>{{ image.caption }}</figcaption>
-            {% endif -%}
-          </figure>
-        {%- endif %}
-
-        {{ content }}
-      {% endcall %}
-    </div>
-
-    {% if aside or related %}
-      <div class="govuk-grid-column-one-third-from-desktop">
-        {% include "layouts/shared/related.njk" %}
-      </div>
-    {% endif %}
-  </div>
+  {{ super() }}
 {% endblock %}
