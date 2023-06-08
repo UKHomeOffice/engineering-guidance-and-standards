@@ -3,9 +3,10 @@ eleventyExcludeFromCollections: true
 layout: sub-navigation
 pagination:
   data: collections
+  # removes (page 1 of n) from title (where n is total number of tags in use)
+  pages: 0 
   size: 1
   alias: tag
-  # excluding other auto generated tag pages - if included, page x of y appears in the head title of the page
   filter:
     - homepage
     - all
