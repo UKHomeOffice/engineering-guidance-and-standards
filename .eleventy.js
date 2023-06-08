@@ -59,7 +59,7 @@ module.exports = function(eleventyConfig) {
         markdownTemplateEngine: 'njk',
         dir: {
             // Use layouts from the plugin
-            layouts: 'node_modules/@x-govuk/govuk-eleventy-plugin/layouts'
+            includes: '_includes/layouts'
         },
         pathPrefix: _customPathPrefix
     }

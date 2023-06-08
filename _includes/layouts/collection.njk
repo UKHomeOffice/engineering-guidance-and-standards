@@ -1,0 +1,10 @@
+{% extends "layouts/collection.njk" %}
+
+{% block main %}
+  <div class="govuk-width-container">
+    {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+    {{ feedback.phaseBanner() }}
+  </div>
+
+  {{ super() }}
+{% endblock %}

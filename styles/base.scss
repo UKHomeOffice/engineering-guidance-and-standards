@@ -24,3 +24,8 @@
     }
   }
 }
+
+// Allows feedback banner to have correct bottom margin.
+.x-govuk-masthead {
+  margin-top: 0;
+}
