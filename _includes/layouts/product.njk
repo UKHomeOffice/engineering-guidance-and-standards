@@ -3,7 +3,7 @@
 {% block main %}
   <div class="govuk-width-container">
     {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-    {{ feedback.phaseBanner() }}
+    {{ feedback.phaseBanner(configuration.phaseBanner) }}
   </div>
 
   {{ super() }}

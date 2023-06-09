@@ -2,7 +2,7 @@
 
 {% block beforeContent %}
   {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-  {{ feedback.phaseBanner() }}
+  {{ feedback.phaseBanner(configuration.phaseBanner) }}
 
   {{ super() }}
 {% endblock %}
