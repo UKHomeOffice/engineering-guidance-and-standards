@@ -48,7 +48,7 @@ The architectural views may contain architecture diagrams, security models, enti
 
 ### Product documentation MUST include a decision log
 
-A decision log should record key design decisions in context. A pattern should be selected to compliment the team ways of working, and may include for example [Architecture Decision Records](https://adr.github.io/). 
+A decision log should record key design decisions in context. A pattern should be selected to complement the team ways of working, and may include for example [Architecture Decision Records](https://adr.github.io/). 
 
 ### Product documentation MUST include incident management information
 
