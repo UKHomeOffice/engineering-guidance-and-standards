@@ -1,8 +1,10 @@
 {% extends "layouts/tag.njk" %}
 
 {% block beforeContent %}
-  {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-  {{ feedback.phaseBanner(configuration.phaseBanner) }}
+  {% if configuration.phaseBanner %}
+    {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+    {{ feedback.phaseBanner(configuration.phaseBanner) }}
+  {% endif %}
 
   {{ super() }}
 {% endblock %}
