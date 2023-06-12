@@ -1,10 +1,10 @@
 {% extends "layouts/product.njk" %}
 
 {% block main %}
-  {% if configuration.phaseBanner %}
+  {% if phaseBannerConfiguration %}
     <div class="govuk-width-container">
       {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-      {{ feedback.phaseBanner(configuration.phaseBanner) }}
+      {{ feedback.phaseBanner(phaseBannerConfiguration) }}
     </div>
   {% endif %}
 

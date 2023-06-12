@@ -1,9 +1,9 @@
 {% extends "layouts/post.njk" %}
 
 {% block beforeContent %}
-  {% if configuration.phaseBanner %}
+  {% if phaseBannerConfiguration %}
     {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-    {{ feedback.phaseBanner(configuration.phaseBanner) }}
+    {{ feedback.phaseBanner(phaseBannerConfiguration) }}
   {% endif %}
 
   {{ super() }}
