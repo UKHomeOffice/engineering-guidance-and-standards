@@ -56,7 +56,7 @@ An incident management process should include technical points of contact, runbo
 
 ### Product documentation MUST include information about observability
 
-Documentation should include details of logging, monitoring, and alerting designs, and links to alerting and monitoring dashboards.
+Documentation should include details of logging, alerting and monitoring designs, and links to alerting and monitoring dashboards.
 
 ### Product documentation MUST include build, release and deployment processes
 
