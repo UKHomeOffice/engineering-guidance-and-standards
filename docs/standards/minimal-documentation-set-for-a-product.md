@@ -14,7 +14,7 @@ tags:
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
-A Home Office engineering product should be documented to a minimum standard so that new engineers can be easily 
+A product should be documented to a minimum standard so that new engineers can be easily 
 onboarded, and knowledge is not siloed within the team.
 
 ---
