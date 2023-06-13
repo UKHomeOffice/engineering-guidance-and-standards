@@ -31,6 +31,12 @@ module.exports = function(eleventyConfig) {
             copyright: {
                 html: '© <a class="govuk-footer__link" href="https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/LICENCE">Crown Copyright (Home Office)</a>'
             },
+            meta: {
+                items: [{
+                    href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
+                    text: 'GitHub repository'
+                }]
+            }
         },
         stylesheets: ['/styles/base.css'],
     })
