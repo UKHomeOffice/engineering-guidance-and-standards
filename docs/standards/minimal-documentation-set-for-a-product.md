@@ -14,8 +14,7 @@ tags:
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
-A product should be documented to a minimum standard so that new engineers can be easily 
-onboarded, and knowledge is not siloed within the team.
+A product should be documented to a minimum standard so that new engineers can be easily onboarded, and knowledge is not siloed within the team.
 
 ---
 
@@ -23,7 +22,7 @@ onboarded, and knowledge is not siloed within the team.
 
 - [Product documentation MUST include a description of the product and what it is for](#product-documentation-must-include-a-description-of-the-product-and-what-it-is-for)
 - [Product documentation MUST include key architectural views](#product-documentation-must-include-key-architectural-views)
-- [Product documentation MUST include a decision log](#product-documentation-must-include-a-decision log)
+- [Product documentation MUST include a decision log](#product-documentation-must-include-a-decision-log)
 - [Product documentation MUST include incident management information](#product-documentation-must-include-incident-management-information)
 - [Product documentation MUST include information about observability](#product-documentation-must-include-information-about-observability)
 - [Product documentation MUST include build, release and deployment processes](#product-documentation-must-include-build-release-and-deployment-processes)
