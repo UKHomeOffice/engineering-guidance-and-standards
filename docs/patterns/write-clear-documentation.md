@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 order: 1
-title: Writing clear documentation
+title: Write clear documentation
 date: git Last Modified
 tags:
 - Ways of working
