@@ -2,8 +2,8 @@
 
 {% block main %}
   {% if phaseBannerConfiguration %}
-    <div class="govuk-width-container">
-      {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+    <div class="govuk-width-container" data-axe-exclude="It is acceptable that this is outside a landmark region">
+      {% import "macros/feedbackBanner.njk" as feedback %}
       {{ feedback.phaseBanner(phaseBannerConfiguration) }}
     </div>
   {% endif %}

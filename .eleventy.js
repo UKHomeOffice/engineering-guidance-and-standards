@@ -73,8 +73,9 @@ module.exports = function(eleventyConfig) {
         htmlTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',
         dir: {
-            // Use layouts from the plugin
-            includes: '_includes/layouts'
+            layouts: '../_includes/layouts',
+            includes: '../_includes',
+            input: 'docs'
         },
         pathPrefix: _customPathPrefix
     }
