@@ -1,14 +1,8 @@
-{% macro phaseBanner() %}
-
-{# Feedback #}
-{% set feedbackUrl = "https://www.homeofficesurveys.homeoffice.gov.uk/s/8PDDG2/" %}
+{% macro phaseBanner(configuration) %}
 
 {# Components #}
 {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 
-{{ govukPhaseBanner({
-  tag: { text: "Alpha" },
-  html: 'This is a new service – your <a class="govuk-link" target="_blank" href="' + feedbackUrl + '">feedback (opens in a new tab)</a> will help us to improve it.'})
-}}
+{{ govukPhaseBanner(configuration) }}
 
 {% endmacro %}

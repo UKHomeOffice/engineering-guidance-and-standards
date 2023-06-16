@@ -31,6 +31,12 @@ module.exports = function(eleventyConfig) {
             copyright: {
                 html: '© <a class="govuk-footer__link" href="https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/LICENCE">Crown Copyright (Home Office)</a>'
             },
+            meta: {
+                items: [{
+                    href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
+                    text: 'GitHub repository'
+                }]
+            }
         },
         stylesheets: ['/styles/base.css'],
     })
@@ -51,6 +57,15 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
         // Tags in array are ignored, no tag list page is generated for these
         return (tags || []).filter(tag => ["homepage"].indexOf(tag) === -1);
+    });
+
+    eleventyConfig.addGlobalData("phaseBannerConfiguration", () => {
+      return {
+        tag: {
+          text: "Alpha"
+        },
+        html: 'This is a new service – your <a class="govuk-link" target="_blank" href="https://www.homeofficesurveys.homeoffice.gov.uk/s/8PDDG2/">feedback (opens in a new tab)</a> will help us to improve it.'
+      }
     });
 
     return {

@@ -1,8 +1,10 @@
 {% extends "layouts/sitemap.njk" %}
 
 {% block beforeContent %}
-  {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-  {{ feedback.phaseBanner() }}
+  {% if phaseBannerConfiguration %}
+    {% import "_includes/macros/feedbackBanner.njk" as feedback %}
+    {{ feedback.phaseBanner(phaseBannerConfiguration) }}
+  {% endif %}
 
   {{ super() }}
 {% endblock %}
