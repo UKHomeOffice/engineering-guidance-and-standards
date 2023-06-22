@@ -9,10 +9,11 @@ or
 
 # Content change 
 I can confirm:
-- [ ] Content is suitable to open source
-- [ ] Content meets the content standards
-- [ ] Content does not relate to unreleased gov policy
-- [ ] Content is appropriately tagged
-- [ ] Content does not refer to anti-fraud mechanisms
 - [ ] Content does not include any code or configuration changes (excluding frontmatter information)
-- [ ] Content does not include sensitive business logic
+- [ ] Content meets the content standards
+e.g. [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/) and [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
+- [ ] Content is suitable to open source
+i.e.
+- Content does not relate to unreleased gov policy
+- Content does not refer to anti-fraud mechanisms
+- Content does not include sensitive business logic
