@@ -32,6 +32,6 @@
     "@x-govuk/govuk-eleventy-plugin": "^5.0.2"
   },
   "devDependencies": {
-    "cypress": "^12.15.0"
+    "cypress": "^12.16.0"
   }
 }
