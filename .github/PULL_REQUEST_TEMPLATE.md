@@ -1,4 +1,4 @@
-Is this pull request a content or a code change?
+Is this pull request a content or a code change? (Please fill in the relevant section and delete the other)
 
 # Code change
 I can confirm:
