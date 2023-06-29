@@ -1,6 +1,6 @@
 ---
 name: Review of existing content
-about: Template for requests to review (amend/remove) existing content
+about: Propose a review of existing content
 title: ''
 labels: ''
 assignees: ''
