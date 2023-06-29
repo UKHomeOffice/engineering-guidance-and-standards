@@ -6,7 +6,3 @@ labels: ''
 assignees: ''
 
 ---
-
-Please read appropriate guidance and standards for proposed content amendments or removals.
-
-
