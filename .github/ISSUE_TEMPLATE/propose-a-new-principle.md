@@ -2,7 +2,7 @@
 name: Propose a new principle
 about: Add documentation for a new principle 
 title: ''
-labels: ''
+labels: 'content principle'
 assignees: ''
 
 ---
