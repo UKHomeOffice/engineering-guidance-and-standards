@@ -20,7 +20,7 @@ Please find some helpful links to guide you in starting your journey with open s
 
 # Getting Started
 
-We will now look at the process we expect contributors to take when suggesting fixes, new content or the review of existing content.  
+We will now look at the process we expect contributors to take when suggesting fixes, new content or a review of existing content.
 
 ## Issues
 
