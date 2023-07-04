@@ -1,13 +1,11 @@
----
-eleventyExcludeFromCollections: true
----
-
 # How to contribute
 
 This is the contribution guide for the Home Office Software Engineering Guidance and Standards, we commonly refer to as SEGAS. This guide will cover the primary way we
 expect contributions to be made, which is adding new principles, standards, guidance and patterns.
 
 To contact the team you can get us at [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk)
+
+Please read and follow our [Code of Conduct](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/CODE_OF_CONDUCT.md).
 
 ## New to open source
 
@@ -22,14 +20,19 @@ Please find some helpful links to guide you in starting your journey with open s
 
 # Getting Started
 
-We will now look at the process we expect contributors to take when suggesting fixes or new content.  
+We will now look at the process we expect contributors to take when suggesting fixes, new content or the review of existing content.  
 
 ## Issues
 
 ### Create an issue
 
-- If you spot a problem then please head over to the issues page and raise a new issue.
-[Create an Issue](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new)
+- Before submitting an issue, please search the issue tracker to check the issue is not already there.
+- Please [create an issue](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new/choose) if you wish to:
+  - report a bug
+  - propose a new pattern
+  - propose a new principle
+  - propose a new standard
+  - review any existing content
 
 ### Solve an issue
 
@@ -65,6 +68,8 @@ When you're finished with your changes you should create a pull request, commonl
 
 Find some helpful information on how to create [GitHub Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
+When creating a PR, use the appropriate template checklists for code and content changes.
+
 ### Who can merge your PR
 
 Any 2 of the maintainers on this repo are needed to accept your change.
@@ -91,6 +96,18 @@ Please add to these where you feel necessary.
 There are no integration tests currently being used in this repo.  As the site is built using the Cross Government Eleventy plugin and mark down files, there is limit scope to do this.  
 
 However, if you feel that some changes are becoming more complex, then you may want to consider adding these in.
+
+## Build, release, deploy
+
+We are using [GitHub workflows](https://github.com/HO-CTO/engineering-guidance-and-standards/tree/main/.github/workflows) for build and deploy and automated end to end testing.
+
+The following actions are performed for each PR:
+- Automated end to end testing using Cypress.
+- [Snyk](https://github.com/snyk/actions) to prevent known vulnerabilities being introduced.
+
+PRs must only be approved after they pass the above checks.
+
+We are deploying the site to [GitHub pages](https://pages.github.com/).
 
 ## Branching
 
@@ -126,6 +143,6 @@ We are going to be using meta data to eventually make the content more discovera
 
 No matter if you are creating content for a new pattern, principle or standard, take a quick look at the standard for that content, to make sure we are all creating content correctly.
 
-- [Standard for a Principle](https://didactic-winner-0a268fdc.pages.github.io/docs/standards/standard-principle/)
-- Standard for a Standard (tbc)
-- Standard for a Pattern (tbc)
+- [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
+- [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
+- Writing a pattern (TBC)
