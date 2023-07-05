@@ -95,7 +95,7 @@ The Home Office Accessibility team have published guidance on [creating accessib
 
 #### Use inclusive language
 
-The Home Office accessibility team have published guidance on [how to write in a way that is compassionate and respectful](https://design.homeoffice.gov.uk/accessibility/inclusive-language). You should follow this guidance, and also remember that there are common technical concepts that should be deprecated, below are some examples (but the list is not exhaustive).
+The Home Office accessibility team have published guidance on [how to write in a way that is compassionate and respectful](https://design.homeoffice.gov.uk/accessibility/inclusive-language). You should follow this guidance, and also remember that there are antiquated instances of technical terminology that should be deprecated, below are some examples (but the list is not exhaustive).
 
 | Example | Use instead |
 |:---|:---|
