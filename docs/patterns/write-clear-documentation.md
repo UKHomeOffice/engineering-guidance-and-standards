@@ -32,7 +32,7 @@ Following this guidance, and the [GOV.UK guidance on how to write well for your 
 
 "_If you don't know what the user needs are, you won't build (or write) the right thing_"
 
-The key to successful documentation is that it meets the needs of the audience in a way that they understand. Taking a user-centred approach to how you design and write your documentation is a great way to make it successful. Engineers are often users too, identify all the potential readers of your documentation when assessing their needs.
+The key to successful documentation is that it meets the needs of the audience in a way that they understand. Taking a user-centred approach to how you design and write your documentation is a great way to make it effective. Engineers are often users too, identify all of the potential readers of your documentation when assessing user needs.
 
 #### How to do this
 
