@@ -16,7 +16,7 @@ Last updated: {{ page.date | postDate }}
 
 Technical documentation explains how a product works, and its intended readers can range anywhere from software developers to non-technical users. It can take a number of forms, such as an onboarding guide or API documentation. Typically, technical writers and engineers create this type of documentation.
 
-The benefits of well-written documentation are often understated, but can transform the experience for engineers and users. If it is straightforward for readers to understand how to use a product, it improves self-service, so they will not need to contact support for help as often. They can become experts at using a product on their own, reducing the amount of time and money spent on troubleshooting, and improving productivity.
+Well-written documentation can transform the experience for engineers and users. If it is straightforward for readers to understand how to use a product, it improves self-service, so they will not need to contact support for help as often. They can become experts at using a product on their own, reducing the amount of time and money spent on troubleshooting, and improving productivity.
 
 Following this guidance, and the [GOV.UK guidance on how to write well for your audience, including specialists.](https://www.gov.uk/guidance/content-design/writing-for-gov-uk), will help you to write effective and accessible technical documentation for your audience.
 
