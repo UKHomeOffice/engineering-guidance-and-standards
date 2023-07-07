@@ -2,9 +2,13 @@
 
 {% block beforeContent %}
   {% if phaseBannerConfiguration %}
-    {% import "_includes/macros/feedbackBanner.njk" as feedback %}
-    {{ feedback.phaseBanner(phaseBannerConfiguration) }}
+    {% import "macros/feedbackBanner.njk" as feedback %}
+    <div data-axe-exclude="It is acceptable that this is outside a landmark region">
+      {{ feedback.phaseBanner(phaseBannerConfiguration) }}
+    </div>
   {% endif %}
 
-  {{ super() }}
+  <nav aria-label="Breadcrumbs">
+    {{ super() }}
+  </nav>
 {% endblock %}

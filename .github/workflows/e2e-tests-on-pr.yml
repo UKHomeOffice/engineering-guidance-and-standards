@@ -12,18 +12,19 @@ env:
 
 jobs:
   e2e-test:
-    runs-on: ubuntu-20.04
-    container: cypress/browsers:node16.16.0-chrome105-ff99-edge
+    runs-on: ubuntu-22.04
+    container: cypress/browsers:node18.12.0-chrome107
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run Cypress Tests
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           build: npm run build
           start: npm run serve -- --port ${{ env.TEST_PORT }}
           wait-on: 'http://${{ env.TEST_URL }}:${{ env.TEST_PORT }}'
+          config: 'video=false,screenshotOnRunFailure=false'
         env:
           CYPRESS_TEST_URL: ${{ env.TEST_URL }}
           CYPRESS_TEST_PORT: ${{ env.TEST_PORT }}

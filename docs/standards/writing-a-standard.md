@@ -4,10 +4,10 @@ order: 1
 title: Writing a standard
 date: git Last Modified
 id: SEGAS-00001
-tags:
+tags: []
 ---
 
-{% import "_includes/macros/tags.njk" as pageTag %}
+{% import "macros/tags.njk" as pageTag %}
 
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
