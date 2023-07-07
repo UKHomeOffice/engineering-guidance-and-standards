@@ -145,4 +145,3 @@ No matter if you are creating content for a new pattern, principle or standard, 
 
 - [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
 - [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
-- Writing a pattern (TBC)
