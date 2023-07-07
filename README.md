@@ -14,7 +14,7 @@ It is built using Markdown, GOV.UK templates, HO styles, the x-gov Eleventy Plug
 ## Installation
 
 ```
-npm install @11ty/eleventy govuk-eleventy-plugin --save
+npm install
 ```
 
 This will install latest version of the x-gov Eleventy Plugin plugin.
