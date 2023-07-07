@@ -17,7 +17,7 @@ It is built using Markdown, GOV.UK templates, HO styles, the x-gov Eleventy Plug
 npm install
 ```
 
-This will install latest version of the x-gov Eleventy Plugin plugin.
+This will install the dependencies needed to run the site.
 
 ## Preview your changes locally
 
@@ -56,9 +56,9 @@ Now you can preview the site on http://localhost:8080
 ## Running Cypress tests
 To run the [Cypress](https://www.cypress.io/) tests locally, run the following command:
 
-\```
+```
 npm run cypress:open
-\```
+```
 
 This will open up the Cypress UI, which you can use to run the end-to-end tests locally.
 
