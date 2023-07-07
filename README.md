@@ -54,15 +54,16 @@ http-server -p 8080
 Now you can preview the site on http://localhost:8080
 
 ## Running Cypress tests
+To run the [Cypress](https://www.cypress.io/) tests locally, run the following command:
 
-To run the [Cypress](https://www.cypress.io/) tests locally, run the following command while the site is running:
-
-```
+\```
 npm run cypress:open
-```
+\```
 
 This will open up the Cypress UI, which you can use to run the end-to-end tests locally.
 
+> **Note**
+> The site must be running on localhost for the tests to work. See [Preview your changes locally](#preview-your-changes-locally).
 ## Contributing
 
 See the [contributing page](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md) for details on how to contribute.
