@@ -33,9 +33,6 @@ module.exports = function(eleventyConfig) {
             },
             meta: {
                 items: [{
-                    href: '/cookies/',
-                    text: 'Cookies'
-                },{
                     href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
                     text: 'GitHub repository'
                 }]
