@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 order: 1
 title: How we use cookies 
 description:
