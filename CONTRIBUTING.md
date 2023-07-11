@@ -15,9 +15,6 @@ Please find some helpful links to guide you in starting your journey with open s
 - [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
 - [See the benefits of Open Source](https://opensource.guide/)
 
-<br>
-<br>
-
 # Getting Started
 
 We will now look at the process we expect contributors to take when suggesting fixes, new content or a review of existing content.
@@ -78,9 +75,6 @@ Any 2 of the maintainers on this repo are needed to accept your change.
 
 Congratulations, your contribution is now merged into the project and you have improved and added value to an on-going open source project.  Thank you!
 
-<br>
-<br>
-
 # Additional Info for Maintainers
 
 ## Testing
@@ -119,29 +113,24 @@ We are using a simple trunk based strategy.  There is only a single environment 
 
 You can tag any of the maintainers of this repo to get pre-pull request reviews and start discussions.  We are a friendly team so please feel free to tag us!
 
-<br>
-<br>
+# Organisation of content
 
-# Organisation of Content
+Patterns, principles and standards should be created in the correct subdirectory in `/docs`. This will mean that the `principle`, `pattern` and `standard` tags are automatically applied to the correct content.
 
-## Grouped by Area
+We are also using a tagging and metadata approach to organise content across the site by topic and related knowledge domain. All patterns, principles and standards content should be tagged in the frontmatter of the .md file to reference at least one of the below topic domains. Follow the guidance on tagging from the ['writing a standard' standard](https://ho-cto.github.io/engineering-guidance-and-standards/standards/writing-a-standard/#a-standard-must-have-tags).
 
-We are using a separation of concern style structure which cross cuts through software engineering.  These areas we identify are:
-
-- Observability - the process of monitoring applications, services and reliability.
-- Software Design - how our applicatons, services and software is architected at the software level.
-- Security - helping our applications, systems and services resistant to cyber attacks.
+- Observability - the process of monitoring applications, services and reliability
+- Software Design - how our applications, services and software are architected at the software level
+- Security - making our applications, systems, services and ways of working resistant to cyber attacks
 - Ways of Working - engineering teams patterns for approaching work
-- Build, Release & Deploy - all things pipelines, building and platform engineering
+- Build, Release and Deploy - all things pipelines, building and platform engineering
 - Source Control - storing and managing the source code
 
-Your content may cross cut many of these areas, and that is ok!  Have a go at finding a home for it at first.  It can always be moved.  
-
-We are going to be using meta data to eventually make the content more discoverable. We will be looking to implement a tagging system so that content can be identified by multiple areas.
+You can view a list of [all the topic domain tags currently in use across the site](https://ho-cto.github.io/engineering-guidance-and-standards/tags/). Your content may cross cut many of these areas, and that is ok, tag everything that you think is relevant.
 
 ## Look at the standard for the content
 
-No matter if you are creating content for a new pattern, principle or standard, take a quick look at the standard for that content, to make sure we are all creating content correctly.
+When creating content, take a look at the standard for that content, to make sure we are all creating content correctly.
 
 - [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
 - [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
