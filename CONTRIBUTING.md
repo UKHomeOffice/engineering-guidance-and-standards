@@ -130,7 +130,7 @@ You can view a list of [all the topic domain tags currently in use across the si
 
 ## Look at the standard for the content
 
-When creating content, take a look at the standard for that content, to make sure we are all creating content correctly.
+When creating content please take a look at the standard for that content. This helps to make sure we are all creating content correctly.
 
 - [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
 - [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
