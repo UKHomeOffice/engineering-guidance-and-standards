@@ -4,7 +4,7 @@ layout: product
 title: Engineering Guidance and Standards
 description: Build better applications by working to agreed Home Office engineering principles and standards
 startButton:
-  href: "/docs/about/"
+  href: "/about/"
   text: Find out more about what we are doing
 # hide duplicate title in page title
 options:

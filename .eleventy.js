@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
             meta: {
                 items: [
                 {
-                    href: '/docs/about/',
+                    href: _customPathPrefix+'/about/',
                     text: 'About'
                 },
                 {
