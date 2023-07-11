@@ -8,7 +8,7 @@ tags:
 
 The Home Office Engineering Guidance and Standards site is a body of knowledge for software engineers. It is comprised of principles, patterns and standards that define how we do engineering at the Home Office, and that direct how we want to do engineering in the future. This guidance is created and curated by the Home Office engineering community. The project as a whole is led by the Home Office DDaT Engineering Profession team.
 
-### Why we are doing it
+## Why we are doing it
 
 The Home Office has a large estate of teams and technology products. There is a wealth of experience and best practice that we can draw on, to standardise some of the things that we do and manage quality consistently. This will help us to deliver secure, performant technology that meets user needs, and deliver it quickly.
 
@@ -22,13 +22,13 @@ This guidance was originally published on an internal content platform. We have 
 
 3. It means that our peers and colleagues, across government and technology communities, can see how we work, and contribute to improvement. We are keen to adopt ways of working from open source communities, and become a better contributor to them too.
 
-### How we manage the site
+## How we manage the site
 
 Proposed content for principles, standards and patterns go through a short process of collaborative creation, and require approval from Home Office engineering leadership to be merged into the site. This is managed via a process which will be familiar to users of GitHub - creating issues and branches for new content, and raising pull requests for review. We also have a small group of engineers committed to the ongoing maintenance and improvement of this site.
 
 You can find out more about how to contribute in our [CONTRIBUTING.md](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md) and you can [raise an issue directly onto the GitHub repository](https://github.com/HO-CTO/engineering-guidance-and-standards/issues).
 
-### Our roadmap
+## Our roadmap
 
 We have work on site improvements and content migration happening in parallel, our immediate aims are below:
 
