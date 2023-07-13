@@ -38,6 +38,10 @@ module.exports = function(eleventyConfig) {
                     text: 'About'
                 },
                 {
+                    href: _customPathPrefix+'/cookies/',
+                    text: 'Cookies'
+                },
+                {
                     href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
                     text: 'GitHub repository'
                 }
