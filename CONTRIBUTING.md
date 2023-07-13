@@ -1,13 +1,11 @@
----
-eleventyExcludeFromCollections: true
----
-
 # How to contribute
 
 This is the contribution guide for the Home Office Software Engineering Guidance and Standards, we commonly refer to as SEGAS. This guide will cover the primary way we
 expect contributions to be made, which is adding new principles, standards, guidance and patterns.
 
 To contact the team you can get us at [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk)
+
+Please read and follow our [Code of Conduct](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/CODE_OF_CONDUCT.md).
 
 ## New to open source
 
@@ -17,19 +15,21 @@ Please find some helpful links to guide you in starting your journey with open s
 - [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
 - [See the benefits of Open Source](https://opensource.guide/)
 
-<br>
-<br>
-
 # Getting Started
 
-We will now look at the process we expect contributors to take when suggesting fixes or new content.  
+We will now look at the process we expect contributors to take when suggesting fixes, new content or a review of existing content.
 
 ## Issues
 
 ### Create an issue
 
-- If you spot a problem then please head over to the issues page and raise a new issue.
-[Create an Issue](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new)
+- Before submitting an issue, please search the issue tracker to check the issue is not already there.
+- Please [create an issue](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new/choose) if you wish to:
+  - report a bug
+  - propose a new pattern
+  - propose a new principle
+  - propose a new standard
+  - review any existing content
 
 ### Solve an issue
 
@@ -65,6 +65,8 @@ When you're finished with your changes you should create a pull request, commonl
 
 Find some helpful information on how to create [GitHub Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
+When creating a PR, use the appropriate template checklists for code and content changes.
+
 ### Who can merge your PR
 
 Any 2 of the maintainers on this repo are needed to accept your change.
@@ -72,9 +74,6 @@ Any 2 of the maintainers on this repo are needed to accept your change.
 ## Your PR is merged!
 
 Congratulations, your contribution is now merged into the project and you have improved and added value to an on-going open source project.  Thank you!
-
-<br>
-<br>
 
 # Additional Info for Maintainers
 
@@ -92,6 +91,18 @@ There are no integration tests currently being used in this repo.  As the site i
 
 However, if you feel that some changes are becoming more complex, then you may want to consider adding these in.
 
+## Build, release, deploy
+
+We are using [GitHub workflows](https://github.com/HO-CTO/engineering-guidance-and-standards/tree/main/.github/workflows) for build and deploy and automated end to end testing.
+
+The following actions are performed for each PR:
+- Automated end to end testing using Cypress.
+- [Snyk](https://github.com/snyk/actions) to prevent known vulnerabilities being introduced.
+
+PRs must only be approved after they pass the above checks.
+
+We are deploying the site to [GitHub pages](https://pages.github.com/).
+
 ## Branching
 
 ### Branching strategy
@@ -102,30 +113,24 @@ We are using a simple trunk based strategy.  There is only a single environment 
 
 You can tag any of the maintainers of this repo to get pre-pull request reviews and start discussions.  We are a friendly team so please feel free to tag us!
 
-<br>
-<br>
+# Organisation of content
 
-# Organisation of Content
+Patterns, principles and standards should be created in the correct subdirectory in `/docs`. This will mean that the `principle`, `pattern` and `standard` tags are automatically applied to the correct content.
 
-## Grouped by Area
+We are also using a tagging and metadata approach to organise content across the site by topic and related knowledge domain. All patterns, principles and standards content should be tagged in the frontmatter of the .md file to reference at least one of the below topic domains. Follow the guidance on tagging from the ['writing a standard' standard](https://ho-cto.github.io/engineering-guidance-and-standards/standards/writing-a-standard/#a-standard-must-have-tags).
 
-We are using a separation of concern style structure which cross cuts through software engineering.  These areas we identify are:
-
-- Observability - the process of monitoring applications, services and reliability.
-- Software Design - how our applicatons, services and software is architected at the software level.
-- Security - helping our applications, systems and services resistant to cyber attacks.
+- Observability - the process of monitoring applications, services and reliability
+- Software Design - how our applications, services and software are architected at the software level
+- Security - making our applications, systems, services and ways of working resistant to cyber attacks
 - Ways of Working - engineering teams patterns for approaching work
-- Build, Release & Deploy - all things pipelines, building and platform engineering
+- Build, Release and Deploy - all things pipelines, building and platform engineering
 - Source Control - storing and managing the source code
 
-Your content may cross cut many of these areas, and that is ok!  Have a go at finding a home for it at first.  It can always be moved.  
-
-We are going to be using meta data to eventually make the content more discoverable. We will be looking to implement a tagging system so that content can be identified by multiple areas.
+You can view a list of [all the topic domain tags currently in use across the site](https://ho-cto.github.io/engineering-guidance-and-standards/tags/). Your content may cross cut many of these areas, and that is ok, tag everything that you think is relevant.
 
 ## Look at the standard for the content
 
-No matter if you are creating content for a new pattern, principle or standard, take a quick look at the standard for that content, to make sure we are all creating content correctly.
+When creating content please take a look at the standard for that content. This helps to make sure we are all creating content correctly.
 
-- [Standard for a Principle](https://didactic-winner-0a268fdc.pages.github.io/docs/standards/standard-principle/)
-- Standard for a Standard (tbc)
-- Standard for a Pattern (tbc)
+- [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
+- [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
