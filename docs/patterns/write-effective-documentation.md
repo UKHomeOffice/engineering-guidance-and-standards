@@ -9,7 +9,7 @@ tags:
 - Accessibility
 ---
 
-{% import "_includes/macros/tags.njk" as pageTag %}
+{% import "macros/tags.njk" as pageTag %}
 
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
@@ -30,7 +30,7 @@ Following this guidance, and the [GOV.UK guidance on how to write well for your 
 
 ### Start with User Needs
 
-"_If you don't know what the user needs are, you won't build (or write) the right thing_"
+"_If you don't know what the user needs are, you won't build (or write) the right thing_" - [Government Design Principles](https://www.gov.uk/guidance/government-design-principles#start-with-user-needs) (parentheses ours)
 
 The key to successful documentation is that it meets the needs of the audience in a way that they understand. Taking a user-centred approach to how you design and write your documentation is a great way to make it effective. Engineers are often users too, identify all of the potential readers of your documentation when assessing user needs.
 
