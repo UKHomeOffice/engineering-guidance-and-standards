@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 layout: page
 order: 5
 title: About
