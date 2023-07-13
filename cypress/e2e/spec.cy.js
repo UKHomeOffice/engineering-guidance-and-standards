@@ -66,3 +66,21 @@ describe('Writing a principle link from all pages tagged with standards loaded t
     cy.contains('h1', 'Writing a principle');
   })
 })
+
+describe('About page links from index page start button test', () => {
+  it('finds the about page describing the aims of the site', () => {
+    cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
+    // Click on first el containing the about page text
+    cy.contains('Find out more about what we are doing').click()
+    cy.contains('h2', 'Why we are doing it')
+  })
+})
+
+describe('About page links from footer test', () => {
+  it('finds the about page describing the aims of the site', () => {
+    cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
+    // Click on first li a containing 'About' page text
+    cy.contains('li a', 'About').click()
+    cy.contains('h2', 'Why we are doing it')
+  })
+})
