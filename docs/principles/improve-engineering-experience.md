@@ -12,7 +12,7 @@ tags:
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
-Engineers have needs. We will continuously improve the ways that we meet those needs, and support our engineers so that they have a good experience.
+At the Home Office, we recognise that [Developer Experience](https://github.blog/2023-06-08-developer-experience-what-is-it-and-why-should-you-care/) is comprised of many different aspects. It is about more than just tooling and platforms and technology meeting engineers' needs. It is affected by our working relationships, our community, our structures and our culture. We will invest in the continuous improvement of our engineering experience.
 
 ---
 
