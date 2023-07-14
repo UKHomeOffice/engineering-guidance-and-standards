@@ -8,7 +8,7 @@ tags:
 - Ways of working
 ---
 
-{% import "_includes/macros/tags.njk" as pageTag %}
+{% import "macros/tags.njk" as pageTag %}
 
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
@@ -32,8 +32,8 @@ Teams may approach these things in different ways depending on their size, make-
 - Make it easy for people to understand your code by practising good git hygiene - write meaningful commit messages, give context to your changes
 - Have a well-understood and communicated branching strategy, be prepared for this to change over time
 - Define how you protect branches, and review the quality of changes that progress through to production - you can use branch protection rules, and CI/CD to formalise and manage this
-- Use Git for version control - the Home Office provides options - and use version control widely, for documentation and configuration as well as code
-- Be collaborative and transparent - manage user access to your repositories appropriately, make sure to share your code as openly as you can unless you have a good reason not to
+- Use Git for version control and use version control widely, for documentation and configuration as well as code
+- [Be collaborative](/principles/be-collaborative/) and [work in the open](/principles/work-in-the-open/) - manage user access to your repositories appropriately, make sure to share your code as openly as you can unless you have a good reason not to
 - Provide documentation in your repositories, for example: what the repository contains, what it does, how to run it and how to improve it
 
 ---
