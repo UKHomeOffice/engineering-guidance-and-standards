@@ -57,6 +57,14 @@ Make sure you pull your fork and switch to your new branch to do these changes.
 
 Don't forget to commit and push your changes to your forked repo ready for the contribution!
 
+## Security vulnerability
+
+### Report a security vulnerability
+
+If you wish to report a security vulnerability please do not do this through an issue, as this will be publicly visible.
+
+You can report a security vulnerability to the Home Office Engineering Guidance and Standards team through the [repository's security advisory page](https://github.com/HO-CTO/engineering-guidance-and-standards/security/advisories/new).
+
 ## Pull Requests
 
 When you're finished with your changes you should create a pull request, commonly known as a PR.
