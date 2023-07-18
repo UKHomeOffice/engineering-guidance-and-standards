@@ -61,9 +61,7 @@ Don't forget to commit and push your changes to your forked repo ready for the c
 
 ### Report a security vulnerability
 
-If you wish to report a security vulnerability please do not do this through an issue, as this will be publicly visible.
-
-You can report a security vulnerability to the Home Office Engineering Guidance and Standards team through the [repository's security advisory page](https://github.com/HO-CTO/engineering-guidance-and-standards/security/advisories/new).
+You can report a security vulnerability to the Home Office Engineering Guidance and Standards team using the [repository's security advisory page](https://github.com/HO-CTO/engineering-guidance-and-standards/security/advisories/new).
 
 ## Pull Requests
 
