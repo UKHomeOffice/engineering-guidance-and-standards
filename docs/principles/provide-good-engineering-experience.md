@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 order: 1
-title: Improve engineering experience
+title: Provide a good engineering experience
 date: git Last Modified
 tags:
 - Ways of working
