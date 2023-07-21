@@ -18,7 +18,7 @@ At the Home Office, we recognise that the [engineer experience](https://github.b
 
 ## Rationale
 
-The Home Office engineering experience is more than tooling and platforms and technology meeting engineers' needs. It is affected by our working relationships, our community, our structures and our culture. Engineers complete work more quickly, and at higher quality, when the tools, environments and teams they work with provide the right capabilities and support. When they don't have those things, work moves more slowly, technical debt is accrued and security can be compromised. We want to reduce day to day friction and duplication, to improve productivity.
+The Home Office engineering experience is more than tooling and platforms and technology meeting engineers' needs. It is affected by our working relationships, our community, our structures and our culture. Engineers complete work quicker and at higher quality when the tools, environments and teams they work with provide the right capabilities and support. When they don't have those things, work moves more slowly, technical debt is accrued and security can be compromised. We want to reduce day-to-day friction and duplication, to improve productivity.
 
 It is important to remember that engineers are users too, we already have proven patterns for the best ways to meet user needs and they should be followed. To improve engineer experience we will meet engineering needs in the same way as we would with any other user need, centering engineers' feedback and experience when testing solutions that have been designed for them. This will provide the Home Office with a measurable and evidenced approach to factors that contribute to productivity and efficiency.
 
