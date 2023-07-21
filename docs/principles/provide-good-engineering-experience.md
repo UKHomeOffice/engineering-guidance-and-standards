@@ -27,7 +27,7 @@ It is important to remember that engineers are users too, we already have proven
 ## Applications and Implications
 
 - The Home Office's cloud platform engineering should deliver platforms as products that are developed according to tenant projects' needs. Engineers should engage with platforms to provide the feedback needed to continuously improve the developer experience.
-- Do user research with engineers to understand how they use tools and services, and where we can improve
+- Engineers use tools and services, use user research methods to understand and guide how that experience can be improved
 - Look at the whole experience for engineers to understand how teams and organisation impact the work that they do, alongside the tools and services they consume
 - Build an essential, community-driven body of knowledge for engineers to follow and refer to, making their jobs easier by promoting common patterns and golden paths to achieve their objectives
 - Onboard and integrate engineers into an inclusive community, encouraged to develop, and empowered to improve the overall state of engineering at the Home Office
