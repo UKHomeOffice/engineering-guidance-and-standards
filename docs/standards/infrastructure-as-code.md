@@ -12,7 +12,7 @@ tags:
 - CI/CD
 ---
 
-{% import "_includes/macros/tags.njk" as pageTag %}
+{% import "macros/tags.njk" as pageTag %}
 
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
