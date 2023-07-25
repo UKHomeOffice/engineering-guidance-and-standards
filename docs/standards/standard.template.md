@@ -20,7 +20,7 @@ Last updated: {{ page.date | postDate }}
 
 ## Requirement(s)
 
-<!-- Populate list for each requirement -->
+<!-- Populate list for each requirement (there can be more than 2)-->
 
 - [Requirement 1](#requirement-1)
 - [Requirement 2](#requirement-2)
