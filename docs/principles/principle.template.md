@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 order: 1
-title: Page title
+title: Principle title
 date: git Last Modified
 tags:
   - TAG 1
@@ -13,16 +13,16 @@ tags:
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
-<!-- Principle description content goes here -->
+<!-- Principle description -->
 
 ---
 
 ## Rationale
 
-<!-- Rational content goes here -->
+<!-- Rational text -->
 
 ---
 
 ## Applications and Implications
 
-<!-- Applications and implications content goes here -->
+<!-- Applications and implications text -->

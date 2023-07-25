@@ -14,7 +14,7 @@ tags: <!-- use tags: [] for no tags -->
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
-<!-- Standard description goes here -->
+<!-- Standard description -->
 
 ---
 
@@ -27,8 +27,10 @@ Last updated: {{ page.date | postDate }}
 
 ### Requirement 1
 
-<!-- Requirement description goes here -->
+<!-- Requirement description text -->
 
 ### Requirement 2
+
+<!-- Requirement description text -->
 
 ---
