@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 order: 1
-title: Selecting a Deployment Strategy
+title: Selecting a deployment strategy
 date: git Last Modified
 tags:
 - Build, release and deploy
