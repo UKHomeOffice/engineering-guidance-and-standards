@@ -19,7 +19,7 @@ Last updated: {{ page.date | postDate }}
 
 ## Rationale
 
-<!-- Rational text -->
+<!-- Rationale text -->
 
 ---
 
