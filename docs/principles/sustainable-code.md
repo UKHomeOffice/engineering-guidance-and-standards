@@ -29,13 +29,13 @@ Reusing existing code saves considerable development time and effort at the cost
 
 ## Applications and Implications
 
-- Keep your code as simple and understandable as possible. Start with only the code needed for the task at hand. Use refactorings where needed to separate concerns, facilitate reuse, and improve readability when the need arises.
-- Have a comprehensive set of regression tests so that you can safely refactor and add new features. If you also practice Test Driven Development you get this for free.
-- Use design patterns when appropriate and avoid using anti-patterns.
-- Keep code loosely coupled and highly reusable which enables future developments to extend the code more easily.
-- Remember code can always be refactored, so keep code simple and refactor for new use cases only when they arise.
-- Prioritise writing readable code. Less code doesn't always mean more efficient/sustainable, is often harder to read and harder to maintain.
-- Use comments sparingly when they add context or meaning that can't be expressed in the code.
-- Use methodologies such as SOLID Principles or Functional Programming where appropriate. Keep in mind methods already used within the project.
+- Keep your code as simple and understandable as possible. Start with only the code needed for the task at hand. Use refactoring where needed to separate concerns, facilitate reuse, and improve readability when the need arises
+- Have a comprehensive set of regression tests so that you can safely refactor and add new features. If you also practice Test Driven Development (TDD) you get this for free
+- Use design patterns when appropriate and avoid using anti-patterns
+- Keep code loosely coupled and highly reusable which enables future developments to extend the code more easily
+- Remember code can always be refactored, so keep code simple and refactor for new use cases only when they arise
+- Prioritise writing readable code. Less code doesn't always mean more efficient/sustainable, is often harder to read and harder to maintain
+- Use comments sparingly when they add context or meaning that can't be expressed in the code
+- Use methodologies such as SOLID Principles or Functional Programming where appropriate. Keep in mind methods already used within the project
   
 ---
