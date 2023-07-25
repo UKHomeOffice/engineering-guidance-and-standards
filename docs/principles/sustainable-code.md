@@ -1,12 +1,12 @@
 ---
 layout: sub-navigation
 order: 1
-title: Write sustainable and evolutionary code
+title: Write maintainable, reusable and evolutionary code
 date: git Last Modified
 tags:
   - Ways of working
   - Software design
-  - Sustainable coding
+  - Maintainability
   - Reusability
 ---
 
@@ -15,7 +15,7 @@ tags:
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
-When writing code, keep in mind that this should be clean, reusable and descriptive. Reuse existing artefacts before delivering new ones where possible. This can enable code to be easier to understand and cheaper to modify and reuse.
+When writing code, keep in mind that this should be clean, reusable and descriptive. Reuse existing artefacts before delivering new ones where possible. This can enable code to be easier to understand, and cheaper to maintain, modify and reuse.
 
 ---
 
