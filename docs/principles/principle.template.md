@@ -25,4 +25,4 @@ Last updated: {{ page.date | postDate }}
 
 ## Applications and Implications
 
-<!-- Applications and implications text -->
+<!-- Applications and implications text, it is best if these are bullet points -->
