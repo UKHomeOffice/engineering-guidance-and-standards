@@ -4,7 +4,7 @@ order: 1
 title: Standard title
 date: git Last Modified
 id: SEGAS-00000 <!-- Set unique ID for standard -->
-tags: <!-- use tags: [] for no tags -->
+tags: <!-- use tags: [] for no tags, note "Standards" tag included automatically -->
   - TAG 1
   - TAG 2
 ---
