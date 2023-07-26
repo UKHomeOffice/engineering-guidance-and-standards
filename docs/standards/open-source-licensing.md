@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Open source licensing
 date: git Last Modified
@@ -7,11 +7,6 @@ id: SEGAS-00004
 tags:
 - Source management
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Open source code repositories maintained by the Home Office must be given an appropriate licence, this explains to users the terms under which that code can be used or modified.
 

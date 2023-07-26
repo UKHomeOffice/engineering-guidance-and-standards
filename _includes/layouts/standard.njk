@@ -1,0 +1,53 @@
+{% extends "layouts/base.njk" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    classes: "govuk-!-display-none-print",
+    items: breadcrumbItems
+  }) if showBreadcrumbs }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter-from-desktop">
+      <nav class="x-govuk-sub-navigation" aria-labelledby="sub-navigation-heading">
+        <h2 class="govuk-heading-m" id="sub-navigation-heading">Standards</h2>
+        <ul class="x-govuk-sub-navigation__section">
+          {%- for post in collections.getAllStandards %}
+          <li class="x-govuk-sub-navigation__section-item">
+            <a href="{{ post.url }}" class="x-govuk-sub-navigation__link" {% if page.url == post.url %} aria-current="page"{% endif %}>
+              {{ post.data.title }}
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="govuk-grid-column-three-quarters-from-desktop">
+      {{ appDocumentHeader({
+        title: title,
+        description: description
+      }) }}
+
+      {% if id %} <p class="govuk-heading-m">ID: {{ id }}</p>{% endif %}
+
+      <p class="govuk-body">
+        Last updated: {{ page.date | postDate }}
+
+        {% if tags %}
+          <br>
+          Relates to (tags): 
+          {%- for tag in tags | filterTagList %}
+            {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
+            <a href="{{ tagUrl }}" class="x-govuk-sub-navigation__link" {% if page.url == post.url %} aria-current="page"{% endif %}>
+              {{ tag }}</a>{%- if not loop.last %}, {% endif %}
+          {%- endfor %}
+        {% endif %}
+      </p>  
+
+      {{ appProseScope(content) if content }}
+
+      {% include "layouts/shared/related.njk" %}
+    </div>
+  </div>
+{% endblock %}
