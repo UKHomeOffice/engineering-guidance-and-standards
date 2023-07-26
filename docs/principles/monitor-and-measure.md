@@ -5,13 +5,18 @@ title: Monitor and measure proactively
 date: git Last Modified
 tags:
 - Ways of working
-- Build release and deploy
+- Build, release and deploy
+- Observability
 ---
 
-Last updated: {{ page.date | postDate }}
-Tags: {{ tags | join(', ') }}
+{% import "macros/tags.njk" as pageTag %}
 
-Measure all aspects of the service from user experience, security, accounting, reliability and performance. Meaningful monitoring of user journeys through SRE pillars of service-level objectives, service level indicators and error budgets..
+Last updated: {{ page.date | postDate }}
+{{ pageTag.tags(tags)  }}
+
+Measure all aspects of the service from user experience, security, accounting, reliability and performance.
+
+Meaningful monitoring of user journeys through SRE pillars of service-level objectives, service level indicators and error budgets.
 
 ---
 
