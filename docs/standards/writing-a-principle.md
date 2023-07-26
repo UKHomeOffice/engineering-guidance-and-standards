@@ -104,3 +104,9 @@ metadata needs to be set as the following.
 date: git Last Modified
 ```
 ---
+
+## Template
+
+You can use the [principle template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md) when creating a new principle.
+
+---

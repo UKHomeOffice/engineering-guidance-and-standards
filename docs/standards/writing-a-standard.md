@@ -107,3 +107,8 @@ shown at the top of the page.  The metadata needs to be set as the following.
 date: git Last Modified
 ```
 ---
+
+## Template
+
+You can use the [standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md) when creating a new standard.
+---
