@@ -16,7 +16,7 @@ Last updated: {{ page.date | postDate }}
 
 An artefact is the deployable unit of code, for instance a Docker image, serverless package, or virtual machine image. You should build artefacts once, that you never modify, and use them across all environments. In other words, if you need to make changes, a new artefact should be created. This helps with assurance and debugging incidents.
 
-With proper versioning of your artefacts, you will be able to tie your environments back to a specific commit in your code-base, which is useful for investigation of incidents. Without immutable artefacts you may have hidden state and/or subtle differences between environments, that make it very hard to understand the behaviour your are observing and undermine your confidence that something will continue to work when moved to another environment. You will also find it hard to recover from a future disaster, as you will need to rebuild your artefact first, and your build pipeline may be broken.
+With proper versioning of your artefacts, you will be able to tie your environments back to a specific commit in your code-base, which is useful for investigation of incidents. Without immutable artefacts you may have hidden state and/or subtle differences between environments, that make it very hard to understand the behaviour you are observing and undermine your confidence that something will continue to work when moved to another environment. You will also find it hard to recover from a future disaster, as you will need to rebuild your artefact first, and your build pipeline may be broken.
 
 ---
 
