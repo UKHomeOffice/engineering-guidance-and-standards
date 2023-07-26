@@ -22,7 +22,7 @@ With proper versioning of your artefacts, you will be able to tie your environme
 
 ## Solution
 
-Immutable artefacts help us to know what we are running. They aid us in accurately reproducing environments and so help with:
+Immutable artefacts help us to know what we are running. They aid us in accurately reproducing environments, this helps with:
 
 - debugging incidents
 - assurance over promotions
