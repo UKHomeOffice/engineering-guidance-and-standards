@@ -132,11 +132,12 @@ You can view a list of [all the topic domain tags currently in use across the si
 
 When creating content please take a look at the standard for that content. This helps to make sure we are all creating content correctly.
 
-- [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
 - [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
+- [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
 
 ### Templates
 
 You can use the following templates when creating content:
-- [Standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md)
+- [Pattern template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/patterns/pattern.template.md)
 - [Principle template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md)
+- [Standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md)
