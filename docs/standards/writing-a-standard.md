@@ -106,5 +106,4 @@ shown at the top of the page.  The metadata needs to be set as the following.
 ```
 date: git Last Modified
 ```
-
 ---

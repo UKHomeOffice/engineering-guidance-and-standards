@@ -103,5 +103,4 @@ metadata needs to be set as the following.
 ```
 date: git Last Modified
 ```
-
 ---
