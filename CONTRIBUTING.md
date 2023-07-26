@@ -134,3 +134,9 @@ When creating content please take a look at the standard for that content. This 
 
 - [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
 - [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
+
+### Templates
+
+You can use the following templates when creating content:
+- [Standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md)
+- [Principle template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md)

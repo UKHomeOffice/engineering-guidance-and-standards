@@ -105,9 +105,3 @@ date: git Last Modified
 ```
 
 ---
-
-## Template
-
-You can use the [principle template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/principle.template.md) when creating a new principle.
-
----
