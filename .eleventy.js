@@ -75,6 +75,18 @@ module.exports = function(eleventyConfig) {
         });
     });
 
+    eleventyConfig.addCollection("getAllPrinciples", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("**/principles/*.md").sort(function(a, b) {
+        return a.data.title.localeCompare(b.data.title); // sort by ID ascending
+      });
+    });
+
+    eleventyConfig.addCollection("getAllPatterns", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("**/patterns/*.md").sort(function(a, b) {
+          return a.data.title.localeCompare(b.data.title); // sort by ID ascending
+        });
+      });
+
     eleventyConfig.addGlobalData("phaseBannerConfiguration", () => {
       return {
         tag: {

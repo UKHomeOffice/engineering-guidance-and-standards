@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: Work in the open
 date: git Last Modified
@@ -7,11 +7,6 @@ tags:
 - Ways of working
 - Source management
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Work in the open by being transparent and collaborative. Provide maximum access to your work and artefacts, share knowledge and solutions, make collective decisions. Open source your code unless there is a good reason not to.
 

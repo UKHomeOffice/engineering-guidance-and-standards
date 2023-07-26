@@ -1,0 +1,14 @@
+{% macro navigationList(currentUrl, listTitle, listItems) %}
+<nav class="x-govuk-sub-navigation" aria-labelledby="sub-navigation-heading">
+  <h2 class="govuk-heading-m" id="sub-navigation-heading">{{ listTitle }}</h2>
+  <ul class="x-govuk-sub-navigation__section">
+    {%- for post in listItems %}
+    <li class="x-govuk-sub-navigation__section-item">
+      <a href="{{ post.url }}" class="x-govuk-sub-navigation__link" {% if currentUrl == post.url %} aria-current="page"{% endif %}>
+        {{ post.data.title }}
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>
+{% endmacro %}

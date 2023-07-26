@@ -1,0 +1,40 @@
+{% extends "layouts/base.njk" %}
+
+{% block beforeContent %}
+  <nav aria-label="Breadcrumbs">
+    {{ govukBreadcrumbs({
+        classes: "govuk-!-display-none-print",
+        items: breadcrumbItems
+    }) if showBreadcrumbs }}
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter-from-desktop">
+      {% block sidebar %}{% endblock %}
+    </div>
+    <div class="govuk-grid-column-three-quarters-from-desktop">
+      {{ appDocumentHeader({
+        title: title,
+        description: description
+      }) }}
+
+      {% if id %} <p class="govuk-heading-m">ID: {{ id }}</p>{% endif %}
+
+      <p class="govuk-body">
+        Last updated: {{ page.date | postDate }}
+        
+        {% if tags %}
+          {% from "macros/tagList.njk" import tagList %}
+          <br>
+          Relates to (tags): {{ tagList(tags) }}
+        {% endif %}
+      </p>  
+
+      {{ appProseScope(content) if content }}
+
+      {% include "layouts/shared/related.njk" %}
+    </div>
+  </div>
+{% endblock %}

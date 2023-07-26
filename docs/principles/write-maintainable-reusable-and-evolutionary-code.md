@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: Write maintainable, reusable and evolutionary code
 date: git Last Modified
@@ -9,11 +9,6 @@ tags:
   - Maintainability
   - Reusability
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 When writing code, keep in mind that this should be clean, reusable and descriptive. Reuse existing artefacts before delivering new ones where possible. This can enable code to be easier to understand, and cheaper to maintain, modify and reuse.
 

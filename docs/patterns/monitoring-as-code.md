@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: pattern
 order: 1
 title: Monitoring-as-code (MaC)
 date: git Last Modified
@@ -9,11 +9,6 @@ tags:
 - Alerting
 - SRE
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 At the Home Office we follow the [GDS Service Manual guidance on how to monitor the status of services](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service) and set performance metrics.
 

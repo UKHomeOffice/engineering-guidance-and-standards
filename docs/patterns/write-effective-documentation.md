@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: pattern
 order: 1
 title: Write effective documentation
 date: git Last Modified
@@ -8,11 +8,6 @@ tags:
 - Documentation
 - Accessibility
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Technical documentation explains how a product works, and its intended readers can range anywhere from software developers to non-technical users. It can take a number of forms, such as an onboarding guide or API documentation. Typically, technical writers and engineers create this type of documentation.
 
