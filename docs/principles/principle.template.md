@@ -3,7 +3,7 @@ layout: sub-navigation
 order: 1
 title: Principle title
 date: git Last Modified
-tags:
+tags: <!-- use tags: [] for no tags, note "Principles" tag included automatically -->
   - TAG 1
   - TAG 2
 ---
