@@ -1,6 +1,11 @@
 {% extends "layouts/base.njk" %}
 
 {% block beforeContent %}
+  {% import "macros/feedbackBanner.njk" as feedback %}
+  <div data-axe-exclude="It is acceptable that this is outside a landmark region">
+    {{ feedback.phaseBanner(phaseBannerConfiguration) }}
+  </div>
+  
   <nav aria-label="Breadcrumbs">
     {{ govukBreadcrumbs({
         classes: "govuk-!-display-none-print",
