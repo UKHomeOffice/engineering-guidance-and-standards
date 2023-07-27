@@ -69,6 +69,13 @@ module.exports = function(eleventyConfig) {
         return (tags || []).filter(tag => ["homepage"].indexOf(tag) === -1);
     });
 
+    eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
+      return collectionApi.getFilteredByGlob([ 
+        "**/patterns.md",
+        "**/principles.md",
+        "**/standards.md"]);
+    });
+
     eleventyConfig.addCollection("getAllStandards", function(collectionApi) {
       return collectionApi.getFilteredByGlob("**/standards/*.md").sort(function(a, b) {
           return a.data.id.localeCompare(b.data.id); // sort by ID ascending

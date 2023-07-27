@@ -1,8 +1,10 @@
 ---
-layout: sub-navigation
-order: 4
+layout: collection
+order: 3
 title: Standards
-description: Select an item from the menu to read more.
-tags:
-- homepage
+tags: []
+paginationHeading: "Select a standard to read more."
+pagination:
+  data: collections.getAllStandards
+  size: 5
 ---

@@ -1,8 +1,10 @@
 ---
-layout: sub-navigation
-order: 5
+layout: collection
+order: 3
 title: Patterns
-description: Select an item from the menu to read more.
-tags:
-- homepage
+tags: []
+paginationHeading: "Select a pattern to read more."
+pagination:
+  data: collections.getAllPatterns
+  size: 5
 ---

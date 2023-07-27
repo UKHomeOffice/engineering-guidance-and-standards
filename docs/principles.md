@@ -1,8 +1,10 @@
 ---
-layout: sub-navigation
+layout: collection
 order: 3
 title: Principles
-description: Select an item from the menu to read more.
-tags:
-- homepage
+tags: []
+paginationHeading: "Select a principle to read more."
+pagination:
+  data: collections.getAllPrinciples
+  size: 5
 ---

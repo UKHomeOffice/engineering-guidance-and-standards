@@ -12,7 +12,7 @@ options:
     productName: ''
 ---
 <div class="govuk-grid-row">
-{% for item in collections["homepage"] %}
+{% for item in collections.homepageLinks %}
   <section class="govuk-grid-column-one-third-from-desktop govuk-!-margin-bottom-8">
     <h2 class="govuk-heading-m govuk-!-font-size-27">{{ item.data.title }}</h2>
     <p class="govuk-body">{{ item.data.description | markdown("inline") }}</p>
