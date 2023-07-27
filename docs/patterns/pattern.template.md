@@ -17,21 +17,9 @@ Last updated: {{ page.date | postDate }}
 
 ---
 
-## Description
-
-<!-- Description text -->
-
----
-
 ## Solution
 
 <!-- Solution text -->
-
----
-
-## Description
-
-<!-- Description text -->
 
 ---
 
