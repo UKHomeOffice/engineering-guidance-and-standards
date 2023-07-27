@@ -25,12 +25,12 @@
       <p class="govuk-body">
         Last updated: {{ page.date | postDate }}
         
-        {% if tags %}
+        {% if tags | length %}
           {% from "macros/tagList.njk" import tagList %}
           <br>
           Relates to (tags): {{ tagList(tags) }}
         {% endif %}
-      </p>  
+      </p>
 
       {{ appProseScope(content) if content }}
 
