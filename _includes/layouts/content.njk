@@ -1,11 +1,13 @@
 {% extends "layouts/base.njk" %}
 
 {% block beforeContent %}
-  {% import "macros/feedbackBanner.njk" as feedback %}
-  <div data-axe-exclude="It is acceptable that this is outside a landmark region">
-    {{ feedback.phaseBanner(phaseBannerConfiguration) }}
-  </div>
-  
+  {% if phaseBannerConfiguration %}
+    {% import "macros/feedbackBanner.njk" as feedback %}
+    <div data-axe-exclude="It is acceptable that this is outside a landmark region">
+      {{ feedback.phaseBanner(phaseBannerConfiguration) }}
+    </div>
+  {% endif %}
+
   <nav aria-label="Breadcrumbs">
     {{ govukBreadcrumbs({
         classes: "govuk-!-display-none-print",
@@ -16,16 +18,20 @@
 
 {% block content %}
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-quarter-from-desktop">
-      {% block sidebar %}{% endblock %}
-    </div>
+    
     <div class="govuk-grid-column-three-quarters-from-desktop">
-      {{ appDocumentHeader({
-        title: title,
-        description: description
-      }) }}
-
-      {% if id %} <p class="govuk-heading-m">ID: {{ id }}</p>{% endif %}
+      
+      <header class="app-document-header">
+        <h1 class="app-document-header__title govuk-heading-xl">
+          {% if id %} <span class="govuk-caption-xl">{{ id }}</span>{% endif %}
+          {{ title | smart }}
+        </h1>
+        {% if description %}
+          <p class="app-document-header__description govuk-body-l">
+            {{ description | markdown("inline") }}
+          </p>
+        {% endif %}
+      </header>
 
       <p class="govuk-body">
         Last updated: {{ page.date | postDate }}
@@ -40,6 +46,9 @@
       {{ appProseScope(content) if content }}
 
       {% include "layouts/shared/related.njk" %}
+    </div>
+    <div class="govuk-grid-column-one-quarter-from-desktop">
+      {% block sidebar %}{% endblock %}
     </div>
   </div>
 {% endblock %}
