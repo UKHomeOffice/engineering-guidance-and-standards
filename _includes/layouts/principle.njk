@@ -1,6 +1,6 @@
 {% extends "layouts/content.njk" %}
 
 {% block sidebar %}
-  {{ navigationList(page.url, "Principles", collections.getAllPrinciples) }} 
+  {{ navigationList(page.url, "Principles", collections.getAllPrinciplesOrderedByTitle) }} 
   {{ super() }}
 {% endblock %}
