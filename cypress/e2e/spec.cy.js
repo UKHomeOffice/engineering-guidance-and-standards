@@ -15,8 +15,8 @@ describe('Standards page loaded test', () => {
     cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
     cy.contains('Read our standards').click()
     cy.title().should('include', 'Standards')
-    cy.contains('h1', 'Standards')
-    cy.contains('div', 'Standards explicitly state what is expected of engineering teams.')
+    cy.contains('.x-govuk-masthead h1', 'Standards')
+    cy.contains('.x-govuk-masthead', 'Standards explicitly state what is expected of engineering teams.')
     cy.contains('h2', 'Select a standard to read more.')
   })
 })
@@ -25,8 +25,8 @@ describe('Principles page loaded test', () => {
   it('finds the page listing all principles', () => {
     cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
     cy.contains('Read our principles').click()
-    cy.contains('h1', 'Principles')
-    cy.contains('div', 'Principles are used to guide the behaviour of software engineering teams and evaluate their output.')
+    cy.contains('.x-govuk-masthead h1', 'Principles')
+    cy.contains('.x-govuk-masthead', 'Principles are used to guide the behaviour of software engineering teams and evaluate their output.')
     cy.contains('h2', 'Select a principle to read more.')
   })
 })
@@ -42,6 +42,21 @@ describe('Tag page loaded test', () => {
     
     cy.contains('li', 'Write effective documentation')
     cy.contains('li', 'Minimal documentation set for a product')
+  })
+})
+
+describe('Standards page loaded test when clicked from tag', () => {
+  it('finds the tag link for standards and checks we go to the Standards collection page', () => {
+    cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
+    cy.contains('Read our standards').click()
+    cy.contains('Minimal documentation set for a product').click()
+    cy.get('.tags').contains('Standards').click() // this is the "tag" link
+    cy.title().should('include', 'Standards')
+    cy.contains('.x-govuk-masthead h1', 'Standards')
+    cy.contains('.x-govuk-masthead', 'Standards explicitly state what is expected of engineering teams.')
+    
+    cy.contains('div', 'Standards explicitly state what is expected of engineering teams.')
+    cy.contains('h2', 'Select a standard to read more.')
   })
 })
 
