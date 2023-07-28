@@ -1,6 +1,6 @@
 {% macro navigationList(currentUrl, listTitle, listItems) %}
-<nav class="x-govuk-sub-navigation" aria-labelledby="sub-navigation-heading">
-  <h2 class="govuk-heading-m" id="sub-navigation-heading">{{ listTitle }}</h2>
+<nav class="x-govuk-related-navigation x-govuk-sub-navigation" aria-labelledby="sub-navigation-heading">
+  <h2 class="x-govuk-related-navigation__main-heading" id="sub-navigation-heading">{{ listTitle }}</h2>
   <ul class="x-govuk-sub-navigation__section">
     {%- for post in listItems %}
     <li class="x-govuk-sub-navigation__section-item">
