@@ -6,6 +6,6 @@ description: "To guide the behaviour and decisions of engineering teams"
 tags: []
 paginationHeading: false
 pagination:
-  data: collections.getAllPrinciples
+  data: collections.getAllPrinciplesOrderedByTitle
   size: 10
 ---

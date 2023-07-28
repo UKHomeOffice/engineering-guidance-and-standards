@@ -1,6 +1,6 @@
 {% extends "layouts/content.njk" %}
 
 {% block sidebar %}
-  {{ navigationList(page.url, "Standards", collections.getAllStandards) }} 
+  {{ navigationList(page.url, "Standards", collections.getAllStandardsOrderedByID) }} 
   {{ super() }}
 {% endblock %}

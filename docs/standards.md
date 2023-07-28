@@ -6,7 +6,7 @@ description: "Explicitly stated expectations for engineering teams"
 tags: []
 paginationHeading: false
 pagination:
-  data: collections.getAllStandards
+  data: collections.getAllStandardsOrderedByTitle
   size: 10
 related:
   sections:

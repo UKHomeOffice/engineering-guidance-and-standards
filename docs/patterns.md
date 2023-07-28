@@ -6,6 +6,6 @@ description: "Recommended approaches to solving common issues"
 tags: []
 paginationHeading: false
 pagination:
-  data: collections.getAllPatterns
+  data: collections.getAllPatternsOrderedByTitle
   size: 10
 ---

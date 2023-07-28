@@ -76,19 +76,25 @@ module.exports = function(eleventyConfig) {
         "**/standards.md"]);
     });
 
-    eleventyConfig.addCollection("getAllStandards", function(collectionApi) {
+    eleventyConfig.addCollection("getAllStandardsOrderedByID", function(collectionApi) {
       return collectionApi.getFilteredByGlob("**/standards/*.md").sort(function(a, b) {
           return a.data.id.localeCompare(b.data.id); // sort by ID ascending
         });
     });
 
-    eleventyConfig.addCollection("getAllPrinciples", function(collectionApi) {
+    eleventyConfig.addCollection("getAllStandardsOrderedByTitle", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("**/standards/*.md").sort(function(a, b) {
+          return a.data.id.localeCompare(b.data.title); // sort by title ascending
+        });
+    });
+
+    eleventyConfig.addCollection("getAllPrinciplesOrderedByTitle", function(collectionApi) {
       return collectionApi.getFilteredByGlob("**/principles/*.md").sort(function(a, b) {
         return a.data.title.localeCompare(b.data.title); // sort by title ascending
       });
     });
 
-    eleventyConfig.addCollection("getAllPatterns", function(collectionApi) {
+    eleventyConfig.addCollection("getAllPatternsOrderedByTitle", function(collectionApi) {
       return collectionApi.getFilteredByGlob("**/patterns/*.md").sort(function(a, b) {
         return a.data.title.localeCompare(b.data.title); // sort by title ascending
       });
