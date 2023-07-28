@@ -5,7 +5,7 @@
     <ul class="x-govuk-sub-navigation__section">
       {%- for post in listItems %}
       <li class="x-govuk-sub-navigation__section-item">
-        <a href="{{ post.url }}" class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" {% if currentUrl == post.url %} aria-current="page"{% endif %}>
+        <a href="{{ post.url | url }}" class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" {% if currentUrl == post.url %} aria-current="page"{% endif %}>
           {% if post.data.id %}{{ post.data.id }} - {% endif %}{{ post.data.title }}
         </a>
       </li>
