@@ -32,7 +32,7 @@
         {% if tags | length %}
           {% from "macros/tagList.njk" import tagList %}
           <br>
-          Relates to (tags): {{ tagList(tags) }}
+          <span class="tags">Relates to (tags): {{ tagList(tags) }}</span>
         {% endif %}
       </p>
 
