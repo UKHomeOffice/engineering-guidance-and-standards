@@ -2,3 +2,4 @@ README.md
 CONTRIBUTING.md
 technical-docs/
 .github/
+docs/*/*.template.md
