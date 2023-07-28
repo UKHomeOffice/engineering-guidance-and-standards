@@ -19,7 +19,7 @@
 {% block content %}
   <div class="govuk-grid-row">
     
-    <div class="govuk-grid-column-three-quarters-from-desktop">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
       
       <header class="app-document-header">
         <h1 class="app-document-header__title govuk-heading-xl">
@@ -44,11 +44,13 @@
       </p>
 
       {{ appProseScope(content) if content }}
-
-      {% include "layouts/shared/related.njk" %}
     </div>
-    <div class="govuk-grid-column-one-quarter-from-desktop">
-      {% block sidebar %}{% endblock %}
+    <div class="govuk-grid-column-one-third-from-desktop">
+      {% block sidebar %}
+        {% from "macros/navigationList.njk" import navigationList %}
+        {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }} 
+      {% endblock %}
+      {% include "layouts/shared/related.njk" %}
     </div>
   </div>
 {% endblock %}

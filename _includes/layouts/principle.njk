@@ -1,6 +1,6 @@
 {% extends "layouts/content.njk" %}
 
 {% block sidebar %}
-  {% from "macros/navigationList.njk" import navigationList %}
+  {{ super() }}
   {{ navigationList(page.url, "Principles", collections.getAllPrinciples) }} 
 {% endblock %}

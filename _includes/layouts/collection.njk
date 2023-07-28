@@ -54,10 +54,13 @@
     }) if pagination.pages.length > 1 }}
   </section>
 
-  {% if aside or related %}
+
   <div class="govuk-grid-column-one-third-from-desktop">
-    {% include "layouts/shared/related.njk" %}
+    {% from "macros/navigationList.njk" import navigationList %}
+    {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }} 
+    {% if aside or related %}
+      {% include "layouts/shared/related.njk" %}
+    {% endif %}
   </div>
-  {% endif %}
 </div>
 {% endblock %}
