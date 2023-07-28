@@ -32,7 +32,8 @@
       </h2>
     {% endif %}
 
-    {{ appDocumentList({
+    {% import "macros/contentDocumentList.njk" as documentList %}
+    {{ documentList.contentDocumentList({
       headingLevel: 3 if paginationHeading else 2,
       classes: "app-document-list--large",
       items: pagination.items
