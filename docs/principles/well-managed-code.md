@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: Well managed code
 date: git Last Modified
@@ -7,11 +7,6 @@ tags:
 - Source management
 - Ways of working
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Have consistent and understood approaches within your teams so that you manage code well.
 

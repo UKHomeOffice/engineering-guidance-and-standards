@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: Be collaborative
 date: git Last Modified
@@ -7,11 +7,6 @@ tags:
 - Software design
 - Ways of working
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Engineers should collaborate widely with other teams and professions, as well as closely with their immediate colleagues.
 

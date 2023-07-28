@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: pattern
 order: 1
 title: Selecting a deployment strategy
 date: git Last Modified
@@ -9,11 +9,6 @@ tags:
 - CI/CD
 
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 A deployment strategy defines the process that takes place when deploying from one version to another. You should select a consistent deployment strategy suitable for team and business needs. This reduces risk and increases repeatability between deployments.
 

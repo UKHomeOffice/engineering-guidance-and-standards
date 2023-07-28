@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 3
 title: Zero trust
 date: git Last Modified
@@ -8,11 +8,6 @@ tags:
 - Software design
 - Observability
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Zero trust architecture replaces implicit network-based trust, instead 
 monitoring, authenticating and authorising across all access requests. 

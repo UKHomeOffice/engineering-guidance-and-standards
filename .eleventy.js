@@ -69,6 +69,37 @@ module.exports = function(eleventyConfig) {
         return (tags || []).filter(tag => ["homepage"].indexOf(tag) === -1);
     });
 
+    eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
+      return collectionApi.getFilteredByGlob([ 
+        "**/patterns.md",
+        "**/principles.md",
+        "**/standards.md"]);
+    });
+
+    eleventyConfig.addCollection("getAllStandardsOrderedByID", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("**/standards/*.md").sort(function(a, b) {
+          return a.data.id.localeCompare(b.data.id); // sort by ID ascending
+        });
+    });
+
+    eleventyConfig.addCollection("getAllStandardsOrderedByTitle", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("**/standards/*.md").sort(function(a, b) {
+          return a.data.id.localeCompare(b.data.title); // sort by title ascending
+        });
+    });
+
+    eleventyConfig.addCollection("getAllPrinciplesOrderedByTitle", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("**/principles/*.md").sort(function(a, b) {
+        return a.data.title.localeCompare(b.data.title); // sort by title ascending
+      });
+    });
+
+    eleventyConfig.addCollection("getAllPatternsOrderedByTitle", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("**/patterns/*.md").sort(function(a, b) {
+        return a.data.title.localeCompare(b.data.title); // sort by title ascending
+      });
+    });
+
     eleventyConfig.addGlobalData("phaseBannerConfiguration", () => {
       return {
         tag: {

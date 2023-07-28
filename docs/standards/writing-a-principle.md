@@ -1,16 +1,11 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Writing a principle
 date: git Last Modified
 id: SEGAS-00002
 tags: []
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 An engineering principle is a goal or property that is foundational to 
 software engineering at the Home Office. Principles should be used to guide 

@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 5
 title: Security is everyone's responsibility
 date: git Last Modified
@@ -7,11 +7,6 @@ tags:
 - Security
 - Ways of working
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 All members of the team, not just technical people, should collaborate to 
 consider the security of the application or service they are delivering. 

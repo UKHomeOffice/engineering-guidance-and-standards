@@ -1,4 +1,4 @@
-{% extends "layouts/collection.njk" %}
+{% extends "layouts/base.njk" %}
 
 {% block main %}
   {% if phaseBannerConfiguration %}
@@ -7,6 +7,60 @@
     {{ feedback.phaseBanner(phaseBannerConfiguration) }}
   </div>
   {% endif %}
+  <section role="region" aria-label="Collection description masthead">
+    {{ xGovukMasthead({
+      title: {
+        html: title | smart
+      } if title,
+      description: {
+        html: description | markdown("inline") | noOrphans
+      } if description,
+      breadcrumbs: {
+        classes: "govuk-!-display-none-print govuk-!-margin-bottom-0",
+        items: breadcrumbItems
+      } if showBreadcrumbs
+    }) }}
+  </section>
 
   {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <section class="govuk-grid-column-two-thirds-from-desktop">
+    {{ appProseScope(content) if content }}
+
+    {% if paginationHeading %}
+      <h2 class="govuk-heading-l govuk-!-font-size-27">
+        {{ paginationHeading }}
+      </h2>
+    {% endif %}
+
+    {% import "macros/contentDocumentList.njk" as documentList %}
+    {{ documentList.contentDocumentList({
+      headingLevel: 3 if paginationHeading else 2,
+      classes: "app-document-list--large",
+      items: pagination.items
+    }) }}
+
+    {{ govukPagination({
+      previous: {
+        href: pagination.href.previous
+      },
+      next: {
+        href: pagination.href.next
+      },
+      items: pagination | itemsFromPagination
+    }) if pagination.pages.length > 1 }}
+  </section>
+
+
+  <div class="govuk-grid-column-one-third-from-desktop">
+    {% from "macros/navigationList.njk" import navigationList %}
+    {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }} 
+    {% if aside or related %}
+      {% include "layouts/shared/related.njk" %}
+    {% endif %}
+  </div>
+</div>
 {% endblock %}

@@ -1,16 +1,11 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: Provide a good engineering experience
 date: git Last Modified
 tags:
 - Ways of working
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 At the Home Office, we recognise that the [engineer experience](https://github.blog/2023-06-08-developer-experience-what-is-it-and-why-should-you-care/) is comprised of many different aspects, and that getting those things right allows engineers to produce their best work.  We will invest in the continuous improvement of our engineering experience.
 

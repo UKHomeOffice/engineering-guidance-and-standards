@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 4
 title: Proportionate security
 date: git Last Modified
@@ -7,11 +7,6 @@ tags:
 - Security
 - Software design
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Proportionate security enables both usable and secure services. Understand 
 the value of the asset you are engineering, and your threat context, and 
