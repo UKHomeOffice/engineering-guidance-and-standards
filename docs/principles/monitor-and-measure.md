@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: Monitor and measure proactively
 date: git Last Modified
@@ -9,11 +9,6 @@ tags:
 - Observability
 - SRE
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Proactive and effective monitoring is the key to observable systems. Ensure consistent deployment, user experience and delivery across our systems by defining metrics and monitoring according to observability principles, and acting on those insights to instigate improvements.
 
