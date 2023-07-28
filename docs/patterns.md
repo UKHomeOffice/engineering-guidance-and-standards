@@ -2,9 +2,9 @@
 layout: collection
 order: 3
 title: Patterns
-description: "Patterns are recommended common approaches to solving issues encountered by engineering teams."
+description: "Recommended approaches to solving common issues"
 tags: []
-paginationHeading: "Select a pattern to read more."
+paginationHeading: false
 pagination:
   data: collections.getAllPatterns
   size: 10

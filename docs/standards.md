@@ -2,7 +2,7 @@
 layout: collection
 order: 3
 title: Standards
-description: "Standards explicitly state what is expected of engineering teams."
+description: "Explicitly stated expectations for engineering teams"
 tags: []
 paginationHeading: "Select a standard to read more."
 pagination:
