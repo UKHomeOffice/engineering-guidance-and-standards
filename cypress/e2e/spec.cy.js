@@ -16,8 +16,7 @@ describe('Standards page loaded test', () => {
     cy.contains('Read our standards').click()
     cy.title().should('include', 'Standards')
     cy.contains('.x-govuk-masthead h1', 'Standards')
-    cy.contains('.x-govuk-masthead', 'Standards explicitly state what is expected of engineering teams.')
-    cy.contains('h2', 'Select a standard to read more.')
+    cy.contains('.x-govuk-masthead', 'Explicitly stated expectations for engineering teams')
   })
 })
 
@@ -26,8 +25,7 @@ describe('Principles page loaded test', () => {
     cy.visit(testing_params.TEST_URL + ":" + testing_params.TEST_PORT)
     cy.contains('Read our principles').click()
     cy.contains('.x-govuk-masthead h1', 'Principles')
-    cy.contains('.x-govuk-masthead', 'Principles are used to guide the behaviour of software engineering teams and evaluate their output.')
-    cy.contains('h2', 'Select a principle to read more.')
+    cy.contains('.x-govuk-masthead', 'To guide the behaviour and decisions of engineering teams')
   })
 })
 
@@ -53,10 +51,7 @@ describe('Standards page loaded test when clicked from tag', () => {
     cy.get('.tags').contains('Standards').click() // this is the "tag" link
     cy.title().should('include', 'Standards')
     cy.contains('.x-govuk-masthead h1', 'Standards')
-    cy.contains('.x-govuk-masthead', 'Standards explicitly state what is expected of engineering teams.')
-    
-    cy.contains('div', 'Standards explicitly state what is expected of engineering teams.')
-    cy.contains('h2', 'Select a standard to read more.')
+    cy.contains('.x-govuk-masthead', 'Explicitly stated expectations for engineering teams')
   })
 })
 
