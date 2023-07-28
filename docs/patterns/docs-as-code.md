@@ -54,10 +54,9 @@ The Home Office software engineering Ways of Working guild has investigated some
 
 #### Technical Options
 
-| Option and links to documentation | Reviewed | Recommended for use? | Comments | Examples of HO documentation using this option |
-|---|---|---|---|---|
-| Middle man and GDS Tech Docs Template <br><br> https://middlemanapp.com/ <br><br> https://github.com/alphagov/tech-docs-template | YES | YES | Ruby based. <br><br> The original GDS sponsored effort to create a gov.uk compliant docs as code pattern. | https://ho-cto.github.io/sre-monitoring-as-code/ |
-| X-gov Eleventy Plugin <br><br> https://x-govuk.github.io/posts/govuk-eleventy-plugin/ | YES | YES | Node.js based. <br><br> A newer offering that also provides gov.uk styling and easy to configure search functionality. | https://ukhomeoffice.github.io/hocs/get-started/ |
-| Hugo <br><br> https://gohugo.io/getting-started/quick-start/ | YES | NO | Go based. <br><br> Static site generator without existing pattern for creating gov.uk or Home Office styled pages. | N/A |
+| Option and links to documentation | Reviewed | Comments | Examples of HO documentation using this option |
+|---|---|---|---|
+| Middle man and GDS Tech Docs Template <br><br> https://middlemanapp.com/ <br><br> https://github.com/alphagov/tech-docs-template | YES | Ruby based. <br><br> The original GDS sponsored effort to create a gov.uk compliant docs as code pattern. | https://ho-cto.github.io/sre-monitoring-as-code/ |
+| X-gov Eleventy Plugin <br><br> https://x-govuk.github.io/posts/govuk-eleventy-plugin/ | YES | Node.js based. <br><br> A newer offering that also provides gov.uk styling and easy to configure search functionality. | https://ukhomeoffice.github.io/hocs/get-started/ |
 
 ---
