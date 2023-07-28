@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Standard title
 date: git Last Modified
@@ -8,11 +8,6 @@ tags: <!-- use tags: [] for no tags, note "Standards" tag included automatically
   - TAG 1
   - TAG 2
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 <!-- Standard description -->
 

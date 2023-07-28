@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: pattern
 order: 1
 title: Pattern title
 date: git Last Modified
@@ -7,11 +7,6 @@ tags: <!-- use tags: [] for no tags, note "Pattern" tag included automatically -
   - TAG 1
   - TAG 2
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 <!-- Pattern description -->
 
