@@ -7,6 +7,13 @@
       {{ feedback.phaseBanner(phaseBannerConfiguration) }}
     </div>
   {% endif %}
+
+  <nav aria-label="Breadcrumbs">
+    {{ govukBreadcrumbs({
+        classes: "govuk-!-display-none-print",
+        items: breadcrumbItems
+    }) if showBreadcrumbs }}
+  </nav>
 {% endblock %}
 
 {% block content %}
