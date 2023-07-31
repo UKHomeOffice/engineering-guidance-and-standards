@@ -34,4 +34,4 @@ jobs:
         env:
           CYPRESS_TEST_URL: ${{ env.TEST_URL }}${{ env.TEST_PATH_PREFIX }}
           CYPRESS_TEST_PORT: ${{ env.TEST_PORT }}
-          PATH_PREFIX: ${{TEST_PATH_PREFIX}}
+          PATH_PREFIX: ${{ env.TEST_PATH_PREFIX }}
