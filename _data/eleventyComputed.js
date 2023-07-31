@@ -1,4 +1,5 @@
 // noinspection JSUnusedGlobalSymbols
+const { applyBaseToUrl } = require('@11ty/eleventy/src/Plugins/HtmlBasePlugin')
 
 function mapRelatedSections(sections, pathPrefix) {
   return sections.map(
@@ -6,7 +7,7 @@ function mapRelatedSections(sections, pathPrefix) {
       ...section,
       items: (section.items ?? []).map(item => ({
         ...item,
-        href: item.href?.startsWith('/') && pathPrefix ? `${pathPrefix}${item.href}` : item.href,
+        href: applyBaseToUrl(item.href, pathPrefix, {pathPrefix}),
       })),
       subsections: mapRelatedSections(section.subsections ?? [], pathPrefix),
     })
@@ -19,8 +20,6 @@ module.exports = {
   },
   // the path prefix isn't applied to related link urls by xGovukRelatedNavigation - so map them here
   related: ({related, pathPrefix}) => {
-    console.log({related, pathPrefix})
-
     if (!related) {
       return related;
     }
