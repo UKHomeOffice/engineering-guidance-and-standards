@@ -32,6 +32,7 @@ jobs:
           wait-on: 'http://${{ env.TEST_URL }}:${{ env.TEST_PORT }}${{ env.TEST_PATH_PREFIX }}'
           config: 'video=false,screenshotOnRunFailure=false'
         env:
-          CYPRESS_TEST_URL: ${{ env.TEST_URL }}${{ env.TEST_PATH_PREFIX }}
+          CYPRESS_TEST_URL: ${{ env.TEST_URL }}
           CYPRESS_TEST_PORT: ${{ env.TEST_PORT }}
+          CYPRESS_TEST_PATH_PREFIX: ${{ env.TEST_PATH_PREFIX }}
           PATH_PREFIX: ${{ env.TEST_PATH_PREFIX }}
