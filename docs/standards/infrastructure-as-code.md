@@ -12,11 +12,14 @@ tags:
 - CI/CD
 ---
 
+<<<<<<< HEAD
 {% import "macros/tags.njk" as pageTag %}
 
 Last updated: {{ page.date | postDate }}
 {{ pageTag.tags(tags)  }}
 
+=======
+>>>>>>> parent of 0b2c0f3 (Update infrastructure-as-code.md)
 Infrastructure should be defined as code and treated in the same way as application code. 
 Storing configuration as code in a source code repository protects those definitions as an asset and means 
 we can apply many of our best practices for managing code. This ensures you know how you are running your 
