@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: pattern
 order: 1
 title: Immutable artefacts
 date: git Last Modified
@@ -8,11 +8,6 @@ tags:
 - Deployment
 - Artefacts
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 An artefact is the deployable unit of code, for instance a Docker image, serverless package, or virtual machine image. 
 
