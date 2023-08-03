@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: pattern
 order: 1
 title: Docs as code
 date: git Last Modified
@@ -8,11 +8,6 @@ tags:
 - Source management
 - Documentation
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 The Home Office [DDaT Strategy 2024 - Principle 2 - Create shared technology products](https://www.gov.uk/government/publications/home-office-digital-data-and-technology-strategy-2024/home-office-digital-data-and-technology-strategy-2024#create-shared-technology-products) provides direction for improved developer documentation.  
 
