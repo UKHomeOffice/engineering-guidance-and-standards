@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: principle
 order: 1
 title: End to end product ownership
 date: git Last Modified
@@ -7,27 +7,24 @@ tags:
 - Ways of working
 ---
 
-{% import "_includes/macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
-
-Product-centric teams take ownership of application build all the way through to live running.
+Engineering teams will follow a product-centric approach. They will form part of an enduring multidisciplinary team, with full-stack and full-lifecycle ownership, from application build through to the ongoing operation and iteration of services in the 'Live' phase.
 
 ---
 
 ## Rationale
 
-Product-centric teams take ownership of application build all the way through to live running.
+As digital services become more and more intertwined with our core business we need to be able to quickly adapt our digital products in response to change requests from the business. Following this, the [HO DDaT Strategy directs us to be product-centric](https://www.gov.uk/government/publications/home-office-digital-data-and-technology-strategy-2024/home-office-digital-data-and-technology-strategy-2024#be-product-centric), basing our decisions on whether they will help users achieve their goal (outcomes). 
+
+Retaining an enduring and effective team that can quickly iterate on the service ensures that the service can continue to meet changing business needs, and creates incentives to write [high quality software that can be easily maintained]({{ '/principles/write-maintainable-reusable-and-evolutionary-code/' | url }}) over a long period of time. This also helps to reduce the need for large-scale rework and expensive replacement programmes.
+
+Giving teams ownership and autonomy, and aligning them appropriately with value streams, allows them to focus on delivering business outcomes. When they are well supported, for example by platform teams providing self-service solutions to common requirements, this focus is improved further, enabling improved delivery.
 
 ---
 
 ## Applications and Implications
 
-Teams may approach these things in different ways depending on their size, make-up and what they are working on, but it invariably take ownership of the products they work on by:
-
-- Align to "Team Topologies", use eXtreme Conway.
-- Product Team owns components, tests, deployment config, IaC, reliability, processes and documentation.
-- Break down walls of Dev/Ops to enable “T” shaped engineers.
+- Think in terms of products instead of projects. Unlike projects, products should be iterated on for the long-term
+- Consider [Team Topologies](https://teamtopologies.com/) - align products, teams and architecture to allow sustained delivery of value streams
+- Product teams own components, tests, deployment and configuration, infrastructure as code, reliability, processes and documentation
 
 ---
