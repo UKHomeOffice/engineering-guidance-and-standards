@@ -45,7 +45,7 @@ A docs as code approach also gives you the following benefits:
 
 ### Getting started
 
-The Home Office software engineering Ways of Working guild has investigated some different technical products for implementing docs as code approaches. An outline of options is below, this site uses the Eleventy plugin.
+The Home Office software engineering Ways of Working guild has investigated some different technical products for implementing docs as code approaches. An outline of options is below, this site uses the x-gov Eleventy plugin.
 
 #### Technical Options
 
