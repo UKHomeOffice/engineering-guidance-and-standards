@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Managing secrets
 date: git Last Modified
@@ -9,11 +9,6 @@ tags:
 - Build, release and deploy
 - Secure development
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Protecting access credentials and secret keys is essential for securing Home Office development activity. Leaked secrets can enable attackers to access confidential environments and information, and give them intelligence on potential threat vectors. Managing secrets with a defence in depth approach therefore mitigates a wide range of security risks in accordance with our zero trust principle.
 
