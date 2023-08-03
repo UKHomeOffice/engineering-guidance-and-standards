@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Infrastructure as code
 date: git Last Modified
@@ -11,11 +11,6 @@ tags:
 - Infrastructure
 - CI/CD
 ---
-
-{% import "macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 Infrastructure should be defined as code and treated in the same way as application code. 
 Storing configuration as code in a source code repository protects those definitions as an asset and means 
