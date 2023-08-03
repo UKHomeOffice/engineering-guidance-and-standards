@@ -1,11 +1,8 @@
 ---
-layout: collection
+layout: sub-navigation
 order: 3
 title: Principles
-description: "To guide the behaviour and decisions of engineering teams"
-tags: []
-paginationHeading: false
-pagination:
-  data: collections.getAllPrinciplesOrderedByTitle
-  size: 10
+description: Select an item from the menu to read more.
+tags:
+- homepage
 ---

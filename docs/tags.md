@@ -14,9 +14,6 @@ pagination:
     - sitemap
     - tagPages
     - tags
-    - Standards
-    - Principles
-    - Patterns
 eleventyComputed:
   title: Pages tagged with "{{ tag }}"
 permalink: /tags/{{ tag | slugify }}/

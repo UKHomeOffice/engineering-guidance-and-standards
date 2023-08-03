@@ -12,15 +12,10 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
       - name: Build
         run: |
           npm ci --omit=dev
@@ -28,11 +23,11 @@ jobs:
         env:
           PATH_PREFIX: /engineering-guidance-and-standards/
       - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
           path: _site
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     needs: build
     permissions:
       pages: write

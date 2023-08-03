@@ -8,14 +8,6 @@ layout: sub-navigation
 
 {% for tag in collections.all | getAllTags | filterTagList %}
 {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
-  {% if tag == "Patterns" %}
-  - [{{tag}}]({{"/patterns" | url}})
-  {% elseif tag == "Principles" %}
-  - [{{tag}}]({{"/principles" | url}})
-  {% elseif tag == "Standards" %}
-  - [{{tag}}]({{"/standards" | url}})
-  {% else %}
-  - [{{tag}}]({{ tagUrl }})
-  {% endif %}
+- [{{ tag }}]({{ tagUrl }})
 {% endfor %}
 

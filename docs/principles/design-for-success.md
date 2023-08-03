@@ -1,11 +1,16 @@
 ---
-layout: principle
+layout: sub-navigation
 order: 1
 title: Design for success
 date: git Last Modified
 tags:
   - Software design
 ---
+
+{% import "_includes/macros/tags.njk" as pageTag %}
+
+Last updated: {{ page.date | postDate }}
+{{ pageTag.tags(tags)  }}
 
 Systems and applications should be designed so that they can be efficiently maintained, developed and deliver their intended value for users. Use success criteria to measure your designs against user needs, business and governance direction, and non-functional requirements such as reliability and security.
 

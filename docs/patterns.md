@@ -1,11 +1,8 @@
 ---
-layout: collection
-order: 3
+layout: sub-navigation
+order: 5
 title: Patterns
-description: "Recommended approaches to solving common issues"
-tags: []
-paginationHeading: false
-pagination:
-  data: collections.getAllPatternsOrderedByTitle
-  size: 10
+description: Select an item from the menu to read more.
+tags:
+- homepage
 ---

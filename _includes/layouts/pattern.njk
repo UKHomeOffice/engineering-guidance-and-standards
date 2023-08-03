@@ -1,6 +1,0 @@
-{% extends "layouts/content.njk" %}
-
-{% block sidebar %}
-  {{ navigationList(page.url, "Patterns", collections.getAllPatternsOrderedByTitle) }} 
-  {{ super() }}
-{% endblock %}
