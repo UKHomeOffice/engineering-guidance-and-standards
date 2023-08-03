@@ -1,0 +1,16 @@
+{% macro navigationList(currentUrl, listTitle, listItems) %}
+<div class="x-govuk-related-navigation">
+  <nav class="x-govuk-sub-navigation" aria-labelledby="sub-navigation-heading-{{ listTitle | slugify }}">
+    <h2 class="x-govuk-related-navigation__main-heading" id="sub-navigation-heading-{{ listTitle | slugify }}">{{ listTitle }}</h2>
+    <ul class="x-govuk-sub-navigation__section">
+      {%- for post in listItems %}
+      <li class="x-govuk-sub-navigation__section-item">
+        <a href="{{ post.url | url }}" class="govuk-link x-govuk-related-navigation__section-link x-govuk-related-navigation__section-link--other" {% if currentUrl == post.url %} aria-current="page"{% endif %}>
+          {% if post.data.id %}{{ post.data.id }} - {% endif %}{{ post.data.title }}
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </nav>
+</div>
+{% endmacro %}

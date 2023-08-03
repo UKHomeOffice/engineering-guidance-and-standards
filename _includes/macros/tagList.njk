@@ -1,0 +1,14 @@
+{% macro tagList(theTags) %}
+{%- for tag in theTags | filterTagList %}
+  {% if tag == "Patterns" %}
+  <a href="{{ "/patterns/" | url }}" class="x-govuk-sub-navigation__link">Patterns</a>{%- if not loop.last %}, {% endif %}
+  {% elseif tag == "Principles" %}
+  <a href="{{ "/principles/" | url }}" class="x-govuk-sub-navigation__link">Principles</a>{%- if not loop.last %}, {% endif %}
+  {% elseif tag == "Standards" %}
+  <a href="{{ "/standards/" | url }}" class="x-govuk-sub-navigation__link">Standards</a>{%- if not loop.last %}, {% endif %}
+  {% else %}
+  {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
+  <a href="{{ tagUrl }}" class="x-govuk-sub-navigation__link">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+  {% endif %}
+{%- endfor %}
+{% endmacro %}

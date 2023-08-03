@@ -1,16 +1,11 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Writing a standard
 date: git Last Modified
 id: SEGAS-00001
-tags:
+tags: []
 ---
-
-{% import "_includes/macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 To be effective, standards must explicitly state what is expected of
 engineering teams. This standard prescribes how all future standards will be
@@ -106,4 +101,9 @@ shown at the top of the page.  The metadata needs to be set as the following.
 ```
 date: git Last Modified
 ```
+---
+
+## Template
+
+You can use the [standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md) when creating a new standard.
 ---

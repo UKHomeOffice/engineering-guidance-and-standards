@@ -1,5 +1,5 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Minimal documentation set for a product
 date: git Last Modified
@@ -8,11 +8,6 @@ tags:
 - Documentation
 - Ways of working
 ---
-
-{% import "_includes/macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 A product should be documented to a minimum standard so that new engineers can be easily onboarded, and knowledge is not siloed within the team.
 

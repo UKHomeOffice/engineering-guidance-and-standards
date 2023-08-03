@@ -1,16 +1,11 @@
 ---
-layout: sub-navigation
+layout: standard
 order: 1
 title: Writing a principle
 date: git Last Modified
 id: SEGAS-00002
-tags:
+tags: []
 ---
-
-{% import "_includes/macros/tags.njk" as pageTag %}
-
-Last updated: {{ page.date | postDate }}
-{{ pageTag.tags(tags)  }}
 
 An engineering principle is a goal or property that is foundational to 
 software engineering at the Home Office. Principles should be used to guide 
@@ -103,4 +98,10 @@ metadata needs to be set as the following.
 ```
 date: git Last Modified
 ```
+---
+
+## Template
+
+You can use the [principle template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md) when creating a new principle.
+
 ---
