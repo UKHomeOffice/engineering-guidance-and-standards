@@ -52,6 +52,6 @@ The Home Office software engineering Ways of Working guild has investigated some
 | Option and links to documentation | Reviewed | Comments | Examples of HO documentation using this option |
 |---|---|---|---|
 | Middle man and GDS Tech Docs Template <br><br> https://middlemanapp.com/ <br><br> https://github.com/alphagov/tech-docs-template | YES | Ruby based. <br><br> The original GDS sponsored effort to create a gov.uk compliant docs as code pattern. | https://ho-cto.github.io/sre-monitoring-as-code/ |
-| X-gov Eleventy Plugin <br><br> https://x-govuk.github.io/posts/govuk-eleventy-plugin/ | YES | Node.js based. <br><br> A newer offering that also provides gov.uk styling and easy to configure search functionality. | https://ukhomeoffice.github.io/hocs/get-started/ |
+| Eleventy and x-gov Eleventy plugin <br><br> https://www.11ty.dev/docs/ <br><br> https://x-govuk.github.io/posts/govuk-eleventy-plugin/ | YES | Node.js based. <br><br> A newer offering that also provides gov.uk styling and easy to configure search functionality. | https://ukhomeoffice.github.io/hocs/get-started/ |
 
 ---
