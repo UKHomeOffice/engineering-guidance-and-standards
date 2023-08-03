@@ -26,7 +26,7 @@ Immutable artefacts are artefacts that are not modified after they are built. Th
 
 You should follow a '[build once, deploy many](https://www.mikemcgarr.com/blog/build-once-deploy-many.html)' approach. Specifically, you should:
 
-- When you create a new version of your application or service (typically, in response to merging some new code into your main branch), build your application once and package it into an artefact along with its dependencies
+- Build your application only once for each version, and package it into an artefact along with its dependencies
 - Store artefacts in a suitable artefact repository with a unique version identifier. Versioning should follow a common pattern, and be automated where possible. For example:
 ```
 ${semver}-${build-number}-${commit-hash-fragment}
