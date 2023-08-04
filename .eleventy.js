@@ -70,7 +70,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
-      return collectionApi.getFilteredByGlob([ 
+      return collectionApi.getFilteredByGlob([
         "**/patterns.md",
         "**/principles.md",
         "**/standards.md"]);
@@ -108,6 +108,8 @@ module.exports = function(eleventyConfig) {
         html: 'This is a new service – your <a class="govuk-link" target="_blank" href="https://www.homeofficesurveys.homeoffice.gov.uk/s/8PDDG2/">feedback (opens in a new tab)</a> will help us to improve it.'
       }
     });
+
+    eleventyConfig.addGlobalData('pathPrefix', _customPathPrefix);
 
     return {
         dataTemplateEngine: 'njk',
