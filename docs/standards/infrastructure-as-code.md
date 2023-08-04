@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Infrastructure as code
-date: git Last Modified
+date: 2023-08-03
 id: SEGAS-00005
 tags:
 - Source management

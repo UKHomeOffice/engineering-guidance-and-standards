@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Well managed code
-date: git Last Modified
+date: 2023-07-14
 tags:
 - Source management
 - Ways of working

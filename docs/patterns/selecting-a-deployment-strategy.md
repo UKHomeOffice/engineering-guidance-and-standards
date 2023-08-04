@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Selecting a deployment strategy
-date: git Last Modified
+date: 2023-07-25
 tags:
 - Build, release and deploy
 - Deployment

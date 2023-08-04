@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Principle title
-date: git Last Modified
+date: 2023-12-31 # use last updated date
 tags: # use `tags: []` for no tags, "Principles" tag is included automatically
   - TAG 1
   - TAG 2

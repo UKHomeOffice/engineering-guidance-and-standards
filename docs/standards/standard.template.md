@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Standard title
-date: git Last Modified
+date: 2023-12-31 # use last updated date
 id: SEGAS-00000 # Set unique ID for standard
 tags: # use `tags: []` for no tags, "Standards" tag is included automatically
   - TAG 1

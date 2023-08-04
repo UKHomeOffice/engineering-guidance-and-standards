@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Monitor and measure proactively
-date: git Last Modified
+date: 2023-07-28
 tags:
 - Ways of working
 - Build, release and deploy

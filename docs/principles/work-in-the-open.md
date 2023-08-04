@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Work in the open
-date: git Last Modified
+date: 2023-07-13
 tags:
 - Ways of working
 - Source management

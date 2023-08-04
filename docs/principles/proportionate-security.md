@@ -2,7 +2,7 @@
 layout: principle
 order: 4
 title: Proportionate security
-date: git Last Modified
+date: 2023-07-13
 tags:
 - Security
 - Software design

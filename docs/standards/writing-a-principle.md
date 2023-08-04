@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Writing a principle
-date: git Last Modified
+date: 2023-08-04
 id: SEGAS-00002
 tags: []
 ---
@@ -91,12 +91,11 @@ tags:
 
 ### A principle MUST show when it was last updated
 
-Show the date the principle was last updated. This will automatically be 
-generated from the git commit time and shown at the top of the page.  The 
-metadata needs to be set as the following.
+Show the date the principle was last updated. The 
+metadata needs to include the date in YYYY-MM-DD format (see below).
 
 ```
-date: git Last Modified
+date: 2023-12-31
 ```
 ---
 

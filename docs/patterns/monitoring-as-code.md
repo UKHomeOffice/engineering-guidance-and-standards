@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Monitoring-as-code (MaC)
-date: git Last Modified
+date: 2023-05-31
 tags:
 - Observability
 - Monitoring

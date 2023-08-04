@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Be collaborative
-date: git Last Modified
+date: 2023-06-22
 tags:
 - Software design
 - Ways of working

@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Design for success
-date: git Last Modified
+date: 2023-06-09
 tags:
   - Software design
 ---

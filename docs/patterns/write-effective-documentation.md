@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Write effective documentation
-date: git Last Modified
+date: 2023-07-18
 tags:
 - Ways of working
 - Documentation

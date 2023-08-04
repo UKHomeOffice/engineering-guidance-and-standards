@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Pattern title
-date: git Last Modified
+date: 2023-12-31 # use last updated date
 tags: # use `tags: []` for no tags, "Patterns" tag is included automatically
   - TAG 1
   - TAG 2
