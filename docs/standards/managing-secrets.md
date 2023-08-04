@@ -10,7 +10,7 @@ tags:
 - Secure development
 ---
 
-Protecting access credentials and secret keys is essential for securing Home Office development activity. Leaked secrets can enable attackers to access confidential environments and information, and give them intelligence on potential threat vectors. Managing secrets with a defence in depth approach therefore mitigates a wide range of security risks in accordance with our zero trust principle.
+Protecting access credentials and secret keys is essential for securing Home Office development activity. Leaked secrets can enable attackers to access confidential environments and information, and give them intelligence on potential threat vectors. Managing secrets with a defence in depth approach therefore mitigates a wide range of security risks in accordance with our [zero trust principle]({{ '/principles/zero-trust/' | url }}).
 
 Here are some examples of the secrets that this standard covers.
 
