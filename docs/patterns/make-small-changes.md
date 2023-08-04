@@ -18,7 +18,7 @@ Make smaller incremental changes in your service, rather than storing up changes
 - Gets new features out to users more quickly, which means you can deliver value and gain feedback more quickly
 - Smaller changes will have less impact (for example) on end users who have to use a GUI/web interface
 
->### Example:
+>**Example**:
 >
 >To complete a new feature, 10 changes are required. If the changes made in all 10 changes are deployed at once, and a problem occurs, it is difficult to know where the problem was introduced. Whereas, if each change was deployed separately, it is much easier to see where the problem occurred.
 
