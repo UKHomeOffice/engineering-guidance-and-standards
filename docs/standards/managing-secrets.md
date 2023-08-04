@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Managing secrets
-date: git Last Modified
+date: 2023-08-04
 id: SEGAS-00006
 tags:
 - Source management
