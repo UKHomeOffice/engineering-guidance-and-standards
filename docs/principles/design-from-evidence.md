@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Design from evidence
-date: git Last Modified
+date: 2023-08-04
 tags:
 - Software design
 - Documentation
