@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Principle title
-date: 2023-12-31 # use last updated date
+date: 2023-12-31 # this should be the date that the content was most recently amended or formally reviewed
 tags: # use `tags: []` for no tags, "Principles" tag is included automatically
   - TAG 1
   - TAG 2
