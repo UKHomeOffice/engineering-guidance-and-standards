@@ -17,7 +17,7 @@ As digital services become more intertwined with our core business we need to be
 
 Retaining an enduring and effective team that can quickly iterate on the service ensures that the service can continue to meet changing business needs, and creates incentives to write [high quality software that can be easily maintained]({{ '/principles/write-maintainable-reusable-and-evolutionary-code/' | url }}) over a long period of time. This also helps to reduce the need for large-scale rework and expensive replacement programmes.
 
-Giving teams ownership and autonomy, and aligning them appropriately with value streams, allows them to focus on delivering business outcomes. When they are well supported, for example by platform teams providing self-service solutions to common requirements, this focus is improved further, enabling improved delivery.
+Giving teams ownership and autonomy, and aligning them appropriately with value streams, allows them to focus on delivering business outcomes. Improved delivery and focus on product-centricity is enabled through stream-aligned teams having the burden on them reduced by other teams, for example by platform teams providing self-service solutions to common requirements.
 
 ---
 
