@@ -4,7 +4,7 @@ order: 1
 title: Design from evidence
 date: git Last Modified
 tags:
-- Software Design
+- Software design
 - Documentation
 ---
 
