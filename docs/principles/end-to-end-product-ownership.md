@@ -13,7 +13,7 @@ Engineering teams will follow a product-centric approach. They will form part of
 
 ## Rationale
 
-As digital services become more and more intertwined with our core business we need to be able to quickly adapt our digital products in response to change requests from the business. Following this, the [Home Office DDaT Strategy directs us to be product-centric](https://www.gov.uk/government/publications/home-office-digital-data-and-technology-strategy-2024/home-office-digital-data-and-technology-strategy-2024#be-product-centric), basing our decisions on whether they will help users achieve their goal (outcomes). 
+As digital services become more intertwined with our core business we need to be able to quickly adapt our digital products in response to change requests from the business. Following this, the [Home Office DDaT Strategy directs us to be product-centric](https://www.gov.uk/government/publications/home-office-digital-data-and-technology-strategy-2024/home-office-digital-data-and-technology-strategy-2024#be-product-centric), basing our decisions on whether they will help users achieve their goal (outcomes). 
 
 Retaining an enduring and effective team that can quickly iterate on the service ensures that the service can continue to meet changing business needs, and creates incentives to write [high quality software that can be easily maintained]({{ '/principles/write-maintainable-reusable-and-evolutionary-code/' | url }}) over a long period of time. This also helps to reduce the need for large-scale rework and expensive replacement programmes.
 
