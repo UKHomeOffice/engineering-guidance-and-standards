@@ -3,7 +3,10 @@ layout: principle
 order: 1
 title: Principle title
 date: 2023-12-31 # this should be the date that the content was most recently amended or formally reviewed
-tags: # use `tags: []` for no tags, "Principles" tag is included automatically
+# use `tags: []` for no tags, "Principles" tag is included automatically 
+# Check https://ho-cto.github.io/engineering-guidance-and-standards/tags/ for existing tags
+# Note: tags must match capitalisation of previously used tags
+tags:
   - TAG 1
   - TAG 2
 related: # remove this section if you do not need related links on your page
