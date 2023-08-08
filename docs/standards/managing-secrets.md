@@ -25,6 +25,7 @@ Here are some examples of the secrets that this standard covers.
 
 ## Requirements
 
+- [Secrets MUST be generated in accordance with the Home Office Password Policy](#secrets-must-be-generated-in-accordance-with-the-home-office-password-policy)
 - [You MUST only store secrets in an approved secret management system](#you-must-only-store-secrets-in-an-approved-secret-management-system)
 - [You MUST proactively manage access to secrets](#you-must-proactively-manage-access-to-secrets)
 - [You MUST implement secret scanning](#you-must-implement-secret-scanning)
@@ -33,13 +34,17 @@ Here are some examples of the secrets that this standard covers.
 - [You MUST monitor the usage of secrets to identify suspicious behaviour](#you-must-monitor-the-usage-of-secrets-to-identify-suspicious-behaviour)
 - [You MUST have a response plan ready to enact if you have an incident](#you-must-have-a-response-plan-ready-to-enact-if-you-have-an-incident)
 
+### Secrets MUST be generated in accordance with the Home Office Password Policy
+
+Talk to your Home Office Cyber Security representative to ensure that the secrets you create and use are generated according to the Home Office Password Policy. This will ensure that they are a suitably complex and long for their use case. Secrets that are used in production, or other environments containing live data, should be unique, and not replicated or used across other staging environments.
+
 ### You MUST only store secrets in an approved secret management system
 
-Your platform team and Home Office Cyber Security (HOCS) contacts will advise on which secret management system to use. Secrets must not be committed into source control, built into artefacts, stored otherwise, or shared via channels that have not been approved.
+You should not generally be planning on creating or building your own secret management system, your platform team and Home Office Cyber Security (HOCS) contacts will advise on which secret management system to use. Secrets must not be committed into source control, built into artefacts, stored otherwise, or shared via channels that have not been approved. Using an approved secret management system means that you will inherit compliance with HOCS standards for transit, management, logging and other secret related requirements.
 
 ### You MUST proactively manage access to secrets
 
-Configure Identity and Access Management (IAM) rules in accordance with a least privilege access model to ensure that secrets are only available to those people and services that require them, when they require them. Use Role-based Access Controls (RBAC). Secrets should only be available for a limited but appropriate length of time. Access rules should be reviewed proactively to ensure they are appropriate. Credentials that are no longer required should be revoked.
+Configure Identity and Access Management (IAM) rules for your secrets management in accordance with the Home Office Cyber Security Account Management Standard. Use a least privilege access model to ensure that secrets are only available to those people and services that require them, when they require them. Use Role-based Access Controls (RBAC) and consider using quorum authentication, or [Shamir's secret sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing), for the management of fundamental secrets. Secrets should only be available for a limited but appropriate length of time. Access rules should be reviewed proactively to ensure they are appropriate. Credentials that are no longer required should be revoked.
 
 ### You MUST implement secret scanning 
 
