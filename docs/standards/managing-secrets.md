@@ -36,7 +36,7 @@ Here are some examples of the secrets that this standard covers.
 
 ### Secrets MUST be generated in accordance with the Home Office Password Policy
 
-Talk to your Home Office Cyber Security representative to ensure that the secrets you create and use are generated according to the Home Office Password Policy. This will ensure that they are a suitably complex and long for their use case. Secrets that are used in production, or other environments containing live data, should be unique, and not replicated or used across other staging environments.
+Talk to your Home Office Cyber Security representative to ensure that the secrets you create and use are generated according to the Home Office Password Policy. This will ensure that they are suitable for their use case. Secrets that are used in production, or other environments containing live data, must be unique. You should not replicate secrets or use the same secrets across environments.
 
 ### You MUST only store secrets in an approved secret management system
 
