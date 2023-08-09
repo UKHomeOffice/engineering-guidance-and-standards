@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Make small changes
-date: 2023-08-04
+date: 2023-08-09
 tags:
 - Build, release and deploy
 - Ways of working
