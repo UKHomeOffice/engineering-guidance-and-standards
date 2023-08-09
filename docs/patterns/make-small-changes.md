@@ -15,7 +15,7 @@ Make smaller incremental changes in your service, rather than storing up changes
 - Find issues quicker, as if something has failed testing, it's more than likely a recent change made
 - Makes deployments more predictable and reliable
 - When untested failures do occur (even in production), rolling back or fixing is much easier, as only a small part of the system has changed
-- Gets new features out to users more quickly, which means you can deliver value and gain feedback more quickly
+- Delivers value to users quicker, reducing feedback loops
 - Smaller changes will have less impact (for example) on end users who have to use a GUI/web interface
 
 >**Example**:
