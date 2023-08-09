@@ -8,7 +8,7 @@ tags:
 - Documentation
 ---
 
-Evidence-based decisions improve our ability to meet user needs. Without evidence of why we do things and their impact, it is hard to know what problems are, what features should be implemented and how best to maintain our products.
+Evidence-based decisions improve our ability to meet user needs. Without evidence of why we do things and their impact, it is hard to know what problems there are, what features should be implemented and how best to maintain our products.
 
 ---
 
