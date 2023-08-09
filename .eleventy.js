@@ -38,6 +38,10 @@ module.exports = function(eleventyConfig) {
                     text: 'About'
                 },
                 {
+                    href: _customPathPrefix+'/privacy-policy/',
+                    text: 'Privacy policy'
+                },
+                {
                     href: _customPathPrefix+'/cookies/',
                     text: 'Cookies'
                 },
