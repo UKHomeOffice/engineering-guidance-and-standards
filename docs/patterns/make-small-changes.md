@@ -5,17 +5,16 @@ title: Make small changes
 date: 2023-08-04
 tags:
 - Build, release and deploy
+- Ways of working
 ---
 
-Make smaller incremental changes in your service, rather than storing up changes and deploying them in bulk. Large changes carry more risk. As more is changing at once, the chance of something breaking is greater, at the same time it will be harder to debug exactly what caused any problems. Making lots of small changes has a number of benefits:
+Make smaller incremental changes in your service, rather than storing up changes and deploying them in bulk. Making lots of small changes has a number of benefits:
 
-- Reduces the failure risk of deployments
-- Small changes build confidence in the release process, which helps reduce perceived risk by the business
-- Frequent delivery of change into production increases business confidence in the team's ability to deliver value
-- Find issues quicker, as if something has failed testing, it's more than likely a recent change made
-- Makes deployments more predictable and reliable
+- Frequent delivery of change into production increases confidence in the team's ability to deliver value
+- Find issues quicker. If something has failed testing, it is more than likely that is due to a recent change
+- Makes deployments more predictable and reliable, reducing risk
 - When untested failures do occur (even in production), rolling back or fixing is much easier, as only a small part of the system has changed
-- Delivers value to users quicker, reducing feedback loops
+- Delivers value to users quicker, shortening feedback loops and release cycles in line with a [DevOps culture](https://learn.microsoft.com/en-us/devops/what-is-devops#adopt-a-devops-culture)
 - Smaller changes will have less impact (for example) on end users who have to use a GUI/web interface
 
 >**Example**:
@@ -28,8 +27,6 @@ Make smaller incremental changes in your service, rather than storing up changes
 
 - Each change should be the smallest possible change, that keeps your default branch in a deployable state
 - Every time a change is made, this should be automatically tested, delivered to an artefact repository, and deployed all the way to production, using CI/CD
-- As soon as you have something that can be be deployed, deploy it through all your environments
 - Use feature flags when you need to make changes without making them immediately available to users
-- Make use of the Agile Change Management process when integrating with Live Services / ServiceNow
-
+- Make use of agile change management processes when integrating with live service teams
 ---
