@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Design from evidence
-date: 2023-08-04
+date: 2023-08-09
 tags:
 - Software design
 - Documentation
