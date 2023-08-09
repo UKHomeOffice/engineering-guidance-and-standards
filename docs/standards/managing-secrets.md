@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Managing secrets
-date: 2023-08-04
+date: 2023-08-08
 id: SEGAS-00006
 tags:
 - Source management
