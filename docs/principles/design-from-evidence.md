@@ -16,7 +16,7 @@ Evidence-based decisions improve our ability to meet user needs. Without evidenc
 
 Successfully meeting user needs requires a proven understanding of user experience. Ensuring that the evidence we base our decisions on is up to date, valid and transparent allows us to iterate with short feedback loops, providing value to our users more quickly. This applies across the whole lifecycle of a product. Evidence can be drawn from user research, and also other non-functional elements, for example legal, security, performance and other compliance requirements.
 
-Designing from evidence, and documenting that effectively, allows people to understand the intent behind design choices. This can help to reduce cost, where only valid requirements are met. This also aids in the future maintainability of products because it is clearer why things were done, and the potential for regression of functionality is reduced. Designing test approaches that provide good evidence that requirements are met gives assurance, and greater confidence in the product.
+Designing from evidence, and documenting that effectively, allows people to understand the intent behind design choices. This can help to reduce cost by only meeting valid requirements. This also aids in the future maintainability of products because it is clearer why things were done, and the potential for regression of functionality is reduced. Designing test approaches based on good evidence of the correct requirements gives assurance and greater confidence in the product.
 
 ---
 
