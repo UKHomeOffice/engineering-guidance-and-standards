@@ -51,6 +51,18 @@ module.exports = function(eleventyConfig) {
         stylesheets: ['/styles/base.css'],
     })
 
+    eleventyConfig.addFilter("itemsFromPaginationWithPathPrefix", (pagination) => {
+      const items = []
+      pagination.pages.forEach((item, index) => {
+        items.push({
+          current: index === pagination.pageNumber,
+          number: index + 1,
+          href: _customPathPrefix + pagination.hrefs[index]
+        })
+      })
+      return items;
+    });
+
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
     });

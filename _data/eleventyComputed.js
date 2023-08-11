@@ -19,6 +19,18 @@ module.exports = {
     return eleventyExcludeFromCollections || page.templateSyntax === 'scss';
   },
   // the path prefix isn't applied to related link urls by xGovukRelatedNavigation - so map them here
+  pagination: ({pagination, pathPrefix}) => {
+    if (!pagination || Object.keys(pagination).length === 0) {
+      return pagination;
+    }
+    if (pagination.href.previous) {
+      pagination.href.previous = applyBaseToUrl(pagination.href.previous, pathPrefix, {pathPrefix});
+    }
+    if (pagination.href.next) {
+      pagination.href.next = applyBaseToUrl(pagination.href.next, pathPrefix, {pathPrefix});
+    }
+    return pagination;
+  },
   related: ({related, pathPrefix}) => {
     if (!related) {
       return related;
