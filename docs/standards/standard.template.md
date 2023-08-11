@@ -6,10 +6,10 @@ date: 2023-12-31 # this should be the date that the content was most recently am
 id: SEGAS-00000 # Set unique ID for standard
 # use `tags: []` for no tags, "Standards" tag is included automatically. 
 # Check https://ho-cto.github.io/engineering-guidance-and-standards/tags/ for existing tags
-# Note: tags must match capitalisation of previously used tags
-tags: 
-  - TAG 1
-  - TAG 2
+# Note: tags must use sentence case capitalisation
+tags:
+  - Tag one
+  - Tag two
 related: # remove this section if you do not need related links on your page
   sections:
     - title: Related links
