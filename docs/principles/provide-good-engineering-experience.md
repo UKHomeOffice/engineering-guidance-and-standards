@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Provide a good engineering experience
-date: git Last Modified
+date: 2023-07-26
 tags:
 - Ways of working
 ---

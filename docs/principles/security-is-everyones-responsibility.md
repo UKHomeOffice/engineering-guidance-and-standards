@@ -2,7 +2,7 @@
 layout: principle
 order: 5
 title: Security is everyone's responsibility
-date: git Last Modified
+date: 2023-07-13
 tags:
 - Security
 - Ways of working

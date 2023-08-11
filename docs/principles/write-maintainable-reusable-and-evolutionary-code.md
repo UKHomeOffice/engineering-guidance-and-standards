@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Write maintainable, reusable and evolutionary code
-date: git Last Modified
+date: 2023-07-25
 tags:
   - Ways of working
   - Software design

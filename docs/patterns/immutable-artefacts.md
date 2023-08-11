@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Immutable artefacts
-date: git Last Modified
+date: 2023-08-03
 tags:
 - Build, release and deploy
 - Deployment

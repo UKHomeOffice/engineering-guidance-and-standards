@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Docs as code
-date: git Last Modified
+date: 2023-08-03
 tags:
 - Ways of working
 - Source management

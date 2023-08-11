@@ -2,7 +2,7 @@
 layout: principle
 order: 3
 title: Zero trust
-date: git Last Modified
+date: 2023-07-13
 tags:
 - Security
 - Software design

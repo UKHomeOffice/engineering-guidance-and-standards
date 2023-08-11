@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Writing a standard
-date: git Last Modified
+date: 2023-08-04
 id: SEGAS-00001
 tags: []
 ---
@@ -95,15 +95,16 @@ tags:
 ### A standard MUST show when it was last updated
 
 Products and services are built to a standard and as time goes by standards
-evolve. This will automatically be generated from the git commit time and
-shown at the top of the page.  The metadata needs to be set as the following.
+evolve. Show the date the standard was last updated. 
+The metadata needs to include the date in YYYY-MM-DD format (see below).
 
 ```
-date: git Last Modified
+date: 2023-12-31
 ```
 ---
 
 ## Template
 
 You can use the [standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md) when creating a new standard.
+
 ---
