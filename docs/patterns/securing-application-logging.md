@@ -22,39 +22,28 @@ Logging any of these can make information available to people that have access t
 
 ## Solution
 
-### Avoid explicitly logging:
+### Avoid explicitly logging sensitive information
 
 - Personal Identifiable Information (PII) of any kind
 - Session tokens or API keys
 - Application secrets
 
-### Sensitive information can be accidentally logged as part of compound objects or arbitrary transmitted data. To avoid such cases:
+### Avoid accidentally logging sensitive information as part of compound objects or arbitrary transmitted data
 
 - Avoid logging whole objects and prefer logging a selection of explicit fields instead
 - Avoid logging full payloads (requests, responses, file uploads, consumed or produced asynchronous messages, etc)
 - Consider where logging statements can be removed altogether
 
-### Detailed logging might be necessary to support application debugging. If this is the case:
+### Take care when using detailed logging to support application debugging
 
 - Ensure detail logs are marked as DEBUG or TRACE level
-- Ensure DEBUG or TRACE log level is not enabled in production under any circumstance
-- Only enable detail logging for the period of time needed to carry out debugging
-- When possible, restrict detail logging to application components that are relevant to the issue being debugged
-
----
-
-## Considerations
-
-### Consider whether logging statements are necessary
-Sometimes logging is used for fast-feedback loops when prototyping application functionality, but eventually become redundant, or the application they provide does not provide additional operational or debugging value for an operator searching through logs.
-
-Consider removing logging statements that do not produce value. If the logging statement is added to increase confidence in the application's correctness, consider replacing it with a unit test instead.
+- Ensure DEBUG or TRACE log level is not enabled in production
+- Only enable detailed logging for the period of time needed to carry out debugging
+- When possible, restrict detailed logging to application components that are relevant to the issue being debugged
 
 ### Log specific fields
 
-Accidental logging often happens when logging statements serialise a whole object. At a point in time the object might be perfectly safe to log, but further introduction of new fields can introduce leaks later on.
-
-Logging specific fields can mitigate this issue.
+Accidental logging often happens when logging statements serialise a whole object. At a point in time the object might be perfectly safe to log, but further introduction of new fields can introduce leaks later on. Logging specific fields can mitigate this issue.
 
 ### Avoid logging full payloads
 
@@ -66,16 +55,23 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 - used only in non-production environments
 - limited to the application components that are under investigation (e.g. to investigate a web issue, enable HTTP payload logging but not Kafka messages logging)
 
-## Alternative approaches
+---
+
+## Considerations
+
+### Consider whether logging statements are necessary
+Sometimes logging is used for fast-feedback loops when prototyping application functionality, but eventually become redundant, or the application they provide does not provide additional operational or debugging value for an operator searching through logs.
+
+Consider removing logging statements that do not produce value. If the logging statement is added to increase confidence in the application's correctness, consider replacing it with a unit test instead.
 
 ### Test when possible
 
-Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing.
-
-Most of these cases should be replaced with unit or integration testing instead, as appropriate.
-
----
+Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing. Most of these cases can be replaced with unit or integration testing instead, as appropriate.
 
 For cases in which lack of confidence is caused by the data domain being broad and edge cases being unforseeable, consider using property-based testing with tooling such as QuickCheck derivatives.
+
+### Logging lifecycle
+
+Logs won't only be stored in one place, they will likely be generated and stored initially in the running environment and then flowed through to other log aggregation and analytics storage locations. Understand where they go and the differing retention and access considerations for each part of the lifecycle.
 
 ---
