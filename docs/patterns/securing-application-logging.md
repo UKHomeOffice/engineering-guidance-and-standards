@@ -1,7 +1,7 @@
 ---
 layout: pattern
 order: 1
-title: Application logging and data security
+title: Securing application logging
 date: 2023-08-11
 tags: 
   - Logging
@@ -9,8 +9,7 @@ tags:
   - Secure development
   - SRE
   - Security
-  - Software design
-    
+  - Software design   
 ---
 
 It is common to log user information from an application to assist operations or debugging. Some middleware might be configured to log full configuration, data, or request/response objects, which may contain Personally Identifiable Information (PII), authentication tokens or application secrets.
@@ -74,6 +73,8 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing.
 
 Most of these cases should be replaced with unit or integration testing instead, as appropriate.
+
+---
 
 For cases in which lack of confidence is caused by the data domain being broad and edge cases being unforseeable, consider using property-based testing with tooling such as QuickCheck derivatives.
 
