@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     // Register the plugins
-    eleventyConfig.addPlugin(govukEleventyPlugin, {
+    let govukPluginOptions = {
         brandColour: '#8f23b3',
         fontFamily: 'roboto, system-ui, sans-serif',
         icons: {
@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
         header: {
-            organisationLogo: '<img src="'+_customPathPrefix+'/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
+            organisationLogo: '<img src="' + _customPathPrefix + '/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
             organisationName: 'Home Office',
             productName: 'Engineering Guidance and Standards',
             search: {
@@ -33,22 +33,33 @@ module.exports = function(eleventyConfig) {
             },
             meta: {
                 items: [
-                {
-                    href: _customPathPrefix+'/about/',
-                    text: 'About'
-                },
-                {
-                    href: _customPathPrefix+'/cookies/',
-                    text: 'Cookies'
-                },
-                {
-                    href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
-                    text: 'GitHub repository'
-                }
-              ]
+                    {
+                        href: _customPathPrefix + '/about/',
+                        text: 'About'
+                    },
+                    {
+                        href: _customPathPrefix + '/cookies/',
+                        text: 'Cookies'
+                    },
+                    {
+                        href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
+                        text: 'GitHub repository'
+                    }
+                ]
             }
         },
         stylesheets: ['/styles/base.css'],
+    };
+    eleventyConfig.addPlugin(govukEleventyPlugin, govukPluginOptions)
+
+    // Customise markdown-it renderer provided by x-gov 11ty plugin. Plugin execution is
+    // deferred, so this needs to be a plugin, and added after the x-gov plugin is.
+    eleventyConfig.addPlugin((eleventyConfig) => {
+        const md = require('@x-govuk/govuk-eleventy-plugin/lib/markdown-it.js')(govukPluginOptions)
+
+        md.use(require('./lib/markdown/dl-as-govuk-summary-list'));
+
+        eleventyConfig.setLibrary('md', md);
     })
 
     eleventyConfig.addFilter("postDate", (dateObj) => {

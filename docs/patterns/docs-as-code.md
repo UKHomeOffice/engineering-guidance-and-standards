@@ -47,11 +47,38 @@ A docs as code approach also gives you the following benefits:
 
 The Home Office software engineering Ways of Working guild has investigated some different technical products for implementing docs as code approaches. An outline of options is below, this site uses the x-gov Eleventy plugin.
 
-#### Technical Options
+#### Middleman and GDS Tech Docs Template
 
-| Option and links to documentation | Reviewed | Comments | Examples of HO documentation using this option |
-|---|---|---|---|
-| Middle man and GDS Tech Docs Template <br><br> https://middlemanapp.com/ <br><br> https://github.com/alphagov/tech-docs-template | YES | Ruby based. <br><br> The original GDS sponsored effort to create a gov.uk compliant docs as code pattern. | https://ho-cto.github.io/sre-monitoring-as-code/ |
-| Eleventy and x-gov Eleventy plugin <br><br> https://www.11ty.dev/docs/ <br><br> https://x-govuk.github.io/posts/govuk-eleventy-plugin/ | YES | Node.js based. <br><br> A newer offering that also provides gov.uk styling and easy to configure search functionality. | https://ukhomeoffice.github.io/hocs/get-started/ |
+Links to documentation
+: - [Middleman](https://middlemanapp.com/)
+  - [Alpha-gov tech docs template](https://tdt-documentation.london.cloudapps.digital/)
+
+Reviewed
+: Yes
+
+Comments
+: Ruby based. 
+  
+  The original GDS sponsored effort to create a gov.uk compliant docs as code pattern.
+
+Example of Home Office documentation using this option
+: [SRE monitoring as code](https://ho-cto.github.io/sre-monitoring-as-code/)
+
+#### Eleventy and x-gov Eleventy plugin
+
+Links to documentation
+: - [Eleventy](https://www.11ty.dev/docs/)
+  - [X-gov eleventy plugin](https://x-govuk.github.io/posts/govuk-eleventy-plugin/)
+
+Reviewed
+: Yes
+
+Comments
+: Node.js based.
+  
+  A newer offering that also provides gov.uk styling and easy to configure search functionality.
+
+Example of Home Office documentation using this option
+: [DECS developer documentation](https://ukhomeoffice.github.io/hocs/get-started/)
 
 ---
