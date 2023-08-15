@@ -6,7 +6,7 @@
     "layout": {{ item.data.layout | dump | safe }},
     "hasFrontmatterDate": {{ item.data.date !== undefined }},
     "date": {{ item.date | date("d LLLL y") | dump | safe }},
-    {% if item.data.id %}"templateContent": {{ (item.data.id + item.templateContent) | tokenize | dump | safe }} {% else %} "templateContent": {{ item.templateContent | tokenize | dump | safe }}{% endif %},
+    {% if item.data.id %}"templateContent": {{ (item.data.id + ' ' + (item.templateContent | tokenize)) | dump | safe }} {% else %} "templateContent": {{ item.templateContent | tokenize | dump | safe }}{% endif %},
     "url": {{ item.url | url | pretty | dump | safe }}
   }{% if not loop.last %},{% endif %}
 {% endfor %}]
