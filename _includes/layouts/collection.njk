@@ -50,14 +50,14 @@
       next: {
         href: pagination.href.next
       },
-      items: pagination | itemsFromPagination
+      items: pagination | itemsFromPaginationWithPathPrefix
     }) if pagination.pages.length > 1 }}
   </section>
 
 
   <div class="govuk-grid-column-one-third-from-desktop">
     {% from "macros/navigationList.njk" import navigationList %}
-    {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }} 
+    {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }}
     {% if aside or related %}
       {% include "layouts/shared/related.njk" %}
     {% endif %}

@@ -124,3 +124,17 @@ describe('Related links respect path prefix', () => {
     cy.contains('h1', 'Writing a standard')
   })
 })
+
+describe('Pagination links respect path prefix', () => {
+  it('finds the pagination links and follows them to valid pages', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    // Click to standards page that has a related link
+    cy.contains('Read our principles').click()
+    // Use the related link
+    cy.contains('.govuk-pagination__next a', 'Next').click()
+    cy.contains('h1', 'Principles')
+
+    cy.contains('.govuk-pagination__prev a', 'Previous').click()
+    cy.contains('h1', 'Principles')
+  })
+})
