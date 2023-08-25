@@ -62,11 +62,7 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 ### Consider whether logging statements are necessary
 Sometimes logging is used for fast-feedback loops when prototyping application functionality, but eventually become redundant, or the application they provide does not provide additional operational or debugging value for an operator searching through logs.
 
-Consider removing logging statements that do not produce value. If the logging statement is added to increase confidence in the application's correctness, consider replacing it with a unit test instead.
-
-### Test when possible
-
-Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing. Most of these cases can be replaced with unit or integration testing instead, as appropriate.
+Consider removing logging statements that do not produce value. Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing. Most of these cases can be replaced with unit or integration testing instead, as appropriate.
 
 For cases in which lack of confidence is caused by the data domain being broad and edge cases being unforseeable, consider using property-based testing with tooling such as QuickCheck derivatives.
 
