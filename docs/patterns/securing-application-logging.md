@@ -10,6 +10,12 @@ tags:
   - SRE
   - Security
   - Software design   
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Managing secrets
+          href: /standards/managing-secrets/
 ---
 
 It is common to log user information from an application to assist operations or debugging. Some middleware might be configured to log full configuration, data, or request/response objects, which may contain Personally Identifiable Information (PII), authentication tokens or application secrets.
