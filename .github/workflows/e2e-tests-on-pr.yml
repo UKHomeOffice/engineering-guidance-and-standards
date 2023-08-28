@@ -24,7 +24,7 @@ jobs:
           node-version: 18
           cache: 'npm'
       - name: Run Cypress Tests
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v6
         with:
           browser: chrome
           build: npm run build
