@@ -7,6 +7,8 @@ tags:
   - Generative AI
   - Artificial intelligence (AI)
   - Source management
+  - Secure development
+  - Ways of working
 ---
 
 Chatbots which utilise [generative Artifical Intelligence (AI)](https://www.gartner.com/en/topics/generative-ai) have exploded in public popularity with the release of ChatGPT from the OpenAI group. These services use large language model (LLM) machine learning to train a chat bot to respond to questions in a real life manner. 
