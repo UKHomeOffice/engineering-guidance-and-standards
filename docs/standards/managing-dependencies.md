@@ -72,7 +72,7 @@ Engineering teams must plan and perform updates to their software components. Th
 
 - [Select and define a deployment strategy]({{ '/patterns/selecting-a-deployment-strategy/' | url }}) that enables the promotion of patches and dependency changes into production frequently
 - Configure pipelines and test suites to allow testing for the compatibility of modified software components
-- Monitor and triage the ongoing need to patch, update or change the configuration of components, over the lifecylce of the product
+- Monitor and triage the ongoing need to patch, update or change the configuration of components, over the lifecycle of the product
 - Employ good software design principles to loosely couple external dependencies where possible, making it easier to replace them if required
 - Use package managers and software composition analysis tools to automate patch management and identify unnecessary dependencies that can be removed
 
