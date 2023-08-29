@@ -37,6 +37,7 @@ function checkUrl(url) {
     url : url,
     failOnStatusCode:false,
   }).then((resp) => {
+    // Ignoring 401/403 as we may include links with restrictions applied in pages
     expect(resp.status).to.not.eq(400)
     expect(resp.status).to.not.eq(404)
     expect(resp.status).to.not.gt(405)
