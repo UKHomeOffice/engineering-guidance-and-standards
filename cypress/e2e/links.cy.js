@@ -1,4 +1,4 @@
-import {testing_params} from "../support/testing_params"
+import {testing_params} from "../support/testing_params";
 
 it('Check for invalid links on main pages', () => {
   const pages = ['/', '/principles/', '/patterns/', '/standards/', '/tags/']
@@ -16,9 +16,23 @@ it('Check for invalid links on content pages', () => {
   })
 })
 
+it('Check for invalid header links', () => {
+  cy.visit(testing_params.TEST_ROOT_URL)
+  cy.get("header a").each(page => {
+    cy.request(page.prop('href'))
+  })
+})
+
+it('Check for invalid footer links', () => {
+  cy.visit(testing_params.TEST_ROOT_URL)
+  cy.get("footer a").each(page => {
+    cy.request(page.prop('href'))
+  })
+})
+
 function checkAllLinks() {
   // Exclude mailto links and exclude survey link -- there is rate limiting for the survey page
-  cy.get("a:not([href*='mailto:']):not([href*='homeofficesurveys']").each(page => {
+  cy.get("main a:not([href*='mailto:']):not([href*='homeofficesurveys']").each(page => {
     cy.request(page.prop('href'))
   })
 }
