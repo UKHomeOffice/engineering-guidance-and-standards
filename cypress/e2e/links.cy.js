@@ -1,17 +1,17 @@
 import {testing_params} from "../support/testing_params"
 
 it('Check for invalid links on main pages', () => {
-  const pages = ['', 'principles', 'patterns', 'standards', 'tags']
+  const pages = ['/', '/principles/', '/patterns/', '/standards/', '/tags/']
   pages.forEach(page => {
-    cy.visit(testing_params.TEST_ROOT_URL + "/" + page)
+    cy.visit(testing_params.TEST_ROOT_URL + page)
     checkAllLinks()
   })
 })
 
 it('Check for invalid links on content pages', () => {
-  const pages = ['principles', 'patterns', 'standards']
+  const pages = ['/principles/', '/patterns/', '/standards/']
   pages.forEach(page => {
-    cy.visit(testing_params.TEST_ROOT_URL + "/" + page)
+    cy.visit(testing_params.TEST_ROOT_URL + page)
     checkAllLinksOfListedPages()
   })
 })
