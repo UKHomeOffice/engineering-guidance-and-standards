@@ -50,7 +50,7 @@ Assessment of software components should take in to account nested or transitive
 
 ### You MUST maintain a discoverable dependency tree for your systems
 
-POMs and package.json are examples of files that include the specification of dependencies required to build a piece of software. However they do not always provide a full picture of the dependency tree of a built application, this because they do not always specify precisely which version of a dependency is to be used, and they do not always elaborate on nested dependencies.
+[POMs](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) and [package.json](https://docs.npmjs.com/cli/v9/configuring-npm/package-json) are examples of files that include the specification of dependencies required to build a piece of software. However they do not always provide a full picture of the dependency tree of a built application, this because they do not always specify precisely which version of a dependency is to be used, and they do not always elaborate on nested dependencies.
 
 Engineers must be able to fully understand which dependencies are running or included in an application, and be able to tie built artefacts to a precise dependency tree and versioned code. Teams should generate Software Bills of Materials (SBOMs) in the build process, and share them with operations teams, so that vulnerabilities in applications can be accurately identified and appropriately remediated.
 
