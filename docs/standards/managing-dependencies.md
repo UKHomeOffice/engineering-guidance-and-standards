@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Managing dependencies
-date: 2023-08-28
+date: 2023-08-29
 id: SEGAS-00007
 tags:
   - Secure development
