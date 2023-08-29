@@ -1,36 +1,14 @@
 import {testing_params} from "../support/testing_params";
 
-it('Check for invalid links on home page', () => {
-  cy.visit(testing_params.TEST_ROOT_URL)
-  checkAllLinks()
-})
+import pages from "../../_site/search.json"
 
-it('Check for invalid links on patterns page', () => {
-  cy.visit(testing_params.TEST_ROOT_URL + '/patterns/')
-  checkAllLinks()
-})
-
-it('Check for invalid links on standards page', () => {
-  cy.visit(testing_params.TEST_ROOT_URL + '/standards/')
-  checkAllLinks()
-})
-
-it('Check for invalid links on principles page', () => {
-  cy.visit(testing_params.TEST_ROOT_URL + '/principles/')
-  checkAllLinks()
-})
-
-it('Check for invalid links on tags page', () => {
-  cy.visit(testing_params.TEST_ROOT_URL + '/tags/')
-  checkAllLinks()
-})
-
-it('Check for invalid links on content pages', () => {
-  const pages = ['/principles/', '/patterns/', '/standards/']
-  pages.forEach(page => {
-    cy.visit(testing_params.TEST_ROOT_URL + page)
-    checkAllLinksOfListedPages()
-  })
+describe('Check for invalid links on all pages', () => {
+  for(const page of pages) {
+    it(`${page.title} (${page.url}) contains valid links`, () => {
+      cy.visit(testing_params.TEST_ROOT_URL + page.url)
+      checkAllLinks()
+    })
+  }
 })
 
 it('Check for invalid header links', () => {
