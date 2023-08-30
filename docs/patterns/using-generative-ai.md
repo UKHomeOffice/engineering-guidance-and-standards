@@ -22,7 +22,7 @@ A lot of the current popular chat bots utilise the GPT3 language model (Generati
 - Amazon Lex
 - Bing Search AI
 
-The capability of LLMs and generative AI is predicated on storing and feeding models with large amounts of real life data, which includes subsequent questions asked of it since going live. As the functionality of the models is largely opaque, and assurance of data confidentiality is not always assured, use of these services potentially introduces risks to the governance of Home Office data, information and processes.
+The capability of LLMs and generative AI is predicated on storing and feeding models with large amounts of real life data, which might include subsequent questions asked of it since going live. As the functionality of the models is largely opaque, and assurance of data confidentiality is not always assured, [use of these services potentially introduces risks to the governance of Home Office data, information and processes](https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk).
 
 In addition to this, some of these services can generate or examine code, to provide suggested solutions. While there is a potential benefit to AI assisted development, care needs to be taken with what code is provided to the service, and how the assistance is assured for quality control.
 
@@ -42,7 +42,7 @@ When using generative AI services to generate code.
 
 - Take care to not expose internal business processes, technology, configuration or secret in prompts - if necessary abstract problems sufficiently to avoid specifics needing to be used
 - Tag generated code blocks with some tagging scheme
-- Do not explicitly trust generated code - it must be subject to regular peer review as with any other written code
+- [Be aware of the potential for data poisoning](https://www.ncsc.gov.uk/blog-post/thinking-about-security-ai-systems). Do not explicitly trust generated code - it must be subject to regular peer review as with any other written code
 - You are responsible for all code you commit, regardless of how it has been created or generated
 
 ---
