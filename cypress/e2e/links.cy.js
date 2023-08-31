@@ -1,6 +1,7 @@
 import {testing_params} from "../support/testing_params";
 
 import pages from "../../_site/search.json"
+import linkExceptionList from "../support/link-exception-list.json"
 
 describe('Check pages contain valid links', () => {
   for(const page of pages) {
@@ -19,13 +20,8 @@ function checkAllLinks() {
 }
 
 function checkUrl(url) {
-  cy.request({
-    url : url,
-    failOnStatusCode:false,
-  }).then((resp) => {
-    // Ignoring 401/403 as we may include links with restrictions applied in pages
-    expect(resp.status).to.not.eq(400)
-    expect(resp.status).to.not.eq(404)
-    expect(resp.status).to.not.gt(405)
-  })
+  if (linkExceptionList.includes(url)) {
+    return;
+  }
+  cy.request(url)
 }
