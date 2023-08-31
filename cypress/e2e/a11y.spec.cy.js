@@ -33,3 +33,24 @@ describe('All pages pass axe-core accessibility checks', () => {
     })
   }
 })
+
+describe('Tag pages pass axe-core accessibility checks', () => {
+  it('Tag page is accessible', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    cy.contains('Read our standards').click()
+    cy.contains('Minimal documentation set for a product').click()
+    cy.get('.tags').contains('Documentation').click()
+    cy.injectAxe()
+    cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
+  })
+
+  it('All tags is accessible', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    cy.contains('Read our standards').click()
+    cy.contains('Minimal documentation set for a product').click()
+    cy.get('.tags').contains('Documentation').click()
+    cy.contains('all tags').click()
+    cy.injectAxe()
+    cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
+  })
+})
