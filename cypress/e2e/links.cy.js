@@ -2,7 +2,7 @@ import {testing_params} from "../support/testing_params";
 
 import pages from "../../_site/search.json"
 
-describe('Check for invalid links on all pages', () => {
+describe('Check pages contain valid links', () => {
   for(const page of pages) {
     it(`${page.title} (${page.url}) contains valid links`, () => {
       cy.visit(testing_params.TEST_ROOT_URL + page.url)
@@ -11,23 +11,9 @@ describe('Check for invalid links on all pages', () => {
   }
 })
 
-it('Check for invalid header links', () => {
-  cy.visit(testing_params.TEST_ROOT_URL)
-  cy.get("header a").each(page => {
-    cy.request(page.prop('href'))
-  })
-})
-
-it('Check for invalid footer links', () => {
-  cy.visit(testing_params.TEST_ROOT_URL)
-  cy.get("footer a").each(page => {
-    cy.request(page.prop('href'))
-  })
-})
-
 function checkAllLinks() {
-  // Exclude mailto links and exclude survey link -- there is rate limiting for the survey page
-  cy.get("main a:not([href*='mailto:']):not([href*='homeofficesurveys']").each(page => {
+  // Exclude mailto links
+  cy.get("a:not([href*='mailto:'])").each(page => {
     checkUrl(page.prop('href'))
   })
 }
