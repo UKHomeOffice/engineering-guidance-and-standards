@@ -80,10 +80,10 @@ module.exports = function(eleventyConfig) {
 
     // Used for tag page generation
     eleventyConfig.addFilter("getAllTags", collection => {
-        let tagSet = new Set();
-        for(let item of collection) {
-            (item.data.tags || []).forEach(tag => tagSet.add(tag));
-        }
+      let tagSet = new Set();
+      for(let item of collection) {
+          (item.data.tags || []).forEach(tag => tagSet.add(tag));
+      }
       return Array.from(tagSet).sort(function(a, b) {
         return a.localeCompare(b); // sort by tag name
       });
