@@ -3,6 +3,8 @@ import {testing_params} from "../support/testing_params";
 import pages from "../../_site/search.json"
 import linkExceptionList from "../support/link-exception-list.json"
 
+let visitedLinks = []; // allows the tests to not repeatedly test the same URLs
+
 describe('Check pages contain valid links', () => {
   for(const page of pages) {
     it(`${page.title} (${page.url}) contains valid links`, () => {
@@ -21,7 +23,11 @@ function checkAllLinks() {
 
 function checkUrl(url) {
   if (linkExceptionList.includes(url)) {
-    return;
+    return
   }
+  if (visitedLinks.includes(url)) {
+    return
+  }
+  visitedLinks.push(url)
   cy.request(url)
 }
