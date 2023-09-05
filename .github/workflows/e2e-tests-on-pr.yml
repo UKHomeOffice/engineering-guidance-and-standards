@@ -14,7 +14,7 @@ env:
 jobs:
   e2e-test:
     runs-on: ubuntu-22.04
-    container: cypress/browsers:node20.5.0-chrome114
+    container: cypress/browsers:node20.5.0-chrome114.0.5735.133
     steps:
       - name: Checkout
         uses: actions/checkout@v3
