@@ -80,16 +80,24 @@ module.exports = function(eleventyConfig) {
 
     // Used for tag page generation
     eleventyConfig.addFilter("getAllTags", collection => {
-        let tagSet = new Set();
-        for(let item of collection) {
-            (item.data.tags || []).forEach(tag => tagSet.add(tag));
-        }
-        return Array.from(tagSet);
+      let tagSet = new Set();
+      for(let item of collection) {
+          (item.data.tags || []).forEach(tag => tagSet.add(tag));
+      }
+      return Array.from(tagSet).sort(function(a, b) {
+        return a.localeCompare(b); // sort by tag name
+      });
     });
 
     eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
         // Tags in array are ignored, no tag list page is generated for these
         return (tags || []).filter(tag => ["homepage"].indexOf(tag) === -1);
+    });
+
+    eleventyConfig.addFilter("orderPagesByTitle", function orderByTitle(collection) {
+      return collection.sort(function(a, b) {
+        return a.data.title.localeCompare(b.data.title); // sort by title ascending
+      });
     });
 
     eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
@@ -107,7 +115,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection("getAllStandardsOrderedByTitle", function(collectionApi) {
       return collectionApi.getFilteredByGlob("**/standards/*.md").sort(function(a, b) {
-          return a.data.id.localeCompare(b.data.title); // sort by title ascending
+          return a.data.title.localeCompare(b.data.title); // sort by title ascending
         });
     });
 

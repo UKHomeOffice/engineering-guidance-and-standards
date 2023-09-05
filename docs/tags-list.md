@@ -3,19 +3,7 @@
 eleventyExcludeFromCollections: true
 title: All page tags currently in use
 permalink: /tags/
-layout: sub-navigation
+layout: tags
 ---
 
-{% for tag in collections.all | getAllTags | filterTagList %}
-{%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
-  {% if tag == "Patterns" %}
-  - [{{tag}}]({{"/patterns" | url}})
-  {% elseif tag == "Principles" %}
-  - [{{tag}}]({{"/principles" | url}})
-  {% elseif tag == "Standards" %}
-  - [{{tag}}]({{"/standards" | url}})
-  {% else %}
-  - [{{tag}}]({{ tagUrl }})
-  {% endif %}
-{% endfor %}
 
