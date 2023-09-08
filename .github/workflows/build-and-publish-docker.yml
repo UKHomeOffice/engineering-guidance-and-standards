@@ -1,0 +1,16 @@
+name: build-and-publish-docker
+
+on:
+  pull_request:
+    types: [ closed ]
+
+jobs:
+  build:
+    uses: UKHomeOffice/sas-github-workflows/.github/workflows/publish-docker.yml@v2
+    if: |
+      github.event.pull_request.merged == true &&
+      github.base_ref == 'main'
+    with:
+      image: 'quay.io/ukhomeofficedigital/engineering-guidance-and-standards'
+      tag: ${{ github.sha }}
+    secrets: inherit
