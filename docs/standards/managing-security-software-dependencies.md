@@ -1,7 +1,7 @@
 ---
 layout: standard
 order: 1
-title: Managing dependencies
+title: Managing the security of software dependencies
 date: 2023-08-29
 id: SEGAS-00007
 tags:
