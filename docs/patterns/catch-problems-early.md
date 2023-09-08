@@ -1,18 +1,18 @@
 ---
 layout: pattern
 order: 1
-title: Catch problems early (shift quality left)
+title: Catch defects early (shift quality left)
 date: 2023-08-30
 tags:
   - Build, release and deploy
   - Ways of working
 ---
 
-Catching problems early means that:
-- Any problems can be addressed more quickly
-- Tighter feedback loop. Allows problems to be fixed while the change context is still fresh in the developer's head
+Catching defects early means that:
+- Any defects can be addressed more quickly
+- Tighter feedback loop. Allows defects to be fixed while the change context is still fresh in the developer's head
 - Reduces development and test effort to deliver a change, as issues can be caught before a formal test phase
-- Problems can be caught before they can impact on your users, which will increase your users' confidence in your service
+- Defects can be caught before they can impact on your users, which will increase your users' confidence in your service
 - Reduces the risk of adverse changes entering the product
 
 Overall this allows for faster iteration, whilst maintaining the quality of your service.
@@ -34,7 +34,7 @@ Overall this allows for faster iteration, whilst maintaining the quality of your
 
 - Be wary of manual tasks going to the left as this can slow down delivery
 - Also consider moving other activities to the left, for example secure by design activities
-- Moving quality control to the left should not be considered as a substitute to observability in production - use shift right activities to catch problems quickly in production
+- Moving quality control to the left should not be considered as a substitute to observability in production - use shift right activities to catch defects quickly in production
 - Shifting assurance left lets you identify things before they become an issue, but you will also need assurance throughout the development lifecycle. For example vulnerability scanning for dependencies should be considered left and right, to allow for vulnerabilities that arise in production after deployment
 - Shifting security considerations left, automating security testing, and implementing policies early improves security integration in the development lifecycle and reduces risk 
 
