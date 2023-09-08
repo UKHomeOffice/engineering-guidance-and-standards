@@ -17,7 +17,7 @@ related: # remove this section if you do not need related links on your page
 
 As a public body, the Home Office has a legal responsibility to ensure that the digital services and systems we control are accessible to the widest possible group of people.
 
-To provide consistency for users and product teams, the Home Office Accessibility team have developed a Home Office Accessibility Standard. This closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.
+To provide consistency for users and product teams, the Home Office Accessibility team have developed a [Home Office Accessibility Standard](https://design.homeoffice.gov.uk/accessibility/standard). This closely aligns with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA but simplifies and focuses on the areas most likely to present challenges for Home Office users.
 
 ---
 
