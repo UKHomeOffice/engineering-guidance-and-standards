@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Accessibility
-date: 2023-08-29
+date: 2023-09-08
 id: SEGAS-00008
 tags:
   - Software design
