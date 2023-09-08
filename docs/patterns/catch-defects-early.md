@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Catch defects early (shift quality left)
-date: 2023-08-30
+date: 2023-09-08
 tags:
   - Build, release and deploy
   - Ways of working
