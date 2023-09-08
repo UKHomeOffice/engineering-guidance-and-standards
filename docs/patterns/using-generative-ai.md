@@ -30,7 +30,7 @@ In addition to this, some of these services can generate or examine code, to pro
 
 ## Solution
 
-With this in mind there are some guidelines that engineers in Home Office must keep in mind when dealing with, asking questions and sending data to any of these services.
+With this in mind there are some guidelines that engineers in Home Office must keep in mind when dealing with, asking questions and sending data to any of these services. This should be considered alongside [Cabinet Office guidance on using generative AI](https://www.gov.uk/government/publications/guidance-to-civil-servants-on-use-of-generative-ai/guidance-to-civil-servants-on-use-of-generative-ai).
 
 - You MUST NEVER enter sensitive data, information, processes or secrets into a 3rd party hosted generative AI service
 - Do not ask questions related to unreleased policy
