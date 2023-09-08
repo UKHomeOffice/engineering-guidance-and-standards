@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Using generative AI
-date: 2023-08-28
+date: 2023-09-08
 tags: 
   - Generative AI
   - Artificial intelligence (AI)
@@ -40,7 +40,7 @@ With this in mind there are some guidelines that engineers in Home Office must k
 
 When using generative AI services to generate code. 
 
-- Take care to not expose internal business processes, technology, configuration or secret in prompts - if necessary abstract problems sufficiently to avoid specifics needing to be used
+- Take care to not expose internal business processes, technology, configuration or secrets in prompts - if necessary, abstract problems sufficiently to avoid specifics needing to be used
 - Tag generated code blocks with some tagging scheme
 - [Be aware of the potential for data poisoning](https://www.ncsc.gov.uk/blog-post/thinking-about-security-ai-systems). Do not explicitly trust generated code - it must be subject to regular peer review as with any other written code
 - You are responsible for all code you commit, regardless of how it has been created or generated
