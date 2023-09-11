@@ -25,13 +25,33 @@ function terminalLog(violations) {
 }
 
 describe('All pages pass axe-core accessibility checks', () => {
+  const titles = {};
+
   for(const page of pages) {
     it(`${page.title} (${page.url}) is accessible`, () => {
       cy.visit(testing_params.TEST_ROOT_URL + page.url)
       cy.injectAxe()
       cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
     })
+
+    titles[page.title] = [
+      ...(titles[page.title] ?? []),
+      page.url
+    ];
   }
+
+  it('All pages have a unique title', () => {
+    const duplicateTitles = Object.entries(titles).filter(([_, urls]) => urls.length > 1);
+    assert(duplicateTitles.length === 0, "There are no pages that share a title");
+    if(duplicateTitles.length > 0) {
+      const tableData = duplicateTitles.map(([title, urls]) => ({
+        "Title": title,
+        "URLs with this title": urls.join("\n")
+      }));
+
+      cy.task('table', tableData)
+    }
+  })
 })
 
 describe('Tag pages pass axe-core accessibility checks', () => {
