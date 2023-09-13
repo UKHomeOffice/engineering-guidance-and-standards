@@ -25,7 +25,7 @@ There are a [number of approaches to threat modelling](https://shellsharks.com/t
 
 ## Solution
 
-Engineering teams should incorporate [collaborative threat modelling with a 'little and often' approach.](https://martinfowler.com/articles/agile-threat-modelling.html#TakeACollaborativeApproach). Don't get bogged down with large upfront models, start by applying modelling to any changes to architecture or the introduction of new features.
+Engineering teams should incorporate [collaborative threat modelling with a 'little and often' approach](https://martinfowler.com/articles/agile-threat-modelling.html#TakeACollaborativeApproach). Don't get bogged down with large upfront models, start by applying modelling to any changes to architecture or the introduction of new features.
 
 - In design sessions, use architecture and design diagrams to [ask 4 key questions](https://www.threatmodelingmanifesto.org/)
   
