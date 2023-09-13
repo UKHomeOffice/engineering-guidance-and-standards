@@ -34,30 +34,30 @@ Monitoring infrastructure utilisation without also monitoring other signals of s
 
 ## Requirements
 
-- [Infrastructure MUST be monitored relative to defined service level expectations](#infrastructure-must-be-monitored-relative-to-defined-service-level-expectations)
-- [CPU utilisation MUST be monitored](#cpu-utilisation-must-be-monitored)
-- [Memory utilisation MUST be monitored](#memory-utilisation-must-be-monitored)
-- [Disk utilisation MUST be monitored](#disk-utilisation-must-be-monitored)
-- [Network utilisation MUST be monitored](#network-utilisation-must-be-monitored)
+- [Infrastructure MUST be observable relative to defined service level expectations](#infrastructure-must-be-observable-relative-to-defined-service-level-expectations)
+- [CPU utilisation MUST be observable](#cpu-utilisation-must-be-observable)
+- [Memory utilisation MUST be observable](#memory-utilisation-must-be-observable)
+- [Disk utilisation MUST be observable](#disk-utilisation-must-be-observable)
+- [Network utilisation MUST be observable](#network-utilisation-must-be-observable)
 - [Historical infrastructure monitoring metrics MUST be retained for analysis](#historical-infrastructure-monitoring-metrics-must-be-retained-for-analysis)
 
-### Infrastructure MUST be monitored relative to defined service level expectations
+### Infrastructure MUST be observable relative to defined service level expectations
 
 Infrastructure utilisation should be baselined so that Service Level Objectives (SLOs) can be defined for infrastructure measures. This enables effective alerting, and triggers for automated proactive measures.
 
-### CPU utilisation MUST be monitored
+### CPU utilisation MUST be observable
 
 CPU utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
 
-### Memory utilisation MUST be monitored
+### Memory utilisation MUST be observable
 
 Memory utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
 
-### Disk utilisation MUST be monitored
+### Disk utilisation MUST be observable
 
 Disk utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
 
-### Network utilisation MUST be monitored
+### Network utilisation MUST be observable
 
 Network utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
 
