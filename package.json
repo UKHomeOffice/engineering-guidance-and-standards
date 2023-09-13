@@ -34,6 +34,6 @@
   "devDependencies": {
     "axe-core": "^4.8.1",
     "cypress-axe": "^1.5.0",
-    "cypress": "^13.1.0"
+    "cypress": "^13.2.0"
   }
 }
