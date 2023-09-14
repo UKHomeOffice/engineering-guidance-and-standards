@@ -27,3 +27,7 @@ Then open up example pages that will be affected by your layout changes. For eac
 - [ ] Are blocks of text left-aligned.
 - [ ] If standard content is included or generated as part of the template, check this against 
   [the content checklist](./content-checks.md).
+- [ ] Zoom the page in to 200%. There should be no horizontal overflow. If this causes the layout to reflow check that
+  the visual order and focus order are maintained.
+- [ ] Access the page on a small screen, or use browser tools to emulate this. If this causes the layout to reflow check that
+  the visual order and focus order are maintained.
