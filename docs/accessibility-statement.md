@@ -33,15 +33,28 @@ If you are having difficulties accessing this site, please let us know. You can:
 
 ## Enforcement procedure
 
+The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the 'accessibility regulations'). If you're not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
+
+If you are in Northern Ireland and are not happy with how we respond to your complaint, you can contact the [Equalities Commission for Northern Ireland](https://www.equalityni.org/Home) who are responsible for enforcing the 'accessibility regulations' in Northern Ireland.
+
 ## Technical information about this website's accessibility
+
+The Home Office is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+
+### Compliance status
+
+This website is compliant with the [Web Content Accessibility Guidelines version 2.1](https://www.w3.org/TR/WCAG21/) AA standard.
 
 ## Non-accessible content
 
-At the time of writing there is no known non-accessible content. You can [check for recently raised issues in GitHub](https://github.com/HO-CTO/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
+At the time of writing there is no known non-accessible content. You can [list recently raised accessinility issues in GitHub](https://github.com/HO-CTO/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
 
 ## Preparation of this accessibility statement
 
 - This statement was prepared and reviewed on 13th September 2023.
 - This website was last tested on 14th September 2023. Testing was carried out internally by the Home Office.
 
+We test this site as it develops by running automated accessibility tests provided by [`axe-core`](https://github.com/dequelabs/axe-core) on all changes, and by following a script of manual checks to perform when reviewing changes to the site. These are stored in GitHub:
 
+- [Checklist for content changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md)
+- [Checklist for layout and template changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md)
