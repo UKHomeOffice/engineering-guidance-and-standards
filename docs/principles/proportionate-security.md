@@ -8,28 +8,15 @@ tags:
 - Software design
 ---
 
-Proportionate security enables both usable and secure services. Understand 
-the value of the asset you are engineering, and your threat context, and 
-implement security to mitigate specific risks or threats. Work with 
-security teams to make decisions so that controls are being implemented for 
-appropriate reasons.
+Proportionate security enables both usable and secure services. Understand the value of the asset you are engineering, and your threat context, and implement security to mitigate specific risks or threats. Work with security teams to make decisions so that controls are being implemented for appropriate reasons.
 
 ---
 
 ## Rationale
 
-At the Home Office we build and operate systems in our own threat landscape, 
-with particular vectors to consider, including motivated, well-funded and 
-well-organised threat actors. These vectors require effective defences. 
-Security features require effort to implement and maintain. Overly restrictive 
-security controls incur unnecessary cost and can drive unintended and unwanted 
-behaviour. 
+At the Home Office we build and operate systems in our own threat landscape, with particular vectors to consider, including motivated, well-funded and well-organised threat actors. These vectors require effective defences. Security features require effort to implement and maintain. Overly restrictive security controls incur unnecessary cost and can drive unintended and unwanted behaviour. 
 
-Security controls that are designed to mitigate understood risks are easier 
-to test and measure for their effectiveness. It is important to implement 
-security features that deliver valuable counters to threats, are balanced 
-with user needs and facilitate the ongoing operation and iteration of our 
-services.
+Security controls that are designed to mitigate understood risks are easier to test and measure for their effectiveness. It is important to implement security features that deliver valuable counters to threats, are balanced with user needs and facilitate the ongoing operation and iteration of our services.
 
 ---
 

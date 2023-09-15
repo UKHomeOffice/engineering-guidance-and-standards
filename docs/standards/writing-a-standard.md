@@ -7,10 +7,7 @@ id: SEGAS-00001
 tags: []
 ---
 
-To be effective, standards must explicitly state what is expected of
-engineering teams. This standard prescribes how all future standards will be
-written. To ensure standards are easy to understand, unambiguous, and 
-maintainable, they need to follow a consistent format.
+To be effective, standards must explicitly state what is expected of engineering teams. This standard prescribes how all future standards will be written. To ensure standards are easy to understand, unambiguous, and maintainable, they need to follow a consistent format.
 
 Standards are comprised of a number of parts which are listed as requirements.
 You must detail each one along with a description and any supporting
@@ -29,9 +26,7 @@ information.
 
 ### A standard MUST have an ID
 
-An unambiguous and unique identifier is needed for each standard. This provides
-clarity and can be helpful in communication. This must be included as part of
-the page metadata.
+An unambiguous and unique identifier is needed for each standard. This provides clarity and can be helpful in communication. This must be included as part of the page metadata.
 
 ```
 layout: side-navigation
@@ -44,10 +39,7 @@ tags:
 
 ### A standard MUST have a title
 
-A short meaningful name is helpful to reference in conversation. Don't include
-words like 'Standard', 'Principle', 'Pattern' or 'Guidance' where they are
-redundant.  It must be provided in the page metadata which will form the
-heading on the page.
+A short meaningful name is helpful to reference in conversation. Don't include words like 'Standard', 'Principle', 'Pattern' or 'Guidance' where they are redundant. It must be provided in the page metadata which will form the heading on the page.
 
 ```
 title: Writing a standard
@@ -55,36 +47,23 @@ title: Writing a standard
 
 ### A standard MUST have a description
 
-An overview for each standard must be included.  This will add high level
-information about the collection of requirements that make up the standard.
-This section will be used as a rationale for the standard as a whole.
+An overview for each standard must be included.  This will add high level information about the collection of requirements that make up the standard. This section will be used as a rationale for the standard as a whole.
 
-It must be no longer than 2 paragraphs and make it very clear whether this
-standard is relevant to the reader. It will be the first paragraph in the
-markdown file following the metadata.
+It must be no longer than 2 paragraphs and make it very clear whether this standard is relevant to the reader. It will be the first paragraph in the markdown file following the metadata.
 
 ### A standard MUST have one or more requirements
 
-The requirements are the explicit expectations of the standard. Engineers need
-to know what to do to meet the standard and will clearly state what MUST apply.
+The requirements are the explicit expectations of the standard. Engineers need to know what to do to meet the standard and will clearly state what MUST apply.
 
-There must be details on the context and justification of each requirement, as
-this provides clarity and will add the spirit to the letter of the law.
+There must be details on the context and justification of each requirement, as this provides clarity and will add the spirit to the letter of the law.
 
-When writing requirements, keep a simple list of each at the top of the page,
-which will then link to the context, description and any supporting
-information below.
+When writing requirements, keep a simple list of each at the top of the page, which will then link to the context, description and any supporting information below.
 
 ### A standard MUST have tags
 
-We use tags as a means to link entities in the body of standards. From
-principles, through standards, to patterns and guidance. Tags should be based
-on the relevant domain to achieve this.
+We use tags as a means to link entities in the body of standards. From principles, through standards, to patterns and guidance. Tags should be based on the relevant domain to achieve this.
 
-Do not create tags based on other attributes of your standard, like 'Draft' or
-'Important'.  All tags must be sentence case i.e. Starts with a capital and
-the rest lower case. These need to be defined in the page metadata and will be
-automatically displayed at the top of the page.
+Do not create tags based on other attributes of your standard, like 'Draft' or'Important'.  All tags must be sentence case i.e. Starts with a capital and the rest lower case. These need to be defined in the page metadata and will be automatically displayed at the top of the page.
 
 ```
 tags:
@@ -94,9 +73,7 @@ tags:
 
 ### A standard MUST show when it was last updated
 
-Products and services are built to a standard and as time goes by standards
-evolve. Show the date the standard was last updated. 
-The metadata needs to include the date in YYYY-MM-DD format (see below).
+Products and services are built to a standard and as time goes by standards evolve. Show the date the standard was last updated. The metadata needs to include the date in YYYY-MM-DD format (see below).
 
 ```
 date: 2023-12-31
