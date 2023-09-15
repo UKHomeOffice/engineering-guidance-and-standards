@@ -18,7 +18,7 @@ Read through the page content. This is best done by checking out the repository 
 - [ ] The page uses plain language and avoids figures of speech, idioms, and complicated metaphors.
 - [ ] Any images have an alt tag with an accessible description of the image. This can be achieved in markdown using
   `![Alt text](/path/to/image.png)`. If the image is decorative the alt text should be present but empty. This is
-  the default behaviour in markdown if nothing is entered between the sqaure braces, i.e. 
+  the default behaviour in markdown if nothing is entered between the square braces, i.e. 
   `![Alt text](/path/to/decorative-image.png)`.
 - [ ] Any links that open a new tab or window are identified as doing so.
 - [ ] Where there is a list of things, an ordered list, unordered list, or definition list is used as appropriate. 

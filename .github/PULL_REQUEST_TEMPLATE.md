@@ -3,7 +3,7 @@ Is this pull request a content or a code change? (Please fill in the relevant se
 # Code change
 I can confirm:
 ## Accessibility considerations
-Please review the [accessibility checks for layout changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md).
+- [ ] Please review the [accessibility checks for layout changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md).
 
 - [ ] This change will not change layouts, page structures or anything else that might impact accessibility
 
@@ -15,7 +15,7 @@ or
 (If the change might impact accessibility then please add some further information here)
 
 # Content change 
-Please review the [accessibility checks for content changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md).
+- [ ] Please review the [accessibility checks for content changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md).
 
 I can confirm:
 - [ ] Content does not include any code or configuration changes (excluding frontmatter information)

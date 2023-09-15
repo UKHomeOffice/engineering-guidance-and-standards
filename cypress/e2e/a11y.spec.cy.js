@@ -42,14 +42,16 @@ describe('All pages pass axe-core accessibility checks', () => {
 
   it('All pages have a unique title', () => {
     const duplicateTitles = Object.entries(titles).filter(([_, urls]) => urls.length > 1);
-    assert(duplicateTitles.length === 0, "There are no pages that share a title");
+
     if(duplicateTitles.length > 0) {
       const tableData = duplicateTitles.map(([title, urls]) => ({
         "Title": title,
         "URLs with this title": urls.join("\n")
       }));
 
-      cy.task('table', tableData)
+      cy.task('table', tableData).then(() => {
+        expect(duplicateTitles).to.be.empty
+      })
     }
   })
 })

@@ -16,7 +16,7 @@ checked as part of the review process.
 ### Prerequisites
 - Check out the repository and serve the site, see 
   [reviewing the changes locally](./../README.md#preview-your-changes-locally) for instructions.
-- You may need to enable keyboard navigation in your operating system's settings for keyboard naviagtion checks to work. 
+- You may need to enable keyboard navigation in your operating system's settings for keyboard navigation checks to work. 
 
 Then open up example pages that will be affected by your layout changes. For each:
 
@@ -24,7 +24,7 @@ Then open up example pages that will be affected by your layout changes. For eac
   order?
 - [ ] The first item before the menu should be a link to skip to the main content, which is only visible when focussed.
   Check this navigates to the start of the page's main content.
-- [ ] Are blocks of text left-aligned.
+- [ ] Are blocks of text left-aligned?
 - [ ] If standard content is included or generated as part of the template, check this against 
   [the content checklist](./content-checks.md).
 - [ ] Zoom the page in to 200%. There should be no horizontal overflow. If this causes the layout to reflow check that

@@ -19,7 +19,7 @@ This website is run by the Home Office. We want as many people as possible to be
 
 We've also made the website text as simple as possible to understand.
 
-[AbilityNet has advice on making your device easier to use](https://mcmw.abilitynet.org.uk/) if you have a disability.
+[AbilityNet has advice on making your device easier to use](https://mcmw.abilitynet.org.uk/).
 
 ## How accessible this website is
 
@@ -47,7 +47,7 @@ This website is compliant with the [Web Content Accessibility Guidelines version
 
 ## Non-accessible content
 
-At the time of writing there is no known non-accessible content. You can [list recently raised accessinility issues in GitHub](https://github.com/HO-CTO/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
+At the time of writing there is no known non-accessible content. You can [list recently raised accessibility issues in GitHub](https://github.com/HO-CTO/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
 
 ## Preparation of this accessibility statement
 
