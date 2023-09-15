@@ -43,15 +43,21 @@ describe('All pages pass axe-core accessibility checks', () => {
   it('All pages have a unique title', () => {
     const duplicateTitles = Object.entries(titles).filter(([_, urls]) => urls.length > 1);
 
+    const message = "Expect there to be no duplicate titles";
+
     if(duplicateTitles.length > 0) {
       const tableData = duplicateTitles.map(([title, urls]) => ({
         "Title": title,
         "URLs with this title": urls.join("\n")
       }));
 
+      // Task doesn't run if top-level expect fails
       cy.task('table', tableData).then(() => {
-        expect(duplicateTitles).to.be.empty
+        expect(duplicateTitles, message).to.be.empty
       })
+    } else {
+      // Log that the check passed
+      expect(duplicateTitles, message).to.be.empty
     }
   })
 })
