@@ -20,6 +20,11 @@ related: # remove this section if you do not need related links on your page
 <!-- Pattern description -->
 
 <!-- 
+
+# Notes on line breaks
+
+Please see https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#line-breaks for notes on usage of line breaks.
+
 # Notes on using links
 
 Internal links need to follow this format:
