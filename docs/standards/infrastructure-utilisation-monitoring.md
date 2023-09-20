@@ -43,23 +43,23 @@ Monitoring infrastructure utilisation without also monitoring other signals of s
 
 ### Infrastructure MUST be observable relative to defined service level expectations
 
-Infrastructure utilisation should be baselined so that Service Level Objectives (SLOs) can be defined for infrastructure measures. This enables effective alerting, and triggers for automated proactive measures.
+Infrastructure utilisation should be baselined so that Service Level Objectives (SLOs) can be defined for infrastructure measures. This enables triggers for automated proactive measures.
 
 ### CPU utilisation MUST be observable
 
-CPU utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
+CPU utilisation by applications, services, systems or pods are to be monitored so that effective measures such as scaling out can be triggered in periods of saturation.
 
 ### Memory utilisation MUST be observable
 
-Memory utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
+Memory utilisation by applications, services, systems or pods are to be monitored so that effective measures such as scaling out can be triggered in periods of saturation.
 
 ### Disk utilisation MUST be observable
 
-Disk utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
+Disk utilisation by applications, services, systems or pods are to be monitored so that effective measures such as scaling out can be triggered in periods of saturation.
 
 ### Network utilisation MUST be observable
 
-Network utilisation by applications, services, systems or pods are to be monitored so that effective alerting and measures such as scaling out can be triggered in periods of saturation.
+Network utilisation by applications, services, systems or pods are to be monitored so that effective measures such as scaling out can be triggered in periods of saturation.
 
 ### Historical infrastructure monitoring metrics MUST be retained for analysis
 
