@@ -19,7 +19,7 @@ Read through the page content. This is best done by checking out the repository 
 - [ ] Any images have an alt tag with an accessible description of the image. This can be achieved in markdown using
   `![Alt text](/path/to/image.png)`. If the image is decorative the alt text should be present but empty. This is
   the default behaviour in markdown if nothing is entered between the square braces, i.e. 
-  `![Alt text](/path/to/decorative-image.png)`.
+  `![](/path/to/decorative-image.png)`.
 - [ ] Any links that open a new tab or window are identified as doing so.
 - [ ] Where there is a list of things, an ordered list, unordered list, or definition list is used as appropriate. 
   Tabular data is displayed in a table. The markdown syntax for these can be found in the Gov.uk eleventy plugin
