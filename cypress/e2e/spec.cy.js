@@ -115,7 +115,7 @@ describe('Cookies page links from footer test', () => {
 })
 
 describe('Related links respect path prefix', () => {
-  it('finds the related writing a standard link and follows it to a valid page', () => {
+  it('finds the correct related link and follows it to a valid page', () => {
     cy.visit(testing_params.TEST_ROOT_URL)
     // Click through to standard page that has a related link
     cy.contains('Read our standards').click()
