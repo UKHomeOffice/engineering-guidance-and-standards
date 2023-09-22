@@ -8,10 +8,4 @@ paginationHeading: false
 pagination:
   data: collections.getAllStandardsOrderedByTitle
   size: 10
-related:
-  sections:
-    - title: Related links
-      items:
-        - text: Writing a standard
-          href: /standards/writing-a-standard/ # https://github.com/11ty/eleventy-dev-server/pull/64
 ---
