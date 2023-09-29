@@ -29,7 +29,7 @@ Home Office engineering principles will be written to include each of the compon
 State the essence of the principle and make it easy to remember. Avoid ambiguous words such as: "support", "open", "consider", and remove unnecessary adjectives and adverbs (fluff). The title must be included as part of the page metadata.
 
 ```
-layout: side-navigation
+layout: principle
 order: 1
 title: Example software engineering principle
 tags:
