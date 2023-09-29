@@ -27,6 +27,6 @@ Then open up example pages that will be affected by your layout changes. For eac
 - [ ] Are blocks of text left-aligned?
 - [ ] If standard content is included or generated as part of the template, check this against 
   [the content checklist](./content-checks.md).
-- [ ] Zoom the page in to 200%. The content should fit horizontally within the page and not require any horizontal scrolling.
+- [ ] Zoom the page in to 200%. The page should fit horizontally within the screen, not requiring any scrolling left or right to view all the content.
     - [ ] If zooming the page causes the layout to change, check that the visual order still matches the focus order
 - [ ] Access the page on a small screen, or use browser tools to emulate this. If the smaller view size causes the layout to change, check that the visual order still matches the focus order.
