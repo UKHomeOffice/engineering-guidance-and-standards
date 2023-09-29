@@ -25,13 +25,41 @@ function terminalLog(violations) {
 }
 
 describe('All pages pass axe-core accessibility checks', () => {
+  const titles = {};
+
   for(const page of pages) {
     it(`${page.title} (${page.url}) is accessible`, () => {
       cy.visit(testing_params.TEST_ROOT_URL + page.url)
       cy.injectAxe()
       cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
     })
+
+    titles[page.title] = [
+      ...(titles[page.title] ?? []),
+      page.url
+    ];
   }
+
+  it('All pages have a unique title', () => {
+    const duplicateTitles = Object.entries(titles).filter(([_, urls]) => urls.length > 1);
+
+    const message = "Expect there to be no duplicate titles";
+
+    if(duplicateTitles.length > 0) {
+      const tableData = duplicateTitles.map(([title, urls]) => ({
+        "Title": title,
+        "URLs with this title": urls.join("\n")
+      }));
+
+      // Task doesn't run if top-level expect fails
+      cy.task('table', tableData).then(() => {
+        expect(duplicateTitles, message).to.be.empty
+      })
+    } else {
+      // Log that the check passed
+      expect(duplicateTitles, message).to.be.empty
+    }
+  })
 })
 
 describe('Tag pages pass axe-core accessibility checks', () => {

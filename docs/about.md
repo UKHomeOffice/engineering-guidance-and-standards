@@ -1,6 +1,6 @@
 ---
 eleventyExcludeFromCollections: true
-layout: page
+layout: post
 order: 5
 title: About
 description: Find out more about what we are doing
