@@ -14,12 +14,9 @@ Engineers should collaborate widely with other teams and professions, as well as
 
 ## Rationale
 
-Collaboration helps us to have a more joined up approach, to break down silos and build cross-functional 
-relationships. It allows us to learn from each other rather than repeat each other's mistakes.
+Collaboration helps us to have a more joined up approach, to break down silos and build cross-functional relationships. It allows us to learn from each other rather than repeat each other's mistakes.
 
-Valuing diverse perspectives on problems leads to better thought out solutions - they work in more cases 
-and cover more considerations - this improves quality, security and reliability. Close collaboration on 
-immediate questions enables shorter feedback loops, quicker iteration and improved velocity of delivery.
+Valuing diverse perspectives on problems leads to better thought out solutions - they work in more cases and cover more considerations - this improves quality, security and reliability. Close collaboration on immediate questions enables shorter feedback loops, quicker iteration and improved velocity of delivery.
 
 ---
 
