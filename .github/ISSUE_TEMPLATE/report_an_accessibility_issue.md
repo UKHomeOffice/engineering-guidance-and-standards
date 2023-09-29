@@ -29,7 +29,7 @@ If applicable, add screenshots to help explain your problem.
  - Version [e.g. 22]
 
 **Any assistance technologies used**
-- Screen reader: [e.g. VoiceOver, JAWS etc.]
+- Screen reader: [e.g. VoiceOver, JAWS, etc.]
 - Navigation method: [Mouse, keyboard, speech recognition, etc.]
 
 **Smartphone (please complete the following information):**
