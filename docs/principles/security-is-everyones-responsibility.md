@@ -14,7 +14,7 @@ All members of the team, not just technical people, should collaborate to consid
 
 ## Rationale
 
-Engaging with wider security communities, and integrating security thinking throughout the software delivery lifecycle, shortens feedback loops in teams. This allows for more efficient redress when concerns are identified. Teams that and are collectively conscious of security, and embed security people when necessary, are more effective at implementing appropriate threat reduction measures.
+Engaging with wider security communities, and integrating security thinking throughout the software delivery lifecycle, shortens feedback loops in teams. This allows for more efficient redress when concerns are identified. Teams that are collectively conscious of security, and embed security people when necessary, are more effective at implementing appropriate threat reduction measures.
 
 An understanding of the security aspects of team and personal behaviours - beyond core engineering activities - deepens the Home Office defence against the wide range of attacks threat actors are prepared to use.
 
