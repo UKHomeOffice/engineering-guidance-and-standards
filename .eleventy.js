@@ -4,6 +4,7 @@ const { DateTime } = require("luxon");
 module.exports = function(eleventyConfig) {
     // Set custom variable to decide the path prefix as it is used in a couple of places.
     const _customPathPrefix = process.env.PATH_PREFIX ?? '';
+    const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     // Register the plugins
@@ -40,6 +41,10 @@ module.exports = function(eleventyConfig) {
                     {
                         href: _customPathPrefix + '/cookies/',
                         text: 'Cookies'
+                    },
+                    {
+                        href: _customPathPrefix + '/accessibility-statement/',
+                        text: 'Accessibility'
                     },
                     {
                         href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
@@ -141,6 +146,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addGlobalData('pathPrefix', _customPathPrefix);
+    eleventyConfig.addGlobalData('siteRoot', _siteRoot);
 
     return {
         dataTemplateEngine: 'njk',

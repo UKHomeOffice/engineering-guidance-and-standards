@@ -1,6 +1,6 @@
 ---
 eleventyExcludeFromCollections: true
-layout: page
+layout: post
 order: 5
 title: Provide feedback
 description:
