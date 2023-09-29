@@ -29,6 +29,18 @@ describe('Principles page loaded test', () => {
   })
 })
 
+describe('Standards page loaded test when clicked from breadcrumb', () => {
+  it('finds the breadcrumb link for standards and checks we go to the Standards collection page', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    cy.contains('Read our standards').click()
+    cy.contains('Minimal documentation set for a product').click()
+    cy.get('.govuk-breadcrumbs__list').contains('Standards').click() // this is the "breadcrumb" link
+    cy.title().should('include', 'Standards')
+    cy.contains('.x-govuk-masthead h1', 'Standards')
+    cy.contains('.x-govuk-masthead', 'Explicitly stated expectations for engineering teams')
+  })
+})
+
 describe('Tag page loaded test', () => {
   it('finds the tag page listing all pages with the "Documentation" tag', () => {
     cy.visit(testing_params.TEST_ROOT_URL)
@@ -40,18 +52,6 @@ describe('Tag page loaded test', () => {
 
     cy.contains('li', 'Write effective documentation')
     cy.contains('li', 'Minimal documentation set for a product')
-  })
-})
-
-describe('Standards page loaded test when clicked from tag', () => {
-  it('finds the tag link for standards and checks we go to the Standards collection page', () => {
-    cy.visit(testing_params.TEST_ROOT_URL)
-    cy.contains('Read our standards').click()
-    cy.contains('Minimal documentation set for a product').click()
-    cy.get('.tags').contains('Standards').click() // this is the "tag" link
-    cy.title().should('include', 'Standards')
-    cy.contains('.x-govuk-masthead h1', 'Standards')
-    cy.contains('.x-govuk-masthead', 'Explicitly stated expectations for engineering teams')
   })
 })
 
