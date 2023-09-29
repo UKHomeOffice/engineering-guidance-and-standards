@@ -29,12 +29,13 @@ information.
 An unambiguous and unique identifier is needed for each standard. This provides clarity and can be helpful in communication. This must be included as part of the page metadata.
 
 ```
-layout: side-navigation
+layout: standard
 order: 1
 title: Writing a standard
+date: 2023-08-04
 id: SEGAS-00001
 tags:
-- example
+- Example
 ```
 
 ### A standard MUST have a title
