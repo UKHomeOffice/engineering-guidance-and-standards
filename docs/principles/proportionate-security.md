@@ -6,6 +6,12 @@ date: 2023-07-13
 tags:
 - Security
 - Software design
+related: # remove this section if you do not need related links on your page
+  sections:
+    - title: Related links
+      items:
+        - text: Threat modelling
+          href: /patterns/threat-modelling/
 ---
 
 Proportionate security enables both usable and secure services. Understand the value of the asset you are engineering, and your threat context, and implement security to mitigate specific risks or threats. Work with security teams to make decisions so that controls are being implemented for appropriate reasons.
