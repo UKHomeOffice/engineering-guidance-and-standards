@@ -121,9 +121,9 @@ You can tag any of the maintainers of this repo to get pre-pull request reviews 
 
 # Organisation of content
 
-Patterns, principles and standards should be created in the correct subdirectory in `/docs`. This will mean that the `principle`, `pattern` and `standard` tags are automatically applied to the correct content.
+Patterns, principles and standards should be created in the correct subdirectory in `/docs`. We are also using a tagging and metadata approach to organise content across the site by topic and related knowledge domain.
 
-We are also using a tagging and metadata approach to organise content across the site by topic and related knowledge domain. All patterns, principles and standards content should be tagged in the frontmatter of the .md file to reference at least one of the below topic domains. Follow the guidance on tagging from the ['writing a standard' standard](https://ho-cto.github.io/engineering-guidance-and-standards/standards/writing-a-standard/#a-standard-must-have-tags).
+All patterns, principles and standards content should be tagged in the frontmatter of the .md file to reference at least one of the below topic domains. Follow the guidance on tagging from the ['writing a standard' standard](https://ho-cto.github.io/engineering-guidance-and-standards/standards/writing-a-standard/#a-standard-must-have-tags).
 
 - Observability - the process of monitoring applications, services and reliability
 - Software Design - how our applications, services and software are architected at the software level
