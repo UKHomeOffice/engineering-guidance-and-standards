@@ -25,7 +25,8 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",

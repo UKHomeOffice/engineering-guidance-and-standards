@@ -4,7 +4,7 @@ layout: post
 order: 1
 title: Accessibility statement 
 description:
-tags:
+tags: []
 ---
 
 This accessibility statement applies to the Engineering Guidance and Standards documentation site at [{{siteRoot}}]({{ siteRoot }}).
@@ -52,7 +52,7 @@ At the time of writing there is no known non-accessible content. You can [list r
 ## Preparation of this accessibility statement
 
 - This statement was prepared and reviewed on 13th September 2023.
-- This website was last tested on 14th September 2023. Testing was carried out internally by the Home Office.
+- This website was last tested on 28th September 2023. Testing was carried out internally by the Home Office.
 
 We test this site as it develops by running automated accessibility tests provided by [`axe-core`](https://github.com/dequelabs/axe-core) on all changes, and by following a script of manual checks to perform when reviewing changes to the site. These are stored in GitHub:
 

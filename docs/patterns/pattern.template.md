@@ -3,7 +3,7 @@ layout: pattern
 order: 1
 title: Pattern title
 date: 2023-12-31 # this should be the date that the content was most recently amended or formally reviewed
-# use `tags: []` for no tags, "Patterns" tag is included automatically 
+# use `tags: []` for no tags 
 # Check https://ho-cto.github.io/engineering-guidance-and-standards/tags/ for existing tags
 # Note: tags must use sentence case capitalisation
 tags:
@@ -20,6 +20,11 @@ related: # remove this section if you do not need related links on your page
 <!-- Pattern description -->
 
 <!-- 
+
+# Notes on line breaks
+
+Please see https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#line-breaks for notes on usage of line breaks.
+
 # Notes on using links
 
 Internal links need to follow this format:

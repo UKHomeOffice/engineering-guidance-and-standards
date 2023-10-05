@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['Principles'],
+    tags: [],
     eleventyComputed: {
         viewSource: data => `./docs${data.page.filePathStem}.md?plain=1`
     },

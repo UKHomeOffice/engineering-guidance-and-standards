@@ -106,10 +106,11 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
-      return collectionApi.getFilteredByGlob([
-        "**/patterns.md",
-        "**/principles.md",
-        "**/standards.md"]);
+      return [
+          ...collectionApi.getFilteredByGlob(["**/principles.md"]),
+          ...collectionApi.getFilteredByGlob(["**/standards.md"]),
+          ...collectionApi.getFilteredByGlob(["**/patterns.md"]),
+      ];
     });
 
     eleventyConfig.addCollection("getAllStandardsOrderedByID", function(collectionApi) {

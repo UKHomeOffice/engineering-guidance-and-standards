@@ -8,8 +8,8 @@
       {{ feedback.phaseBanner(phaseBannerConfiguration) }}
     </div>
   {% endif %}
-
-  <section role="region" aria-label="Site description masthead">
+  {% block beforeContent %}{% endblock %}
+  <main id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
     {{ xGovukMasthead({
       classes: "x-govuk-masthead--large",
       title: {
@@ -31,13 +31,12 @@
         items: breadcrumbItems
       } if showBreadcrumbs
     }) }}
-  </section>
+    <div class="govuk-width-container {{ containerClasses }}">
+      <div class="govuk-main-wrapper">
+        {{ appProseScope(content) if content }}
 
-  {{ super() }}
-{% endblock %}
-
-{% block content %}
-  {{ appProseScope(content) if content }}
-
-  {% include "layouts/shared/related.njk" %}
+        {% include "layouts/shared/related.njk" %}
+      </div>
+    </div>
+  </main>
 {% endblock %}

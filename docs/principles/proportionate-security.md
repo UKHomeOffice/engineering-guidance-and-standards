@@ -20,7 +20,7 @@ Proportionate security enables both usable and secure services. Understand the v
 
 ## Rationale
 
-At the Home Office we build and operate systems in our own threat landscape, with particular vectors to consider, including motivated, well-funded and well-organised threat actors. These vectors require effective defences. Security features require effort to implement and maintain. Overly restrictive security controls incur unnecessary cost and can drive unintended and unwanted behaviour. 
+At the Home Office we build and operate systems in our own threat landscape, with particular vectors to consider, including motivated, well-funded and well-organised threat actors. These vectors require effective defences. Security features require effort to implement and maintain. Overly restrictive security controls incur unnecessary cost and can drive unintended and unwanted behaviour. 
 
 Security controls that are designed to mitigate understood risks are easier to test and measure for their effectiveness. It is important to implement security features that deliver valuable counters to threats, are balanced with user needs and facilitate the ongoing operation and iteration of our services.
 
