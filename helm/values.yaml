@@ -12,5 +12,5 @@ ingress:
     enabled: true
     host: engineering.internal.sas.homeoffice.gov.uk
   external:
-    enabled: false
+    enabled: true
     host: engineering.homeoffice.gov.uk
