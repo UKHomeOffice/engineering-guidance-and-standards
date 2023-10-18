@@ -1,0 +1,29 @@
+{{- if .Values.ingress.internal.enabled }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name:  {{ include "app.name" . }}-internal
+  labels:
+    cert-manager.io/solver: route53
+  annotations:
+    cert-manager.io/enabled: "true"
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  ingressClassName: "nginx-internal"
+  tls:
+    - hosts:
+        - {{ .Values.ingress.internal.host }}
+      secretName: {{ include "app.name" . }}-internal
+  rules:
+    - host: {{ .Values.ingress.internal.host }}
+      http:
+        paths:
+        - path: /
+          pathType: ImplementationSpecific
+          backend:
+            service:
+              name: {{ include "app.name" . }}
+              port:
+                number: {{ .Values.service.port }}
+{{- end}}

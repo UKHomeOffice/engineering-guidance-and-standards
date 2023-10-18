@@ -1,0 +1,19 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: {{ include "app.name" . }}-service-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: {{ include "app.name" . }}
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              name: ingress-internal
+        - namespaceSelector:
+            matchLabels:
+              name: ingress-external

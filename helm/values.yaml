@@ -1,0 +1,16 @@
+app:
+  image:
+    repository: quay.io/ukhomeofficedigital/engineering-guidance-and-standards
+    version:
+  port: 80
+
+service:
+  port: 443
+
+ingress:
+  internal:
+    enabled: true
+    host: engineering.internal.sas.homeoffice.gov.uk
+  external:
+    enabled: false
+    host: engineering.homeoffice.gov.uk
