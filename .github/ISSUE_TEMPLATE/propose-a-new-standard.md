@@ -6,7 +6,7 @@ labels: 'content, standard'
 assignees: ''
 
 ---
-Our engineering standards are the things that we expect engineers to do. Look at the ['writing a standard' standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/) and provide some brief information below
+Our engineering standards are the things that we expect engineers to do. Look at the ['writing a standard' standard](https://engineering.homeoffice.gov.uk/standards/writing-a-standard/) and provide some brief information below
 
 **What is the standard you are suggesting?**
 A concise description of the standard
