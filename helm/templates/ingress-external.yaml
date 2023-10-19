@@ -4,6 +4,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ include "app.name" . }}-external
+  labels:
+    cert-manager.io/solver: "http01"
   annotations:
     cert-manager.io/enabled: "true"
     ingress.kubernetes.io/force-ssl-redirect: "true"
