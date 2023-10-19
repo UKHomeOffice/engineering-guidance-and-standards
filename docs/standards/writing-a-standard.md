@@ -83,6 +83,6 @@ date: 2023-12-31
 
 ## Template
 
-You can use the [standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md) when creating a new standard.
+You can use the [standard template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md) when creating a new standard.
 
 ---

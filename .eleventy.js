@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
         },
         footer: {
             copyright: {
-                html: '© <a class="govuk-footer__link" href="https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/LICENCE">Crown Copyright (Home Office)</a>'
+                html: '© <a class="govuk-footer__link" href="https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/LICENCE">Crown Copyright (Home Office)</a>'
             },
             meta: {
                 items: [
@@ -47,7 +47,7 @@ module.exports = function(eleventyConfig) {
                         text: 'Accessibility'
                     },
                     {
-                        href: 'https://github.com/HO-CTO/engineering-guidance-and-standards',
+                        href: 'https://github.com/UKHomeOffice/engineering-guidance-and-standards',
                         text: 'GitHub repository'
                     }
                 ]

@@ -27,7 +27,7 @@ This guidance was originally published on an internal content platform. We have 
 
 Proposed content for principles, standards and patterns go through a short process of collaborative creation, and require approval from Home Office engineering leadership to be merged into the site. This is managed via a process which will be familiar to users of GitHub - creating issues and branches for new content, and raising pull requests for review. We also have a small group of engineers committed to the ongoing maintenance and improvement of this site.
 
-You can find out more about how to contribute in our [CONTRIBUTING.md](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md) and you can [raise an issue directly onto the GitHub repository](https://github.com/HO-CTO/engineering-guidance-and-standards/issues).
+You can find out more about how to contribute in our [CONTRIBUTING.md](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md) and you can [raise an issue directly onto the GitHub repository](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues).
 
 ## Our roadmap
 
