@@ -153,11 +153,10 @@ Furthermore, comments should encompass all pertinent information, including para
 
 #### Docblock Information
 - [Docblock - Wikipedia](https://en.wikipedia.org/wiki/Docblock)
-- [Docblocks in Programming](https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/docblocks.html)
 
 ##### Language Specific Links (for reference only)
-- [JavaDoc](https://docs.oracle.com/javase/8/docs/technotes/guides/javadoc/index.html)
-- [JSDoc](https://jsdoc.app/)
+- [JavaDoc](https://www.oracle.com/uk/technical-resources/articles/java/javadoc-tool.html)
+- [JSDoc](https://developer.adobe.com/commerce/php/coding-standards/js-docblock/)
 - [TSDoc](https://tsdoc.org/)
 - [Python Doc String](https://pandas.pydata.org/docs/development/contributing_docstring.html)
 
@@ -231,19 +230,13 @@ Comments in production deployments present potential security and performance ri
 It is important to ensure that no comments are included in production code to mitigate these issues. The removal of comments from production code enhances security and optimizes code performance, ultimately leading to an improved user experience.
 
 #### Tools (for reference only)
-- **Java:**
-  - [Java Compiler](https://docs.oracle.com/en/java/javase/17/docs/)
-
-- **Python:**
-  - [Python -m compileall](https://docs.python.org/3/library/compileall.html)
-
 - **React/JavaScript/TypeScript/Node:**
   - [Terser](https://terser.org/)
   - [Babel](https://babeljs.io/)
 
 - **HTML/CSS:**
-  - [HTML Minifier](https://kangax.github.io/html-minifier/)
-  - [CSS Minifier](https://cssminifier.com/)
+  - [HTML Minifier]([https://kangax.github.io/html-minifier/](https://www.npmjs.com/package/html-minifier))
+  - [CSS Minifier]([https://cssminifier.com/](https://www.npmjs.com/package/css-minify))
 
 #### Example
 ```
