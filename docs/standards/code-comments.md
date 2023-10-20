@@ -235,8 +235,8 @@ It is important to ensure that no comments are included in production code to mi
   - [Babel](https://babeljs.io/)
 
 - **HTML/CSS:**
-  - [HTML Minifier]([https://kangax.github.io/html-minifier/](https://www.npmjs.com/package/html-minifier))
-  - [CSS Minifier]([https://cssminifier.com/](https://www.npmjs.com/package/css-minify))
+  - [HTML Minifier](https://www.npmjs.com/package/html-minifier)
+  - [CSS Minifier](https://www.npmjs.com/package/css-minify)
 
 #### Example
 ```
