@@ -3,7 +3,7 @@ Is this pull request a content or a code change? (Please fill in the relevant se
 # Code change
 I can confirm:
 ## Accessibility considerations
-- [ ] Please review the [accessibility checks for layout changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md).
+- [ ] Please review the [accessibility checks for layout changes](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md).
 
 - [ ] This change will not change layouts, page structures or anything else that might impact accessibility
 
@@ -15,12 +15,12 @@ or
 (If the change might impact accessibility then please add some further information here)
 
 # Content change 
-- [ ] Please review the [accessibility checks for content changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md).
+- [ ] Please review the [accessibility checks for content changes](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md).
 
 I can confirm:
 - [ ] Content does not include any code or configuration changes (excluding frontmatter information)
 - [ ] Content meets the content standards
-e.g. [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/) and [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
+e.g. [Writing a principle](https://engineering.homeoffice.gov.uk/standards/writing-a-principle/) and [Writing a standard](https://engineering.homeoffice.gov.uk/standards/writing-a-standard/)
 - [ ] Content is suitable to open source, i.e.:
     - Content does not relate to unreleased gov policy
     - Content does not refer to anti-fraud mechanisms

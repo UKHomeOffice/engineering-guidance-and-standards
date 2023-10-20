@@ -22,7 +22,7 @@ This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-w
 
 ### Open source repositories MUST contain a licence file
 
-Ensure that there is a LICENCE or LICENCE.md file in the root of your repository. This should be included in the repository as early as possible. The LICENCE file should contain minimal or no other information beyond the licence itself and the copyright notice. See the [LICENCE file for this site](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/LICENCE) for an example.
+Ensure that there is a LICENCE or LICENCE.md file in the root of your repository. This should be included in the repository as early as possible. The LICENCE file should contain minimal or no other information beyond the licence itself and the copyright notice. See the [LICENCE file for this site](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/LICENCE) for an example.
 
 ### Open source repositories MUST have a licence that adheres to the Open Source Definition
 

@@ -5,7 +5,7 @@ expect contributions to be made, which is adding new principles, standards, guid
 
 To contact the team you can get us at [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk)
 
-Please read and follow our [Code of Conduct](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/CODE_OF_CONDUCT.md).
+Please read and follow our [Code of Conduct](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CODE_OF_CONDUCT.md).
 
 ## New to open source
 
@@ -24,7 +24,7 @@ We will now look at the process we expect contributors to take when suggesting f
 ### Create an issue
 
 - Before submitting an issue, please search the issue tracker to check the issue is not already there.
-- Please [create an issue](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new/choose) if you wish to:
+- Please [create an issue](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/new/choose) if you wish to:
   - report a bug
   - propose a new pattern
   - propose a new principle
@@ -33,11 +33,11 @@ We will now look at the process we expect contributors to take when suggesting f
 
 ### Solve an issue
 
-- Have a look at our [existing issues](https://github.com/HO-CTO/engineering-guidance-and-standards/issues), and you might find something you would like to help us on!
+- Have a look at our [existing issues](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues), and you might find something you would like to help us on!
 
 ## Make changes
 
-To start the process of making changes to an issue you have raised, firstly you should [fork our repo](https://github.com/HO-CTO/engineering-guidance-and-standards/fork). This is so you can make changes without affecting the original project until you're ready.
+To start the process of making changes to an issue you have raised, firstly you should [fork our repo](https://github.com/UKHomeOffice/engineering-guidance-and-standards/fork). This is so you can make changes without affecting the original project until you're ready.
 
 ### Create a branch
 
@@ -61,7 +61,7 @@ Don't forget to commit and push your changes to your forked repo ready for the c
 
 ### Report a security vulnerability
 
-You can report a security vulnerability to the Home Office Engineering Guidance and Standards team using the [repository's security advisory page](https://github.com/HO-CTO/engineering-guidance-and-standards/security/advisories/new).
+You can report a security vulnerability to the Home Office Engineering Guidance and Standards team using the [repository's security advisory page](https://github.com/UKHomeOffice/engineering-guidance-and-standards/security/advisories/new).
 
 ## Pull Requests
 
@@ -99,11 +99,10 @@ However, if you feel that some changes are becoming more complex, then you may w
 
 ## Build, release, deploy
 
-We are using [GitHub workflows](https://github.com/HO-CTO/engineering-guidance-and-standards/tree/main/.github/workflows) for build and deploy and automated end to end testing.
+We are using [GitHub workflows](https://github.com/UKHomeOffice/engineering-guidance-and-standards/tree/main/.github/workflows) for build and deploy and automated end to end testing.
 
 The following actions are performed for each PR:
 - Automated end to end testing using Cypress.
-- [Snyk](https://github.com/snyk/actions) to prevent known vulnerabilities being introduced.
 
 PRs must only be approved after they pass the above checks.
 
@@ -123,7 +122,7 @@ You can tag any of the maintainers of this repo to get pre-pull request reviews 
 
 Patterns, principles and standards should be created in the correct subdirectory in `/docs`. We are also using a tagging and metadata approach to organise content across the site by topic and related knowledge domain.
 
-All patterns, principles and standards content should be tagged in the frontmatter of the .md file to reference at least one of the below topic domains. Follow the guidance on tagging from the ['writing a standard' standard](https://ho-cto.github.io/engineering-guidance-and-standards/standards/writing-a-standard/#a-standard-must-have-tags).
+All patterns, principles and standards content should be tagged in the frontmatter of the .md file to reference at least one of the below topic domains. Follow the guidance on tagging from the ['writing a standard' standard](https://engineering.homeoffice.gov.uk/standards/writing-a-standard/#a-standard-must-have-tags).
 
 - Observability - the process of monitoring applications, services and reliability
 - Software Design - how our applications, services and software are architected at the software level
@@ -132,18 +131,18 @@ All patterns, principles and standards content should be tagged in the frontmatt
 - Build, Release and Deploy - all things pipelines, building and platform engineering
 - Source Control - storing and managing the source code
 
-You can view a list of [all the topic domain tags currently in use across the site](https://ho-cto.github.io/engineering-guidance-and-standards/tags/). Your content may cross cut many of these areas, and that is ok, tag everything that you think is relevant.
+You can view a list of [all the topic domain tags currently in use across the site](https://engineering.homeoffice.gov.uk/tags/). Your content may cross cut many of these areas, and that is ok, tag everything that you think is relevant.
 
 ## Look at the standard for the content
 
 When creating content please take a look at the standard for that content. This helps to make sure we are all creating content correctly.
 
-- [Writing a principle](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/)
-- [Writing a standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-standard/)
+- [Writing a principle](https://engineering.homeoffice.gov.uk/standards/writing-a-principle/)
+- [Writing a standard](https://engineering.homeoffice.gov.uk/standards/writing-a-standard/)
 
 ### Templates
 
 You can use the following templates when creating content:
-- [Pattern template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/patterns/pattern.template.md)
-- [Principle template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md)
-- [Standard template](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md)
+- [Pattern template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/patterns/pattern.template.md)
+- [Principle template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md)
+- [Standard template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md)

@@ -6,7 +6,7 @@ labels: 'content, principle'
 assignees: ''
 
 ---
-Our engineering principles are the high-level direction we want to encourage engineers to follow or consider when they are making decisions and implementing things. Look at the ['writing a principle' standard](https://ho-cto.github.io/engineering-guidance-and-standards/docs/standards/writing-a-principle/) and provide some brief information below
+Our engineering principles are the high-level direction we want to encourage engineers to follow or consider when they are making decisions and implementing things. Look at the ['writing a principle' standard](https://engineering.homeoffice.gov.uk/standards/writing-a-principle/) and provide some brief information below
 
 **What is the principle you are suggesting?**
 A concise description of the principle

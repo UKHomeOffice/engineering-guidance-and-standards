@@ -15,7 +15,7 @@ This is the preferred option. If you raise an issue on our repository you can ea
 
 You will need a GitHub account in order to create an issue, which will involve agreeing to [GitHub's privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
-[Raise an issue on our GitHub repository](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new/choose)
+[Raise an issue on our GitHub repository](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/new/choose)
 
 ## Get in touch directly
 

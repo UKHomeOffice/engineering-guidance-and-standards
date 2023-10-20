@@ -23,12 +23,12 @@ We've also made the website text as simple as possible to understand.
 
 ## How accessible this website is
 
-Accessibility issues with the site are tracked in GitHub. You can [view a list of outstanding accessibility issues](https://github.com/HO-CTO/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
+Accessibility issues with the site are tracked in GitHub. You can [view a list of outstanding accessibility issues](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
 
 ## Reporting accessibility problems with this website
 
 If you are having difficulties accessing this site, please let us know. You can:
-- [Raise a new issue in GitHub](https://github.com/HO-CTO/engineering-guidance-and-standards/issues/new?assignees=&labels=accessibility&projects=&template=report_an_accessibility_issue.md&title=%5BA11Y%5D)
+- [Raise a new issue in GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/new?assignees=&labels=accessibility&projects=&template=report_an_accessibility_issue.md&title=%5BA11Y%5D)
 - [Email us at segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk)
 
 ## Enforcement procedure
@@ -47,7 +47,7 @@ This website is compliant with the [Web Content Accessibility Guidelines version
 
 ## Non-accessible content
 
-At the time of writing there is no known non-accessible content. You can [list recently raised accessibility issues in GitHub](https://github.com/HO-CTO/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
+At the time of writing there is no known non-accessible content. You can [list recently raised accessibility issues in GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility).
 
 ## Preparation of this accessibility statement
 
@@ -56,5 +56,5 @@ At the time of writing there is no known non-accessible content. You can [list r
 
 We test this site as it develops by running automated accessibility tests provided by [`axe-core`](https://github.com/dequelabs/axe-core) on all changes, and by following a script of manual checks to perform when reviewing changes to the site. These are stored in GitHub:
 
-- [Checklist for content changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md)
-- [Checklist for layout and template changes](https://github.com/HO-CTO/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md)
+- [Checklist for content changes](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md)
+- [Checklist for layout and template changes](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/layout-checks.md)

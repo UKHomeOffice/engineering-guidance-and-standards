@@ -5,7 +5,7 @@ kind: Ingress
 metadata:
   name: {{ include "app.name" . }}-external
   labels:
-    cert-manager.io/solver: route53
+    cert-manager.io/solver: "http01"
   annotations:
     cert-manager.io/enabled: "true"
     ingress.kubernetes.io/force-ssl-redirect: "true"
