@@ -1,0 +1,12 @@
+# Default ownership - @ukhomeoffice/segas-admins own all 
+# files in the repository unless a later match takes precedence
+# and will be requested for review when a pull request is opened
+*       @UKHomeOffice/segas-admins
+
+# @ukhomeoffice/segas-engineering-principals own all
+# standards, patterns and principles. They will be requested for
+# review if a pull request is opened touching a file in these
+# directories, or their subdirectories
+/docs/patterns/ @UKHomeOffice/segas-engineering-principals
+/docs/standards/ @UKHomeOffice/segas-engineering-principals
+/docs/principles/ @UKHomeOffice/segas-engineering-principals
