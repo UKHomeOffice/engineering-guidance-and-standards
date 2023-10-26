@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Minimal documentation set for a product
-date: 2023-06-13
+date: 2023-10-26
 id: SEGAS-00003
 tags:
 - Documentation
