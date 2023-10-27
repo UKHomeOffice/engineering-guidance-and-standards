@@ -1,6 +1,6 @@
 ---
-name: Review of existing content
-about: Propose a review of existing content
+name: Propose review or change to site content
+about: Request review or change to existing standards, principles, patterns or other site content
 title: ''
 labels: ''
 assignees: ''
