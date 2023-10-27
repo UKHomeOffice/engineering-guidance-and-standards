@@ -31,14 +31,8 @@ You can find out more about how to contribute in our [CONTRIBUTING.md](https://g
 
 ## Our roadmap
 
-We have work on site improvements and content migration happening in parallel, our immediate aims are below:
+We have work on site and content improvements happening in parallel. The long term enhancements we are looking at are below:
 
-- Migrate all existing content from our internal content platform to these pages
-- Meet our own standards for assurance, accessibility, security and documentation
-- Develop our content creation pipeline to make it simpler for new content to be introduced and approved
-
-Once we have made progress with the above we then intend to add new functionality and improvements, including:
-
-- Automate review schedules so that it is easy to keep everything up to date
-- Build a self-assurance mechanism so that teams can easily confirm compliance to our standards
-- Move the site hosting so that we can serve it from a homeoffice.gov.uk subdomain
+- Grow the body of guidance and standards by continuing to engage our wide engineering community, and supporting them to create new content
+- Build a self-assurance mechanism so that teams can easily assert compliance with the standards
+- Continue development of the site so that it is an examplar of conformance to our growing collection of standards
