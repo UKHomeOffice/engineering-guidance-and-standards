@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Minimal documentation set for a product
-date: 2023-06-13
+date: 2023-10-26
 id: SEGAS-00003
 tags:
 - Documentation
@@ -24,10 +24,11 @@ A product should be documented to a minimum standard so that new engineers can b
 
 ### Product documentation MUST include a description of the product and what it is for
 
-The description should provide domain context to an engineer and link to product documentation, for example:
+The description should provide domain context to an engineer and link to product documentation, including:
 
 - Information about the team
 - Key stakeholders
+- Who the [Senior Responsible Owner (SRO)](https://www.gov.uk/government/publications/the-role-of-the-senior-responsible-owner/the-role-of-the-senior-responsible-owner) is
 - User research findings
 - Product roadmap
 - Business analysis findings
