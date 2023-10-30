@@ -61,9 +61,9 @@ Contributions to the site are managed using the [engineering guidance and standa
 
 ## Non-accessible content
 
-At the time of writing there is no known non-accessible content on the engineering guidance and standards site. You can [list recently raised accessibility issues in GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility). As GitHub may not be accessible to all users, we aim to promptly update this statement when new issues are raised.
+At the time of writing there is no known non-accessible content on the engineering guidance and standards site. You can [see a list of open accessibility issues in GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues?q=is%3Aissue+is%3Aopen+label%3Aaccessibility). As GitHub may not be accessible to all users, we aim to promptly update this statement when new issues are raised.
 
-Contributing to the site using the [engineering guidance and standards repository on GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards) is partially accessible. You can view [GitHub's accessibility conformance report](https://accessibility.github.com/conformance/github-com/) for details the current issues with accessing GitHub. If you would like to contribute to the site and are unable to, please contact the site maintainers by email: [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk).
+Contributing to the site using the [engineering guidance and standards repository on GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards) is partially accessible. You can view [GitHub's accessibility conformance report](https://accessibility.github.com/conformance/github-com/) for details of the current issues with accessing GitHub. If you would like to contribute to the site and are unable to, please contact the site maintainers by email: [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk).
 
 ## Preparation of this accessibility statement
 
