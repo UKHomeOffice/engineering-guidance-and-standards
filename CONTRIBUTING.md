@@ -75,7 +75,7 @@ When creating a PR, use the appropriate template checklists for code and content
 
 ### Who can merge your PR
 
-Any 2 of the maintainers on this repo are needed to accept your change.
+Any 2 of the maintainers on this repo are needed to review and accept your change and at least 1 reviewer must be a [code owner](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CODEOWNERS).
 
 ## Your PR is merged!
 
@@ -106,13 +106,13 @@ The following actions are performed for each PR:
 
 PRs must only be approved after they pass the above checks.
 
-We are deploying the site to [GitHub pages](https://pages.github.com/).
+We are deploying the site to a Docker container.
 
 ## Branching
 
 ### Branching strategy
 
-We are using a simple trunk based strategy.  There is only a single environment being used, as GitHub pages does not support more than 1 active site.
+We are using a simple trunk based strategy.
 
 ### Review
 

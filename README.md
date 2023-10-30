@@ -2,7 +2,7 @@
  
 This is the home of engineering guidance and standards for the Home Office. Learn more about this project on the [about page](https://engineering.homeoffice.gov.uk/about/).
 
-It is built using Markdown, GOV.UK templates, HO styles, the x-gov Eleventy Plugin, GitHub Actions and GitHub pages.
+It is built using Markdown, GOV.UK templates, HO styles, the [x-gov Eleventy Plugin](https://x-govuk.github.io/govuk-eleventy-plugin/) and GitHub Actions.
 
 ## Requirements
 

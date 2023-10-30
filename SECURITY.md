@@ -2,7 +2,9 @@
 
 ## Report a security vulnerability
 
-You can report a vulnerability to the Home Office Engineering Guidance and Standards team through the [repository's security advisory page](https://github.com/UKHomeOffice/engineering-guidance-and-standards/security/advisories/new).
+You can report a vulnerability to the Home Office Engineering Guidance and Standards team using the following methods:
+- Raise an issue on the [repository's security advisory page](https://github.com/UKHomeOffice/engineering-guidance-and-standards/security/advisories/new)
+- Email [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk)
 
 Please enter as much information as possible in your report, this will help us better triage the vulnerability.
 
