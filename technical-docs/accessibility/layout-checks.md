@@ -30,3 +30,13 @@ Then open up example pages that will be affected by your layout changes. For eac
 - [ ] Zoom the page in to 200%. The page should fit horizontally within the screen, not requiring any scrolling left or right to view all the content.
     - [ ] If zooming the page causes the layout to change, check that the visual order still matches the focus order
 - [ ] Access the page on a small screen, or use browser tools to emulate this. If the smaller view size causes the layout to change, check that the visual order still matches the focus order.
+
+## Assumptions
+
+This checklist is a reduced list compared to the full WCAG v2.1 criteria. They have been chosen based on the assumptions:
+
+- That the engineering guidance and standards site will remain a static documentation site. 
+- That principles, standards, and patterns will be structured text, with some images and diagrams.
+- That there are no interactive components on the site except the site search and hyperlinks.
+
+If these assumptions no longer hold, you should check the changes against the full criteria set. A copy of the current WCAG AA criteria can be found in the [Accessibility guidelines of the Home Office design system](https://design.homeoffice.gov.uk/accessibility/standard).
