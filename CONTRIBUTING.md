@@ -30,6 +30,7 @@ We will now look at the process we expect contributors to take when suggesting f
   - propose a new principle
   - propose a new standard
   - review any existing content
+  - report a security vulnerability
 
 ### Solve an issue
 
@@ -56,12 +57,6 @@ Make sure you pull your fork and switch to your new branch to do these changes.
 ### Commit your update
 
 Don't forget to commit and push your changes to your forked repo ready for the contribution!
-
-## Security vulnerability
-
-### Report a security vulnerability
-
-You can report a security vulnerability to the Home Office Engineering Guidance and Standards team using the [repository's security advisory page](https://github.com/UKHomeOffice/engineering-guidance-and-standards/security/advisories/new).
 
 ## Pull Requests
 
