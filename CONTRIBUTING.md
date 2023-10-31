@@ -30,6 +30,7 @@ We will now look at the process we expect contributors to take when suggesting f
   - propose a new principle
   - propose a new standard
   - review any existing content
+  - report a security vulnerability
 
 ### Solve an issue
 
@@ -57,12 +58,6 @@ Make sure you pull your fork and switch to your new branch to do these changes.
 
 Don't forget to commit and push your changes to your forked repo ready for the contribution!
 
-## Security vulnerability
-
-### Report a security vulnerability
-
-You can report a security vulnerability to the Home Office Engineering Guidance and Standards team using the [repository's security advisory page](https://github.com/UKHomeOffice/engineering-guidance-and-standards/security/advisories/new).
-
 ## Pull Requests
 
 When you're finished with your changes you should create a pull request, commonly known as a PR.
@@ -75,7 +70,7 @@ When creating a PR, use the appropriate template checklists for code and content
 
 ### Who can merge your PR
 
-Any 2 of the maintainers on this repo are needed to accept your change.
+Any 2 of the maintainers on this repo are needed to review and accept your change and at least 1 reviewer must be a [code owner](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CODEOWNERS).
 
 ## Your PR is merged!
 
@@ -106,13 +101,13 @@ The following actions are performed for each PR:
 
 PRs must only be approved after they pass the above checks.
 
-We are deploying the site to [GitHub pages](https://pages.github.com/).
+We are deploying the site to a Docker container.
 
 ## Branching
 
 ### Branching strategy
 
-We are using a simple trunk based strategy.  There is only a single environment being used, as GitHub pages does not support more than 1 active site.
+We are using a simple trunk based strategy.
 
 ### Review
 
