@@ -5,6 +5,8 @@ COPY . .
 RUN apk update && apk upgrade && \
     apk add --no-cache git
 
+ENV SITE_ROOT "https://engineering.homeoffice.gov.uk/"
+
 RUN npm ci --omit=dev
 RUN npm run build
 
