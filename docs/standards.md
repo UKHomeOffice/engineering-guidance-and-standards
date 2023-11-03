@@ -8,4 +8,10 @@ paginationHeading: false
 pagination:
   data: collections.getAllStandardsOrderedByTitle
   size: 10
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Writing a standard
+          href: /standards/writing-a-standard/
 ---
