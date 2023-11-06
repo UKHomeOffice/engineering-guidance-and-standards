@@ -139,3 +139,35 @@ describe('Pagination links respect path prefix', () => {
     cy.contains('h1', 'Principles')
   })
 })
+
+describe('Content category displays in correct listing pages', () => {
+  it('finds the content category in tag page', () => {
+    cy.visit(testing_params.TEST_ROOT_URL + '/tags/ways-of-working/')
+    cy.get('ol.app-document-list').find('.document-category')
+      .its('length').should('be.gte', 5)
+  })
+
+  it('does not find the content category in principles page', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    cy.contains('Read our principles').click()
+    // No .document-category listed in this page
+    cy.get('ol.app-document-list').find('.document-category')
+      .should('have.length', 0)
+  })
+
+  it('does not find the content category in standards page', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    cy.contains('Read our standards').click()
+    // No .document-category listed in this page
+    cy.get('ol.app-document-list').find('.document-category')
+      .should('have.length', 0)
+  })
+
+  it('does not find the content category in patterns page', () => {
+    cy.visit(testing_params.TEST_ROOT_URL)
+    cy.contains('Read our patterns').click()
+    // No .document-category listed in this page
+    cy.get('ol.app-document-list').find('.document-category')
+      .should('have.length', 0)
+  })
+})

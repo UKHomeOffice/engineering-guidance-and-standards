@@ -17,7 +17,7 @@
       {% if item.data.date or item.data.tags %}
       <ul class="app-document-list__item-metadata">
         {% if params.displayContentCategory === true and item.data.category %}
-        <li class="app-document-list__attribute">
+        <li class="app-document-list__attribute document-category">
           {{ item.data.category }}
         </li>
         {% endif %}
