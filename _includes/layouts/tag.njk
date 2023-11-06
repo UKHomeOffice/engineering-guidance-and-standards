@@ -24,7 +24,8 @@
     {{ documentList.contentDocumentList({
       headingLevel: 3 if paginationHeading else 2,
       classes: "app-document-list--large",
-      items: collections[tag] | orderPagesByTitle
+      items: collections[tag] | orderPagesByTitle,
+      displayContentCategory: true
     }) }}
 
     {{ appProseScope(content) if content }}

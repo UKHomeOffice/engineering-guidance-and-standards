@@ -16,6 +16,11 @@
       {% endif %}
       {% if item.data.date or item.data.tags %}
       <ul class="app-document-list__item-metadata">
+        {% if params.displayContentCategory === true and item.data.category %}
+        <li class="app-document-list__attribute">
+          {{ item.data.category }}
+        </li>
+        {% endif %}
         {% if item.data.id %}
         <li class="app-document-list__attribute">
           {{ item.data.id }}
