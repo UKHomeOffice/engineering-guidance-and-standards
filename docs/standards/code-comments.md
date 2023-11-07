@@ -23,7 +23,7 @@ This standard promotes effective communication and knowledge sharing within the 
 
 ## Requirement(s)
 
-- [Comments MUST be strategically placed to enhance code comprehension and maintainability.](#comments-must-be-strategically-placed-to-enhance-code-comprehension-and-maintainability)
+- [Comments MUST be enhance code comprehension and maintainability.](#comments-must-enhance-code-comprehension-and-maintainability)
 - [Comments MUST be explanatory, not merely descriptive, and use concise, fully-formed sentences.](#comments-must-be-explanatory-not-merely-descriptive-and-use-concise-fully-formed-sentences)
 - [Comments MUST add value to the understanding and readability of the code.](#comments-must-add-value-to-the-understanding-and-readability-of-the-code)
 - [Comments MUST adhere to a documented standard, such as Docblock, and include all necessary information.](#comments-must-adhere-to-a-documented-standard-such-as-docblock-and-include-all-necessary-information)
@@ -32,7 +32,7 @@ This standard promotes effective communication and knowledge sharing within the 
 - [Comments MUST NOT be duplicated or be used as a substitute for deleting code.](#comments-must-not-be-duplicated-or-be-used-as-a-substitute-for-deleting-code)
 - [Comments MUST NOT contain sensitive data, such as API keys, tokens, etc.](#comments-must-not-contain-sensitive-data-such-as-api-keys-tokens-etc)
 
-### Comments MUST be strategically placed to enhance code comprehension and maintainability.
+### Comments MUST enhance code comprehension and maintainability.
 
 The placement of comments is essential for code comprehensibility and maintainability. Comments should be thoughtfully positioned to explain complex logic, significant decision points, or any non-trivial functionality.
 
