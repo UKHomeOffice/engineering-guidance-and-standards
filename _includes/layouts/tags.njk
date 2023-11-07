@@ -22,15 +22,7 @@
 
       <ul class="govuk-list govuk-list--bullet">
        {% for tag in collections.all | getAllTags | filterTagList %}
-        {% if tag == "Patterns" %}
-          {%- set tagUrl %}{{ "/patterns/" | url }}/{% endset %}
-        {% elseif tag == "Principles" %}
-          {%- set tagUrl %}{{ "/principles/" | url }}/{% endset %}
-        {% elseif tag == "Standards" %}
-         {%- set tagUrl %}{{ "/standards" | url }}/{% endset %}
-        {% else %}
-         {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
-        {% endif %}
+       {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
         <li>
           <a href="{{ tagUrl }}">{{ tag }}</a>
         </li>

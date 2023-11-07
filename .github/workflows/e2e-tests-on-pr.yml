@@ -9,7 +9,6 @@ on:
 env:
   TEST_URL: localhost
   TEST_PORT: 8080
-  TEST_PATH_PREFIX: '/test/'
 
 jobs:
   e2e-test:
@@ -29,10 +28,8 @@ jobs:
           browser: chrome
           build: npm run build
           start: npm run serve -- --port ${{ env.TEST_PORT }}
-          wait-on: 'http://${{ env.TEST_URL }}:${{ env.TEST_PORT }}${{ env.TEST_PATH_PREFIX }}'
+          wait-on: 'http://${{ env.TEST_URL }}:${{ env.TEST_PORT }}'
           config: 'video=false,screenshotOnRunFailure=false'
         env:
           CYPRESS_TEST_URL: ${{ env.TEST_URL }}
           CYPRESS_TEST_PORT: ${{ env.TEST_PORT }}
-          CYPRESS_TEST_PATH_PREFIX: ${{ env.TEST_PATH_PREFIX }}
-          PATH_PREFIX: ${{ env.TEST_PATH_PREFIX }}
