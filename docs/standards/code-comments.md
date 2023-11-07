@@ -17,7 +17,7 @@ related:
 
 These Code Commenting Guidelines are designed to ensure that code is documented at a minimum standard, making it easy for new engineers to quickly get up to speed and preventing the isolation of knowledge within the team. By following these guidelines, you help streamline the onboarding process for new team members, ensuring that code is accessible and understandable. 
 
-This standard is essential for programmers, as it promotes effective communication and knowledge sharing within the team, ultimately contributing to the overall success of the project.
+This standard promotes effective communication and knowledge sharing within the team, ultimately contributing to the overall success of the project.
 
 ---
 
