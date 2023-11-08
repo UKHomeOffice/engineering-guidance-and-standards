@@ -114,7 +114,7 @@ describe('Cookies page links from footer test', () => {
   })
 })
 
-describe('Related links respect path prefix', () => {
+describe('Related links', () => {
   it('finds the correct related link and follows it to a valid page', () => {
     cy.visit(testing_params.TEST_ROOT_URL)
     // Click through to standard page that has a related link
@@ -126,7 +126,7 @@ describe('Related links respect path prefix', () => {
   })
 })
 
-describe('Pagination links respect path prefix', () => {
+describe('Pagination links', () => {
   it('finds the pagination links and follows them to valid pages', () => {
     cy.visit(testing_params.TEST_ROOT_URL)
     // Click to standards page that has a related link

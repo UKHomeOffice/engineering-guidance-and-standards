@@ -2,8 +2,6 @@ const govukEleventyPlugin  = require('@x-govuk/govuk-eleventy-plugin')
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-    // Set custom variable to decide the path prefix as it is used in a couple of places.
-    const _customPathPrefix = process.env.PATH_PREFIX ?? '';
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
@@ -19,7 +17,7 @@ module.exports = function(eleventyConfig) {
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
         header: {
-            organisationLogo: '<img src="' + _customPathPrefix + '/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
+            organisationLogo: '<img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
             organisationName: 'Home Office',
             productName: 'Engineering Guidance and Standards',
             search: {
@@ -35,15 +33,15 @@ module.exports = function(eleventyConfig) {
             meta: {
                 items: [
                     {
-                        href: _customPathPrefix + '/about/',
+                        href: '/about/',
                         text: 'About'
                     },
                     {
-                        href: _customPathPrefix + '/cookies/',
+                        href: '/cookies/',
                         text: 'Cookies'
                     },
                     {
-                        href: _customPathPrefix + '/accessibility-statement/',
+                        href: '/accessibility-statement/',
                         text: 'Accessibility'
                     },
                     {
@@ -65,18 +63,6 @@ module.exports = function(eleventyConfig) {
         md.use(require('./lib/markdown/dl-as-govuk-summary-list'));
 
         eleventyConfig.setLibrary('md', md);
-    })
-
-    eleventyConfig.addFilter("itemsFromPaginationWithPathPrefix", (pagination) => {
-      const items = []
-      pagination.pages.forEach((item, index) => {
-        items.push({
-          current: index === pagination.pageNumber,
-          number: index + 1,
-          href: _customPathPrefix + pagination.hrefs[index]
-        })
-      })
-      return items;
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
@@ -142,11 +128,10 @@ module.exports = function(eleventyConfig) {
         tag: {
           text: "Alpha"
         },
-        html: 'This is a new service – your <a class="govuk-link" target="_blank" href="' + _customPathPrefix + '/provide-feedback/">feedback (opens in a new tab)</a> will help us to improve it.'
+        html: 'This is a new service – your <a class="govuk-link" target="_blank" href="/provide-feedback/">feedback (opens in a new tab)</a> will help us to improve it.'
       }
     });
 
-    eleventyConfig.addGlobalData('pathPrefix', _customPathPrefix);
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);
 
     return {
@@ -158,7 +143,6 @@ module.exports = function(eleventyConfig) {
             layouts: '../_includes/layouts',
             includes: '../_includes',
             input: 'docs'
-        },
-        pathPrefix: _customPathPrefix
+        }
     }
 };

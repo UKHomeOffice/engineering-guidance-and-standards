@@ -8,4 +8,10 @@ paginationHeading: false
 pagination:
   data: collections.getAllPrinciplesOrderedByTitle
   size: 10
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Writing a principle
+          href: /standards/writing-a-principle/
 ---
