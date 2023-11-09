@@ -74,7 +74,6 @@ This practice ensures that readers can grasp the code's intent without any ambig
 """
 Calculates the factorial of a given integer.
 
-This function takes an integer as input and returns its factorial. The factorial of a non-negative integer n, denoted as n!, is the product of all positive integers less than or equal to n.
 
 :param n: The non-negative integer for which to calculate the factorial.
 :return: The factorial of the input integer.
