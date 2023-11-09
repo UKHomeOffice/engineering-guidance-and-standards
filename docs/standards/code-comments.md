@@ -179,7 +179,7 @@ def calculate_factorial(n):
 Calculate factorial, takes a param called `n` which is a number to compute the returned factorial.
 """
 def calculate_factorial(n):
-    # Logic to compute the factorial
+    ...
 ```
 
 ### Comments MUST use neutral, unopinionated language and remain applicable and relevant after a code refactor.
