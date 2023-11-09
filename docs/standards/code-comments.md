@@ -251,7 +251,7 @@ def calculate_price(item):
 
 ### Comments MUST NOT be duplicated or be used as a substitute for deleting code.
 
-Duplication of comments and using comments as a replacement for code deletion can impact code cleanliness. Developers are encouraged to steer clear of duplicating comments across various code sections, as it may result in inconsistencies when modifications are required. Rather than adding a comment to elucidate outdated or unnecessary code, it is advisable to remove the unused code entirely.
+Duplication of comments and using comments as a replacement for code deletion can impact code cleanliness. Developers are encouraged to steer clear of duplicating comments across various code sections, as it may result in inconsistencies when modifications are required. Rather than adding a comment to explain outdated or unnecessary code, it is advisable to remove the unused code entirely.
 
 Replacing code deletion with comments can introduce confusion and clutter within the codebase. Ensuring that comments are employed for authentic explanations and not as a workaround for code removal contributes to a cleaner and more maintainable codebase.
 
