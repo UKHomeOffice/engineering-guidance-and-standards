@@ -148,7 +148,7 @@ def validate_password(password):
 
 Adhering to a documented standard in your comments can assist in achieving consistency and comprehension. Following established standards, like Docblock, helps harmonize the commenting style across the codebase, simplifying navigation and comprehension for all team members.
 
-Furthermore, comments should encompass all pertinent information, including parameter descriptions, return values, and function or class descriptions. This practice ensures that any developer reviewing the code possesses all the necessary details to use, modify, or maintain it effectively, reducing the necessity for time-consuming back-and-forths or investigations.
+Furthermore, comments should encompass all pertinent information, including parameter descriptions, return values, and function or class explanations. This practice ensures that any developer reviewing the code possesses all the necessary details to use, modify, or maintain it effectively, reducing the necessity for time-consuming back-and-forths or investigations.
 
 #### Docblock Information
 - [Docblock - Wikipedia](https://en.wikipedia.org/wiki/Docblock)
