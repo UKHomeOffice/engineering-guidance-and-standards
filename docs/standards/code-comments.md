@@ -170,7 +170,7 @@ This function takes an integer as input and returns its factorial. The factorial
 :return: The factorial of the input integer.
 """
 def calculate_factorial(n):
-    # Factorial calculation logic here
+    ...
 ```
 
 #### Negative Example
