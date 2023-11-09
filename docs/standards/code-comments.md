@@ -36,7 +36,7 @@ This standard promotes effective communication and knowledge sharing within the 
 
 The placement of comments is essential for code comprehensibility and maintainability. Comments should be thoughtfully positioned to explain complex logic, significant decision points, or any non-trivial functionality.
 
-Positioning comments at the top of files, structural elements, or before specific code sections assists both newcomers and existing team members in understanding the code's purpose. This fosters a collaborative environment, ensuring seamless knowledge transfer and facilitating effective contributions from colleagues to the project.
+Positioning comments at the top of files, above structural elements, or before specific code sections assists both newcomers and existing team members in understanding the code's purpose. This fosters a collaborative environment, ensuring seamless knowledge transfer and facilitating effective contributions from colleagues to the project.
 
 #### Positive Example
 ```
