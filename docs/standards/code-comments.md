@@ -141,7 +141,7 @@ This function validates user passwords.
 :return: True if the password is valid, False if it's not.
 """
 def validate_password(password):
-    # Check if the password is valid
+    ...
 ```
 
 ### Comments MUST adhere to a documented standard, such as Docblock, and include all necessary information.
