@@ -1,10 +1,13 @@
 const govukEleventyPlugin  = require('@x-govuk/govuk-eleventy-plugin')
 const { DateTime } = require("luxon");
+const childProcess = require('child_process');
 const fs = require("fs");
 const path = require("path");
 
 module.exports = function(eleventyConfig) {
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
+    const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
+
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     // Register the plugins
@@ -52,7 +55,7 @@ module.exports = function(eleventyConfig) {
                         text: 'Accessibility'
                     },
                     {
-                        href: 'https://github.com/UKHomeOffice/engineering-guidance-and-standards',
+                        href: gitHubRepositoryUrl,
                         text: 'GitHub repository'
                     }
                 ]
@@ -149,6 +152,14 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);
+
+    const latestGitCommitHash =
+    childProcess
+      .execSync('git rev-parse HEAD')
+      .toString()
+      .trim();
+    eleventyConfig.addGlobalData('gitHashPath',
+      gitHubRepositoryUrl+'/blob/'+latestGitCommitHash+'/docs');
 
     return {
         dataTemplateEngine: 'njk',
