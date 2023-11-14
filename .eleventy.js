@@ -126,7 +126,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addGlobalData("phaseBannerConfiguration", () => {
       return {
         tag: {
-          text: "Alpha"
+          text: "New Service"
         },
         html: 'This is a new service – your <a class="govuk-link" target="_blank" href="/provide-feedback/">feedback (opens in a new tab)</a> will help us to improve it.'
       }
