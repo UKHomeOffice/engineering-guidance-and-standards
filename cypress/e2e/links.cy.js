@@ -11,6 +11,18 @@ describe('Check pages contain valid links', () => {
       cy.visit(testing_params.TEST_ROOT_URL + page.url)
       checkAllLinks()
     })
+
+    // Only check content pages for version permalink
+    if ((page.url.includes("principles") && !page.url.endsWith("principles/")) ||
+        (page.url.includes("standards") && !page.url.endsWith("standards/")) ||
+        (page.url.includes("patterns") && !page.url.endsWith("patterns/")))
+    {
+      it(`${page.title} (${page.url}) contains version permalink`, () => {
+        cy.visit(testing_params.TEST_ROOT_URL + page.url)
+        cy.contains(".version-permalink",
+          "Content version permalink (GitHub) - (opens in a new tab)")
+      })
+    }
   }
 })
 

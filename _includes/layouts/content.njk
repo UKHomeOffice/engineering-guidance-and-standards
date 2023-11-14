@@ -18,9 +18,9 @@
 
 {% block content %}
   <div class="govuk-grid-row">
-    
+
     <div class="govuk-grid-column-two-thirds-from-desktop">
-      
+
       <header class="app-document-header">
         <h1 class="app-document-header__title govuk-heading-xl">
           {% if id %} <span class="govuk-caption-xl">{{ id }}</span>{% endif %}
@@ -35,7 +35,7 @@
 
       <p class="govuk-body">
         Last updated: {{ page.date | postDate }}
-        
+
         {% if tags | length %}
           {% from "macros/tagList.njk" import tagList %}
           <br>
@@ -44,11 +44,18 @@
       </p>
 
       {{ appProseScope(content) if content }}
+
+      <p class="govuk-body">
+        {% set githubPath = page.filePathStem + '.md' %}
+        <a class="version-permalink" href="{{ gitHashPath }}{{githubPath}}" target="_blank">
+          Content version permalink (GitHub) - (opens in a new tab)
+        </a>
+      </p>
     </div>
     <div class="govuk-grid-column-one-third-from-desktop">
       {% block sidebar %}
         {% from "macros/navigationList.njk" import navigationList %}
-        {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }} 
+        {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }}
       {% endblock %}
       {% include "layouts/shared/related.njk" %}
     </div>
