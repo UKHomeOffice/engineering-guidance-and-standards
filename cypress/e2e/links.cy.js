@@ -20,7 +20,7 @@ describe('Check pages contain valid links', () => {
       it(`${page.title} (${page.url}) contains version permalink`, () => {
         cy.visit(testing_params.TEST_ROOT_URL + page.url)
         cy.contains(".version-permalink",
-          "Content version permalink (GitHub) - (opens in a new tab)")
+          "Content version permalink (GitHub) (opens in a new tab)")
       })
     }
   }
