@@ -10,10 +10,6 @@ id: SEGAS-TBC # Set unique ID for standard
 tags:
   - Low code
   - Software design
-  - Azure Logic Apps
-  - Microsoft Power Automate
-  - AWS Step Functions
-  - Oracle Integration Cloud
 ---
 
 <!-- Standard description -->
