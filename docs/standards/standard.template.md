@@ -32,6 +32,8 @@ Internal links need to follow this format:
 [link text to internal page]({{ '/standards/writing-a-standard/' | url }})
 Note the use of the `url` filter. This ensures the link is appended to the base URL of the webpage correctly.
 
+Anchor tags, such as those used when listing the requirements at the top of the 'Requirements' section, should use HTML URL Encoding. This ensures links to headers with punctuation will work as expected. You can obtain the HTML URL Encodeded link by running the site locally, inspecting the appropriate <h3> element in the browser's developer tools and copying the value from the 'id' attribute.
+
 External links follow standard markdown formatting:
 [link text to external page](https://example.com)
 -->
@@ -40,7 +42,17 @@ External links follow standard markdown formatting:
 
 ## Requirement(s)
 
-<!-- Populate list for each requirement (there can be more than 2)-->
+<!-- Populate list for each requirement (there can be more than 2) -->
+
+<!--
+
+# Notes on anchor links
+
+Use HTML URL encoding as in the 'Notes on links' above, to ensure that links to headers with punctuation works as expected. For example:
+
+[Product documentation MUST include build, release and deployment processes](#product-documentation-must-include-build%2C-release-and-deployment-processes)
+
+-->
 
 - [Requirement 1](#requirement-1)
 - [Requirement 2](#requirement-2)

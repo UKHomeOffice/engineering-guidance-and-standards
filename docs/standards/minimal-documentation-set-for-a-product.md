@@ -20,7 +20,7 @@ A product should be documented to a minimum standard so that new engineers can b
 - [Product documentation MUST include a decision log](#product-documentation-must-include-a-decision-log)
 - [Product documentation MUST include incident management information](#product-documentation-must-include-incident-management-information)
 - [Product documentation MUST include information about observability](#product-documentation-must-include-information-about-observability)
-- [Product documentation MUST include build, release and deployment processes](#product-documentation-must-include-build-release-and-deployment-processes)
+- [Product documentation MUST include build, release and deployment processes](#product-documentation-must-include-build%2C-release-and-deployment-processes)
 
 ### Product documentation MUST include a description of the product and what it is for
 

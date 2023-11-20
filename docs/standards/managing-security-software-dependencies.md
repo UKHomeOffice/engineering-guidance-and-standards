@@ -35,7 +35,7 @@ Home Office engineering teams are required to manage software dependencies proac
 - [You MUST assess the security of external components before introducing them into software designs](#you-must-assess-the-security-of-external-components-before-introducing-them-into-software-designs)
 - [You MUST maintain a discoverable dependency tree for your systems](#you-must-maintain-a-discoverable-dependency-tree-for-your-systems)
 - [You MUST proactively identify vulnerabilities in dependencies with scanning and other tools](#you-must-proactively-identify-vulnerabilities-in-dependencies-with-scanning-and-other-tools)
-- [You MUST regularly update, replace and remove dependencies](#you-must-regularly-update-replace-and-remove-dependencies)
+- [You MUST regularly update, replace and remove dependencies](#you-must-regularly-update%2C-replace-and-remove-dependencies)
 
 ### You MUST assess the security of external components before introducing them into software designs
 
