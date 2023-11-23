@@ -15,7 +15,9 @@ related:
       items:
 ---
 
-Testing code forms part of the core of developing code. Testing should provide confidence to stakeholders and the intent of any test should be clear as they can provide as a form of documentation to the overall solution, they should be relatively easy to understand with coverage tracked, though this must be stressed coverage is not the be all end all.
+Testing code forms part of the core of developing code. Testing should provide confidence to stakeholders and be proportionate to risk. 
+
+The intent of any test should be clear as they can provide as a form of documentation to the overall solution, they should be relatively easy to understand with coverage tracked, though this must be stressed coverage is not the be all end all.
 
 Testing can come in different forms unit/integration/mutation/property based, but all must adhere to the requirements laid out as the following benefits can be achieved from it:
 
