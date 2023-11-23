@@ -52,4 +52,9 @@ Guidance on testing often and early is available as below.
 
 - [Test Link](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
 
+
+### Tests MUST be repeatable
+
+
+
 ---
