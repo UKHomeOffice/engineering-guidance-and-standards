@@ -40,7 +40,7 @@ Guidance on tracking test coverage is available as below.
 
 - [Test Link](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
 
-### Tests should be clear and easy to connect failures
+### It MUST be clear when and why tests fail.
 
 Guidance on making tests clear is available as below.
 
