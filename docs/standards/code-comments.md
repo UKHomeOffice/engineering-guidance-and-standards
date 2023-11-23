@@ -23,13 +23,14 @@ This standard promotes effective communication and knowledge sharing within the 
 
 ## Requirement(s)
 
-- [Comments MUST be enhance code comprehension and maintainability.](#comments-must-enhance-code-comprehension-and-maintainability)
+- [Comments MUST enhance code comprehension and maintainability.](#comments-must-enhance-code-comprehension-and-maintainability)
 - [Comments MUST be explanatory, not merely descriptive, and use concise, fully-formed sentences.](#comments-must-be-explanatory-not-merely-descriptive-and-use-concise-fully-formed-sentences)
 - [Comments MUST add value to the understanding and readability of the code.](#comments-must-add-value-to-the-understanding-and-readability-of-the-code)
 - [Comments MUST adhere to a documented standard, such as Docblock, and include all necessary information.](#comments-must-adhere-to-a-documented-standard-such-as-docblock-and-include-all-necessary-information)
-- [Comments MUST use neutral, unopinionated language and remain applicable and relevant after a code refactor.](#comments-must-use-neutral-unopinionated-language-and-remain-applicable-and-relevant-after-a-code-refactor)
+- [Comments MUST Remain Applicable After Code Refactor.](#comments-must-remain-applicable-after-code-refactor)
+- [Comments MUST Use Neutral, Unopinionated Language.](#comments-must-use-neutral-unopinionated-language)
 - [Comments MUST NOT be present in production deployments.](#comments-must-not-be-present-in-production-deployments)
-- [Comments MUST NOT be duplicated or be used as a substitute for deleting code.](#comments-must-not-be-duplicated-or-be-used-as-a-substitute-for-deleting-code)
+- [Comments MUST NOT be used as a substitute for deleting code.](#comments-must-not-be-used-as-a-substitute-for-deleting-code)
 - [Comments MUST NOT contain sensitive data, such as API keys, tokens, etc.](#comments-must-not-contain-sensitive-data-such-as-api-keys-tokens-etc)
 
 ### Comments MUST enhance code comprehension and maintainability.
@@ -41,10 +42,14 @@ Positioning comments at the top of files, above structural elements, or before s
 #### Positive Example
 ```
 """
-This function calculates the total price of items in the shopping cart.
+Calculates the total price of items in the shopping cart by summing up individual item prices.
 
-:param cart: The shopping cart as a list of items.
-:return: The total price as a float.
+This function iterates through each item in the provided shopping cart, extracting the 'price'
+attribute from each item, and aggregating these prices to compute the overall total.
+
+:param cart: A list of items in the shopping cart. Each item should be an object or instance
+             with a 'price' attribute representing the cost of that particular item.
+:return: The total price as a floating-point number, representing the sum of individual item prices.
 """
 def calculate_total_price(cart):
     total_price = 0.0
@@ -67,7 +72,9 @@ def calculate_total_price(cart):
 
 The use of language in your comments is essential for effective communication. Comments should serve the purpose of explaining the reasoning behind the code rather than solely describing its functionality. They should be clear, concise, and composed of fully-formed sentences.
 
-This practice ensures that readers can grasp the code's intent without any ambiguity. Concise and explanatory comments contribute to enhanced code readability and easier maintenance. Developers, including yourself, can better understand the context and logic behind code segments, reducing the likelihood of misinterpretation and errors.
+This practice ensures that readers can grasp the code's intent without any ambiguity. Concise and explanatory comments contribute to enhanced code readability and easier maintenance.
+
+Additionally, adhere to the DRY (Don't Repeat Yourself) principle. Avoid duplicating comments that describe similar logic in different parts of the code. Instead, use well-crafted comments in one location to cover shared concepts or functionalities. This not only reduces redundancy but also promotes consistency and helps prevent inconsistencies or contradictions in your documentation.
 
 #### Positive Example
 ```
@@ -118,6 +125,8 @@ Comments that provide value are essential for code documentation. Comments shoul
 
 Each comment should contribute to the reader's understanding of the code by providing insights or explanations that might not be immediately evident from the code itself. Value-added comments act as a bridge between the code's functionality and the developer's comprehension, improving accessibility and efficiency for both current and future team members.
 
+Additionally, consider that code functions should be written in a way that allows developers to use them effectively without having to delve into the source code. This means that function signatures, parameter names, and return types should be self-explanatory. Well-crafted comments can complement this by offering high-level explanations or usage examples, making it possible for developers to utilize functions blindly, confidently relying on the documented behavior without necessarily needing to inspect the implementation details.
+
 #### Positive Example
 ```
 """
@@ -149,6 +158,11 @@ def validate_password(password):
 Adhering to a documented standard in your comments can assist in achieving consistency and comprehension. Following established standards, like Docblock, helps harmonize the commenting style across the codebase, simplifying navigation and comprehension for all team members.
 
 Furthermore, comments should encompass all pertinent information, including parameter descriptions, return values, and function or class explanations. This practice ensures that any developer reviewing the code possesses all the necessary details to use, modify, or maintain it effectively, reducing the necessity for time-consuming back-and-forths or investigations.
+
+When developing APIs, comments play a crucial role in generating API documentation automatically. Systems like Swagger, which rely on comments within the code, can extract valuable information and generate comprehensive API documentation. By consistently using Docblock or similar standards, developers contribute not only to the clarity of the code but also to the seamless generation of API documentation. This documentation becomes an invaluable resource for users and maintainers, facilitating easier integration and understanding of the API's capabilities.
+
+### Swagger Information
+- [Swagger](https://swagger.io/)
 
 #### Docblock Information
 - [Docblock - Wikipedia](https://en.wikipedia.org/wiki/Docblock)
@@ -182,11 +196,37 @@ def calculate_factorial(n):
     ...
 ```
 
-### Comments MUST use neutral, unopinionated language and remain applicable and relevant after a code refactor.
+### Comments MUST Remain Applicable After Code Refactor
 
-The use of neutral language and ensuring post-refactor relevance in comments is essential for long-term code sustainability. Comments should avoid personal opinions, subjectivity, or emotional language. They should maintain a neutral and factual tone to enable consistent communication.
+Ensuring that comments remain relevant after code refactors is crucial for long-term code sustainability. Comments should retain their relevance even after code refactors or modifications. This practice ensures that the information conveyed in the comments remains accurate and valuable as the codebase undergoes changes. By doing so, the risk of confusion and errors during future modifications is significantly reduced.
 
-Furthermore, comments should remain pertinent even after code refactors or modifications. This practice ensures that the information conveyed in the comments stays accurate and valuable as the codebase undergoes changes, thereby reducing the risk of confusion and errors during future modifications.
+#### Positive Example
+```
+"""
+Calculates the total price of items in the shopping cart.
+
+This function computes the total price by iterating through the items in the shopping cart and summing their prices.
+
+:param cart: List of items in the shopping cart.
+:return: Total price as a float.
+"""
+```
+
+#### Negative Example
+```
+"""
+This function is optimized for small shopping carts with less than 10 items.
+
+This function is specifically designed for small shopping carts with less than 10 items. It uses an efficient algorithm that may not be suitable for larger carts.
+
+:param cart: List of items in the shopping cart.
+:return: Total price as a float.
+"""
+```
+
+### Comments MUST Use Neutral, Unopinionated Language
+
+Comments should use neutral, unopinionated language to ensure clarity and avoid subjective interpretations. Expressions of personal opinions, unwarranted enthusiasm, or assertions of superiority should be avoided. The goal is to provide factual and clear explanations that facilitate understanding.
 
 #### Positive Example
 ```
@@ -198,11 +238,6 @@ This function takes a shopping cart as input and calculates the total price. It 
 :param cart: The shopping cart as a list of items.
 :return: The total price as a float.
 """
-def calculate_total_price(cart):
-    total_price = 0.0
-    for item in cart:
-        total_price += item.price
-    return total_price
 ```
 
 #### Negative Example
@@ -215,11 +250,6 @@ This function takes a list of items as input and computes the total price in a h
 :param items: The list of items.
 :return: The total price, and trust me, it's the best way to do it.
 """
-def smart_price_calculation(items):
-    total = 0.0
-    for item in items:
-        total += item.price
-    return total
 ```
 
 ### Comments MUST NOT be present in production deployments.
@@ -227,6 +257,8 @@ def smart_price_calculation(items):
 Comments in production deployments present potential security and performance risks. They can unintentionally expose sensitive information, such as API keys or debugging details, to unauthorized individuals. Additionally, comments may have a marginal impact on the code's size, which can affect performance in production environments.
 
 It is important to ensure that no comments are included in production code to mitigate these issues. The removal of comments from production code enhances security and optimizes code performance, ultimately leading to an improved user experience.
+
+Furthermore, note that some modern compilers and build tools may automatically strip comments from the compiled code during the production build process. While relying on automatic tools, it is still crucial for developers to follow best practices and ensure that no sensitive information or unnecessary comments are present in the codebase, even before the build process.
 
 #### Tools (for reference only)
 - **React/JavaScript/TypeScript/Node:**
@@ -238,18 +270,9 @@ It is important to ensure that no comments are included in production code to mi
   - [CSS Minifier](https://www.npmjs.com/package/css-minify)
 
 #### Example
-```
-# This is a development comment that provides insights for developers.
-def calculate_price(item):
-    # Calculate the price based on item properties
-    return item.base_price * item.discount
+No example given.
 
-# In production code, comments are removed to enhance performance and security.
-def calculate_price(item):
-    return item.base_price * item.discount
-```
-
-### Comments MUST NOT be duplicated or be used as a substitute for deleting code.
+### Comments MUST NOT be used as a substitute for deleting code.
 
 Duplication of comments and using comments as a replacement for code deletion can impact code cleanliness. Developers are encouraged to steer clear of duplicating comments across various code sections, as it may result in inconsistencies when modifications are required. Rather than adding a comment to explain outdated or unnecessary code, it is advisable to remove the unused code entirely.
 
