@@ -112,7 +112,7 @@ Where possible, the service should set caching headers to HTTP requests to reduc
 
 - Check that services respond with appropriate cache directives in HTTP response headers
 
-### Service MUST be able to toletate expected load
+### Service MUST be able to tolerate expected load
 
 Where required based off business requirements, the service can be load, soak or stressed tested to expected normal conditions as defined by the service volumetrics to; 
 
