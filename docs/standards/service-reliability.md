@@ -30,6 +30,7 @@ Home office systems should be able to withstand failures during various circumst
   - [Service MUST be soak tested.](#service-must-be-soak-tested)
 
 ### Service reliability MUST be observable relative to defined service level expectations
+
 Reliability expectations should be clear and baselined so that Service Level Objectives (SLOs) can be defined for measures that can keep Home Office services reliable.
 
 ### Service MUST be tolerant to expected and unexpected failure of a data centre
