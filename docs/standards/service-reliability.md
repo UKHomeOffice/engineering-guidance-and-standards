@@ -78,7 +78,7 @@ Furthermore, implement a backoff strategy if your transactions allow it.
 
 ### Service MUST be sized appropriately for normal operations
 
-The application / service must be sized appropriately in terms of system resources (CPU, memory, storage, et al) for normal operating conditions preventing unnecessary resource wastage. 
+The application / service must be sized appropriately in terms of system resources (CPU, memory, storage, etc.) for normal operating conditions preventing unnecessary resource wastage. 
 Considering the acceptable time it takes for your application to recover (Mean Time To Recover / MTTR), additional headroom is allowed in the event of failures - for example, it is permissible if you are running a two node cluster that normal operations yield 50% resource utilisation, so that if a single node is lost your service may continue to function on a single node at 100% utilisation until the second node is/can be recovered.
 
 - Check that Kubernetes services have configured CPU and Memory requests and limits are configured
