@@ -135,7 +135,9 @@ Validate with test teams that the service has been stress tested to expected pea
 Provide evidence / links to load test reports.
 
 ### Service MUST be soak tested.
+
 The service must be soak tested to ensure normal operating conditions over time, from low, normal to high load situations, so as to:
+
 - Understand how the service behaves over a period of time, and that garbage collection effectively prevents memory and CPU leaks over time
 - Understand how the service recovers from high load situations and ensure it relinquishes unused resource back to the underlying infrastructure
 
