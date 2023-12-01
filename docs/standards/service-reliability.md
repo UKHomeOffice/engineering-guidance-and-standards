@@ -10,21 +10,20 @@ tags:
   - SRE
 ---
 
-Home office systems should be able to withstand failures during various circumstances, both expected and unexpected over a specified period in specified environments. 
+Home office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
 
 ---
 
 ## Requirement(s)
 
+- [Requirement(s)](#requirements)
   - [Service reliability MUST be observable relative to defined service level expectations](#service-reliability-must-be-observable-relative-to-defined-service-level-expectations)
   - [Service MUST be tolerant to expected and unexpected failure of a data centre](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-a-data-centre)
   - [Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware, including networks](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-physical-or-virtualised-hardware-including-networks)
   - [Service MUST be tolerant to expected and unexpected failure of upstream services such as databases](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-upstream-services-such-as-databases)
-  - [Service MUST be sized appropriately for normal operations](#service-must-be-sized-appropriately-for-normal-operations)
-  - [Service MUST be able to scale as appropriate automatically based on metrics](#service-must-be-able-to-scale-as-appropriate-automatically-based-on-metrics)
+  - [Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics](#service-must-be-sized-appropriately-for-normal-operations-and-must-be-able-to-automatically-scale-as-appropriate-based-on-metrics)
   - [Service MUST be able to reject and/or queue requests to protect the overall service](#service-must-be-able-to-reject-andor-queue-requests-to-protect-the-overall-service)
-  - [Service MUST be able to set appropriate caching directives in HTTP responses so as to reduce load on the service](#service-must-be-able-to-set-appropriate-caching-directives-in-http-responses-so-as-to-reduce-load-on-the-service)
-  - [Service MUST be able to toletate expected load](#service-must-be-able-to-toletate-expected-load)
+  - [Service MUST be able to tolerate expected load](#service-must-be-able-to-tolerate-expected-load)
   - [Service MUST be able to toletate expected stress](#service-must-be-able-to-toletate-expected-stress)
   - [Service MUST be soak tested.](#service-must-be-soak-tested)
 
@@ -76,18 +75,9 @@ Furthermore, implement a backoff strategy if your transactions allow it.
 - Go through upstream services your service relies on, and  how it reacts to an expected or unexpected failure of that service.
 - Tests results for service proving behaviour.
 
-### Service MUST be sized appropriately for normal operations
+### Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics
 
-The application / service must be sized appropriately in terms of system resources (CPU, memory, storage, etc.) for normal operating conditions preventing unnecessary resource wastage. 
-Considering the acceptable time it takes for your application to recover (Mean Time To Recover / MTTR), additional headroom is allowed in the event of failures - for example, it is permissible if you are running a two node cluster that normal operations yield 50% resource utilisation, so that if a single node is lost your service may continue to function on a single node at 100% utilisation until the second node is/can be recovered.
-
-- Check that Kubernetes services have configured CPU and Memory requests and limits are configured
-- Check that AWS services are sized appropriately
-- Refer to appropriate dashboards to ensure CPU and Memory utilisation. 
-
-**Services should be continuously reviewed.**
-
-### Service MUST be able to scale as appropriate automatically based on metrics
+The service must be sized appropriately in terms of system resources (CPU, memory, storage, etc.) for normal operating conditions preventing unnecessary resource wastage.
 
 All components of a service can be scaled up or out (or down or in) based on some metric (such as CPU, memory, thread utilisation or some appropriate metric) so as to ensure continued successful operation of the service during expected and unexpected peak or off-peak operating periods.
 Ideally, scaling should be based on some metric that is indicative of an application's performance (such as number of busy threads, queue depth) rather than system resources such as CPU and memory as (in the case of scaling up for instance);
@@ -99,18 +89,13 @@ Allowing for automatic scaling of a service not only enables a service to respon
 - Check that Kubernetes service have HPA configured
 - Check that AWS services are in Auto-Scaling Groups
 
+**Services should be continuously reviewed.**
+
 ### Service MUST be able to reject and/or queue requests to protect the overall service
 
 The service must be able to apply rate limiting rules to protect itself from being overwhelmed by external and internal clients, preventing such scenarios as DDoS style attacks either intentional or accidental.
 
 - Check that services respond accordingly during load and stress testing; usually services should respond with HTTP 503
-- Tests results for service proving behaviour.
-
-### Service MUST be able to set appropriate caching directives in HTTP responses so as to reduce load on the service
-
-Where possible, the service should set caching headers to HTTP requests to reduce duplicate computation and thereby reducing load, conversely, client services should cache responses as defined by HTTP responses.
-
-- Check that services respond with appropriate cache directives in HTTP response headers
 
 ### Service MUST be able to tolerate expected load
 
@@ -120,10 +105,8 @@ Where required based off business requirements, the service can be load, soak or
 - identify and remediate performance bottlenecks
 - understand trigger points for scaling policies
 
-Validate with test teams that the service has been tested to expected peak load.
-Provide evidence / links to test reports.
-
 ### Service MUST be able to toletate expected stress
+
 The service must be stressed tested beyond normal load conditions (at least 200% of expected peak load), so as to;
 
 - Understand how the application behaves beyond normal conditions, and document any findings
@@ -131,17 +114,11 @@ The service must be stressed tested beyond normal load conditions (at least 200%
 - Identify and remediate performance bottlenecks in the service and upstream / downstream systems and services.
   - This is particularly important as there will be hidden limits that affect scaling capacity, such as limits on upstream systems, Kubernetes, our AWS accounts, or network throughput on appliances connecting to 3rd parties/POISE.
 
-Validate with test teams that the service has been stress tested to expected peak load.
-Provide evidence / links to load test reports.
-
 ### Service MUST be soak tested.
 
 The service must be soak tested to ensure normal operating conditions over time, from low, normal to high load situations, so as to:
 
 - Understand how the service behaves over a period of time, and that garbage collection effectively prevents memory and CPU leaks over time
 - Understand how the service recovers from high load situations and ensure it relinquishes unused resource back to the underlying infrastructure
-
-Validate with test teams that the service has been soak tested to expected peak load.
-Provide evidence / links to load test reports.
 
 ---
