@@ -16,6 +16,7 @@ Home office systems should be able to withstand failures during various circumst
 
 ## Requirement(s)
 
+
   - [Service reliability MUST be observable relative to defined service level expectations](#service-reliability-must-be-observable-relative-to-defined-service-level-expectations)
   - [Service MUST be tolerant to expected and unexpected failure of a data centre](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-a-data-centre)
   - [Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware, including networks](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-physical-or-virtualised-hardware-including-networks)
@@ -23,7 +24,7 @@ Home office systems should be able to withstand failures during various circumst
   - [Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics](#service-must-be-sized-appropriately-for-normal-operations-and-must-be-able-to-automatically-scale-as-appropriate-based-on-metrics)
   - [Service MUST be able to reject and/or queue requests to protect the overall service](#service-must-be-able-to-reject-andor-queue-requests-to-protect-the-overall-service)
   - [Service MUST be able to tolerate expected load](#service-must-be-able-to-tolerate-expected-load)
-  - [Service MUST be able to toletate expected stress](#service-must-be-able-to-toletate-expected-stress)
+  - [Service MUST be able to tolerate expected stress](#service-must-be-able-to-tolerate-expected-stress)
   - [Service MUST be soak tested.](#service-must-be-soak-tested)
 
 ### Service reliability MUST be observable relative to defined service level expectations
@@ -104,7 +105,7 @@ Where required based off business requirements, the service can be load, soak or
 - identify and remediate performance bottlenecks
 - understand trigger points for scaling policies
 
-### Service MUST be able to toletate expected stress
+### Service MUST be able to tolerate expected stress
 
 The service must be stressed tested beyond normal load conditions (at least 200% of expected peak load), so as to;
 
