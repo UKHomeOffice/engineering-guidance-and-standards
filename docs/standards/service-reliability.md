@@ -10,7 +10,7 @@ tags:
   - SRE
 ---
 
-Home office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
+Home Office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
 
 ---
 
