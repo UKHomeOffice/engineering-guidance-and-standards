@@ -64,7 +64,7 @@ Evidence could be a screenshot, link to repository or code snippet of where it i
 ### Service MUST be tolerant to expected and unexpected failure of upstream services such as databases
 
 In the event of an unexpected event (failure of an upstream application, database, etc.) or an expected event (upgrade, maintenance activities, etc.) your service may suffer an outage.
-Such scenarios are common and your service should guard against such scenarios by;
+Your service should guard against such scenarios by;
 - handling the failure gracefully, or
 - attempt to reconnect, and/or
 - attempt to retry within reasonable limits of your service
