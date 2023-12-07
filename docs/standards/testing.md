@@ -15,7 +15,7 @@ related:
       items:
 ---
 
-Testing code forms part of the core of developing code. Testing should provide confidence to stakeholders and be proportionate to risk.
+Testing code forms part of the core of developing code. Testing your changes is necessary to gain assurance that they can be deployed safely to production and that the service will still function as expected.
 
 The intent of any test should be clear as they can provide as a form of documentation to the overall solution, they should be relatively easy to understand with coverage tracked, though this must be stressed coverage is not the be all end all.
 
@@ -31,25 +31,29 @@ Testing can come in different forms unit/integration/mutation/property based, bu
 
 ## Requirement(s)
 
-- [You MUST track test coverage](#you-must-track-test-coverage)
-- [It MUST be clear when and why tests fail](#it-must-be-clear-when-and-why-tests-fail)
 - [You MUST test early and often](#you-must-test-early-and-often)
+- [You MUST have a way of measuring the effectiveness of testing](#you-must-have-a-way-of-measuring-the-effectiveness-of-testing)
+- [It MUST be clear what is being tested and what the results are](#it-must-be-clear-what-is-being-tested-and-what-the-results-are)
 - [Tests MUST be repeatable](#tests-must-be-repeatable)
 - [Tests MUST be included for both the happy path and unhappy path](#tests-must-be-included-for-both-the-happy-path-and-unhappy-path)
-- [Tests MUST be fast](#tests-must-be-fast)
-- [You MUST test for security issues as part of your pipelines](#you-must-test-for-security-issues-as-part-of-your-pipelines)
-
-### You MUST track test coverage
-
-Test coverage helps a team understand the amount of code that is tested within a codebase. Setting a minimum threshold (such as 80%) ensures that any new code is tested. Coverage is not always accurate, as if a test has an always truthy assertion then coverage can over estimate. However, it is a good indication overall.
-
-### It MUST be clear when and why tests fail.
-
-Understanding why tests are failing and been transparent about why (such as a report, or CI pipeline) can help the whole team see the value, and understand where failures are occuring. It also builds confidence within the team and business when tests wither catch something, or that they are running regularily. You shouldn't need to check manually whether a test has passed or failed.
+- [Tests that block deployments MUST complete in a reasonable time](#tests-that-block-deployments-must-complete-in-a-reasonable-time)
+- [You MUST use automated security testing](#you-must-use-automated-security-testing)
 
 ### You MUST test early and often
 
 The earlier testing happens in the development process, the less time is spent debugging, the better quality of the code through more tests, and the different paths are considered more. Using TDD can help here, as you can test the logic before writing it, which can help develop logic and sets the foundations of what you expect your code to do.
+
+### You MUST have a way of measuring the effectiveness of testing
+
+You need to know ehether your test effictiveness has changed over the course of your developments and that you haven't had any regressions on your changes. Tracking this effectiveness over times helps to understand the landscape of your testing moving forward.
+
+One way of doing this is through monitoring test coverage, Test coverage helps a team understand the amount of code that is tested within a codebase. Setting a minimum threshold (such as 80%) ensures that any new code is tested. Another example is mutation testing.
+
+### It MUST be clear what is being tested and what the results are
+
+Understanding why tests are failing and been transparent about why can help the whole team see the value, and understand where failures are occurring. You shouldn't need to check manually that tests have failed.
+
+An example is through making sure piplelines fail when tests fail, and you're able to see more information about why.
 
 ### Tests MUST be repeatable
 
@@ -59,12 +63,18 @@ The ability to repeat the same tests, gives confidence that if there is a failur
 
 Testing for all eventualities helps to write code that can handle errors in a better way. This should include things like testing for illegal arguements, or no arguements to be passed.
 
-### Tests MUST be fast
+### Tests that block deployments MUST complete in a reasonable time
 
-A developer should be able to run tests quickly to help understand the inpact of change. The longer it takes for a suite of tests to run, the less likely a developer is going to run the entire suite, which might cause issues later on in the development cycle.
+Tests such as unit/integration tests should complete in a reasonable time to help keep a fast path to live and help developers run tests quickly to understand the impact of their changes.
 
-### You MUST test for security issues as part of your pipelines
+Other tests such as soak that don't block deployments can be completed in a greater length of time.
 
-Testing security issues in your pipeline is vital to help make sure your application is secure and doesn't have any vulnerabilities.
+### You MUST use automated security testing
+
+Automated security testing can help understand where your code may have any security issues. These tests should be be ran as part of your pipelines to help identify issues and block the deployment of insecure code.
+
+Automated security testing, good peer reviews and good developer knowledge around keeping applications secure help to make sure an application stays secure.
+
+A good example of this is using Sonarqube as part of your pipelines.
 
 ---
