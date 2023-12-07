@@ -77,4 +77,12 @@ Automated security testing, good peer reviews and good developer knowledge aroun
 
 A good example of this is using Sonarqube as part of your pipelines.
 
+### You MUST make sure tests fail
+
+Making sure tests fail helps to verify that your tests are doing the correct thing and that they would fail if there is an issue.
+
+One way of achieving this is using red/green testing, when using TDD you get this for free, as you write the test first, have it fail (Red), then write the code to make the test pass (Green).
+
+Another way of making sure tests fail is using mutation testing. Mutation testing creates small varitions of source code and subjects them to the same tests and dataset to detect any errors in the code.
+
 ---
