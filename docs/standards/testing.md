@@ -17,7 +17,7 @@ related:
 
 Testing code forms part of the core of developing code. Testing your changes is necessary to gain assurance that they can be deployed safely to production and that the service will still function as expected.
 
-The intent of any test should be clear as they can provide as a form of documentation to the overall solution, they should be relatively easy to understand with coverage tracked, though this must be stressed coverage is not the be all end all.
+The intent of any test should be clear as they can provide a form of documentation to the overall solution, they should be relatively easy to understand with coverage tracked, although it must be stressed that coverage is not the be all end all.
 
 A good test should be clear on the intent of the test, should only have one test case, and be readable and the test should pass everytime without changes to the underlying code.
 
