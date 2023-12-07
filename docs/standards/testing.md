@@ -26,6 +26,8 @@ Testing can come in different forms unit/integration/mutation/property based, bu
 - Easy to connect failures in code from failed tests
 - Security & confidence when continously integrating code
 - Easy to understand intent and functionality of code
+- Tests should be automated when possible
+- Developers should be able to write and run tests and not silo'd to QAT
 
 ---
 
@@ -87,5 +89,13 @@ Making sure tests fail helps to verify that your tests are doing the correct thi
 One way of achieving this is using red/green testing, when using TDD you get this for free, as you write the test first, have it fail (Red), then write the code to make the test pass (Green).
 
 Another way of making sure tests fail is using mutation testing. Mutation testing creates small varitions of source code and subjects them to the same tests and dataset to detect any errors in the code.
+
+### You MUST use automated accessibility testing
+
+Accessibility testing can help understand where any accessibility issuses may be in your code. If there is a failure, it shouldblock your code from deploying so you have opportunity to fix any issues first.
+
+Automated acessibility testing alongside QAT testing should (hopefully) pick up most issues related to accessibility.
+
+A good example is using aXe in your pipelines.
 
 ---
