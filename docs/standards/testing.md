@@ -69,6 +69,8 @@ Tests such as unit/integration tests should complete in a reasonable time to hel
 
 Other tests such as soak that don't block deployments can be completed in a greater length of time.
 
+If tests completion time significantly increases when a code change is made, then a test should be treated as a failing test.
+
 ### You MUST use automated security testing
 
 Automated security testing can help understand where your code may have any security issues. These tests should be be ran as part of your pipelines to help identify issues and block the deployment of insecure code.
