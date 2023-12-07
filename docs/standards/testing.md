@@ -38,6 +38,7 @@ Testing can come in different forms unit/integration/mutation/property based, bu
 - [Tests MUST be included for both the happy path and unhappy path](#tests-must-be-included-for-both-the-happy-path-and-unhappy-path)
 - [Tests that block deployments MUST complete in a reasonable time](#tests-that-block-deployments-must-complete-in-a-reasonable-time)
 - [You MUST use automated security testing](#you-must-use-automated-security-testing)
+- [You MUST make sure tests fail](#you-must-make-sure-tests-fail)
 
 ### You MUST test early and often
 
