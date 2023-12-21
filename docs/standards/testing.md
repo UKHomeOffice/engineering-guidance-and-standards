@@ -37,7 +37,7 @@ Testing can come in different forms unit/integration/mutation/property based, bu
 - [You MUST automate tests](#you-must-automate-tests)
 - [You MUST make tests repeatable](#you-must-make-tests-repeatable)
 - [You MUST have a way of measuring the effectiveness of testing](#you-must-have-a-way-of-measuring-the-effectiveness-of-testing)
-- [You MUST make it clear what is being tested and what the results are](#you-must-make-it-clear-what-is-being-tested-and-what-the-results-are)
+- [Tests MUST have a purpose and explicit result](#tests-must-have-a-purpose-and-explicit-result)
 - [You MUST think about the edge cases](#you-must-think-about-the-edge-cases)
 
 ### You MUST test early and often
@@ -58,11 +58,11 @@ You need to know whether your test effectiveness has changed over the course of 
 
 One way of doing this is through monitoring test coverage, Test coverage helps a team understand the amount of code that is tested within a codebase. Setting a minimum threshold (such as 80%) ensures that any new code is tested. Another example is mutation testing.
 
-### You MUST make it clear what is being tested and what the results are
+### Tests MUST have a purpose and explicit result
 
-Understanding why tests are failing and been transparent about why can help the whole team see the value, and understand where failures are occurring. You shouldn't need to chesck manually that tests have failed.
+Tests must indicate why they are failing, showing expected and actual responses and the name of the test.
 
-An example is through making sure piplelines fail when tests fail, and you're able to see more information about why.
+An example is through making sure pipelines fail when tests fail, and you're able to see more information about why.
 
 ### You MUST think about the edge cases
 
