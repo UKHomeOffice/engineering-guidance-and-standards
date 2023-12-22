@@ -10,12 +10,11 @@ tags:
   - SRE
 ---
 
-Home Office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
+Home office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
 
 ---
 
 ## Requirement(s)
-
 
   - [Service reliability MUST be observable relative to defined service level expectations](#service-reliability-must-be-observable-relative-to-defined-service-level-expectations)
   - [Service MUST be tolerant to expected and unexpected failure of a data centre](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-a-data-centre)
@@ -64,7 +63,7 @@ Evidence could be a screenshot, link to repository or code snippet of where it i
 ### Service MUST be tolerant to expected and unexpected failure of upstream services such as databases
 
 In the event of an unexpected event (failure of an upstream application, database, etc.) or an expected event (upgrade, maintenance activities, etc.) your service may suffer an outage.
-Your service should guard against such scenarios by;
+Such scenarios are common and your service should guard against such scenarios by;
 - handling the failure gracefully, or
 - attempt to reconnect, and/or
 - attempt to retry within reasonable limits of your service
