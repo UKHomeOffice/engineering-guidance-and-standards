@@ -10,7 +10,7 @@ tags:
   - SRE
 ---
 
-Home office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
+Home Office systems should be able to withstand failures during various circumstances, both expected and unexpected, over a specified period, and in specified environments. 
 
 ---
 
@@ -34,15 +34,7 @@ Reliability expectations should be clear and baselined so that Service Level Obj
 
 In the event of an unexpected catastrophic event (flooding, fire, etc.) or an expected event (data centre maintenance), an entire data centre may be lost causing outages of services that are hosted in the affected data centre.
 
-Although rare, services should consider the possibility and guard against such scenarios by operating from multiple data centres by spreading applications / services across multiple data centres (e.g. AWS Availability Zones) either in Active/Active or Active/Passive configuration.
-
-Check that services are spread across multiple nodes and/or multiple availability zones; this can be checked by checking;
-- Kubernetes pod anti-affinity rules,
-- AWS multi-az settings for AWS services
-- AWS Auto Scaling Group configurations
-
-Evidence could be a screenshot, link to repository or code snippet of where it is configured. 
-**Example:** [Kubernetes Docs on pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#an-example-of-a-pod-that-uses-pod-affinity:~:text=Pod%20affinity%20example)
+Although rare, services should consider the possibility and guard against such scenarios by spreading applications / services across multiple data centres (e.g. Availability Zones) either in Active/Active or Active/Passive configuration.
 
 ### Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware, including networks
 
@@ -51,19 +43,10 @@ Such scenario is more common and your service should guard against such scenario
 - from multiple data centres
 - from multiple physical / virtualised nodes
 
-Check that services are spread across multiple nodes and/or multiple availability zones; this can be checked by checking;
-- Kubernetes pod anti-affinity rules
-- AWS multi-az settings for AWS services
-- AWS Auto Scaling Group configurations
-
-Evidence could be a screenshot, link to repository or code snippet of where it is configured.
-**Example:** [Kubernetes Docs on pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#an-example-of-a-pod-that-uses-pod-affinity:~:text=Pod%20affinity%20example)
-
-
 ### Service MUST be tolerant to expected and unexpected failure of upstream services such as databases
 
 In the event of an unexpected event (failure of an upstream application, database, etc.) or an expected event (upgrade, maintenance activities, etc.) your service may suffer an outage.
-Such scenarios are common and your service should guard against such scenarios by;
+Your service should guard against such scenarios by;
 - handling the failure gracefully, or
 - attempt to reconnect, and/or
 - attempt to retry within reasonable limits of your service
@@ -71,22 +54,20 @@ Such scenarios are common and your service should guard against such scenarios b
 When retrying transactions, particularly when an upstream service was down, avoid flooding the upstream service(s) with requests thus potentially creating a DDoS style attack on the upstream service, potentially causing further upstream service outages. 
 Furthermore, implement a backoff strategy if your transactions allow it.
 
-- Go through upstream services your service relies on, and  how it reacts to an expected or unexpected failure of that service.
-- Tests results for service proving behaviour.
+Go through upstream services your service relies on, and test how it reacts to an expected or unexpected failure of that service.
 
 ### Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics
 
 The service must be sized appropriately in terms of system resources (CPU, memory, storage, etc.) for normal operating conditions preventing unnecessary resource wastage.
 
 All components of a service can be scaled up or out (or down or in) based on some metric (such as CPU, memory, thread utilisation or some appropriate metric) so as to ensure continued successful operation of the service during expected and unexpected peak or off-peak operating periods.
-Ideally, scaling should be based on some metric that is indicative of an application's performance (such as number of busy threads, queue depth) rather than system resources such as CPU and memory as (in the case of scaling up for instance);
-- your application may exhaust threads and cannot service any more requests, while CPU and memory utilisation is low 
-- a messaging queue is filling up, but there are not enough consumers to process messages
+
+Ideally, scaling should be based on some metric that is indicative of an application's performance (such as number of busy threads, queue depth) rather than system resources such as CPU and memory. Not scaling based on intelligent metrics could result in situations such as:
+- your application has exhausted threads and cannot service any more requests, while CPU and memory utilisation is low
+- a messaging queue has filled up, and there are not enough consumers to process messages
+
 Basing scaling policies based on system resources should be the fallback option, rather than the main criteria by which you scale.
 Allowing for automatic scaling of a service not only enables a service to respond accordingly during peak or off-peak times, but is also a valuable cost saver.
-
-- Check that Kubernetes service have HPA configured
-- Check that AWS services are in Auto-Scaling Groups
 
 **Services should be continuously reviewed.**
 
@@ -111,7 +92,7 @@ The service must be stressed tested beyond normal load conditions (at least 200%
 - Understand how the application behaves beyond normal conditions, and document any findings
 - Ensure scaling policies behave as expected, and that normal service can be expected from unexpected load conditions
 - Identify and remediate performance bottlenecks in the service and upstream / downstream systems and services.
-  - This is particularly important as there will be hidden limits that affect scaling capacity, such as limits on upstream systems, Kubernetes, our AWS accounts, or network throughput on appliances connecting to 3rd parties/POISE.
+  - This is particularly important as there will be hidden limits that affect scaling capacity, such as limits on upstream systems, Cloud accounts, or network throughput on appliances connecting to 3rd parties/POISE.
 
 ### Service MUST be soak tested.
 
