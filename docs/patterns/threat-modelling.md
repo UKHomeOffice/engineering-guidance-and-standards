@@ -46,7 +46,7 @@ Engineering teams should incorporate [collaborative threat modelling with a 'lit
 
 - You do not need to be a security expert to do threat modelling, and the process does not need to be fully comprehensive to bring value, in fact attempting to build the 'perfect' threat model is often counterproductive
 
-- [Security is everyone's responsibility](principles/security-is-everyones-responsibility/). While it is a useful opportunity to engage security colleagues in threat modelling activities, it is not essential. Value is brought from the process when the whole team is involved
+- [Security is everyone's responsibility](/principles/security-is-everyones-responsibility/). While it is a useful opportunity to engage security colleagues in threat modelling activities, it is not essential. Value is brought from the process when the whole team is involved
 
 - As engineers, our instinct is to focus on the technology. It is ok to be technology driven when doing threat modelling, but don't forget to think about potential threats from people and process
 

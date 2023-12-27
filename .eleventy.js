@@ -21,8 +21,7 @@ module.exports = function(eleventyConfig) {
                     '<span class="govuk-header__logotype">' +
                     '  <img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
                     '  <span class="govuk-header__logotype-text">Home Office</span>' +
-                    '</span>&nbsp;' +
-                    '<span class="govuk-header__product-name">Engineering Guidance and Standards</span>'
+                    '</span>'
             },
             productName: 'Engineering Guidance and Standards',
             search: {

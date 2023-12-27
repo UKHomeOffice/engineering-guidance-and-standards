@@ -31,6 +31,8 @@ describe('All pages pass axe-core accessibility checks', () => {
     it(`${page.title} (${page.url}) is accessible`, () => {
       cy.visit(testing_params.TEST_ROOT_URL + page.url)
       cy.injectAxe()
+      // Prevent intermittent colour contrast failures
+      cy.wait(10)
       cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
     })
 
@@ -72,7 +74,7 @@ describe('Tag pages pass axe-core accessibility checks', () => {
     cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
   })
 
-  it('All tags is accessible', () => {
+  it('All tags page is accessible', () => {
     cy.visit(testing_params.TEST_ROOT_URL)
     cy.contains('Read our standards').click()
     cy.contains('Minimal documentation set for a product').click()

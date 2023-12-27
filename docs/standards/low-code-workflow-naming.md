@@ -2,28 +2,18 @@
 layout: standard
 order: 1
 title: Low code workflow naming
-date: 2023-11-15 # this should be the date that the content was most recently amended or formally reviewed
-id: SEGAS-00012 # Set unique ID for standard
-# use `tags: []` for no tags
-# Check https://ho-cto.github.io/engineering-guidance-and-standards/tags/ for existing tags
-# Note: tags must use sentence case capitalisation
+date: 2023-11-15 
+id: SEGAS-00012 
 tags:
   - Low code
   - Software design
 ---
 
-<!-- Standard description -->
-Ensuring clean and clear naming in low-code workflow tools helps provide structure and maintainability. This covers a variety of aspects from workflow and action names to scope blocks and error handling. This standard aims to provide generic rules that can be applied across all platforms, however due to the nature of low-code technology and tooling-specific limitations, there may be exceptional circumstances where they cannot be applied. 
-<!-- 
+Ensuring clean and clear naming in low-code workflow tools helps provide structure and maintainability. This covers a variety of aspects from workflow and action names to scope blocks and error handling. This standard aims to provide generic rules that can be applied across all platforms, however due to the nature of low-code technology and tooling-specific limitations, there may be exceptional circumstances where they cannot be applied.
 
-# Notes on line breaks
-
-Please see https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#line-breaks for notes on usage of line breaks.
 ---
 
 ## Requirement(s)
-
-<!-- Populate list for each requirement (there can be more than 2)-->
 
 - [Naming conventions MUST be consistent](#naming-conventions-must-be-consistent)
 - [Acronyms or uncommon abbreviations MUST be defined in a central or project glossary](#acronyms-or-uncommon-abbreviations-must-be-defined-in-a-central-or-project-glossary)
