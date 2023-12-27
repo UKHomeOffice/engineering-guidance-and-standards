@@ -16,8 +16,14 @@ module.exports = function(eleventyConfig) {
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
         header: {
-            organisationLogo: '<img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
-            organisationName: 'Home Office',
+            logotype: {
+                html:
+                    '<span class="govuk-header__logotype">' +
+                    '  <img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
+                    '  <span class="govuk-header__logotype-text">Home Office</span>' +
+                    '</span>&nbsp;' +
+                    '<span class="govuk-header__product-name">Engineering Guidance and Standards</span>'
+            },
             productName: 'Engineering Guidance and Standards',
             search: {
                 label: 'Search site',
