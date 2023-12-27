@@ -55,7 +55,7 @@ The Home Office is committed to making its website accessible, in accordance wit
 
 ### Compliance status
 
-This website is compliant with the [Web Content Accessibility Guidelines version 2.1](https://www.w3.org/TR/WCAG21/) AA standard.
+This website is compliant with the [Web Content Accessibility Guidelines version 2.2](https://www.w3.org/TR/WCAG22/) AA standard.
 
 Contributions to the site are managed using the [engineering guidance and standards repository on GitHub](https://github.com/UKHomeOffice/engineering-guidance-and-standards). This is partially compliant as described in [GitHub's accessibility conformance report](https://accessibility.github.com/conformance/github-com/). 
 
@@ -67,8 +67,8 @@ Contributing to the site using the [engineering guidance and standards repositor
 
 ## Preparation of this accessibility statement
 
-- This statement was prepared and reviewed on 27th October 2023.
-- This website was last tested on 28th September 2023. Testing was carried out internally by the Home Office.
+- This statement was prepared and reviewed on 27th December 2023.
+- This website was last tested on 27th December 2023. Testing was carried out internally by the Home Office.
 
 We test this site as it develops by running automated accessibility tests provided by [`axe-core`](https://github.com/dequelabs/axe-core) on all changes, and by following a script of manual checks to perform when reviewing changes to the site. These are stored in GitHub:
 
