@@ -7,8 +7,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     // Register the plugins
     let govukPluginOptions = {
-        brandColour: '#8f23b3',
-        fontFamily: 'roboto, system-ui, sans-serif',
+        scssSettingsPath: "/styles/_settings.scss",
         icons: {
             mask: '/assets/logos/ho-mask-icon.svg',
             shortcut: '/assets/logos/ho-favicon.ico',
