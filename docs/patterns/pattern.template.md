@@ -25,14 +25,9 @@ related: # remove this section if you do not need related links on your page
 
 Please see https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#line-breaks for notes on usage of line breaks.
 
-# Notes on using links
+# Notes on linking to headings within a page
 
-Internal links need to follow this format:
-[link text to internal page]({{ '/standards/writing-a-standard/' | url }})
-Note the use of the `url` filter. This ensures the link is appended to the base URL of the webpage correctly.
-
-External links follow standard markdown formatting:
-[link text to external page](https://example.com)
+Heading tags are automatically assigned an id, converting spaces to `kebab-case` and applying URL encoding. If you want to link to a specific heading, you can obtain the URL encoded link by running the site locally, inspecting the appropriate <h3> element in the browser's developer tools and copying the value from the 'id' attribute.
 -->
 
 ---

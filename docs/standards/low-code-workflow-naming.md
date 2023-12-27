@@ -19,17 +19,6 @@ Ensuring clean and clear naming in low-code workflow tools helps provide structu
 # Notes on line breaks
 
 Please see https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#line-breaks for notes on usage of line breaks.
-
-# Notes on using links
-
-Internal links need to follow this format:
-[link text to internal page]({{ '/standards/writing-a-standard/' | url }})
-Note the use of the `url` filter. This ensures the link is appended to the base URL of the webpage correctly.
-
-External links follow standard markdown formatting:
-[link text to external page](https://example.com)
--->
-
 ---
 
 ## Requirement(s)

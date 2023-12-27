@@ -17,7 +17,7 @@ related: # remove this section if you do not need related links on your page
           href: /principles/design-from-evidence/
 ---
 
-Effectively understanding and communicating the potential attack vectors for our systems enables the Home Office to develop more secure applications and implement [proportionate security]({{ '/principles/proportionate-security/' | url }}). Threat modelling is an [approach to identifying threats to a system](https://owasp.org/www-community/Threat_Modeling) so that appropriate security controls can be prioritised for implementation to mitigate risks.
+Effectively understanding and communicating the potential attack vectors for our systems enables the Home Office to develop more secure applications and implement [proportionate security](/principles/proportionate-security/). Threat modelling is an [approach to identifying threats to a system](https://owasp.org/www-community/Threat_Modeling) so that appropriate security controls can be prioritised for implementation to mitigate risks.
 
 There are a [number of approaches to threat modelling](https://shellsharks.com/threat-modeling) of varying scope and involvement. This pattern suggests a few ways that teams can start to incorporate threat modelling into their activities.
 
@@ -46,7 +46,7 @@ Engineering teams should incorporate [collaborative threat modelling with a 'lit
 
 - You do not need to be a security expert to do threat modelling, and the process does not need to be fully comprehensive to bring value, in fact attempting to build the 'perfect' threat model is often counterproductive
 
-- [Security is everyone's responsibility]({{ '/principles/security-is-everyones-responsibility/' | url }}). While it is a useful opportunity to engage security colleagues in threat modelling activities, it is not essential. Value is brought from the process when the whole team is involved
+- [Security is everyone's responsibility](principles/security-is-everyones-responsibility/). While it is a useful opportunity to engage security colleagues in threat modelling activities, it is not essential. Value is brought from the process when the whole team is involved
 
 - As engineers, our instinct is to focus on the technology. It is ok to be technology driven when doing threat modelling, but don't forget to think about potential threats from people and process
 

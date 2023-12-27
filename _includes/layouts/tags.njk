@@ -22,7 +22,7 @@
 
       <ul class="govuk-list govuk-list--bullet">
        {% for tag in collections.all | getAllTags | filterTagList %}
-       {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
+       {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
         <li>
           <a href="{{ tagUrl }}">{{ tag }}</a>
         </li>
