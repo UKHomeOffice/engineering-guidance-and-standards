@@ -52,7 +52,7 @@ Automating tests enables the tests to be run consistently and often. Automated t
 
 ### You MUST make tests repeatable
 
-The ability to repeat the same tests, gives confidence that if there is a failure, something has changed to affect that failure. The values shouldn't change based on enviroments and unit tests should not depend on other external factors to run.
+The ability to repeat the same tests gives confidence that if there is a failure, something has changed to affect that failure. The values that a test rely on shouldn't change based on environments, and tests such as unit tests should not depend on other external factors and dependencies (such as third party API, etc) to run.
 
 ### You MUST have a way of measuring the effectiveness of testing
 
