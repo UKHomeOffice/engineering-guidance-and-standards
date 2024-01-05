@@ -30,14 +30,11 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@x-govuk/govuk-eleventy-plugin": "^6.0.3"
+    "@x-govuk/govuk-eleventy-plugin": "^5.0.6"
   },
   "devDependencies": {
     "axe-core": "^4.8.3",
     "cypress-axe": "^1.5.0",
     "cypress": "^13.6.2"
-  },
-  "overrides": {
-    "axios": "^1.6"
   }
 }
