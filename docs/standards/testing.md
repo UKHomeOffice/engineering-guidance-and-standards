@@ -27,7 +27,7 @@ Testing can come in different forms, unit/integration/mutation/property based, b
 - Easy to correct failures in code from failed tests.
 - Security & confidence when continously integrating code
 - Easy to understand intent and functionality of code
-- Developers should be able to write and run tests and not silo'd to QAT
+- Tests are owned by the same team who owns the code and not within a silo external to the team.
 
 ---
 
