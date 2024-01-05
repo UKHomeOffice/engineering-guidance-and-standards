@@ -2,11 +2,10 @@
 layout: standard
 order: 1
 title: Developer Testing
-date: 2023-10-26
-id: SEGAS-TOBEFILLED
+date: 2024-01-05
+id: SEGAS-00013
 tags:
-  - Source management
-  - Secure development
+  - Software Design
   - Ways of working
   - Testing
 related:
