@@ -66,10 +66,10 @@ Tests must indicate why they are failing, showing expected and actual responses 
 
 An example is through making sure pipelines fail when tests fail, and you're able to see more information about why.
 
-A test failing due to a regression often exposes an engineer to functionality they are not familiar with. The information logged along with the test implementation should provide enough context that they can understand what is being tested and what has gone wrong, and be able to reason about how they can resolve it.
+A test failing due to a regression often implies that a functionality has been added that contradict existing (and previous expectations), this should be reviewed to understand why this happened and what needs to be done to fix the regression issue. Although the area of concern may be unfamiliar, the information logged along with the test implementation should provide enough context to help with this review - in understanding what is being tested, what has gone wrong, and hence be able to reason about how the issue can be resolved.
 
 ### You MUST think about the edge cases
 
-Testing for all eventualities helps to write code that can handle errors in a better way. This should include things like testing for illegal arguements, or no arguements to be passed.
+Testing for all eventualities helps to write code that can handle errors and exceptions. This should include things like testing for illegal or no arguments, dependencies' edge cases (which can often be simulated through mocking dependencies as appropriate).
 
 ---
