@@ -18,7 +18,8 @@ related:
 Testing code forms part of the core of developing code. Testing your changes is necessary to gain assurance that they can be deployed safely to production and that the service will still function as expected.
 
 The intent of any test should be clear as they can provide a form of documentation to the overall solution.
-The tests should be relatively easy to understand with a track of the overall testing coverage kept. It is good to keep in mind that test coverage of a code base is not a definitive marker of quality.
+
+The tests should be relatively easy to understand with a track of the overall testing coverage kept. Strong test coverage of a code base contributes towards overall quality of application code, although depending on your application context, it may not necessarily be the only definitive marker of quality code.
 
 A good test should be clear on the intent of the test, have one test case, be readable and should pass every time without changes to the underlying code.
 
@@ -65,6 +66,7 @@ Tests must indicate why they are failing, showing expected and actual responses 
 An example is through making sure pipelines fail when tests fail, and you're able to see more information about why.
 
 A test failing due to a regression often exposes an engineer to functionality they are not familiar with. The information logged along with the test implementation should provide enough context that they can understand what is being tested and what has gone wrong, and be able to reason about how they can resolve it.
+
 ### You MUST think about the edge cases
 
 Testing for all eventualities helps to write code that can handle errors in a better way. This should include things like testing for illegal arguements, or no arguements to be passed.
