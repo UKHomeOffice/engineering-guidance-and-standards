@@ -5,7 +5,7 @@ title: Developer Testing
 date: 2024-01-05
 id: SEGAS-00013
 tags:
-  - Software Design
+  - Software design
   - Ways of working
   - Testing
 related:
