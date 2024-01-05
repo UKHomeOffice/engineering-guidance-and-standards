@@ -17,16 +17,16 @@ related:
 
 Testing code forms part of the core of developing code. Testing your changes is necessary to gain assurance that they can be deployed safely to production and that the service will still function as expected.
 
-The intent of any test should be clear as they can provide a form of documentation to the overall solution, they should be relatively easy to understand with coverage tracked, although it must be stressed that coverage is not the be all end all.
+The intent of any test should be clear as they can provide a form of documentation to the overall solution.
+The tests should be relatively easy to understand with a track of the overall testing coverage kept. It is good to keep in mind that test coverage of a code base is not a definitive marker of quality.
 
-A good test should be clear on the intent of the test, should only have one test case, and be readable and the test should pass everytime without changes to the underlying code.
+A good test should be clear on the intent of the test, have one test case, be readable and should pass every time without changes to the underlying code.
 
-Testing can come in different forms unit/integration/mutation/property based, but all must adhere to the requirements laid out as the following benefits can be achieved from it:
+Testing can come in different forms, unit/integration/mutation/property based, but all must adhere to the requirements as the following benefits can be achieved:
 
-- Easy to connect failures in code from failed tests
+- Easy to correct failures in code from failed tests.
 - Security & confidence when continously integrating code
 - Easy to understand intent and functionality of code
-- Tests should be automated when possible
 - Developers should be able to write and run tests and not silo'd to QAT
 
 ---
