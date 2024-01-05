@@ -1,5 +1,13 @@
 {% extends "layouts/base.njk" %}
-{# Forked from layouts/product to wrap masthead in region #}
+{#- Forked from layouts/product to wrap masthead in region -#}
+
+{#-
+https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/components/header/template.njk#L4-L6
+
+The govuk header uses the layout name to remove the border for collection and product pages. Because we add the phase
+banner, the border should be on all pages, so hide that this is a product page.
+-#}
+{%- set layout="prevent-layout-specific-styling" -%}
 
 {% block main %}
   {% if phaseBannerConfiguration %}
@@ -19,15 +27,15 @@
         html: description | markdown("inline") | noOrphans
       } if description,
       startButton: {
-        href: startButton.href | url,
+        href: startButton.href,
         text: startButton.text
       } if startButton,
       image: {
         alt: image.alt,
-        src: image.src | url
+        src: image.src
       } if image,
       breadcrumbs: {
-        classes: "govuk-!-display-none-print govuk-!-margin-bottom-0",
+        classes: "govuk-!-display-none-print",
         items: breadcrumbItems
       } if showBreadcrumbs
     }) }}

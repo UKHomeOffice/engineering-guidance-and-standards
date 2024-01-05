@@ -1,6 +1,6 @@
 {% macro tagList(theTags) %}
 {%- for tag in theTags | filterTagList %}
-  {%- set tagUrl %}{{ "/tags/" | url }}{{ tag | slugify }}/{% endset %}
+  {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
   <a href="{{ tagUrl }}" class="x-govuk-sub-navigation__link">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
 {%- endfor %}
 {% endmacro %}

@@ -70,7 +70,7 @@ Vulnerability scanning should be automated and implemented in multiple locations
 
 Engineering teams must plan and perform updates to their software components. There are a number of things teams should do to enable this on an ongoing basis:
 
-- [Select and define a deployment strategy]({{ '/patterns/selecting-a-deployment-strategy/' | url }}) that enables the promotion of patches and dependency changes into production frequently
+- [Select and define a deployment strategy](/patterns/selecting-a-deployment-strategy/) that enables the promotion of patches and dependency changes into production frequently
 - Configure pipelines and test suites to allow testing for the compatibility of modified software components
 - Monitor and triage the ongoing need to patch, update or change the configuration of components, over the lifecycle of the product
 - Employ good software design principles to loosely couple external dependencies where possible, making it easier to replace them if required
