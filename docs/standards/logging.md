@@ -22,7 +22,7 @@ related:
 
 <!-- Standard description -->
 
-to-do
+Logging tools are one of the primary ways of debugging application problems and identifying the root cause of incidents. However, logs need to be in a standard and useful format so that they are not only useful for the application's original developers, but also support engineers down the line. However, logs are sometimes relied on to heavily for problem detection, over purpose chosen monitoring tooling. Therefore these standards provide guidance on the proper utilsation of application logs, as well as their format.
 
 <!-- 
 
