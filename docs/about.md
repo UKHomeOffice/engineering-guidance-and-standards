@@ -33,6 +33,6 @@ You can find out more about how to contribute in our [CONTRIBUTING.md](https://g
 
 We have work on site and content improvements happening in parallel. The long term enhancements we are looking at are below:
 
-- Grow the body of guidance and standards by continuing to engage our wide engineering community, and supporting them to create new content
+- Grow the body of guidance and standards, by continuing to engage our engineering community and supporting them to create new content
 - Build a self-assurance mechanism so that teams can easily assert compliance with the standards
 - Continue development of the site so that it is an examplar of conformance to our growing collection of standards
