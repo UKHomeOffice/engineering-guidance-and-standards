@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Service reliability
-date: 2023-11-23
+date: 2024-01-12
 id: SEGAS-00013
 tags:
   - Reliability
@@ -18,13 +18,13 @@ Home Office systems should be able to withstand failures during various circumst
 
   - [Service reliability MUST be observable relative to defined service level expectations](#service-reliability-must-be-observable-relative-to-defined-service-level-expectations)
   - [Service MUST be tolerant to expected and unexpected failure of a data centre](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-a-data-centre)
-  - [Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware, including networks](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-physical-or-virtualised-hardware-including-networks)
+  - [Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware as well as network](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-physical-or-virtualised-hardware-as-well-as-network)
   - [Service MUST be tolerant to expected and unexpected failure of upstream services such as databases](#service-must-be-tolerant-to-expected-and-unexpected-failure-of-upstream-services-such-as-databases)
   - [Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics](#service-must-be-sized-appropriately-for-normal-operations-and-must-be-able-to-automatically-scale-as-appropriate-based-on-metrics)
-  - [Service MUST be able to reject and/or queue requests to protect the overall service](#service-must-be-able-to-reject-andor-queue-requests-to-protect-the-overall-service)
+  - [Service MUST be able to handle requests to protect the overall service](#service-must-be-able-to-handle-requests-to-protect-the-overall-service)
   - [Service MUST be able to tolerate expected load](#service-must-be-able-to-tolerate-expected-load)
   - [Service MUST be able to tolerate expected stress](#service-must-be-able-to-tolerate-expected-stress)
-  - [Service MUST be soak tested.](#service-must-be-soak-tested)
+  - [Service MUST be soak tested](#service-must-be-soak-tested)
 
 ### Service reliability MUST be observable relative to defined service level expectations
 
@@ -36,7 +36,7 @@ In the event of an unexpected catastrophic event (flooding, fire, etc.) or an ex
 
 Although rare, services should consider the possibility and guard against such scenarios by spreading applications / services across multiple data centres (e.g. Availability Zones) either in Active/Active or Active/Passive configuration.
 
-### Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware, including networks
+### Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware as well as network
 
 In the event of an unexpected event (hardware fault, withdrawal of virtualised hardware e.g. SPOT instances) or an expected event (maintenance activities) your service may suffer an outage.
 Such scenario is more common and your service should guard against such scenarios by operating;
@@ -70,7 +70,7 @@ Allowing for automatic scaling of a service not only enables a service to respon
 
 **Services should be continuously reviewed.**
 
-### Service MUST be able to reject and/or queue requests to protect the overall service
+### Service MUST be able to handle requests to protect the overall service
 
 The service must be able to apply rate limiting rules to protect itself from being overwhelmed by external and internal clients, preventing such scenarios as DDoS style attacks either intentional or accidental.
 
@@ -93,7 +93,7 @@ The service must be stressed tested beyond normal load conditions (at least 200%
 - Identify and remediate performance bottlenecks in the service and upstream / downstream systems and services.
 - This is particularly important as there will be hidden limits that affect scaling capacity, such as limits on upstream systems, Cloud accounts, or network throughput on appliances connecting to 3rd parties/POISE.
 
-### Service MUST be soak tested.
+### Service MUST be soak tested
 
 The service must be soak tested to ensure normal operating conditions over time, from low, normal to high load situations, so as to:
 
