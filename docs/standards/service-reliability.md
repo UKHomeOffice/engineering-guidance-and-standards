@@ -92,7 +92,7 @@ The service must be stressed tested beyond normal load conditions (at least 200%
 - Understand how the application behaves beyond normal conditions, and document any findings
 - Ensure scaling policies behave as expected, and that normal service can be expected from unexpected load conditions
 - Identify and remediate performance bottlenecks in the service and upstream / downstream systems and services.
-  - This is particularly important as there will be hidden limits that affect scaling capacity, such as limits on upstream systems, Cloud accounts, or network throughput on appliances connecting to 3rd parties/POISE.
+- This is particularly important as there will be hidden limits that affect scaling capacity, such as limits on upstream systems, Cloud accounts, or network throughput on appliances connecting to 3rd parties/POISE.
 
 ### Service MUST be soak tested.
 
