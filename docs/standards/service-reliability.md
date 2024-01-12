@@ -54,7 +54,6 @@ Your service should guard against such scenarios by;
 When retrying transactions, particularly when an upstream service was down, avoid flooding the upstream service(s) with requests thus potentially creating a DDoS style attack on the upstream service, potentially causing further upstream service outages. 
 Furthermore, implement a backoff strategy if your transactions allow it.
 
-Go through upstream services your service relies on, and test how it reacts to an expected or unexpected failure of that service.
 
 ### Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics
 
