@@ -66,7 +66,7 @@ Ideally, scaling should be based on some metric that is indicative of an applica
 - your application has exhausted threads and cannot service any more requests, while CPU and memory utilisation is low
 - a messaging queue has filled up, and there are not enough consumers to process messages
 
-Basing scaling policies based on system resources should be the fallback option, rather than the main criteria by which you scale.
+Basing scaling policies on system resources should be the fallback option, rather than the main criteria by which you scale.
 Allowing for automatic scaling of a service not only enables a service to respond accordingly during peak or off-peak times, but is also a valuable cost saver.
 
 **Services should be continuously reviewed.**
