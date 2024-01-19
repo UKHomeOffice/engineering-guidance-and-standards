@@ -20,7 +20,7 @@ Testing code forms part of the core of developing code. Testing your changes is 
 
 The intent of any test should be clear as they can provide a form of documentation to the overall solution.
 
-The tests should be easy to understand with a track of the overall testing coverage kept. Strong test coverage of a code base contributes towards overall quality of application code, although depending on your application context, it may not necessarily be the only definitive marker of quality code.
+Tests must be easy to understand with a way of measuring test effectiveness (for example coverage). Strong test coverage of a code base contributes towards overall quality of application code, although depending on your application context, it may not necessarily be the only definitive marker of quality code.
 
 A good test should be clear on the intent of the test, have one test case, be readable and should pass every time without changes to the underlying code.
 
