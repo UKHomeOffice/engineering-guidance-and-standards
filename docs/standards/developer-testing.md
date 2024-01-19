@@ -12,6 +12,8 @@ related:
   sections:
     - title: Related links
       items:
+        - text: Write maintainable, reusable and evolutionary code
+          href: /principles/write-maintainable-reusable-and-evolutionary-code/
 ---
 
 Testing code forms part of the core of developing code. Testing your changes is necessary to gain assurance that they can be deployed safely to production and that the service will still function as expected.
