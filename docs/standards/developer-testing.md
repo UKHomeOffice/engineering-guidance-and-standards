@@ -22,7 +22,7 @@ The tests should be relatively easy to understand with a track of the overall te
 
 A good test should be clear on the intent of the test, have one test case, be readable and should pass every time without changes to the underlying code.
 
-Testing can come in different forms, unit/integration/mutation/property based, but all must adhere to the requirements as the following benefits can be achieved:
+Testing can come in different forms, for example unit/integration/mutation/property based, but all must adhere to the requirements as the following benefits can be achieved:
 
 - Easy to correct failures in code from failed tests.
 - Security & confidence when continously integrating code
