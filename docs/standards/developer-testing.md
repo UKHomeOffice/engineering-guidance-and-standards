@@ -44,7 +44,7 @@ Testing can come in different forms, for example unit/integration/mutation/prope
 
 ### You MUST test early and often
 
-Writing tests early and often in a software development process tends to reduce the amount of time spent debugging. Good tests written early generally helps improve the overall assurance and design quality of your application.
+Writing tests early and often in a software development process reduces the amount of time spent debugging. Good tests written early helps improve the overall assurance and design quality of your application.
 
 Test Driven Development (TDD) is a valuable development approach that can help towards achieving this. This development approach encourages you to think ahead on how your requirements can be met by thinking on how your solution can be tested first at unit level. Once a test is written first albeit failing due to non-existing solution, you can implement your solution to pass the test, and then refactor. "Testing early and often" in this case leads to "refactoring early and often", which continuously improves the quality of your application code and design.
 
