@@ -58,7 +58,7 @@ The ability to repeat the same tests gives confidence that if there is a failure
 
 You need to know whether your test effectiveness has changed over the course of your development and that you haven't had any regressions on your changes. Tracking this effectiveness over time helps to understand the landscape of your testing moving forward.
 
-One way of doing this is through monitoring test coverage, Test coverage helps a team understand the amount of code that is tested within a codebase. Setting a minimum threshold (such as 80%) ensures that any new code is tested. Another example is mutation testing.
+One way of doing this is through monitoring test coverage. Test coverage helps a team understand the amount of code that is tested within a codebase. Setting a minimum threshold (such as 80%) ensures that any new code is tested. Another example is mutation testing.
 
 ### Tests MUST have a purpose and explicit result
 
