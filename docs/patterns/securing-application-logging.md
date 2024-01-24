@@ -65,6 +65,18 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 
 ## Considerations
 
+### Consider how information can combine to form PII
+
+Examples of PII include:
+* Passport number, Issuing Country, Expiry Dates
+* BRP/C number, Date of Birth
+
+With the examples above, the information by themselves do not mean very much, after all a BRP/C number is just a "random" sequence of characters; but in combination with the date of birth it can be used to uniquely identify an individual.
+
+If you are unsure what is person identifiable information, consult with your security specialists.
+
+Information and data sets that contain sensitive information should not be output to logs regardless of log level.
+
 ### Consider whether logging statements are necessary
 Sometimes logging is used for fast-feedback loops when prototyping application functionality, but eventually become redundant, or the application they provide does not provide additional operational or debugging value for an operator searching through logs.
 
