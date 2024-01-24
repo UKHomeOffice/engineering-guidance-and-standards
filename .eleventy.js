@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
                     '</span>'
             },
             productName: 'Engineering Guidance and Standards',
+            organisationName: 'Home Office',
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
