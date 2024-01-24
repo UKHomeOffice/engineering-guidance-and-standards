@@ -19,7 +19,7 @@ related:
 ---
 
 It is common to log user information from an application to assist operations or debugging. Some middleware might be configured to log full configuration, data, or request/response objects, which may contain Personally Identifiable Information (PII), authentication tokens or application secrets.
-
+  
 Logging any of these can make information available to people that have access to log aggregation platforms, or log storage, but are not legally allowed to view PII, or should not otherwise have access to that information. User authentication tokens and application secrets can be used to impersonate users and elevate privilege.
 
 [Sensitive Data Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure) has been a recognised risk to secure application development historically. Our [managing secrets]({{ '/standards/managing-secrets/' | url }}) standard has requirements on ensuring logs do not contain tokens or other secrets.
@@ -67,14 +67,14 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 
 ### Consider how information can combine to form PII
 
-Examples of PII include:
+Examples of combined PII include:
 * Passport number, Issuing Country, Expiry Dates
 * BRP/C number, Date of Birth
-
-With the examples above, the information by themselves do not mean very much, after all a BRP/C number is just a "random" sequence of characters; but in combination with the date of birth it can be used to uniquely identify an individual.
-
+  
+With the examples above, the information by themselves do not mean very much. After all, a BRP/C number is just a "random" sequence of characters; but in combination with the date of birth it can be used to uniquely identify an individual.
+  
 If you are unsure what is person identifiable information, consult with your security specialists.
-
+  
 Information and data sets that contain sensitive information should not be output to logs regardless of log level.
 
 ### Consider whether logging statements are necessary
