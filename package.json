@@ -33,7 +33,7 @@
     "@x-govuk/govuk-eleventy-plugin": "^6.0.4"
   },
   "devDependencies": {
-    "axe-core": "^4.8.3",
+    "axe-core": "^4.8.4",
     "cypress-axe": "^1.5.0",
     "cypress": "^13.6.4"
   }
