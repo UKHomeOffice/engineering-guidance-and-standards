@@ -71,7 +71,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+        return DateTime.fromJSDate(dateObj).toFormat('d MMMM yyyy');
     });
 
     // Used for tag page generation
