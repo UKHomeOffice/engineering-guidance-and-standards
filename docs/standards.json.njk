@@ -1,0 +1,17 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /standards.json
+---
+[{% for standard in collections.getAllStandardsOrderedByID %}
+{
+    "id": "{{ standard.data.id }}",
+    "title": "{{ standard.data.title }}",
+    "url": "{{ standard.url }}",
+    "tags": [
+        {%- for tag in standard.data.tags -%}
+        "{{- tag -}}"{%- if not loop.last %} ,{%- endif -%}
+        {%- endfor -%}
+    ],
+    "requirements": {{ standard.templateContent | extractRequirements | jsonStringify }}
+}{% if not loop.last %},{% endif %}
+{% endfor %}]

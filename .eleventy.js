@@ -1,5 +1,7 @@
 const govukEleventyPlugin  = require('@x-govuk/govuk-eleventy-plugin')
 const { DateTime } = require("luxon");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
@@ -95,6 +97,15 @@ module.exports = function(eleventyConfig) {
         return a.data.title.localeCompare(b.data.title); // sort by title ascending
       });
     });
+
+    fs.readdirSync(path.join(process.cwd(), path.join('lib', 'filters'))).map((file) => path.parse(file))
+        .filter(({ext}) => ext === '.js')
+        .forEach(({name, base}) =>
+            eleventyConfig.addFilter(
+                name,
+                require(path.join(process.cwd(), 'lib', 'filters', base)),
+            )
+        );
 
     eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
       return [
