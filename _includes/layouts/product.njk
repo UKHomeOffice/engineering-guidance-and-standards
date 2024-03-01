@@ -1,5 +1,4 @@
-{% extends "layouts/base.njk" %}
-{#- Forked from layouts/product to wrap masthead in region -#}
+{% extends "layouts/product.njk" %}
 
 {#-
 https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/components/header/template.njk#L4-L6
@@ -16,35 +15,6 @@ banner, the border should be on all pages, so hide that this is a product page.
       {{ feedback.phaseBanner(phaseBannerConfiguration) }}
     </div>
   {% endif %}
-  {% block beforeContent %}{% endblock %}
-  <main id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
-    {{ xGovukMasthead({
-      classes: "x-govuk-masthead--large",
-      title: {
-        html: title | smart
-      } if title,
-      description: {
-        html: description | markdown("inline") | noOrphans
-      } if description,
-      startButton: {
-        href: startButton.href,
-        text: startButton.text
-      } if startButton,
-      image: {
-        alt: image.alt,
-        src: image.src
-      } if image,
-      breadcrumbs: {
-        classes: "govuk-!-display-none-print",
-        items: breadcrumbItems
-      } if showBreadcrumbs
-    }) }}
-    <div class="govuk-width-container {{ containerClasses }}">
-      <div class="govuk-main-wrapper">
-        {{ appProseScope(content) if content }}
 
-        {% include "layouts/shared/related.njk" %}
-      </div>
-    </div>
-  </main>
+  {{ super() }}
 {% endblock %}
