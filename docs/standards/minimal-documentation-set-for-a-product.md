@@ -18,7 +18,7 @@ A product should be documented to a minimum standard so that new engineers can b
 - [Product documentation MUST include a description of the product and what it is for](#product-documentation-must-include-a-description-of-the-product-and-what-it-is-for)
 - [Product documentation MUST include key architectural views](#product-documentation-must-include-key-architectural-views)
 - [Product documentation MUST include a decision log](#product-documentation-must-include-a-decision-log)
-- [Product documentation MUST include incident management information](#product-documentation-must-include-incident-management-information)
+- [Product documentation MUST include runbooks for expected tasks](#product-documentation-must-include-runbooks-for-expected-tasks)
 - [Product documentation MUST include information about observability](#product-documentation-must-include-information-about-observability)
 - [Product documentation MUST include build, release and deployment processes](#product-documentation-must-include-build%2C-release-and-deployment-processes)
 
@@ -28,6 +28,7 @@ The description should provide domain context to an engineer and link to product
 
 - Information about the team
 - Key stakeholders
+    - Include contacts in case of a technical incident with the product
 - Who the [Senior Responsible Owner (SRO)](https://www.gov.uk/government/publications/the-role-of-the-senior-responsible-owner/the-role-of-the-senior-responsible-owner) is
 - User research findings
 - Product roadmap
@@ -35,7 +36,7 @@ The description should provide domain context to an engineer and link to product
 - Governance and assurance documentation
     - IT health check reports
     - Security audits
-    - Service design package
+    - Service design package which MUST include the incident management process
 
 ### Product documentation MUST include key architectural views
 
@@ -45,9 +46,11 @@ The architectural views may contain architecture diagrams, security models, enti
 
 A decision log should record key design decisions in context. A pattern should be selected to complement the team ways of working, and may include for example [Architecture Decision Records](https://adr.github.io/). 
 
-### Product documentation MUST include incident management information
+### Product documentation MUST include runbooks for expected tasks
 
-An incident management process should include technical points of contact, runbooks, and disaster recovery information.
+Document any incident support and maintenance tasks that are the responsibility of the product team. 
+
+Where a task can't be automated, provide a runbook detailing how to carry out that task.
 
 ### Product documentation MUST include information about observability
 
