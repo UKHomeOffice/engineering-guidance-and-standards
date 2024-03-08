@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@x-govuk/govuk-eleventy-plugin": "^6.0.5",
+    "@x-govuk/govuk-eleventy-plugin": "^6.1.0",
     "luxon": "^3.4.4"
   },
   "devDependencies": {
