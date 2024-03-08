@@ -2,16 +2,19 @@
 eleventyExcludeFromCollections: true
 permalink: /standards.json
 ---
-[{% for standard in collections.getAllStandardsOrderedByID %}
 {
-    "id": "{{ standard.data.id }}",
-    "title": "{{ standard.data.title }}",
-    "url": "{{ standard.url }}",
-    "tags": [
-        {%- for tag in standard.data.tags -%}
-        "{{- tag -}}"{%- if not loop.last %} ,{%- endif -%}
-        {%- endfor -%}
-    ],
-    "requirements": {{ standard.templateContent | extractRequirements | jsonStringify }}
-}{% if not loop.last %},{% endif %}
-{% endfor %}]
+  "standards": [
+    {% for standard in collections.getAllStandardsOrderedByID %}
+    {
+      "id": "{{ standard.data.id }}",
+      "title": "{{ standard.data.title }}",
+      "url": "{{ standard.url }}",
+      "date": "{{ standard.data.date | isoDate }}",
+      "tags": {{ standard.data.tags | jsonStringify(2) | indent(6) }},
+      "requirements": {{ standard.templateContent | extractRequirements | jsonStringify(2) | indent(6) }}
+    }{% if not loop.last %},
+    {% endif %}
+{% endfor %}
+
+  ]
+}
