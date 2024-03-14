@@ -48,7 +48,7 @@ A decision log should record key design decisions in context. A pattern should b
 
 ### Product documentation MUST include runbooks for expected tasks
 
-Document any incident support and maintenance tasks that are the responsibility of the product team. 
+Document any incident support, disaster recovery, and maintenance tasks that are the responsibility of the product team. 
 
 Where a task can't be automated, provide a runbook detailing how to carry out that task.
 
