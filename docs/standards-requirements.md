@@ -14,11 +14,11 @@ related:
           href: /standards.json
 ---
 {% for standard in collections.getAllStandardsOrderedByID %}
-## [{{ standard.data.title }}]({{ standard.url }})
-<p class="govuk-hint">
-{{standard.data.id}} <br/>
-Last updated: {{ standard.data.date | postDate }}
-</p>
+<h2 class="app-document-header__title govuk-heading-l">
+  <span class="govuk-caption-l">{{standard.data.id}}</span>
+  <a href="{{ standard.url }}" class="govuk-link">{{ standard.data.title }}</a>
+</h2>
+<p class="govuk-hint">Last updated: {{ standard.data.date | postDate }}</p>
 
 {% for requirement in standard.templateContent | extractRequirements %}
 * [{{requirement.title}}]({{ standard.url }}{{requirement.id}})
