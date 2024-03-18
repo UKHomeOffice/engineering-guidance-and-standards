@@ -68,8 +68,8 @@ Do not create tags based on other attributes of your standard, like 'Draft' or'I
 
 ```yaml
 tags:
-- Source management
-- Security
+  - Source management
+  - Security
 ```
 
 ### A standard MUST show when it was last updated
