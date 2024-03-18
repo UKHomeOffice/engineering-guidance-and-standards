@@ -32,7 +32,7 @@ An unambiguous and unique identifier is needed for each standard. This provides 
 layout: standard
 order: 1
 title: Writing a standard
-date: 2023-08-04
+date: 2024-03-18
 id: SEGAS-00001
 tags:
   - Example
