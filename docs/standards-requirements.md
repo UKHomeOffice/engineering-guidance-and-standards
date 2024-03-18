@@ -5,13 +5,13 @@ order: 5
 title: Summary of engineering standards' requirements
 description: An overview of the requirements of all Home Office engineering standards.
 tags: []
-related:
-  sections:
-    - title: Other formats
-      description: Description  
-      items:
-        - text: standards.json
-          href: /standards.json
+aside:
+  title: Other formats
+  content: |
+    <p class="govuk-hint">You can download this page in JSON or CSV formats:</p>
+    
+    * <a href="/standards.json" download="standards.json">standards.json</a> (<a href="/standards.schema.json" download="standards.schema.json">JSON Schema</a>)
+    * <a href="/standards.csv" download="standards.csv">standards.csv</a>
 ---
 {% for standard in collections.getAllStandardsOrderedByID %}
 <h2 class="app-document-header__title govuk-heading-l">

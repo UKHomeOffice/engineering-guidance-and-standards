@@ -31,12 +31,13 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@x-govuk/govuk-eleventy-plugin": "^6.1.0",
-    "parse5": "^7.1.2",
-    "luxon": "^3.4.4"
+    "luxon": "^3.4.4",
+    "parse5": "^7.1.2"
   },
   "devDependencies": {
+    "@cfworker/json-schema": "^1.12.8",
     "axe-core": "^4.8.4",
-    "cypress-axe": "^1.5.0",
-    "cypress": "^13.7.0"
+    "cypress": "^13.7.0",
+    "cypress-axe": "^1.5.0"
   }
 }

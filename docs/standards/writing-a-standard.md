@@ -58,7 +58,7 @@ The requirements are the explicit expectations of the standard. Engineers need t
 
 There must be details on the context and justification of each requirement, as this provides clarity and will add the spirit to the letter of the law.
 
-When writing requirements, keep a simple list of each at the top of the page, which will then link to the context, description and any supporting information below.
+When writing requirements, include a list of requirements after the standard's description, which link to the context, description and any supporting information below. The site builder expects an unordered list of links, each linking to the header for that requirement's section.
 
 ### A standard MUST have tags
 
