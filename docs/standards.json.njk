@@ -8,7 +8,7 @@ permalink: /standards.json
     {
       "id": "{{ standard.data.id }}",
       "title": "{{ standard.data.title }}",
-      "url": "{{ standard.url }}",
+      "url": "{{ standard.url | prefixWithRoot(siteRoot) }}",
       "date": "{{ standard.data.date | isoDate }}",
       "tags": {{ standard.data.tags | jsonStringify(2) | indent(6) }},
       "requirements": {{ standard.templateContent | extractRequirements | jsonStringify(2) | indent(6) }}

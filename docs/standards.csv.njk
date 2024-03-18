@@ -1,0 +1,10 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /standards.csv
+---
+segasId,title,url,date,tags,requirement,requirementId
+{% for standard in collections.getAllStandardsOrderedByID %}
+{% for requirement in (standard.templateContent | extractRequirements) %}
+{{ standard.data.id | escapeCsvCell }},{{ standard.data.title | escapeCsvCell }},{{ standard.url | prefixWithRoot(siteRoot) | escapeCsvCell }},{{ standard.data.date | isoDate | escapeCsvCell }},{{ standard.data.tags | join(',') | escapeCsvCell }},{{ requirement.title | escapeCsvCell }},{{ requirement.id | escapeCsvCell }}
+{% endfor %}
+{% endfor %}
