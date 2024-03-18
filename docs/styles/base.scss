@@ -6,6 +6,8 @@
   font-weight: 400;
 }
 
+$x-govuk-code-color: #d13118;
+
 .govuk-header {
   background-color: #f1f1f1;
 
@@ -25,8 +27,9 @@
   }
 }
 
-.x-govuk-code--block {
-  background-color: #f8f8f8;
+.x-govuk-code__string,
+.x-govuk-code__doctag {
+  color: $x-govuk-code-color;
 }
 
 .x-govuk-related-navigation .govuk-link[aria-current] {
