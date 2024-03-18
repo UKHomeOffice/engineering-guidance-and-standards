@@ -28,12 +28,12 @@ Home Office engineering principles will be written to include each of the compon
 
 State the essence of the principle and make it easy to remember. Avoid ambiguous words such as: "support", "open", "consider", and remove unnecessary adjectives and adverbs (fluff). The title must be included as part of the page metadata.
 
-```
+```yaml
 layout: principle
 order: 1
 title: Example software engineering principle
 tags:
-- Example
+  - Example
 ```
 
 ### A principle MUST have a description
@@ -60,17 +60,17 @@ We use tags as a means to link entities in the body of standards. From principle
 
 Do not create tags based on other attributes of your standard, like 'Draft' or 'Important'.  All tags must be sentence case i.e. Starts with a capital and the rest lower case. These need to be defined in the page metadata and will be automatically displayed at the top of the page.
 
-```
+```yaml
 tags:
-- Source management
-- Security
+  - Source management
+  - Security
 ```
 
 ### A principle MUST show when it was last updated
 
 Show the date the principle was last updated. The metadata needs to include the date in YYYY-MM-DD format (see below).
 
-```
+```yaml
 date: 2023-12-31
 ```
 ---

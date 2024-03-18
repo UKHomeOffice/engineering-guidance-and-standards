@@ -28,21 +28,21 @@ information.
 
 An unambiguous and unique identifier is needed for each standard. This provides clarity and can be helpful in communication. This must be included as part of the page metadata.
 
-```
+```yaml
 layout: standard
 order: 1
 title: Writing a standard
 date: 2023-08-04
 id: SEGAS-00001
 tags:
-- Example
+  - Example
 ```
 
 ### A standard MUST have a title
 
 A short meaningful name is helpful to reference in conversation. Don't include words like 'Standard', 'Principle', 'Pattern' or 'Guidance' where they are redundant. It must be provided in the page metadata which will form the heading on the page.
 
-```
+```yaml
 title: Writing a standard
 ```
 
@@ -66,7 +66,7 @@ We use tags as a means to link entities in the body of standards. From principle
 
 Do not create tags based on other attributes of your standard, like 'Draft' or'Important'.  All tags must be sentence case i.e. Starts with a capital and the rest lower case. These need to be defined in the page metadata and will be automatically displayed at the top of the page.
 
-```
+```yaml
 tags:
 - Source management
 - Security
@@ -76,7 +76,7 @@ tags:
 
 Products and services are built to a standard and as time goes by standards evolve. Show the date the standard was last updated. The metadata needs to include the date in YYYY-MM-DD format (see below).
 
-```
+```yaml
 date: 2023-12-31
 ```
 ---
