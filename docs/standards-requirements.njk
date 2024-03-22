@@ -1,0 +1,29 @@
+---
+eleventyExcludeFromCollections: true
+layout: post
+order: 5
+title: Summary of engineering standards' requirements
+description: An overview of the requirements of all Home Office engineering standards.
+tags: []
+aside:
+  title: Other formats
+  content: |
+    <p class="govuk-hint">You can download this page in JSON or CSV formats:</p>
+
+    * <a href="/standards.json" download="standards.json">standards.json</a> (<a href="/standards.schema.json" download="standards.schema.json">JSON Schema</a>)
+    * <a href="/standards.csv" download="standards.csv">standards.csv</a>
+---
+{% for standard in collections.getAllStandardsOrderedByID %}
+  <h2 class="app-document-header__title govuk-heading-l">
+    <span class="govuk-caption-l">{{standard.data.id}}</span>
+    <a href="{{ standard.url }}" class="govuk-link">{{ standard.data.title }}</a>
+  </h2>
+  <p class="govuk-hint">Last updated: {{ standard.data.date | postDate }}</p>
+  <ul class="govuk-list govuk-list--bullet">
+    {% for requirement in standard.templateContent | extractRequirements %}
+      <li>
+        <a href="{{ standard.url }}{{ requirement.id }}" class="govuk-link">{{ requirement.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

@@ -14,4 +14,6 @@ related:
       items:
         - text: Writing a standard
           href: /standards/writing-a-standard/
+        - text: Summary of engineering standards' requirements
+          href: /standards-requirements/
 ---
