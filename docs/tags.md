@@ -22,4 +22,4 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-See [all tags]({{"/tags/" | url}})
+See [all tags](/tags/)

@@ -10,8 +10,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     // Register the plugins
     let govukPluginOptions = {
-        brandColour: '#8f23b3',
-        fontFamily: 'roboto, system-ui, sans-serif',
+        scssSettingsPath: "/styles/_settings.scss",
         icons: {
             mask: '/assets/logos/ho-mask-icon.svg',
             shortcut: '/assets/logos/ho-favicon.ico',
@@ -20,9 +19,15 @@ module.exports = function(eleventyConfig) {
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
         header: {
-            organisationLogo: '<img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">',
-            organisationName: 'Home Office',
+            logotype: {
+                html:
+                    '<span class="govuk-header__logotype">' +
+                    '  <img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
+                    '  <span class="govuk-header__logotype-text">Home Office</span>' +
+                    '</span>'
+            },
             productName: 'Engineering Guidance and Standards',
+            organisationName: 'Home Office',
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
@@ -69,7 +74,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+        return DateTime.fromJSDate(dateObj).toFormat('d MMMM yyyy');
     });
 
     // Used for tag page generation

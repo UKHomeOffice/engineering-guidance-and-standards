@@ -1,4 +1,11 @@
 {% extends "layouts/base.njk" %}
+{#-
+https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/components/header/template.njk#L4-L6
+
+The govuk header uses the layout name to remove the border for collection and product pages. Because we add the phase
+banner, the border should be on all pages, so hide that this is a collection page.
+-#}
+{%- set layout="prevent-layout-specific-styling" -%}
 
 {% block main %}
   {% if phaseBannerConfiguration %}

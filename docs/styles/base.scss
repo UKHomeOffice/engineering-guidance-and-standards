@@ -37,3 +37,8 @@
 .govuk-header label.govuk-visually-hidden {
   color: black;
 }
+
+.govuk-breadcrumbs__link {
+  display: inline-block;
+  min-height: 24px;
+}

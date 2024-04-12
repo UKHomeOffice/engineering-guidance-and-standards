@@ -2,6 +2,16 @@ import {testing_params} from "../support/testing_params";
 
 import pages from "../../_site/search.json"
 
+const axeConfig = {
+  // There are occasional contrast false-positives if the page isn't fully loaded
+  retries: 1,
+  interval: 100,
+  // WCAG 2.2 isn't included by default - only the target size check is automated by axe
+  rules: {
+    'target-size': { enabled: true },
+  },
+}
+
 function terminalLog(violations) {
   const totalNodes = violations.reduce((acc, v) => acc + v.nodes.length, 0);
 
@@ -31,7 +41,7 @@ describe('All pages pass axe-core accessibility checks', () => {
     it(`${page.title} (${page.url}) is accessible`, () => {
       cy.visit(testing_params.TEST_ROOT_URL + page.url)
       cy.injectAxe()
-      cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
+      cy.checkA11y({exclude: '[data-axe-exclude]'}, axeConfig, terminalLog);
     })
 
     titles[page.title] = [
@@ -69,16 +79,16 @@ describe('Tag pages pass axe-core accessibility checks', () => {
     cy.contains('Minimal documentation set for a product').click()
     cy.get('.tags').contains('Documentation').click()
     cy.injectAxe()
-    cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
+    cy.checkA11y({exclude: '[data-axe-exclude]'}, axeConfig, terminalLog);
   })
 
-  it('All tags is accessible', () => {
+  it('All tags page is accessible', () => {
     cy.visit(testing_params.TEST_ROOT_URL)
     cy.contains('Read our standards').click()
     cy.contains('Minimal documentation set for a product').click()
     cy.get('.tags').contains('Documentation').click()
     cy.contains('all tags').click()
     cy.injectAxe()
-    cy.checkA11y({exclude: '[data-axe-exclude]'}, null, terminalLog);
+    cy.checkA11y({exclude: '[data-axe-exclude]'}, axeConfig, terminalLog);
   })
 })

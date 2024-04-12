@@ -25,6 +25,6 @@ Designing from evidence, and documenting that effectively, allows people to unde
 - Be product centric. Understand user needs and provide evidence for the successful delivery of functionality. User research is a great way to do this, especially as part of short, continuous, agile feedback loops
 - All needs and requirements - whether functional or non-functional - should be documented, pointing back to the evidence base and rationale for the requirement
 - Tests should be used to provide evidence that requirements have been met. This should be understandable to stakeholders so that they have confidence in the software
-- Provide evidence for design decisions in documentation and adhere to the [minimal documentation standard]({{ '/standards/minimal-documentation-set-for-a-product/' | url }}) - technical decision logs and other useful design artefacts make assurance, future maintenance and development easier
+- Provide evidence for design decisions in documentation and adhere to the [minimal documentation standard]( /standards/minimal-documentation-set-for-a-product/) - technical decision logs and other useful design artefacts make assurance, future maintenance and development easier
 
 ---

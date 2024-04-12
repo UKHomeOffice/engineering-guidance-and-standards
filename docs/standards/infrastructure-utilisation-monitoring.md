@@ -28,7 +28,7 @@ Monitoring infrastructure utilisation enables the increased reliability and perf
 - Detecting, identifying and remediating issues
 - Assuring the reliability of services
 
-Monitoring infrastructure utilisation without also monitoring other signals of service performance is not enough to ensure a high quality service. Teams should look to our patterns for monitoring (for example [Monitoring-as-code]({{ '/patterns/monitoring-as-code/' | url }})) to meet this standard and complement other service monitoring.
+Monitoring infrastructure utilisation without also monitoring other signals of service performance is not enough to ensure a high quality service. Teams should look to our patterns for monitoring (for example [Monitoring-as-code](/patterns/monitoring-as-code/)) to meet this standard and complement other service monitoring.
 
 ---
 

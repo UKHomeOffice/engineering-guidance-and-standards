@@ -35,7 +35,7 @@ Home Office engineering teams are required to manage software dependencies proac
 - [You MUST assess the security of external components before introducing them into software designs](#you-must-assess-the-security-of-external-components-before-introducing-them-into-software-designs)
 - [You MUST maintain a discoverable dependency tree for your systems](#you-must-maintain-a-discoverable-dependency-tree-for-your-systems)
 - [You MUST proactively identify vulnerabilities in dependencies with scanning and other tools](#you-must-proactively-identify-vulnerabilities-in-dependencies-with-scanning-and-other-tools)
-- [You MUST regularly update, replace and remove dependencies](#you-must-regularly-update-replace-and-remove-dependencies)
+- [You MUST regularly update, replace and remove dependencies](#you-must-regularly-update%2C-replace-and-remove-dependencies)
 
 ### You MUST assess the security of external components before introducing them into software designs
 
@@ -70,7 +70,7 @@ Vulnerability scanning should be automated and implemented in multiple locations
 
 Engineering teams must plan and perform updates to their software components. There are a number of things teams should do to enable this on an ongoing basis:
 
-- [Select and define a deployment strategy]({{ '/patterns/selecting-a-deployment-strategy/' | url }}) that enables the promotion of patches and dependency changes into production frequently
+- [Select and define a deployment strategy](/patterns/selecting-a-deployment-strategy/) that enables the promotion of patches and dependency changes into production frequently
 - Configure pipelines and test suites to allow testing for the compatibility of modified software components
 - Monitor and triage the ongoing need to patch, update or change the configuration of components, over the lifecycle of the product
 - Employ good software design principles to loosely couple external dependencies where possible, making it easier to replace them if required

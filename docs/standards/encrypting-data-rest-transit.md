@@ -48,6 +48,6 @@ Depending on what your service does you might need to use more than one technolo
 
 All encryption of data at rest and in transit requires the use of cryptographic keys. Cryptographic keys are application secrets and must be protected appropriately.
 
-Follow the [Managing secrets standard]({{ '/standards/managing-secrets/' | url }}) to ensure that your are using appropriate secret storage and processes.
+Follow the [Managing secrets standard](/standards/managing-secrets/) to ensure that your are using appropriate secret storage and processes.
 
 ---

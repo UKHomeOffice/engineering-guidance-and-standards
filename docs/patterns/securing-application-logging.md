@@ -22,7 +22,7 @@ It is common to log user information from an application to assist operations or
 
 Logging any of these can make information available to people that have access to log aggregation platforms, or log storage, but are not legally allowed to view PII, or should not otherwise have access to that information. User authentication tokens and application secrets can be used to impersonate users and elevate privilege.
 
-[Sensitive Data Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure) has been a recognised risk to secure application development historically. Our [managing secrets]({{ '/standards/managing-secrets/' | url }}) standard has requirements on ensuring logs do not contain tokens or other secrets.
+[Sensitive Data Exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure) has been a recognised risk to secure application development historically. Our [managing secrets](/standards/managing-secrets/) standard has requirements on ensuring logs do not contain tokens or other secrets.
 
 ---
 

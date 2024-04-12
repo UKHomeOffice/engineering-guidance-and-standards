@@ -1,16 +1,19 @@
-FROM node:20.9.0-alpine AS build
+FROM node:20.11.1-alpine AS build
 
 COPY . .
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache git
+    apk add --no-cache git tzdata
 
-ENV SITE_ROOT "https://engineering.homeoffice.gov.uk/"
+RUN ln -s /usr/share/zoneinfo/Europe/London /etc/localtime
+
+ENV SITE_ROOT="https://engineering.homeoffice.gov.uk/" \
+    LANG="en_GB.UTF-8"
 
 RUN npm ci --omit=dev
 RUN npm run build
 
-FROM nginx:1.25.3-alpine
+FROM nginx:1.25.4-alpine
 
 COPY --from=build /_site /usr/share/nginx/html
 COPY --from=build /nginx/nginx.conf /etc/nginx/nginx.conf
