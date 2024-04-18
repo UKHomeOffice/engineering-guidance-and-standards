@@ -34,7 +34,7 @@
     "luxon": "^3.4.4"
   },
   "devDependencies": {
-    "axe-core": "^4.8.4",
+    "axe-core": "^4.9.0",
     "cypress-axe": "^1.5.0",
     "cypress": "^13.7.3"
   }
