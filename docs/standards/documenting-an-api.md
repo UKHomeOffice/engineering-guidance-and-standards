@@ -27,7 +27,7 @@ Listing our API's contributes to the government community as well as other organ
 
 If your API is for internal or team use only, then it should be included in the internal API register.
 
-if your API is public, it should also be on the [cabinet offices list of API's](https://www.api.gov.uk/ho/#home-office).
+If your API is public, it should also be on the [cabinet offices list of API's](https://www.api.gov.uk/ho/#home-office).
 
 ### You MUST have appropriate status codes returning from each endpoint 
 
