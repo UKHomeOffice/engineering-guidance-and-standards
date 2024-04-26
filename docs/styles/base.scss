@@ -25,6 +25,22 @@
   }
 }
 
+// Update contrast to WCAG AA for code blocks
+.x-govuk-code__string,
+.x-govuk-code__doctag {
+  color: #d13118;
+}
+
+.x-govuk-code__comment,
+.x-govuk-code__quote {
+  color: #696e73;
+}
+
+.x-govuk-code__type,
+.x-govuk-code__class .x-govuk-code__title {
+  color: #6669a4;
+}
+
 .x-govuk-related-navigation .govuk-link[aria-current] {
   font-weight: bold;
 }
