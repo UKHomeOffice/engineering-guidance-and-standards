@@ -9,7 +9,7 @@ tags:
   - API Design
 ---
 
-Documenting an API is an important part of the software design lifecycle. It helps consumers of your API, the wider community and even your own team understand the purpose of endpoints, what and how they work, inputs and outputs etc.
+Documenting an API is an important part of the software design lifecycle. It helps consumers of your API, the wider community and even your own team understand the purpose of endpoints, what and how they work, inputs and outputs, what the requirements are to access it etc.
 
 ---
 
