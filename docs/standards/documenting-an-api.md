@@ -41,7 +41,7 @@ The Mozilla Foundation has a [definitive list of status codes](https://developer
 
 Documenting the inputs and outputs of endpoints makes it easy for consumers to understand what is required and how to use the given responses from an endpoint. It should also detail an error messages that can be returned and reason for it.
 
-This can be achieved easily in RESTful API by using Swagger.
+This can be achieved for a RESTful API by using [OpenAPI (Swagger v3)](https://www.openapis.org/what-is-openapi).
 
 ### You MUST provide specific feedback in responses
 
