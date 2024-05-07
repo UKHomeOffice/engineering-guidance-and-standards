@@ -7,6 +7,16 @@ id: SEGAS-XXX
 tags:
   - Software design
   - API Design
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Minimal documentation set for a product
+          href:  /standards/minimal-documentation-set-for-a-product/
+        - text: How to document APIs
+          href: https://www.gov.uk/guidance/how-to-document-apis
+        - text: Writing API Reference Documentation
+          href: https://www.gov.uk/guidance/writing-api-reference-documentation
 ---
 
 Documenting an API is an important part of the software design lifecycle. It helps consumers of your API, the wider community and even your own team understand the purpose of endpoints, what and how they work, inputs and outputs, what the requirements are to access it etc.
