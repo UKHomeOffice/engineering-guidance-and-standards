@@ -30,6 +30,7 @@ Documenting an API is an important part of the software design lifecycle. It hel
 - [You MUST have documentation on inputs and outputs of all endpoints](#you-must-have-documentation-on-inputs-and-outputs-of-all-endpoints)
 - [You MUST provide specific feedback in responses](#you-must-provide-specific-feedback-in-responses)
 - [You MUST use appropriate nouns for resource names](#you-must-use-appropriate-nouns-for-resource-names)
+- [You MUST document how to connect to your API](#you-must-document-how-to-connect-to-your-api)
 
 ### You MUST include your API on the relevant registers
 
