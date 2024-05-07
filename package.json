@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@cfworker/json-schema": "^1.12.8",
-    "axe-core": "^4.9.0",
+    "axe-core": "^4.9.1",
     "cypress-axe": "^1.5.0",
     "cypress": "^13.8.1"
   }
