@@ -12,7 +12,7 @@ related:
     - title: Related links
       items:
         - text: Minimal documentation set for a product
-          href:  /standards/minimal-documentation-set-for-a-product/
+          href: /standards/minimal-documentation-set-for-a-product/
         - text: How to document APIs
           href: https://www.gov.uk/guidance/how-to-document-apis
         - text: Writing API Reference Documentation
@@ -85,5 +85,9 @@ Using the appropriate methods help to keep endpoints secure as well as helping c
 ### You MUST use appropriate nouns for resource names
 
 Your API resources must follow RESTful resource naming standards as outlined on the restful API [resource naming page](https://restfulapi.net/resource-naming/).
+
+### You MUST document how to connect to your API
+
+You must have documentation in place explaining how you onboard users to your API, if your API requires authorisation, you must document how to get authentication keys.
 
 ---
