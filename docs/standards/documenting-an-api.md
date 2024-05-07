@@ -49,7 +49,20 @@ The Mozilla Foundation has a [definitive list of status codes](https://developer
 
 ### You MUST have documentation on inputs and outputs of all endpoints
 
-Documenting the inputs and outputs of endpoints makes it easy for consumers to understand what is required and how to use the given responses from an endpoint. It should also detail an error messages that can be returned and reason for it.
+Documenting the inputs and outputs of endpoints makes it easy for consumers to understand what is required and how to use the given responses from an endpoint. 
+
+It should include all of the following inputs that apply to your API:
+
+- Request method
+- URI query parameters
+- Request headers
+- Requirements for the request body
+
+For each possible response, including error responses, you should document the following:
+
+- Response status code
+- Response headers
+- The format of the response body
 
 This can be achieved for a RESTful API by using [OpenAPI (Swagger v3)](https://www.openapis.org/what-is-openapi).
 
