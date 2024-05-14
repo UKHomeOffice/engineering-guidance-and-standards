@@ -90,6 +90,8 @@ Caching will help reduce load on your API, give the user a better service as it 
 
 ### You MUST use OpenAPI Swagger v3
 
-Any new APIs must use Swagger v3, using it will help defining an API before it's implemented, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
+Any new APIs must use Swagger, using it will help defining an API before it's implemented, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
+
+You should use the latest version of swagger if possible, if not, the last version compatible with your API.
 
 ---
