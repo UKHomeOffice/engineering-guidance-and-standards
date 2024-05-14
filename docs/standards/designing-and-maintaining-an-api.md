@@ -38,6 +38,8 @@ related:
 
 It is good practice to maintain and keep a good versioning of your API where appropriate, when using versioning it is recommended we follow the [semver standards](https://semver.org).
 
+There are a few [different ways of versioning](https://www.xmatters.com/blog/blog-four-rest-api-versioning-strategies) an API, via the URI path, query parameters or headers. You will also need to decide a versioning strategy, whether that be per endpoint or for the whole API.
+
 ### You MUST have appropriate status codes returning from each endpoint 
 
 Your API endpoints must return the relevant status code for each endpoint, for example a 403 if a user doesn't have access.
@@ -63,6 +65,14 @@ There's some useful info on the [GOV.UK GDS guidance](https://www.gov.uk/guidanc
 ### You MUST consider security
 
 Considering security will help keep your API secure and up to date, things like updating dependencies, IT health checks and considering what happens to user data will help here. The [security principles and standards](https://engineering.homeoffice.gov.uk/tags/security/) should help you to understand more of what is required.
+
+### You MUST validate inputs
+
+Input validation is the processing a verifying data entered into the API by other systems or users. The aim is to prevent invalid, malicious or malformed inputs. This increases the security of your API if you check for exploits such as [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [injection attacks](https://owasp.org/www-community/Injection_Theory) among others.
+
+### You MUST consider authentication and authorisation
+
+Authentication and authorisation could be really important for your API, this can mean restricting certain tasks or functions to a limited number of users. A user should have the least privilege possible. Role Based Access Control (RBAC) is an example of how to implement this.
 
 ### You MUST test your API 
 
