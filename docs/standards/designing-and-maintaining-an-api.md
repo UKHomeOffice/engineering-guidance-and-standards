@@ -32,7 +32,7 @@ related:
 - [You MUST consider scalability of your API](#you-must-consider-scalability-of-your-api)
 - [You MUST consider using microservices](#you-must-consider-using-microservices)
 - [You MUST cache responses when appropriate](#you-must-cache-responses-when-appropriate)
-- [You MUST use OpenAPI Swagger v3](#you-must-use-openapi-swagger-v3)
+- [You MUST use OpenAPI Swagger](#you-must-use-openapi-swagger)
 
 ### You MUST include a form of versioning to your API 
 
