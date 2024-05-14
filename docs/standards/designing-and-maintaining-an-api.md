@@ -88,7 +88,7 @@ If your API isn't suitable for using microservices, then using a monolithic API 
 
 Caching will help reduce load on your API, give the user a better service as it will be quicker. However, caching should not be included on endpoints with any sensitive data or authenication methods.
 
-### You MUST use OpenAPI Swagger v3
+### You MUST use OpenAPI Swagger
 
 Any new APIs must use Swagger, using it will help defining an API before it's implemented, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
 
