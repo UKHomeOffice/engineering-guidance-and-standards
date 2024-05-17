@@ -9,6 +9,30 @@ tags:
 
 The Home Office Engineering Guidance and Standards site is a body of knowledge for software engineers. It is comprised of principles, patterns and standards that define how we do engineering at the Home Office, and that direct how we want to do engineering in the future. This guidance is created and curated by the Home Office engineering community. The project as a whole is led by the Home Office DDaT Engineering Profession team.
 
+## How we are doing it
+
+Bi weekly the various guilds meet to discuss topics relating to their areas and help to contribute towards the guidance, standards and principles on this site.
+
+The best place to start learning more about the guilds, when they meet and how to join, the best place to start is the Slack.
+
+On Slack you'll find more information for each guild in their respective channels along with more information on when they meet, and who to contact to join.
+
+### Guild information
+
+Build, release and deployment guild - Slack: [#segas-build-release-deployment](https://homeoffice.enterprise.slack.com/archives/C02DR9CU4SC)
+
+Low Code - Slack: [#segas-low-code](https://homeoffice.enterprise.slack.com/archives/C05MK8UM2F7)
+
+Observability - Slack: [#segas-observability](https://homeoffice.enterprise.slack.com/archives/C02BJSXJ0QK)
+
+Security - Slack: [#segas-security](https://homeoffice.enterprise.slack.com/archives/C0282A158FM)
+
+Software Design - Slack: [#segas-software-design](https://homeoffice.enterprise.slack.com/archives/C02AHL4ML7P)
+
+Source Management - Slack: [#segas-source-management](https://homeoffice.enterprise.slack.com/archives/C02DE9B8M25)
+
+Ways of Working - Slack: [#segas-ways-of-working](https://homeoffice.enterprise.slack.com/archives/C02CLUJ01QX)
+
 ## Why we are doing it
 
 The Home Office has a large estate of teams and technology products. There is a wealth of experience and best practice that we can draw on, to standardise some of the things that we do and manage quality consistently. This will help us to deliver secure, performant technology that meets user needs, and deliver it quickly.
