@@ -13,7 +13,7 @@ The Home Office Engineering Guidance and Standards site is a body of knowledge f
 
 Bi weekly the various guilds meet to discuss topics relating to their areas and help to contribute towards the guidance, standards and principles on this site.
 
-The best place to start learning more about the guilds, when they meet and how to join, the best place to start is the Slack.
+The best place to start learning more about the guilds, when they meet and how to join, the best place to start is Home Office Slack.
 
 On Slack you'll find more information for each guild in their respective channels along with more information on when they meet, and who to contact to join.
 
