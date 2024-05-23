@@ -13,11 +13,8 @@ The Home Office Engineering Guidance and Standards site is a body of knowledge f
 
 The guilds meet regularly to discuss topics relating to their areas and contribute towards the guidance, standards and principles.
 
-The best place to start learning more about the guilds, when they meet and how to join, the best place to start is Home Office Slack.
-
-On Slack you'll find more information for each guild in their respective channels along with more information on when they meet, and who to contact to join.
-
 ### Guild information
+On Home Office Slack you'll find more information for each guild in their respective channels along with when they meet, and who to contact to join.
 
 Build, release and deployment guild - Slack: [#segas-build-release-deployment](https://homeoffice.enterprise.slack.com/archives/C02DR9CU4SC)
 
