@@ -24,51 +24,51 @@ On Home Office Slack you'll find more information for each guild in their respec
 Build, release and deployment guild
 : Topics related to the release and deployment pipeline including CI/CD, Feature Toggling and Artefact Management.
 
-[**Slack**: #segas-build-release-deployment](https://homeoffice.enterprise.slack.com/archives/C02DR9CU4SC)
+  [**Slack**: #segas-build-release-deployment](https://homeoffice.enterprise.slack.com/archives/C02DR9CU4SC)
 
-[Pages tagged with build, release and deploy](/tags/build-release-and-deploy/)
+  [Pages tagged with build, release and deploy](/tags/build-release-and-deploy/)
 
 Low Code
 : A space for to discuss low-code engineering guidance and standards.
 
-[**Slack**: #segas-low-code](https://homeoffice.enterprise.slack.com/archives/C05MK8UM2F7)
+  [**Slack**: #segas-low-code](https://homeoffice.enterprise.slack.com/archives/C05MK8UM2F7)
 
-[Pages tagged with low code](/tags/low-code/)
+  [Pages tagged with low code](/tags/low-code/)
 
 Observability
 : Topics relating to the ongoing monitoring of applications and services, including Logging, Analytics and Performance.
 
-[**Slack**: #segas-observability](https://homeoffice.enterprise.slack.com/archives/C02BJSXJ0QK)
+  [**Slack**: #segas-observability](https://homeoffice.enterprise.slack.com/archives/C02BJSXJ0QK)
 
-[Pages tagged with observability](/tags/observability/)
+  [Pages tagged with observability](/tags/observability/)
 
 Security
 : Articles in this section relate to subjects such as Secure Development, Identity & Access and Vulnerability Scanning.
 
-[**Slack**: #segas-security](https://homeoffice.enterprise.slack.com/archives/C0282A158FM)
+  [**Slack**: #segas-security](https://homeoffice.enterprise.slack.com/archives/C0282A158FM)
 
-[Pages tagged with security](/tags/security/)]
+  [Pages tagged with security](/tags/security/)]
 
 Software Design
 : Items to be covered to include Frameworks, Languages, Quality and Coding Standards.
 
-[**Slack**: #segas-software-design](https://homeoffice.enterprise.slack.com/archives/C02AHL4ML7P)
+  [**Slack**: #segas-software-design](https://homeoffice.enterprise.slack.com/archives/C02AHL4ML7P)
 
-[Pages tagged with software design](/tags/software-design/)
+  [Pages tagged with software design](/tags/software-design/)
 
 Source Management
 : Items to be covered to include Open Source, Licensing and Source Code Management.
 
-[**Slack**: #segas-source-management](https://homeoffice.enterprise.slack.com/archives/C02DE9B8M25)
+  [**Slack**: #segas-source-management](https://homeoffice.enterprise.slack.com/archives/C02DE9B8M25)
 
-[Pages tagged with source management](/tags/source-management/)
+  [Pages tagged with source management](/tags/source-management/)
 
 Ways of Working
 : Items to be covered to include Documentation, Tooling and Defining Stories.
 
-[**Slack**: #segas-ways-of-working](https://homeoffice.enterprise.slack.com/archives/C02CLUJ01QX)
+  [**Slack**: #segas-ways-of-working](https://homeoffice.enterprise.slack.com/archives/C02CLUJ01QX)
 
-[Pages tagged with ways of working](/tags/ways-of-working/)
+  [Pages tagged with ways of working](/tags/ways-of-working/)
 
 ## Why we are doing it
 
