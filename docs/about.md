@@ -11,7 +11,7 @@ The Home Office Engineering Guidance and Standards site is a body of knowledge f
 
 ## How we are doing it
 
-Bi weekly the various guilds meet to discuss topics relating to their areas and help to contribute towards the guidance, standards and principles on this site.
+The guilds meet regularly to discuss topics relating to their areas and contribute towards the guidance, standards and principles.
 
 The best place to start learning more about the guilds, when they meet and how to join, the best place to start is Home Office Slack.
 
