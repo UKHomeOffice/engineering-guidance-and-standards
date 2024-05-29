@@ -29,7 +29,7 @@ Build, release and deployment guild
   [Pages tagged with build, release and deploy](/tags/build-release-and-deploy/)
 
 Low Code
-: A space for to discuss low-code engineering guidance and standards.
+: A space to discuss low-code engineering guidance and standards.
 
   [**Slack**: #segas-low-code](https://homeoffice.enterprise.slack.com/archives/C05MK8UM2F7)
 
