@@ -80,28 +80,18 @@ You should test your API, there's more information on the developer testing stan
 
 This helps keep code to a high quality and helps gain assurance that your API is working correctly and can be deployed safely to production.
 
-Using unit, contract, and NFR testing helps give an overall picture on the quality of your API.
+Using integration tests, checking errors and status codes can help maintain quality within your API and build confidence that all is working as expected.
 
 ### You MUST consider scalability of your API
 
 Knowing how your API scales helps to make sure your API is resilient, can handle peaks of traffic.
 
-Often using stateless approach to designing an API can help horizontally scale an API.
+Often using stateless approach to designing an API can help horizontally scale an API. Using techniques such as asynchronous code, multithreading and an event driven approach can all help scale your API.
 
-### You MUST consider using microservices
+### You MUST use an API Specification
 
-Using microservices can help scaling parts of your API independently it also helps shorten your path to live as you can deploy apps separately. So only the app with changes can be deployed.
+Using an API Specification will help defining an API before it's implemented, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
 
-If your API isn't suitable for using microservices, then using a monolithic API may be required.
-
-### You MUST cache responses when appropriate
-
-Caching will help reduce load on your API, give the user a better service as it will be quicker. However, caching should not be included on endpoints with any sensitive data or authenication methods.
-
-### You MUST use OpenAPI Swagger
-
-Any new APIs must use Swagger, using it will help defining an API before it's implemented, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
-
-You should use the latest version of swagger if possible, if not, the last version compatible with your API.
+A good example is using OpenAPI Swagger to help build, maintain and document your API.
 
 ---
