@@ -28,11 +28,11 @@ related:
 - [You MUST use appropriate nouns for resource names](#you-must-use-appropriate-nouns-for-resource-names)
 - [You MUST include some way to observe your API](#you-must-include-some-way-to-observe-your-api)
 - [You MUST consider security](#you-must-consider-security)
+- [You MUST validate inputs](#you-must-validate-inputs)
+- [You MUST consider authentication and authorisation](#you-must-consider-authentication-and-authorisation)
 - [You MUST test your API](#you-must-test-your-api)
 - [You MUST consider scalability of your API](#you-must-consider-scalability-of-your-api)
-- [You MUST consider using microservices](#you-must-consider-using-microservices)
-- [You MUST cache responses when appropriate](#you-must-cache-responses-when-appropriate)
-- [You MUST use OpenAPI Swagger](#you-must-use-openapi-swagger)
+- [You MUST use an API Specification](#you-must-use-an-api-specification)
 
 ### You MUST include a form of versioning to your API 
 
