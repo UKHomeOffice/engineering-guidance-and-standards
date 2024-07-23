@@ -4,7 +4,7 @@ order: 1
 title: Reducing Code Complexity
 date: 2024-07-23
 tags:
-  - Software Design
+  - Software design
   - Ways of working
   - Quality
 ---
