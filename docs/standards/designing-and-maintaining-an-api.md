@@ -34,7 +34,7 @@ related:
 - [You MUST consider scalability of your API](#you-must-consider-scalability-of-your-api)
 - [You MUST use an API Specification](#you-must-use-an-api-specification)
 
-### You MUST include a form of versioning to your API 
+### You MUST include a form of versioning to your API and consider how you may deprecate a version
 
 It is good practice to maintain and keep a good versioning of your API where appropriate, when using versioning it is recommended we follow the [semver standards](https://semver.org).
 
@@ -62,7 +62,7 @@ Metrics is also a good way to understand the current state of your API, as devel
 
 There's some useful info on the [GOV.UK GDS guidance](https://www.gov.uk/guidance/gds-api-technical-and-data-standards#operate-your-api).
 
-### You MUST consider security
+### You MUST apply security best practices
 
 Considering security will help keep your API secure and up to date, things like updating dependencies, IT health checks and considering what happens to user data will help here. The [security principles and standards](https://engineering.homeoffice.gov.uk/tags/security/) should help you to understand more of what is required.
 
@@ -90,7 +90,7 @@ Often using stateless approach to designing an API can help horizontally scale a
 
 ### You MUST use an API Specification
 
-Using an API Specification will help defining an API before it's implemented, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
+Using an API Specification will help define your API endpoints, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
 
 A good example is using OpenAPI Swagger to help build, maintain and document your API.
 
