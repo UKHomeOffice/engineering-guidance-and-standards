@@ -1,4 +1,4 @@
-name: S3 bucket sync
+name: Deploy to Core Cloud
 
 on:
   pull_request:
@@ -10,10 +10,13 @@ permissions:
   id-token: write
   actions: read
 
-jobs:
+env:
+  CYPRESS_TEST_URL: localhost
+  CYPRESS_TEST_PORT: 8080
 
+jobs:
   s3-sync:
-    name: sync dryrun
+    name: Build and sync to S3
     environment:
       name: core-cloud
     runs-on: ubuntu-latest
@@ -23,14 +26,13 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
-      - uses: aws-actions/configure-aws-credentials@v4
-        name: Configure AWS IdP Credentials
+      - name: Configure AWS IdP Credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::${{ vars.AWS_ACCOUNT_ID }}:role/${{ vars.AWS_DEPLOYMENT_ROLE }}
           role-session-name: GitHubActions
           retry-max-attempts: 5
           aws-region: eu-west-2
-
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -38,9 +40,17 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: NPM Install & build
-        run:
-          npm install && npm run build
+      - name: Build & Run Cypress Tests
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          build: npm run build
+          start: npm run serve -- --port ${{ env.CYPRESS_TEST_PORT }}
+          wait-on: 'http://${{ env.CYPRESS_TEST_URL }}:${{ env.CYPRESS_TEST_PORT }}'
+          config: 'video=false,screenshotOnRunFailure=false'
+        env:
+          CYPRESS_TEST_URL: ${{ env.CYPRESS_TEST_URL }}
+          CYPRESS_TEST_PORT: ${{ env.CYPRESS_TEST_PORT }}
 
       - name: Sync
         working-directory: ./_site
