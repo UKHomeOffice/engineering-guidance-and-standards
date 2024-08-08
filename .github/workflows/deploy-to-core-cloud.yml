@@ -1,0 +1,48 @@
+name: S3 bucket sync (dryrun)
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  id-token: write
+  actions: read
+
+jobs:
+
+  s3-sync:
+    name: sync dryrun
+    environment:
+      name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        name: Configure AWS IdP Credentials
+        with:
+          role-to-assume: arn:aws:iam::${{ vars.ACCOUNT_ID }}:role/${{ vars.ROLE_NAME }}
+          role-session-name: GitHubActions
+          retry-max-attempts: 5
+          aws-region: eu-west-2
+
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: NPM Install & build
+        run:
+          npm install && npm run build
+
+      - name: Sync
+        working-directory: ./_site
+        run: |
+          aws s3 sync . s3://${{ vars.BUCKET_NAME }}/ --delete --dryrun
