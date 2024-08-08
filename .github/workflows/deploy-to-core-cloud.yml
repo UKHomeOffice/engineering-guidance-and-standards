@@ -1,4 +1,4 @@
-name: S3 bucket sync (dryrun)
+name: S3 bucket sync
 
 on:
   pull_request:
@@ -45,4 +45,4 @@ jobs:
       - name: Sync
         working-directory: ./_site
         run: |
-          aws s3 sync . s3://${{ vars.S3_BUCKET_NAME }}/ --delete --dryrun
+          aws s3 sync . s3://${{ vars.S3_BUCKET_NAME }}/ --delete
