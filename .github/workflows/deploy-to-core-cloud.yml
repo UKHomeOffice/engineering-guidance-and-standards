@@ -15,7 +15,7 @@ jobs:
   s3-sync:
     name: sync dryrun
     environment:
-      name: test
+      name: core-cloud
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -26,7 +26,7 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v4
         name: Configure AWS IdP Credentials
         with:
-          role-to-assume: arn:aws:iam::${{ vars.ACCOUNT_ID }}:role/${{ vars.ROLE_NAME }}
+          role-to-assume: arn:aws:iam::${{ vars.AWS_ACCOUNT_ID }}:role/${{ vars.AWS_DEPLOYMENT_ROLE }}
           role-session-name: GitHubActions
           retry-max-attempts: 5
           aws-region: eu-west-2
@@ -45,4 +45,4 @@ jobs:
       - name: Sync
         working-directory: ./_site
         run: |
-          aws s3 sync . s3://${{ vars.BUCKET_NAME }}/ --delete --dryrun
+          aws s3 sync . s3://${{ vars.S3_BUCKET_NAME }}/ --delete --dryrun
