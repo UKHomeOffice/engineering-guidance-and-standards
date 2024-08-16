@@ -1,7 +1,7 @@
 name: Deploy to Core Cloud
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -16,17 +16,17 @@ env:
 
 jobs:
   s3-sync:
-    name: Build and sync to S3
+    name: Build, test, and sync to S3
     environment:
       name: core-cloud
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
 
-      - name: Configure AWS IdP Credentials
+      - name: Configure AWS IdP credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::${{ vars.AWS_ACCOUNT_ID }}:role/${{ vars.AWS_DEPLOYMENT_ROLE }}
@@ -34,13 +34,13 @@ jobs:
           retry-max-attempts: 5
           aws-region: eu-west-2
 
-      - name: Setup Node
+      - name: Setup NPM cache
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
-      - name: Build & Run Cypress Tests
+      - name: Build site, run Cypress tests
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
@@ -52,7 +52,7 @@ jobs:
           CYPRESS_TEST_URL: ${{ env.CYPRESS_TEST_URL }}
           CYPRESS_TEST_PORT: ${{ env.CYPRESS_TEST_PORT }}
 
-      - name: Sync
+      - name: Sync site to S3 bucket
         working-directory: ./_site
         run: |
           aws s3 sync . s3://${{ vars.S3_BUCKET_NAME }}/ --delete
