@@ -35,7 +35,7 @@
     "parse5": "^7.1.2"
   },
   "devDependencies": {
-    "@cfworker/json-schema": "^1.12.8",
+    "@cfworker/json-schema": "^2.0.1",
     "axe-core": "^4.10.0",
     "cypress-axe": "^1.5.0",
     "cypress": "^13.13.3"
