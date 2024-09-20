@@ -147,19 +147,26 @@ module.exports = function(eleventyConfig) {
         tag: {
           text: "New Service"
         },
-        html: 'This is a new service – your <a class="govuk-link" target="_blank" href="/provide-feedback/">feedback (opens in a new tab)</a> will help us to improve it.'
+        html: 'This is a new service – your ' +
+            '<a class="govuk-link" href="/provide-feedback/" target="_blank" rel="noopener">' +
+            'feedback (opens in a new tab)' +
+            '</a> ' +
+            'will help us to improve it.'
       }
     });
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);
 
-    const latestGitCommitHash =
-    childProcess
-      .execSync('git rev-parse HEAD')
-      .toString()
-      .trim();
-    eleventyConfig.addGlobalData('gitHashPath',
-      gitHubRepositoryUrl+'/blob/'+latestGitCommitHash+'/docs');
+    try {
+        const latestGitCommitHash = childProcess.execSync('git rev-parse HEAD').toString().trim();
+        eleventyConfig.addGlobalData(
+            'gitHashPath',
+            gitHubRepositoryUrl + '/blob/' + latestGitCommitHash + '/docs'
+        );
+    } catch (e) {
+        console.warn("Unable to determine current Git commit hash. Permalinks will not be generated.")
+    }
+
 
     return {
         dataTemplateEngine: 'njk',
