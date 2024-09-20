@@ -4,6 +4,24 @@ const childProcess = require('child_process');
 const fs = require("fs");
 const path = require("path");
 
+function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
+    let latestGitCommitHash = process.env.GITHUB_COMMIT_SHA;
+
+    if(!latestGitCommitHash) {
+        try {
+            latestGitCommitHash = childProcess.execSync('git rev-parse HEAD').toString().trim();
+        } catch (e) {
+            console.warn("Unable to determine current Git commit hash. Permalinks will not be generated.")
+            return;
+        }
+    }
+
+    eleventyConfig.addGlobalData(
+        'gitHashPath',
+        gitHubRepositoryUrl + '/blob/' + latestGitCommitHash + '/docs'
+    );
+}
+
 module.exports = function(eleventyConfig) {
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
     const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
@@ -157,16 +175,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);
 
-    try {
-        const latestGitCommitHash = childProcess.execSync('git rev-parse HEAD').toString().trim();
-        eleventyConfig.addGlobalData(
-            'gitHashPath',
-            gitHubRepositoryUrl + '/blob/' + latestGitCommitHash + '/docs'
-        );
-    } catch (e) {
-        console.warn("Unable to determine current Git commit hash. Permalinks will not be generated.")
-    }
-
+    injectGitSha(eleventyConfig, gitHubRepositoryUrl);
 
     return {
         dataTemplateEngine: 'njk',
