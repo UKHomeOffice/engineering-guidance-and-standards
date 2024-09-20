@@ -55,6 +55,7 @@ jobs:
         env:
           CYPRESS_TEST_URL: ${{ env.CYPRESS_TEST_URL }}
           CYPRESS_TEST_PORT: ${{ env.CYPRESS_TEST_PORT }}
+          GITHUB_COMMIT_SHA: ${{ github.event.push.after }}
 
       - name: Sync site to S3 bucket
         working-directory: ./_site
