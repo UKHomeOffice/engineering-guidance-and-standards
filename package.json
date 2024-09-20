@@ -26,7 +26,8 @@
     "build": "eleventy",
     "serve": "eleventy --serve",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "docker:build": "docker build -t engineering-guidance-and-standards ."
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",

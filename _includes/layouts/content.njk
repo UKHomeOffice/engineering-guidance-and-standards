@@ -45,12 +45,14 @@
 
       {{ appProseScope(content) if content }}
 
-      <p class="govuk-body">
-        {% set githubPath = page.filePathStem + '.md' %}
-        <a class="version-permalink" href="{{ gitHashPath }}{{githubPath}}" target="_blank">
-          Content version permalink (GitHub) (opens in a new tab)
-        </a>
-      </p>
+      {% if gitHashPath %}
+        <p class="govuk-body">
+          {% set githubPath = page.filePathStem + '.md' %}
+          <a class="version-permalink" href="{{ gitHashPath }}{{githubPath}}" target="_blank" rel="noopener">
+            Content version permalink (GitHub) (opens in a new tab)
+          </a>
+        </p>
+      {% endif %}
     </div>
     <div class="govuk-grid-column-one-third-from-desktop">
       {% block sidebar %}
