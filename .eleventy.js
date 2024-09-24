@@ -1,10 +1,31 @@
 const govukEleventyPlugin  = require('@x-govuk/govuk-eleventy-plugin')
 const { DateTime } = require("luxon");
+const childProcess = require('child_process');
 const fs = require("fs");
 const path = require("path");
 
+function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
+    let latestGitCommitHash = process.env.GITHUB_COMMIT_SHA;
+
+    if(!latestGitCommitHash) {
+        try {
+            latestGitCommitHash = childProcess.execSync('git rev-parse HEAD').toString().trim();
+        } catch (e) {
+            console.warn("Unable to determine current Git commit hash. Permalinks will not be generated.")
+            return;
+        }
+    }
+
+    eleventyConfig.addGlobalData(
+        'gitHashPath',
+        gitHubRepositoryUrl + '/blob/' + latestGitCommitHash + '/docs'
+    );
+}
+
 module.exports = function(eleventyConfig) {
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
+    const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
+
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     // Register the plugins
@@ -52,7 +73,7 @@ module.exports = function(eleventyConfig) {
                         text: 'Accessibility'
                     },
                     {
-                        href: 'https://github.com/UKHomeOffice/engineering-guidance-and-standards',
+                        href: gitHubRepositoryUrl,
                         text: 'GitHub repository'
                     }
                 ]
@@ -144,11 +165,17 @@ module.exports = function(eleventyConfig) {
         tag: {
           text: "New Service"
         },
-        html: 'This is a new service – your <a class="govuk-link" target="_blank" href="/provide-feedback/">feedback (opens in a new tab)</a> will help us to improve it.'
+        html: 'This is a new service – your ' +
+            '<a class="govuk-link" href="/provide-feedback/" target="_blank" rel="noopener">' +
+            'feedback (opens in a new tab)' +
+            '</a> ' +
+            'will help us to improve it.'
       }
     });
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);
+
+    injectGitSha(eleventyConfig, gitHubRepositoryUrl);
 
     return {
         dataTemplateEngine: 'njk',
