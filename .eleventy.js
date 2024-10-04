@@ -51,7 +51,7 @@ module.exports = function(eleventyConfig) {
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
-                sitemapPath: '/sitemap'
+                sitemapPath: '/sitemap.html'
             }
         },
         footer: {
