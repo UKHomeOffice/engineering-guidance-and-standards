@@ -39,6 +39,6 @@
     "@cfworker/json-schema": "^2.0.1",
     "axe-core": "^4.10.0",
     "cypress-axe": "^1.5.0",
-    "cypress": "^13.14.2"
+    "cypress": "^13.15.0"
   }
 }
