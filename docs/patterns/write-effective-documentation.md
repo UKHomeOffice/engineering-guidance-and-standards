@@ -64,7 +64,7 @@ Avoid making assumptions about your audience's knowledge. Different users need d
 
 ### Make your content accessible and inclusive
 
-Accessibility is the law. You should  [familiarise yourself with the WCAG principles](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag) and the [Home Office Accesibility Standard](https://design.homeoffice.gov.uk/accessibility/standard).
+Accessibility is the law. You should  [familiarise yourself with the WCAG principles](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag) and the [Home Office Accessibility Standard](https://design.homeoffice.gov.uk/accessibility/standard).
 
 #### Write with a digital audience in mind
 
