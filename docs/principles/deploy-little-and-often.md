@@ -32,7 +32,7 @@ Big sizeable releases that fail can cause a lot of pain not just for stakeholder
 
 - This principle is reliant on good quality tests which validate the release before it gets to production, therefore tests reinforce the confidence in our builds so that we can deploy often
 - We have CI/CD pipelines that are quick and efficient, automating repetitive tasks so that we can deploy little and often
-- We must be aware of downstream users, fixing forward is good which is what this principle implies but not every aspect of your prohect may be using this principle and therefore not as flexible
+- We must be aware of downstream users, fixing forward is good which is what this principle implies but not every aspect of your project may be using this principle and therefore not as flexible
 - As we will be deploying more often there is the option to use feature flags as a way to better safeguard with new features continually coming through to production 
 
 ---
