@@ -30,7 +30,7 @@
     "docker:build": "docker build -t engineering-guidance-and-standards ."
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@x-govuk/govuk-eleventy-plugin": "^6.6.1",
     "luxon": "^3.5.0",
     "parse5": "^7.1.2"
