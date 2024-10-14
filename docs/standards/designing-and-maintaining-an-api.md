@@ -70,7 +70,7 @@ Considering security will help keep your API secure and up to date, things like 
 
 Input validation is the processing a verifying data entered into the API by other systems or users. The aim is to prevent invalid, malicious or malformed inputs. This increases the security of your API if you check for exploits such as [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [injection attacks](https://owasp.org/www-community/Injection_Theory) among others.
 
-Making sure database queries are also secure from malicious actors by using parameterused queries is also important to make your API secure.
+Making sure database queries are also secure from malicious actors by using parameterised queries is also important to make your API secure.
 
 ### You MUST consider authentication and authorisation
 
