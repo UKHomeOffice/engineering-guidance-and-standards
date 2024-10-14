@@ -70,6 +70,8 @@ Considering security will help keep your API secure and up to date, things like 
 
 Input validation is the processing a verifying data entered into the API by other systems or users. The aim is to prevent invalid, malicious or malformed inputs. This increases the security of your API if you check for exploits such as [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [injection attacks](https://owasp.org/www-community/Injection_Theory) among others.
 
+Making sure database queries are also secure from malicious actors by using parameterused queries is also important to make your API secure.
+
 ### You MUST consider authentication and authorisation
 
 Authentication and authorisation could be really important for your API, this can mean restricting certain tasks or functions to a limited number of users. A user should have the least privilege possible. Role Based Access Control (RBAC) is an example of how to implement this.
@@ -81,6 +83,8 @@ You should test your API, there's more information on the developer testing stan
 This helps keep code to a high quality and helps gain assurance that your API is working correctly and can be deployed safely to production.
 
 Using integration tests, checking errors and status codes can help maintain quality within your API and build confidence that all is working as expected.
+
+Load testing is also important to make sure your API handles the projected number of users that your API will handle.
 
 ### You MUST consider scalability of your API
 
