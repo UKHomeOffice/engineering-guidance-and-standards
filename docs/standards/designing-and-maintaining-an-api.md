@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Designing and Maintaining an API
-date: 2024-05-07
+date: 2024-10-14
 id: SEGAS-0015
 tags:
   - Software design
