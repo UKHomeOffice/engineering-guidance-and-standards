@@ -58,7 +58,7 @@ When maintaining an API we must have a way to make sure that is in good health a
 
 It is recommended that logs are used however the sensitivity of the data logged must also be considered.
 
-Metrics is also a good way to understand the current state of your API, as developers will be able to track and observe in real time any issues or downtime via alerts that can be set up.
+Metrics are also a good way to understand the current state of your API, as developers will be able to track and observe in real time any issues or downtime via alerts that can be set up.
 
 There's some useful info on the [GOV.UK GDS guidance](https://www.gov.uk/guidance/gds-api-technical-and-data-standards#operate-your-api).
 
@@ -68,13 +68,13 @@ Considering security will help keep your API secure and up to date, things like 
 
 ### You MUST validate inputs
 
-Input validation is the processing a verifying data entered into the API by other systems or users. The aim is to prevent invalid, malicious or malformed inputs. This increases the security of your API if you check for exploits such as [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [injection attacks](https://owasp.org/www-community/Injection_Theory) among others.
+Input validation is the process of verifying data entered into the API by other systems or users. The aim is to prevent invalid, malicious or malformed inputs. This increases the security of your API if you check for exploits such as [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [injection attacks](https://owasp.org/www-community/Injection_Theory) among others.
 
 Making sure database queries are also secure from malicious actors by using parameterised queries is also important to make your API secure.
 
 ### You MUST consider authentication and authorisation
 
-Authentication and authorisation could be really important for your API, this can mean restricting certain tasks or functions to a limited number of users. A user should have the least privilege possible. Role Based Access Control (RBAC) is an example of how to implement this.
+Authentication and authorisation are really important for API, this can mean restricting certain tasks or functions to a limited number of users. A user should have the least privilege possible. Role Based Access Control (RBAC) is an example of how to implement this.
 
 ### You MUST test your API 
 
@@ -88,7 +88,7 @@ Load testing is also important to make sure your API handles the projected numbe
 
 ### You MUST consider scalability of your API
 
-Knowing how your API scales helps to make sure your API is resilient, can handle peaks of traffic.
+Knowing how your API scales helps to make sure your API is resilient and can handle peaks of traffic.
 
 Often using stateless approach to designing an API can help horizontally scale an API. Using techniques such as asynchronous code, multithreading and an event driven approach can all help scale your API.
 
