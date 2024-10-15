@@ -33,7 +33,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@x-govuk/govuk-eleventy-plugin": "^6.6.1",
     "luxon": "^3.5.0",
-    "parse5": "^7.1.2"
+    "parse5": "^7.2.0"
   },
   "devDependencies": {
     "@cfworker/json-schema": "^2.0.1",
