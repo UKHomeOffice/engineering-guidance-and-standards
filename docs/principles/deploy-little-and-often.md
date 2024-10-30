@@ -11,8 +11,9 @@ tags:
 - Quality
 ---
 
-Deploying little and often is the practice of when we have a "completed" change and deploying that through 
-our pipeline stages all the way to production often, no matter the size of the change. This reduces risk, enables the team to fix issues faster and iterate faster, while maintaining high product quality.
+Deploying little and often is the practice of regularly deploying small changes, to production if possible, to avoid long intervals between deployments.
+
+This reduces risk, enables teams to iterate and react faster, while maintaining product quality.
 
 ---
 
