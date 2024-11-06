@@ -29,7 +29,7 @@ Smaller, incremental deployments build confidence for stakeholders, creating les
 
 ## Applications and Implications
 
-- This principle is reliant on good quality tests which validate the release before it gets to production. These tests reinforce the confidence in our builds so that we can deploy often. Adding automated test coverage will greatly improve a team's likelihood of achieving this principle.
+- This principle is reliant on good quality tests which validate the release before it gets to production. These tests reinforce the confidence in our builds so that we can deploy often. Adding automated test coverage for example can greatly improve a team's likelihood of achieving this principle.
 - We have CI/CD pipelines that are quick and efficient, automating repetitive tasks so that we can deploy little and often
 - We must be aware of how frequent releases affect users, and consider whether it is applicable in each use case. For example, where a breaking change is introduced, or an in-progress operation would be affected
 - Deployment strategies should be considered where appropriate. For example, feature flags can be used to allow deployments to occur without releasing new functionality to all users at once. See [Selecting a deployment strategy](/patterns/selecting-a-deployment-strategy/) for more detail
