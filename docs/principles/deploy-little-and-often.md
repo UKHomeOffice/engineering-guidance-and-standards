@@ -29,9 +29,9 @@ Smaller, incremental deployments build confidence for stakeholders, creating les
 
 ## Applications and Implications
 
-- This principle is reliant on good quality tests which validate the release before it gets to production, therefore tests reinforce the confidence in our builds so that we can deploy often
+- This principle is reliant on good quality tests which validate the release before it gets to production. These tests reinforce the confidence in our builds so that we can deploy often. Adding automated test coverage will greatly improve a team's likelihood of achieving this principle.
 - We have CI/CD pipelines that are quick and efficient, automating repetitive tasks so that we can deploy little and often
-- We must be aware of downstream users, fixing forward is good which is what this principle implies but not every aspect of your project may be using this principle and therefore not as flexible
+- We must be aware of how frequent releases affect users, and consider whether it is applicable in each use case. For example, where a breaking change is introduced, or an in-progress operation would be affected
 - Deployment strategies should be considered where appropriate. For example, feature flags can be used to allow deployments to occur without releasing new functionality to all users at once. See [Selecting a deployment strategy](/patterns/selecting-a-deployment-strategy/) for more detail
 
 ---
