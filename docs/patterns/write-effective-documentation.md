@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Write effective documentation
-date: 2023-07-18
+date: 2024-11-06
 tags:
 - Ways of working
 - Documentation
