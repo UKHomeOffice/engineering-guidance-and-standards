@@ -6,11 +6,27 @@
   font-weight: 400;
 }
 
+html.govuk-template {
+  background-color: #fff;
+}
+
+body, .govuk-template__body {
+  background-color: #f5f5f5;
+  color: #0b0c0c;
+}
+
 .govuk-header {
-  background-color: #f1f1f1;
+  background-color: #fff;
+  color: #0b0c0c;
+
+  .govuk-header__container {
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   .govuk-header__link, .govuk-header__link:visited {
-    color: #15141A;
+    color: #0b0c0c;
   }
 
   .govuk-header__logo img {
@@ -22,6 +38,22 @@
       width: 100%;
       margin-bottom: 10px;
     }
+
+    .app-site-search__input {
+      border: 1px #cbcbcb solid;
+    }
+  }
+}
+
+.govuk-footer {
+  background-color: #fff;
+  color: #0b0c0c;
+  border: none;
+  padding-top: 0;
+
+  .govuk-width-container {
+    border-top: 10px solid #cbcbcb;
+    padding-top: 45px;
   }
 }
 
