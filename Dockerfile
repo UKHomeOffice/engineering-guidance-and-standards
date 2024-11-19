@@ -1,4 +1,4 @@
-FROM node:20.14.0-alpine AS build
+FROM node:23.2.0-alpine AS build
 
 COPY . .
 
