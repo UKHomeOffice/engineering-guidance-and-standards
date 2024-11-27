@@ -4,8 +4,10 @@ order: 1
 title: Quality assurance and testing
 date: 2024-11-25
 tags:
-- quality assurance and testing
-- test engineering
+- Testing
+- Quality
+- Quality assurance and testing
+- Test engineering
 ---
 
 These principles represent the minimum set of considerations for any QAT activity.
