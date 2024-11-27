@@ -1,7 +1,7 @@
 ---
 layout: principle
 order: 1
-title: HO QAT Principles
+title: Quality assurance and testing
 date: 2024-11-25
 tags:
 - quality assurance and testing
