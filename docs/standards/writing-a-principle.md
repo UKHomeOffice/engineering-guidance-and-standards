@@ -36,7 +36,7 @@ tags:
   - Example
 ```
 
-The filename must be the kebab-cased title so that the principle's url matches. E.g. `writing-a-principle.md`.
+The filename must be the kebab-cased title so that the principle's url matches its title. E.g. `writing-a-principle.md`.
 
 ### A principle MUST have a description
 

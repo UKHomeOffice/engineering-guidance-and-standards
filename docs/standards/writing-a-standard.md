@@ -46,7 +46,7 @@ A short meaningful name is helpful to reference in conversation. Don't include w
 title: Writing a standard
 ```
 
-The filename must be the kebab-cased title so that the standard's url matches. E.g. `writing-a-standard.md`.  
+The filename must be the kebab-cased title so that the standard's url matches its title. E.g. `writing-a-standard.md`.  
 
 ### A standard MUST have a description
 
