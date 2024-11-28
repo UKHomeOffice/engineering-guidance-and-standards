@@ -32,7 +32,7 @@ An unambiguous and unique identifier is needed for each standard. This provides 
 layout: standard
 order: 1
 title: Writing a standard
-date: 2024-03-18
+date: 2024-11-28
 id: SEGAS-00001
 tags:
   - Example
@@ -45,6 +45,8 @@ A short meaningful name is helpful to reference in conversation. Don't include w
 ```yaml
 title: Writing a standard
 ```
+
+The filename must be the kebab-cased title so that the standard's url matches. E.g. `writing-a-standard.md`.  
 
 ### A standard MUST have a description
 
