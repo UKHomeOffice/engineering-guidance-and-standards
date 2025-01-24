@@ -23,7 +23,7 @@ jobs:
     name: Build, test, and sync to S3
     environment:
       name: core-cloud
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
       - name: Setup NPM cache
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Build site, run Cypress tests

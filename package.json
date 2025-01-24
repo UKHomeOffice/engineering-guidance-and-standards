@@ -29,6 +29,9 @@
     "cypress:run": "cypress run",
     "docker:build": "docker build -t engineering-guidance-and-standards ."
   },
+  "engines": {
+    "node": ">=22.0.0 <23.0.0"
+  },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@x-govuk/govuk-eleventy-plugin": "^6.7.2",
