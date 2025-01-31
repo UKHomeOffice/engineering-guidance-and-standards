@@ -27,18 +27,20 @@ related:
 - [You MUST have appropriate status codes returning from each endpoint](#you-must-have-appropriate-status-codes-returning-from-each-endpoint)
 - [You MUST use appropriate nouns for resource names](#you-must-use-appropriate-nouns-for-resource-names)
 - [You MUST include some way to observe your API](#you-must-include-some-way-to-observe-your-api)
-- [You MUST consider security](#you-must-consider-security)
+- [You MUST apply security best practices](#you-must-apply-security-best-practices)
 - [You MUST validate inputs](#you-must-validate-inputs)
 - [You MUST consider authentication and authorisation](#you-must-consider-authentication-and-authorisation)
 - [You MUST test your API](#you-must-test-your-api)
 - [You MUST consider scalability of your API](#you-must-consider-scalability-of-your-api)
 - [You MUST use an API Specification](#you-must-use-an-api-specification)
 
-### You MUST include a form of versioning to your API and consider how you may deprecate a version
+### You MUST include a form of versioning to your API
 
 It is good practice to maintain and keep a good versioning of your API where appropriate, when using versioning it is recommended we follow the [semver standards](https://semver.org).
 
 There are a few [different ways of versioning](https://www.xmatters.com/blog/blog-four-rest-api-versioning-strategies) an API, via the URI path, query parameters or headers. You will also need to decide a versioning strategy, whether that be per endpoint or for the whole API.
+
+You should also consider how you a version should be depreciated, and communicate this with any consumers.
 
 ### You MUST have appropriate status codes returning from each endpoint 
 
@@ -50,7 +52,9 @@ The Mozilla Foundation has a [definitive list of status codes](https://developer
 
 ### You MUST use appropriate nouns for resource names
 
-Your API resources must follow RESTful resource naming standards as outlined on the restful API [resource naming page](https://restfulapi.net/resource-naming/).
+Using appropiate nouns for resource names rather than actions, because nouns describe the data, and can be used hierarchically to allow a consumer to navigate an API more easily. An example may be to use /devices to list all devices and /devices/:id to list the attributes of a particular device.
+
+Although this advice is given on the [RESTful resource naming page](https://restfulapi.net/resource-naming/) it details a recommended approach to help regardless on type of API (RESTful, GraphQL etc).
 
 ### You MUST include some way to observe your API 
 
@@ -90,7 +94,9 @@ Load testing is also important to make sure your API handles the projected numbe
 
 Knowing how your API scales helps to make sure your API is resilient and can handle peaks of traffic.
 
-Often using stateless approach to designing an API can help horizontally scale an API. Using techniques such as asynchronous code, multithreading and an event driven approach can all help scale your API.
+A stateless API means that the cliant is responsible for providing information about authantication etc. In turn, this means an application can then scale easily horizontally, as it doesn't matter which instance a client connects to.
+
+Using other techniques such as asynchronous code, multithreading and an event driven approach can also help scale an API.
 
 ### You MUST use an API Specification
 
