@@ -33,5 +33,6 @@ Outdated systems are harder to support and integrate with modern components, lea
 
 - Schedule time dedicated to updating dependencies, refactoring code, and maintaining pipelines. This proactive approach ensures that systems remain current and reduces the risk of accumulating technical debt
 - Continuously observe and assess updates in the technology ecosystem, such as new library versions or framework releases. Staying informed enables timely adoption of improvements and ensures compatibility with external systems
+- Regularly review the [Home Office Engineering Guidance and Standards](/) to ensure that products remaining aligned with standards and best practices
 - Automatically detect outdated dependencies and facilitate testing processes. Automation streamlines maintenance tasks, minimises human error, and accelerates the integration of necessary updates
 - Incorporate planned and measurable maintenance activities into team roadmaps. By formally recognising maintenance as a critical component of the development lifecycle, teams can allocate resources effectively and maintain system integrity over time
