@@ -37,7 +37,7 @@ If a developer with project experience leaves the team, the remaining team membe
 - Follow the theme and practices already established within a project, to help the existing team understand new code more easily.
 - Keeping things simple can mean using third party libraries where someone else has already solved a problem, or made something simpler to implement.
 - Multiple lines of comments could mean the code is too complicated to understand and should be refactored.
-- Following naming convention for variables and methods helps in self documenting your code
+- Following naming conventions for variables and methods helps in self documenting your code.
 - Refactoring large functions to break out key logic can improve readability as well as enabling reuse in the future. For further details, the [Write maintainable, reusable and evolutionary code principle](/principles/write-maintainable-reusable-and-evolutionary-code/) goes into greater depth.
 
 ---
