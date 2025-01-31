@@ -100,7 +100,7 @@ Using other techniques such as asynchronous code, multithreading and an event dr
 
 ### You MUST use an API Specification
 
-Using an API Specification will help define your API endpoints, support is wide, with a wide community using it. It helps the team work to the same standards, and it can generate documentation when needed.
+Using an API Specification will help define your API endpoints, support is wide, with a wide community using it.
 
 A good example is using OpenAPI Swagger to help build, maintain and document your API.
 
