@@ -16,24 +16,28 @@ related:
           href: /principles/write-maintainable-reusable-and-evolutionary-code/
 ---
 
-Keeping your code and piplines simple, makes them easier to read, self documenting and it enables incidents to be more quickly analysed and changes made.
+Keeping your code and pipelines simple makes them easier to read, self-documenting and enables incidents to be analysed and resolved faster.
 
 ---
 
 ## Rationale
 
-Code should be legible by a developer at any level, creating complex and hard to read code makes it more difficult to understand, work on and, ulitimately fix issues. Readbility is important, to help others understand what the code is meant to do, asking team members to explain may mean the code is too complicated. If a developer with project experience leaves the team, the code should still be understanable to be iterated on.
+Code should be legible by a developer at any level. Creating complex and hard to read code makes it more difficult to understand, work on and ultimately fix issues.
+
+Readability is important to help others understand what the code is meant to do. If code needs to be explained often, this may be a sign that it is too complicated and should be simplified.
+
+If a developer with project experience leaves the team, the remaining team members should still be able to understand and maintain the codebase.
 
 ---
 
 ## Applications and Implications
 
-- Simple code enables better async communication, enabling pull requests to be read with ease, and to understand the intent of the actions it performs.
-- Don't overthink the future of your code, to avoid premature optimisation, don't write code until it's needed. Though extendability should still considered.
-- Follow the theme and practices within a project already, to help the existing team understand more easily.
+- Simple code enables better asynchronous communication, enabling pull requests to be more easily read and understood.
+- To avoid premature optimisation, don't write code until it's needed, whilst considering extensibility where appropriate.
+- Follow the theme and practices already established within a project, to help the existing team understand new code more easily.
 - Third party libraries can be useful to reuse code that someone else has already written.
-- Multiple lines of comments, could mean the code is too complicated to understand and should be refactored.
-- Clear variable and function names helps to keep your code self documenting.
-- Looking at whether large functions be refactored to break out key logic can help understand a functions intent, as well as enabling reusability in the future. For further details the [Write maintainable, reusable and evolutionary code priciple](/principles/write-maintainable-reusable-and-evolutionary-code/) goes into greater depth.
+- Multiple lines of comments could mean the code is too complicated to understand and should be refactored.
+- Following naming convention for variables and methods helps in self documenting your code
+- Refactoring large functions to break out key logic can improve readability as well as enabling reuse in the future. For further details, the [Write maintainable, reusable and evolutionary code principle](/principles/write-maintainable-reusable-and-evolutionary-code/) goes into greater depth.
 
 ---
