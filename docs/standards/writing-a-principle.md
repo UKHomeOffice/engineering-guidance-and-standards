@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Writing a principle
-date: 2023-08-04
+date: 2024-11-28
 id: SEGAS-00002
 tags: []
 ---
@@ -31,10 +31,12 @@ State the essence of the principle and make it easy to remember. Avoid ambiguous
 ```yaml
 layout: principle
 order: 1
-title: Example software engineering principle
+title: Writing a principle
 tags:
   - Example
 ```
+
+The filename must be the kebab-cased title so that the principle's url matches its title. E.g. `writing-a-principle.md`.
 
 ### A principle MUST have a description
 
