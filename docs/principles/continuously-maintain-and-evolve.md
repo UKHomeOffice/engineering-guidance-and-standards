@@ -17,6 +17,8 @@ related:
           href: /principles/write-maintainable-reusable-and-evolutionary-code/
         - text: Well managed code
           href: /principles/well-managed-code/
+        - text: GOV.UK Service Standard - Iterate and improve frequently
+          href: https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently
 ---
 
 Building great products isn't just about writing good code initially - it's about continuously maintaining and evolving them. Regularly update codebases, dependencies, pipelines, infrastructure, and processes to ensure they remain secure, performant, and aligned with current standards. Avoid allowing systems to stagnate by scheduling maintenance and improvements as a regular part of the delivery lifecycle.
