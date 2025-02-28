@@ -9,6 +9,14 @@ tags:
 - Deployment
 - CI/CD
 - Quality
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Selecting a deployment strategy
+          href: /patterns/selecting-a-deployment-strategy/
+        - text: Make small changes
+          href: /patterns/make-small-changes/
 ---
 
 Deploying little and often is the practice of regularly deploying small changes, to production if possible, to avoid long intervals between deployments.
