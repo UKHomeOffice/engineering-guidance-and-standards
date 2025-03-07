@@ -14,6 +14,10 @@ or
 - [ ] This change might impact accessibility and is not covered by automated aXe tests - manual testing has been performed
 (If the change might impact accessibility then please add some further information here)
 
+## Commit signing
+
+- [ ] All commits are signed. [GitHub guidance on signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification)
+
 # Content change 
 - [ ] Please review the [accessibility checks for content changes](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md).
 
@@ -26,3 +30,4 @@ e.g. [Writing a principle](https://engineering.homeoffice.gov.uk/standards/writi
     - Content does not refer to anti-fraud mechanisms
     - Content does not include sensitive business logic
 - [ ] Last updated date for content is correct
+- [ ] All commits are signed. [GitHub guidance on signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification)

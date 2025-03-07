@@ -56,7 +56,7 @@ Make sure you pull your fork and switch to your new branch to do these changes.
 
 ### Commit your update
 
-Don't forget to commit and push your changes to your forked repo ready for the contribution!
+Don't forget to commit and push your changes to your forked repo ready for the contribution! Please make sure you have setup Git to sign your commits with a method that GitHub can verify. GitHub provides [instructions on setting up commit signing](https://docs.github.com/en/authentication/managing-commit-signature-verification). The repository rules require a fully signed commit history when merging a pull request into the main branch, so you will not be able to merge the resulting PR if any commits are unsigned.
 
 ## Pull Requests
 
