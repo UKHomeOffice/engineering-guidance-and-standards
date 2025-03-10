@@ -1,7 +1,7 @@
 ---
 layout: standard
 order: 1
-title: Test parallelisation
+title: test parallelisation
 date: 2025-10-03
 id: SEGAS-00016
 tags:
