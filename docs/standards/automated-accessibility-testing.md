@@ -1,7 +1,7 @@
 ---
 layout: standard
 order: 1
-title: Automated accessibility testing
+title: automated accessibility testing
 date: 2025-10-03
 id: SEGAS-00019
 tags:
