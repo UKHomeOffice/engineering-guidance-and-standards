@@ -1,7 +1,7 @@
 ---
 layout: standard
 order: 1
-title: CI/CD pipeline
+title: ci/cd pipeline
 date: 2025-10-03
 id: SEGAS-00020
 tags:
