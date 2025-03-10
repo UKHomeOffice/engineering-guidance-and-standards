@@ -28,7 +28,7 @@ Been clear about how your API can be used, and what is happening can help a cons
 ## Requirement(s)
 
 - [You MUST include a form of versioning to your API](#you-must-include-a-form-of-versioning-to-your-api)
-- [You MUST have appropriate status codes returning from each endpoint](#you-must-have-appropriate-status-codes-returning-from-each-endpoint)
+- [You MUST return appropriate status codes from each endpoint](#you-must-return-appropriate-status-codes-from-each-endpoint)
 - [You MUST use appropriate nouns for resource names](#you-must-use-appropriate-nouns-for-resource-names)
 - [You MUST include some way to observe your API](#you-must-include-some-way-to-observe-your-api)
 - [You MUST apply security best practices](#you-must-apply-security-best-practices)
@@ -44,9 +44,9 @@ It is good practice to maintain and keep a good versioning of your API where app
 
 There are a few [different ways of versioning](https://www.xmatters.com/blog/blog-four-rest-api-versioning-strategies) an API, via the URI path, query parameters or headers. You will also need to decide a versioning strategy, whether that be per endpoint or for the whole API.
 
-You should also consider how you a version should be depreciated, and communicate this with any consumers.
+You should also consider how a version should be deprecated and communicate this to any consumers.
 
-### You MUST have appropriate status codes returning from each endpoint 
+### You MUST return appropriate status codes from each endpoint
 
 Your API endpoints must return the relevant status code for each endpoint, for example a 403 if a user doesn't have access.
 
@@ -58,13 +58,13 @@ The Mozilla Foundation has a [definitive list of status codes](https://developer
 
 Using appropiate nouns for resource names rather than actions, because nouns describe the data, and can be used hierarchically to allow a consumer to navigate an API more easily. An example may be to use /devices to list all devices and /devices/:id to list the attributes of a particular device.
 
-Although this advice is given on the [RESTful resource naming page](https://restfulapi.net/resource-naming/) it details a recommended approach to help regardless on type of API (RESTful, GraphQL etc).
+Although this advice is given on the [RESTful resource naming page](https://restfulapi.net/resource-naming/) it details a recommended approach to help regardless of the type of API (RESTful, GraphQL etc).
 
-### You MUST include some way to observe your API 
+### You MUST include some way to observe your API
 
 When maintaining an API we must have a way to make sure that is in good health and there is a way to trace activity.
 
-It is recommended that logs are used however the sensitivity of the data logged must also be considered.
+Application logs that are sent to an aggregation service are recommended for this. Review [the securing application logging pattern](https://engineering.homeoffice.gov.uk/patterns/securing-application-logging/) if your requests or responses could contain sensitive information.
 
 Metrics are also a good way to understand the current state of your API, as developers will be able to track and observe in real time any issues or downtime via alerts that can be set up.
 
@@ -84,7 +84,7 @@ Making sure database queries are also secure from malicious actors by using para
 
 Authentication and authorisation are really important for API, this can mean restricting certain tasks or functions to a limited number of users. A user should have the least privilege possible. Role Based Access Control (RBAC) is an example of how to implement this.
 
-### You MUST test your API 
+### You MUST test your API
 
 You should test your API, there's more information on the developer testing standard.
 
@@ -98,14 +98,14 @@ Load testing is also important to make sure your API handles the projected numbe
 
 Knowing how your API scales helps to make sure your API is resilient and can handle peaks of traffic.
 
-A stateless API means that the cliant is responsible for providing information about authantication etc. In turn, this means an application can then scale easily horizontally, as it doesn't matter which instance a client connects to.
+A stateless API means that the client is responsible for providing information about authentication etc. In turn, this means an application can then scale easily horizontally, as it doesn't matter which instance a client connects to.
 
-Using other techniques such as asynchronous code, multithreading and an event driven approach can also help scale an API.
+Using techniques such as asynchronous code, multithreading or an event driven approach can help scale an API.
 
 ### You MUST use an API Specification
 
-Using an API Specification will help define your API endpoints, support is wide, with a wide community using it.
+Using an API Specification will help define your API endpoints and is widely supported by a large community.
 
-A good example is using OpenAPI Swagger to help build, maintain and document your API.
+An example is using [OpenAPI (previously Swagger)](https://www.openapis.org/) to help build, maintain and document your API.
 
 ---
