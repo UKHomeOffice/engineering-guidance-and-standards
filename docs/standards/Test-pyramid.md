@@ -8,7 +8,9 @@ tags:
 - 
   
 ---
-### Test pyramid Image to be added ###
+
+![image alt](https://github.com/rkoneru-hub/engineering-guidance-and-standards/blob/67dca075ff8bfd282f70d3fb04fb408bbbc82fd3/docs/standards/Testpyramid.PNG)
+
 The Software Engineering Test Pyramid is a strategic model for software testing that emphasises a balanced approach to testing across distinct levels. Each layer represents a different type of test, and the size of the layer indicating the recommended proportion of that test type. To ensure robust software quality and efficient development, follow the structured approach outlined by the test pyramid. Prioritise a large volume of unit tests, forming the foundation, to validate individual components effectively. Implement a smaller set of integration tests to verify interactions between these components. Limit end-to-end (E2E) tests to critical user flows and high-risk areas, due to their complexity and maintenance costs.
 
 While the test pyramid is a helpful guide - it should not be seen as a perfect fit in all situations. Complex systems, rapid prototyping, safety-critical applications, and resource limitations can all require deviations. For complex integrations or AI, more end-to-end tests might be needed. Short-lived apps may prioritise user testing over extensive unit tests. Safety-critical systems need thorough testing at all levels. Teams with limited automation might need a more practical approach. 
