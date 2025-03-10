@@ -11,57 +11,43 @@ tags:
 - Chaos testing
 ---
 
-Infrastructure should be defined as code and treated in the same way as application code. Storing infrastructure definitions in a source code repository protects them as an asset and means we can apply many of our best practices for managing code. This ensures you know how you are running your applications, allows changes to be traced and audited, and allows rolling back to a previous state. Other benefits include:
+Infrastructure as Code (IaC) testing is a critical practice for ensuring the security, compliance, and functionality of infrastructure configurations before deployment. It encompasses a range of testing methodologies, including syntax validation, security scanning, compliance checks, and functional testing, applied to technologies like AWS Cloud Formation, IAM security, and Kubernetes manifests. Leveraging test-driven development (TDD) for IaC modules and automating tests within CI/CD pipelines ensures rapid feedback and continuous validation.
 
-- Assists testing, peer review and other assurance of changes
-- Avoids hidden state, as infrastructure definitions are visible in a repository
-- Improves the speed and reliability of disaster recovery processes
-- Infrastructure definitions are versioned and stable, and can be consistently promoted across deployment environments using automated CI/CD pipelines
+Maintaining a dedicated testing environment and continuously updating testing tools and policies are essential for staying ahead of evolving threats and best practices. This approach provides reliability, robust security, and consistency across all environments, minimising the risks associated with untested infrastructure, such as deployment chaos, security breaches, and costly operational failures. By proactively addressing issues, IaC testing enables a predictable and reliable infrastructure, minimising disruptions, and maximising efficiency.
 
 ---
 
 ## Requirements
 
-- [Infrastructure definitions MUST be stored as code](#infrastructure-definitions-must-be-stored-as-code)
-- [Infrastructure definitions MUST be validated](#infrastructure-definitions-must-be-validated)
-- [Secrets MUST NOT be stored in infrastructure definitions](#secrets-must-not-be-stored-in-infrastructure-definitions)
-- [Source management best practices MUST be followed for infrastructure definitions](#source-management-best-practices-must-be-followed-for-infrastructure-definitions)
+- [You MUST do Static Code Analysis](#You MUST do Static Code Analysis).
+- [You MUST do component and integration tests of individual Components](#You MUST do component and integration tests of individual Components).
+- [You MUST do Functional and Regression testing](#You MUST do Functional and Regression testing).
+- [You MUST do Security and Compliance checks](#You MUST do Security and Compliance checks).
+- [You MUST do Performance testing](#You MUST do Performance testing).
+- [You MUST do Operational Acceptance testing](#You MUST do Operational Acceptance testing).
 
-### Infrastructure definitions MUST be stored as code
+### You MUST do Static Code Analysis
 
-You must store your [Infrastructure as Code (IaC)](https://www.ibm.com/topics/infrastructure-as-code), and store it in a source code repository. Specifically, you should:
+Static code analysis examines source code without executing it to identify potential defects, vulnerabilities, and coding standard violations. It automates the detection of issues early in the development lifecycle, improving code quality and security. Implement static code analysis tools for scanning IaC files for issues that may lead to security or compliance problems and misconfiguration issues. In addition, scans can check for compliance with common industry standards such as the Center for Internet Security (CIS) and Amazon Web Services (AWS) Foundations Benchmark.
 
-- define your cloud resources (e.g. [AWS](https://aws.amazon.com/)) in [Terraform](https://www.terraform.io/)
-- define your Kubernetes resources in [k8s YAML](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) or [Helm charts](https://helm.sh/).
+### You MUST do component and integration tests of individual Components 
 
-You should deploy your infrastructure via a Continuous Deployment (CD) pipeline. Avoid making changes through CLI and cloud consoles (e.g. [AWS console](https://aws.amazon.com/console/) or [kubectl](https://kubernetes.io/docs/reference/kubectl/)).
+Component tests the correctness of individual infrastructure modules e.g., modules in isolation. Integration testing validates that multiple components work together in a deployed environment and so prevents conflicts and misconfigurations when combining services.
+ 
+### You MUST do Functional and Regression testing
 
-You should aim to ensure consistency across deployment environments, for instance by using the same infrastructure definitions and by managing environment-specific values in separate configuration.
+Functional testing in IaC verifies that deployed infrastructure components perform their intended tasks correctly, validating interactions and dependencies between resources. Regression testing ensures that changes to IaC code do not introduce unintended side effects or break existing functionality, maintaining stability, and preventing configuration drift.
 
-### Infrastructure definitions MUST be validated 
+### You MUST do Security and Compliance checks
 
-At a minimum, syntax must be validated, either through a tool-specific checker, or a generic language (e.g. JSON/YAML) linter.
+Security testing within IaC verifies that infrastructure configurations adhere to security best practices and prevent vulnerabilities such as unauthorised access. Compliance checks ensure configurations meet regulatory and organisational standards, guaranteeing adherence to policies and avoiding potential penalties.
 
-Additional checks should be done wherever possible, such as:
+### You MUST do Performance testing
 
-- Security scanning (to check for poor security practices such as hard-coding passwords)
-- Dry running (to check validity and test that the required actions can be performed OK)
+Performance testing of IaC components rigorously evaluates the resource utilisation, latency, and throughput of individual infrastructure modules under simulated load conditions. It focuses on isolating and measuring the efficiency of specific configurations, like network settings or compute resources, to ensure they meet defined performance benchmarks and handle anticipated traffic.
 
-It is important to validate infrastructure definitions before deployment in order to catch things early. This should be done as early as possible, for instance on a commit to a feature branch. 
+### You MUST do Operational Acceptance testing
 
-### Secrets MUST NOT be stored in infrastructure definitions
-
-Secrets (for instance passwords, tokens, private keys) must not be stored in infrastructure code, otherwise anyone with access to the code will be able to impersonate the system.
-
-An appropriate secrets management tool must be used, such as Vault, AWS Secrets Manager or Kubernetes secrets (with appropriate [security practices](https://kubernetes.io/docs/concepts/security/secrets-good-practices/)). Your platform engineering team will be able to assist you to locate the right tool.
-
-### Source management best practices MUST be followed for infrastructure definitions
-
-As with all code, you should strive to make your infrastructure definitions understandable, and carefully manage any change to that code. You should:
-
-- Use comments where appropriate to make it clear what code does
-- Practice good git hygiene, e.g. engineers should be able to understand the change history through good commit messages
-- Use branching strategies and pull request processes to ensure change is reviewed and sequenced in a managed way
-- Use versioning, and tagging, to help to give a clearer understanding of which code was live at a given point 
+Focus on Validating Reliability and Availability without unexpected failures (Chaos Engineering), Regulatory compliance (GDPR), Observability mechanisms (AWS CLoudWatch, Prometheus & Grafana, Data Dog) work as expected, Backup & Disaster Recovery (RDS snapshots) strategies in case of failures to confirm that the infrastructure is ready for long-term operations. 
 
 ---
