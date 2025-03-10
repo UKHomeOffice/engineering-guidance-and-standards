@@ -1,7 +1,7 @@
 ---
 layout: standard
 order: 1
-title: Infrastructure as code testing
+title: Test pyramid
 date: 2025-10-03
 id: SEGAS-00018
 tags:
