@@ -16,7 +16,7 @@ or
 
 ## Commit signing
 
-- [ ] All commits are signed. [GitHub guidance on signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification)
+- [ ] All commits are signed with a key that can be verified by GitHub. [GitHub guidance on signing commits](https://docs.github.com/en/enterprise-cloud@latest/authentication/managing-commit-signature-verification/signing-commits)
 
 # Content change 
 - [ ] Please review the [accessibility checks for content changes](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/technical-docs/accessibility/content-checks.md).
@@ -30,4 +30,4 @@ e.g. [Writing a principle](https://engineering.homeoffice.gov.uk/standards/writi
     - Content does not refer to anti-fraud mechanisms
     - Content does not include sensitive business logic
 - [ ] Last updated date for content is correct
-- [ ] All commits are signed. [GitHub guidance on signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification)
+- [ ] All commits are signed with a key that can be verified by GitHub. [GitHub guidance on signing commits](https://docs.github.com/en/enterprise-cloud@latest/authentication/managing-commit-signature-verification/signing-commits)
