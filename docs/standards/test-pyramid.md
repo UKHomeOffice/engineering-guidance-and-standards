@@ -5,7 +5,8 @@ title: test pyramid
 date: 2025-10-03
 id: SEGAS-00018
 tags:
-- 
+- Quality assurance and testing
+- Testing
   
 ---
 
