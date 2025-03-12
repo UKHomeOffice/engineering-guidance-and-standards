@@ -12,7 +12,7 @@ tags:
   
 ---
 
-Automated accessibility testing, integrated into the CI/CD pipeline, shifts accessibility validation left, resulting in earlier detection and resolution of common issues. By automating a significant portion of accessibility checks (it is key to acknowledge that automated testing will only every identify between 30 and 40% of accessibility issues), teams can proactively address potential barriers, ensuring web applications meet accessibility standards from the outset. This early intervention reduces the burden of manual testing, allowing human experts to focus on complex user-centric issues and ultimately delivering a more inclusive and accessible user experience.
+Automated accessibility testing, integrated into the CI/CD pipeline, shifts accessibility validation left, resulting in earlier detection and resolution of common issues. By automating a significant portion of accessibility checks (it is key to acknowledge that automated testing will only identify between 30 and 40% of accessibility issues), teams can proactively address potential barriers, ensuring web applications meet accessibility standards from the outset. This early intervention reduces the burden of manual testing, allowing human experts to focus on complex user-centric issues and ultimately delivering a more inclusive and accessible user experience.
 
 ---
 
