@@ -21,8 +21,6 @@ related:
 
 When designing an API aspects such as naming and versioning will help with not only the maintenance of the API, but also help the consumers of your API.
 
-Been clear about how your API can be used, and what is happening can help a consumer build a better applicationby adding proper error messaging as well as using the latest versions of endpoints.
-
 ---
 
 ## Requirement(s)
