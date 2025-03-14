@@ -35,7 +35,7 @@ There are different techniques you can follow to reduce complexity, which should
 
 #### Splitting files and functions
 
-Keeping code a succinct, easy to manage files and functions makes it easier to maintain with simpler functions and allows for further reuse.
+Keeping code succinct, easy to manage files and functions makes it easier to maintain with simpler functions and allows for further reuse.
 
 Designing functions to be modular from the outset can also help reduce complexity, as well as enable reuse in the future.
 
