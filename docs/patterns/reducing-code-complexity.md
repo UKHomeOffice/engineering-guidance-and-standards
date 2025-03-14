@@ -63,7 +63,7 @@ Documentation is especially useful for new team members, enabling them to unders
 
 ## Considerations
 
-- Teams should have agree owns standards for code, set some rules and document them. Following this, the same standards can be used across code reviews, rules set in tools (for instance, setting a high complexity allowed, allowing high LOC's etc.).
+- Teams should agree their own standards for code, set some rules and document them. Following this, the same standards can be used across code reviews, rules set in tools (for instance, setting a high complexity allowed, allowing high LOC's etc.).
 - Code complexity is form of tech debt, by letting it increase it can make your code harder to maintain over time.
 - Code complexity is everyone's responsibility within the team
 
