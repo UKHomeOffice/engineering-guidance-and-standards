@@ -17,7 +17,7 @@ Complex code can make code difficult to maintain and hard to understand errors. 
 
 ### Measure code complexity
 
-Measuring code complexity can spot issues early, been able to make smaller changes earlier within the Software Lifecycle as well as highlighting overarching issues such as where code hasn't been reused.
+Measuring code complexity can spot issues early, allowing correction with smaller changes earlier in the Software Lifecycle, as well as highlighting overarching issues such as where code hasn't been reused.
 
 #### Using tools to measure code complexity
 
@@ -45,17 +45,17 @@ Setting good functions and variable names helps other developers understand what
 
 In function names it can also help reduce complexity by describing 'what' the function does, not 'how' it does it.
 
-#### Regularily refactoring code
+#### Regularly refactoring code
 
 Using refactoring can help reduce complexity, by splitting functions, reusing components etc.
 
 #### Balance coupling vs DRY
 
-DRY (Don't repeat yourself) is a software development principle that aims to reduce repetitive code by writing code once, and referencing it again later.
+DRY (Don't repeat yourself) is a software development principle that aims to reduce repetitive code by refactoring it into a shared function that can be called wherever needed. This reduces immediate code complexity, but introduces coupling between the pieces of code that call the shared function. Check when merging repeated code that the complexity reduction justifies the maintenance cost of coupling.
 
 #### Documentation
 
-Documentation is important for reducing complexity and providers insights into what code does and how it works.
+Documentation is important for reducing complexity and providers insights into what code does and how it works. Documentation should include the team's standards and patterns allowing future modification in a consistent style with minimal extra complexity.
 
 Documentation is especially useful for new team members, enabling them to understand the previous structural and architectural decisions made.
 
