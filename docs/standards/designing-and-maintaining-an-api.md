@@ -54,9 +54,9 @@ The Mozilla Foundation has a [definitive list of status codes](https://developer
 
 ### You MUST use appropriate nouns for resource names
 
-Using appropiate nouns for resource names rather than actions, because nouns describe the data, and can be used hierarchically to allow a consumer to navigate an API more easily. An example may be to use /devices to list all devices and /devices/:id to list the attributes of a particular device.
+Using appropriate nouns for resource names rather than actions, because nouns describe the data, and can be used hierarchically to allow a consumer to navigate an API more easily. An example may be to use /devices to list all devices and /devices/:id to list the attributes of a particular device.
 
-Although this advice is given on the [RESTful resource naming page](https://restfulapi.net/resource-naming/) it details a recommended approach to help regardless of the type of API (RESTful, GraphQL etc).
+Although this advice is given on the [RESTful resource naming page](https://restfulapi.net/resource-naming/) it details a recommended approach to help regardless of the type of API (RESTful, GraphQL etc.).
 
 ### You MUST include some way to observe your API
 
