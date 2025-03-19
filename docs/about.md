@@ -71,7 +71,7 @@ Ways of Working
   [Pages tagged with ways of working](/tags/ways-of-working/)
 
 Quality Engineering
-: Items to be covered to include Quality Engineering Standards.
+: Items to be covered to include Quality Engineering.
 
   [**Slack**: #segas-quality-engineering](https://homeoffice.enterprise.slack.com/archives/C08HUEHDBGF)
 
