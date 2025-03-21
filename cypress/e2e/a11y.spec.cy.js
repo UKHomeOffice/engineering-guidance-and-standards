@@ -77,7 +77,7 @@ describe("Tag pages pass axe-core accessibility checks", () => {
     cy.visit(testing_params.TEST_ROOT_URL);
     cy.contains("Read our standards").click();
     cy.contains("Accessibility").click();
-    cy.get(".tags").contains("Documentation").click();
+    cy.get(".tags").contains("Accessibility").click();
     cy.injectAxe();
     cy.checkA11y({ exclude: "[data-axe-exclude]" }, axeConfig, terminalLog);
   });
@@ -86,7 +86,7 @@ describe("Tag pages pass axe-core accessibility checks", () => {
     cy.visit(testing_params.TEST_ROOT_URL);
     cy.contains("Read our standards").click();
     cy.contains("Accessibility").click();
-    cy.get(".tags").contains("Documentation").click();
+    cy.get(".tags").contains("Accessibility").click();
     cy.contains("all tags").click();
     cy.injectAxe();
     cy.checkA11y({ exclude: "[data-axe-exclude]" }, axeConfig, terminalLog);
