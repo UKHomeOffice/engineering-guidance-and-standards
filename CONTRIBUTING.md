@@ -96,18 +96,19 @@ However, if you feel that some changes are becoming more complex, then you may w
 
 We are using [GitHub workflows](https://github.com/UKHomeOffice/engineering-guidance-and-standards/tree/main/.github/workflows) for build and deploy and automated end to end testing.
 
-The following actions are performed for each PR:
-- Automated end to end testing using Cypress.
+The following actions are performed for each PR before merging:
+
+- Automated end to end testing using Cypress
 
 PRs must only be approved after they pass the above checks.
 
-We are deploying the site to a Docker container.
+Once merged the site is deployed.
 
 ## Branching
 
 ### Branching strategy
 
-We are using a simple trunk based strategy.
+We are using a trunk based strategy.
 
 ### Review
 
