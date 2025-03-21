@@ -1,0 +1,80 @@
+---
+layout: standard
+order: 1
+title: Documenting an API
+date: 2025-03-21
+id: SEGAS-00016
+tags:
+  - Software design
+  - API Design
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Minimal documentation set for a product
+          href: /standards/minimal-documentation-set-for-a-product/
+        - text: How to document APIs
+          href: https://www.gov.uk/guidance/how-to-document-apis
+        - text: Writing API Reference Documentation
+          href: https://www.gov.uk/guidance/writing-api-reference-documentation
+---
+
+Documenting an API is an important part of the software design lifecycle. It helps consumers of your API, the wider community and even your own team understand the purpose of endpoints, what and how they work, inputs and outputs, what the requirements are to access it etc.
+
+---
+
+## Requirement(s)
+
+- [You MUST include your API on the relevant registers](#you-must-include-your-api-on-the-relevant-registers)
+- [You MUST have documentation on inputs and outputs of all endpoints](#you-must-have-documentation-on-inputs-and-outputs-of-all-endpoints)
+- [You MUST provide specific feedback in responses](#you-must-provide-specific-feedback-in-responses)
+- [You MUST document how to connect to your API](#you-must-document-how-to-connect-to-your-api)
+- [You MUST document how to raise an issue with your API](#you-must-document-how-to-raise-an-issue-with-your-api)
+- [You MUST document information on rate limits](#you-must-document-information-on-rate-limits)
+
+### You MUST include your API on the relevant registers if your API is public
+
+Listing our APIs contributes to the government community as well as other organisations and wider industry. Listing our APIs here will also help inter-departmental data exchanges, as well as sharing best practice in API development.
+
+If your API is public, it should also be on the [UK public sector API Catalogue](https://www.api.gov.uk/ho/#home-office).
+
+### You MUST have documentation on inputs and outputs of all endpoints
+
+Documenting the inputs and outputs of endpoints makes it easy for consumers to understand what is required and how to use the given responses from an endpoint.
+
+It should include all of the following inputs that apply to your API:
+
+- Request method
+- URI query parameters
+- Request headers
+- Requirements for the request body
+
+For each possible response, including error responses, you should document the following:
+
+- Response status code
+- Response headers
+- The format of the response body
+
+This can be achieved for a RESTful API by using [OpenAPI (Swagger v3)](https://www.openapis.org/what-is-openapi).
+
+### You MUST provide specific feedback in responses
+
+It's important that response is clear and gives a brief overview of what has happened when called an endpoint. For example. Access Denied or Cannot connect to database. Your documentation should also state what each status code represents.
+
+This can make it easier to debug for any consumers.
+
+A response should not include any information about the technologies used or any internal information for example internal server addresses etc.
+
+### You MUST document how to connect to your API
+
+You must have documentation in place explaining how you onboard users to your API, if your API requires authorisation or authentication, you must document how to gain access to the API.
+
+### You MUST document how to raise an issue with your API
+
+It's important to document how to raise an issue with your API, this not only helps your consumers with debugging or raising concerns, but enables a feedback loop with your users.
+
+### You MUST document information on rate limits
+
+Rate limiting is important to secure your API and consumers may want to query your API often, so documenting the rate limits helps consumers build their software around these limits.
+
+---
