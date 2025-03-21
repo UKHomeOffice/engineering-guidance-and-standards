@@ -36,7 +36,6 @@ Documenting an API is an important part of the software design lifecycle. It hel
 
 Listing our APIs contributes to the government community as well as other organisations and wider industry. Listing our APIs here will also help inter-departmental data exchanges, as well as sharing best practice in API development.
 
-If your API is for internal or team use only, then it should be included in the internal API register.
 
 If your API is public, it should also be on the [cabinet offices list of APIs](https://www.api.gov.uk/ho/#home-office).
 
