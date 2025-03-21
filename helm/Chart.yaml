@@ -1,5 +1,0 @@
-apiVersion: v2
-name: engineering-guidance-and-standards
-description: A Helm chart for Engineering Guidance and Standards
-type: application
-version: 1.0.0

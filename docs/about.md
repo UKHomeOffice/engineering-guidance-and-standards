@@ -4,7 +4,7 @@ layout: post
 order: 5
 title: About
 description: Find out more about what we are doing
-tags:
+tags: []
 ---
 
 The Home Office Engineering Guidance and Standards site is a body of knowledge for software engineers. It is comprised of principles, patterns and standards that define how we do engineering at the Home Office, and that direct how we want to do engineering in the future. This guidance is created and curated by the Home Office engineering community. The project as a whole is led by the Home Office DDaT Engineering Profession team.
@@ -47,7 +47,7 @@ Security
 
   [**Slack**: #segas-security](https://homeoffice.enterprise.slack.com/archives/C0282A158FM)
 
-  [Pages tagged with security](/tags/security/)]
+  [Pages tagged with security](/tags/security/)
 
 Software Design
 : Items to be covered to include Frameworks, Languages, Quality and Coding Standards.
