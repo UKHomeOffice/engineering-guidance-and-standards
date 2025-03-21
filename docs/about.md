@@ -70,6 +70,12 @@ Ways of Working
 
   [Pages tagged with ways of working](/tags/ways-of-working/)
 
+Quality Engineering
+: Items to be covered to include Quality Engineering.
+
+  [**Slack**: #segas-quality-engineering](https://homeoffice.enterprise.slack.com/archives/C08HUEHDBGF)
+
+  [Pages tagged with quality engineering](/tags/quality-engineering/)
 ## Why we are doing it
 
 In 2021 we conducted a discovery across a wide range of our engineering teams, including suppliers and civil servants, and encompassing all of our delivery portfolios. We found that there were a number of key areas that we should prioritise for centralised guidance. Since then we have been running guilds and other working groups to identify the more specific needs of our engineers, and develop guidance to meet those needs.
