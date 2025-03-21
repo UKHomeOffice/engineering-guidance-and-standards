@@ -32,7 +32,7 @@ Documenting an API is an important part of the software design lifecycle. It hel
 - [You MUST document how to raise an issue with your API](#you-must-document-how-to-raise-an-issue-with-your-api)
 - [You MUST document information on rate limits](#you-must-document-information-on-rate-limits)
 
-### You MUST include your API on the relevant registers
+### You MUST include your API on the relevant registers if your API is public
 
 Listing our APIs contributes to the government community as well as other organisations and wider industry. Listing our APIs here will also help inter-departmental data exchanges, as well as sharing best practice in API development.
 
