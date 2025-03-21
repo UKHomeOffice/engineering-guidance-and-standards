@@ -55,9 +55,9 @@ describe("Tag page loaded test", () => {
     cy.visit(testing_params.TEST_ROOT_URL);
     cy.contains("Read our standards").click();
     cy.contains("Accessibility").click();
-    cy.get(".tags").contains("Documentation").click(); // this is the "tag" link
-    cy.title().should("include", 'Pages tagged with "Documentation"');
-    cy.contains("h1", "Pages tagged with “Documentation”"); // page renders with “ ” chars
+    cy.get(".tags").contains("Accessibility").click(); // this is the "tag" link
+    cy.title().should("include", 'Pages tagged with "Accessibility"');
+    cy.contains("h1", "Pages tagged with “Accessibility”"); // page renders with “ ” chars
 
     cy.contains("li", "Write effective documentation");
     cy.contains("li", "Accessibility");
@@ -69,9 +69,9 @@ describe("All tags page loaded test", () => {
     cy.visit(testing_params.TEST_ROOT_URL);
     cy.contains("Read our standards").click();
     cy.contains("Accessibility").click();
-    cy.get(".tags").contains("Documentation").click(); // this is the "tag" link
-    cy.title().should("include", 'Pages tagged with "Documentation"');
-    cy.contains("h1", "Pages tagged with “Documentation”"); // page renders with “ ” chars
+    cy.get(".tags").contains("Accessibility").click(); // this is the "tag" link
+    cy.title().should("include", 'Pages tagged with "Accessibility"');
+    cy.contains("h1", "Pages tagged with “Accessibility”"); // page renders with “ ” chars
     cy.contains("See all tags");
 
     // Assert all tags link is functional
