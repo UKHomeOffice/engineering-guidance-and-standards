@@ -71,7 +71,7 @@ You must have documentation in place explaining how you onboard users to your AP
 
 ### You MUST document how to raise an issue with your API
 
-It's important to document how to raise an issue with your API, this not only helps your consumers with debugging or raising concerns, but enabled a feedback loop with your users.
+It's important to document how to raise an issue with your API, this not only helps your consumers with debugging or raising concerns, but enables a feedback loop with your users.
 
 ### You MUST document information on rate limits
 
