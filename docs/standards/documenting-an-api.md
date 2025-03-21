@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Documenting an API
-date: 2024-04-09
-id: SEGAS-XXX
+date: 2025-03-21
+id: SEGAS-00016
 tags:
   - Software design
   - API Design
