@@ -8,6 +8,7 @@ tags:
 - Infrastructure
 - CI/CD
 - Infrastructure as code
+- Quality engineering
   
 ---
 CI/CD pipelines automate software integration and deployment for fast, reliable releases. They provide fast feedback to identify and address issues early, using stages like code commits, builds, testing, and deployments. Effective pipelines use branching strategies, code linting, and package management. Comprehensive testing and continuous monitoring with tools like SonarQube ensure quality and performance. This approach enables rapid development, improved reliability, and faster releases.
