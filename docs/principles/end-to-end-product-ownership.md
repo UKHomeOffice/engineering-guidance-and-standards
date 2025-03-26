@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: End to end product ownership
-date: git Last Modified
+date: 2023-08-25
 tags:
 - Ways of working
 ---
