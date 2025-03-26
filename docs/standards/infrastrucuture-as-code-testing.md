@@ -8,6 +8,7 @@ tags:
 - Infrastructure
 - CI/CD
 - Infrastructure as code
+- Quality engineering
   
 ---
 
