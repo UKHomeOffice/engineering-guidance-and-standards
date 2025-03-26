@@ -58,6 +58,13 @@ Make sure you pull your fork and switch to your new branch to do these changes.
 
 Don't forget to commit and push your changes to your forked repo ready for the contribution!
 
+Please make sure you have set up Git to sign your commits with a method that GitHub can verify. GitHub provides [instructions on setting up commit signing](https://docs.github.com/en/enterprise-cloud@latest/authentication/managing-commit-signature-verification/signing-commits). To help the site comply with [SEGAS-00009 - Signing code commits](https://engineering.homeoffice.gov.uk/standards/signing-code-commits/), the repository rules require a fully signed commit history when merging a pull request into the main branch. You will not be able to merge the resulting PR if any commits in the associated branch are unsigned, or if the signatures can't be verified by GitHub. If you are signing commits, and they are showing as unverified in GitHub, check you have added the relevant key to your account. When adding SSH keys in GitHub you can add the key as an authorisation key or a signing key. If you want to use the same key for both, you will need to add it twice, once for each purpose.
+
+If you have already pushed a commit that is unsigned, you can rectify this in two ways:
+
+1. Once commit signing is set up, rebase your work onto the main branch, then force push the changes. As with any force push, if you think others may have your branch checked out please make sure they are aware, e.g. with a comment on the pull request, so that they can update their local branches. This is usually not an issue for SEGAS contributions, as other collaborators work through the GitHub web interface rather than locally checked out versions.
+2. Create a new branch from the main branch, re-apply your changes to that branch, submit a new PR, and close the old one. This is usually more work, but can be simpler to manage if there are multiple contributors, or a complex commit history.
+
 ## Pull Requests
 
 When you're finished with your changes you should create a pull request, commonly known as a PR.
