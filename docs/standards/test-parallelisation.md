@@ -7,6 +7,7 @@ id: SEGAS-00016
 tags:
 - Test coverage
 - CI/CD pipelines
+- Quality engineering
   
 ---
 
