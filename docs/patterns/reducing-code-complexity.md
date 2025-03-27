@@ -6,7 +6,7 @@ date: 2024-07-23
 tags:
   - Software design
   - Ways of working
-  - Quality
+  - Quality engineering
 ---
 
 Complex code can make code difficult to maintain and hard to understand errors. There are various tools that can analyse your code to reduce or bring code complexity to your attention as well as different techniques you can use to help to reduce code complexity.
