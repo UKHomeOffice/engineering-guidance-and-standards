@@ -6,7 +6,7 @@ date: 2023-09-08
 tags:
   - Build, release and deploy
   - Ways of working
-  - Quality
+  - Quality engineering
 ---
 
 Shifting quality checks to the left of the development process means that teams can identify issues earlier, this is particularly beneficial with automated checks. Catching defects early means that:

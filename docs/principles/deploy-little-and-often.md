@@ -8,7 +8,7 @@ tags:
 - Ways of working
 - Deployment
 - CI/CD
-- Quality
+- Quality engineering
 related:
   sections:
     - title: Related links
