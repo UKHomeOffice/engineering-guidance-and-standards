@@ -42,7 +42,7 @@ Automate as much as possible to help relive the code review burdon, things like 
 
 This is not an exaustive list, just some recommendations, but your team should have their own standards, a pull request template can help with this too by creating a checklist of what to look for.
 
-#### Does it work as attended?
+#### Does it work as intended?
 
 Does the code look like it would work like the author intended? Does it work as users would expect?
 
