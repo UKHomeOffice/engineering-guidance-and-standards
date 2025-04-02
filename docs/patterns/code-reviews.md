@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Code reviews
-date: 2025-03-21
+date: 2025-04-02
 tags:
   - Software design
   - Ways of working
