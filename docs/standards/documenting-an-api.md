@@ -27,14 +27,15 @@ Documenting an API is an important part of the software design lifecycle. It hel
 
 ## Requirement(s)
 
-- [You MUST include your API on the relevant registers](#you-must-include-your-api-on-the-relevant-registers)
-- [You MUST have documentation on inputs and outputs of all endpoints](#you-must-have-documentation-on-inputs-and-outputs-of-all-endpoints)
-- [You MUST provide specific feedback in responses](#you-must-provide-specific-feedback-in-responses)
+- [You MUST include your API on the relevant registers if your API has external consumers](#you-must-include-your-api-on-the-relevant-registers-if-your-api-has-external-consumers)
+- [You MUST have documentation on requests and responses of all endpoints](#you-must-have-documentation-on-requests-and-responses-of-all-endpoints)
+- [You MUST provide specific feedback in error responses](#you-must-provide-specific-feedback-in-error-responses)
 - [You MUST document how to connect to your API](#you-must-document-how-to-connect-to-your-api)
-- [You MUST document how to raise an issue with your API](#you-must-document-how-to-raise-an-issue-with-your-api)
+- [You MUST document how to raise an issue with your API if your API has external consumers](#you-must-document-how-to-raise-an-issue-with-your-api-if-your-api-has-external-consumers)
 - [You MUST document information on rate limits](#you-must-document-information-on-rate-limits)
+- [You MUST document different versions of your API](#you-must-document-different-versions-of-your-api)
 
-### You MUST include your API on the relevant registers if your API is public
+### You MUST include your API on the relevant registers if your API has external consumers
 
 Listing our APIs contributes to the government community as well as other organisations and wider industry. Listing our APIs here will also help inter-departmental data exchanges, as well as sharing best practice in API development.
 
@@ -73,7 +74,7 @@ You must have documentation in place explaining how you onboard users to your AP
 
 If you have multiple versions of your API you need document each supported version.
 
-### You MUST document how to raise an issue with your API if your API is public
+### You MUST document how to raise an issue with your API if your API has external consumers
 
 It's important to document how to raise an issue with your API, this not only helps your consumers with debugging or raising concerns, but enables a feedback loop with your users.
 
