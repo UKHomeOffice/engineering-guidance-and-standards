@@ -80,7 +80,7 @@ It's important to document how to raise an issue with your API, this not only he
 
 ### You MUST document information on rate limits
 
-Rate limiting is important to secure your API and consumers may want to query your API often, so documenting the rate limits helps consumers build their software around these limits.
+Rate limiting is important to secure your API and consumers may want to query your API often, so documenting the rate limits helps consumers build their software around these limits. These limits may not be set by your application, but instead your WAF etc. but understanding limits help consumers when querying your API.
 
 ### You MUST document different versions of your API
 
