@@ -24,15 +24,15 @@ When reviewing code, you should focus on the code, not the author. Remember that
 
 ### Point out the good things as well as bad
 
-Positive feedback can help build a positive culture within your team and it's always nice to hear positive feedback.
+Positive feedback can help build a positive culture within your team, and it's always nice to hear positive feedback.
 
 ### Have a pull request template
 
-A pull request template can help you create a check list of what to do before/while creating a pull request, it can also be useful for the person reviewing the code too.
+A pull request template can help you create a checklist of what to do before/while creating a pull request, it can also be useful for the person reviewing the code too.
 
 ### Support your code reviews with automation
 
-Automate as much as possible to help relive the code review burdon, things like testing and linters can be automated. Tools like ESLint and Prettier can help with this.
+Automate as much as possible to help relieve the code review burden, things like testing and linters can be automated. Tools like ESLint and Prettier can help with this.
 
 ---
 
