@@ -72,7 +72,7 @@ Should there be more documentation around this code? Would you need more informa
 
 #### Does it follow standards?
 
-Does it follow the teams standards? Does it follow SEGAS standards? Does it follow service manual standards?
+Does it follow the teams standards? Does it follow [SEGAS standards](/standards/)? Does it follow [service manual standards](https://www.gov.uk/service-manual)?
 
 #### Do the automated tests pass?
 
