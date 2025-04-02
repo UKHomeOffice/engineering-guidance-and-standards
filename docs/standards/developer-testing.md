@@ -7,7 +7,7 @@ id: SEGAS-00013
 tags:
   - Software design
   - Ways of working
-  - Testing
+  - Quality engineering
 related:
   sections:
     - title: Related links
