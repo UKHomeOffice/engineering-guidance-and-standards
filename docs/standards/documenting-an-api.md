@@ -38,11 +38,11 @@ Listing our APIs contributes to the government community as well as other organi
 
 If your API is public, it should also be on the [cabinet offices list of APIs](https://www.api.gov.uk/ho/#home-office).
 
-### You MUST have documentation on inputs and outputs of all endpoints
+### You MUST have documentation on requests and responses of all endpoints
 
-Documenting the inputs and outputs of endpoints makes it easy for consumers to understand what is required and how to use the given responses from an endpoint.
+Documenting the requests and responses of endpoints makes it easy for consumers to understand what is required and how to use the given responses from an endpoint.
 
-It should include all of the following inputs that apply to your API:
+It should include all of the following that apply to a request:
 
 - Request method
 - URI query parameters
@@ -57,9 +57,9 @@ For each possible response, including error responses, you should document the f
 
 This can be achieved for a RESTful API by using [OpenAPI (Swagger v3)](https://www.openapis.org/what-is-openapi).
 
-### You MUST provide specific feedback in responses
+### You MUST provide specific feedback in error responses
 
-It's important that response is clear and gives a brief overview of what has happened when called an endpoint. For example. Access Denied or Cannot connect to database. Your documentation should also state what each status code represents.
+It's important that response is clear and gives a brief overview of what has happened when called an endpoint. For example. Access Denied or Not Found. Your documentation should also state what each status code represents.
 
 This can make it easier to debug for any consumers.
 
