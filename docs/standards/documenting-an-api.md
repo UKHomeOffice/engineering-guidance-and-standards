@@ -38,7 +38,7 @@ Documenting an API is an important part of the software design lifecycle. It hel
 
 Listing our APIs contributes to the government community as well as other organisations and wider industry. Listing our APIs here will also help inter-departmental data exchanges, as well as sharing best practice in API development.
 
-If your API is public, it should also be on the [UK public sector API Catalogue](https://www.api.gov.uk/ho/#home-office).
+Public API's must also be on the [UK public sector API Catalogue](https://www.api.gov.uk/ho/#home-office).
 
 ### You MUST have documentation on requests and responses of all endpoints
 
@@ -71,7 +71,9 @@ A response should not include any information about the technologies used or any
 
 You must have documentation in place explaining how you onboard users to your API, if your API requires authorisation or authentication, you must document how to gain access to the API.
 
-### You MUST document how to raise an issue with your API
+If you have multiple versions of your API you need document each supported version.
+
+### You MUST document how to raise an issue with your API if your API is public
 
 It's important to document how to raise an issue with your API, this not only helps your consumers with debugging or raising concerns, but enables a feedback loop with your users.
 
