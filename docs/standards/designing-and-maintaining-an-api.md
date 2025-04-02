@@ -16,7 +16,7 @@ related:
         - text: How to document APIs
           href: https://www.gov.uk/guidance/how-to-document-apis
         - text: Writing API Reference Documentation
-          href: https://www.gov.uk/guidance/writing-api-reference-documentation\
+          href: https://www.gov.uk/guidance/writing-api-reference-documentation
         - text: Documenting an API
           href: /standards/documenting-an-api/
 ---
