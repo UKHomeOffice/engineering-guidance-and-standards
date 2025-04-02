@@ -79,4 +79,10 @@ It's important to document how to raise an issue with your API, this not only he
 
 Rate limiting is important to secure your API and consumers may want to query your API often, so documenting the rate limits helps consumers build their software around these limits.
 
+### You MUST document different versions of your API
+
+Documentation is important, especially if you have downstream consumers of your API. This documentation should include a list of changes between versions and ways to migrate to the next version.
+
+If releasing a version with depreciated properties or breaking changes, this should be clearly documented and, if possible include any updated endpoints/parameters etc.
+
 ---
