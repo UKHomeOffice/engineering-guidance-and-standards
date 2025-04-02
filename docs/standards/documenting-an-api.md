@@ -17,6 +17,8 @@ related:
           href: https://www.gov.uk/guidance/how-to-document-apis
         - text: Writing API Reference Documentation
           href: https://www.gov.uk/guidance/writing-api-reference-documentation
+        - text: Designing and Maintaining an API
+          href: /standards/designing-and-maintaining-an-api/
 ---
 
 Documenting an API is an important part of the software design lifecycle. It helps consumers of your API, the wider community and even your own team understand the purpose of endpoints, what and how they work, inputs and outputs, what the requirements are to access it etc.
