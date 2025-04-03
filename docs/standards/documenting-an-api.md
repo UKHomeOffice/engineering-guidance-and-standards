@@ -27,7 +27,7 @@ Documenting an API is an important part of the software design lifecycle. It hel
 
 ## Requirement(s)
 
-- [You MUST include your API on the relevant registers if your API has external consumers](#you-must-include-your-api-on-the-relevant-registers-if-your-api-has-external-consumers)
+- [You MUST include your API on the relevant registers if your API is public](#you-must-include-your-api-on-the-relevant-registers-if-your-api-is-public)
 - [You MUST have documentation on requests and responses of all endpoints](#you-must-have-documentation-on-requests-and-responses-of-all-endpoints)
 - [You MUST provide specific feedback in error responses](#you-must-provide-specific-feedback-in-error-responses)
 - [You MUST document how to connect to your API](#you-must-document-how-to-connect-to-your-api)
@@ -35,11 +35,11 @@ Documenting an API is an important part of the software design lifecycle. It hel
 - [You MUST document information on rate limits](#you-must-document-information-on-rate-limits)
 - [You MUST document different versions of your API](#you-must-document-different-versions-of-your-api)
 
-### You MUST include your API on the relevant registers if your API has external consumers
+### You MUST include your API on the relevant registers if your API is public
 
 Listing our APIs contributes to the government community as well as other organisations and wider industry. Listing our APIs here will also help inter-departmental data exchanges, as well as sharing best practice in API development.
 
-Public API's must also be on the [UK public sector API Catalogue](https://www.api.gov.uk/ho/#home-office).
+Public API's must be on the [UK public sector API Catalogue](https://www.api.gov.uk/ho/#home-office).
 
 ### You MUST have documentation on requests and responses of all endpoints
 
