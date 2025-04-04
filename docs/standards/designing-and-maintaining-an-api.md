@@ -17,6 +17,8 @@ related:
           href: https://www.gov.uk/guidance/how-to-document-apis
         - text: Writing API Reference Documentation
           href: https://www.gov.uk/guidance/writing-api-reference-documentation
+        - text: Documenting an API
+          href: /standards/documenting-an-api/
 ---
 
 When designing an API aspects such as naming and versioning will help with not only the maintenance of the API, but also help the consumers of your API.
