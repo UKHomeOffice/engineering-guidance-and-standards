@@ -23,20 +23,12 @@ jobs:
     name: Build, test, and sync to S3
     environment:
       name: core-cloud
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
-
-      - name: Configure AWS IdP credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::${{ vars.AWS_ACCOUNT_ID }}:role/${{ vars.AWS_DEPLOYMENT_ROLE }}
-          role-session-name: GitHubActions
-          retry-max-attempts: 5
-          aws-region: eu-west-2
 
       - name: Setup NPM cache
         uses: actions/setup-node@v4
@@ -58,7 +50,11 @@ jobs:
           GITHUB_COMMIT_SHA: ${{ github.event.push.after }}
           SITE_ROOT: https://engineering.homeoffice.gov.uk/
 
-      - name: Sync site to S3 bucket
-        working-directory: ./_site
-        run: |
-          aws s3 sync . s3://${{ vars.S3_BUCKET_NAME }}/ --delete
+      - name: Sync
+        uses: UKHomeOffice/core-cloud-static-sites-action@0.1.0
+        with:
+          assume-role-arn: ${{ vars.ROLE_ARN }}
+          cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
+          bucket-name: ${{ vars.BUCKET_NAME }}
+          working-directory: ./_site
+
