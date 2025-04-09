@@ -40,7 +40,7 @@ Automate as much as possible to help relieve the code review burden, things like
 
 ### Some of the things that should be checked for
 
-This is not an exhaustive list, just some recommendations, but your team should have their own standards, a pull request template can help with this too by creating a checklist of what to look for.
+This is not an exhaustive list, just some recommendations, but your team should have their own standards. A pull request template can help with this by creating a checklist of what to look for.
 
 Does it work as intended?
 : Does the code look like it would work like the author intended? Does it work as users would expect?
