@@ -28,7 +28,7 @@ Positive feedback can help build a positive culture within your team, and it's a
 
 ### Have a pull request template
 
-A [pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) can help you create a checklist of what to do before/while creating a pull request, it can also be useful for the person reviewing the code.
+A [pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) can help you create a checklist of what to do before/while creating a pull request, it can also be useful for the person reviewing the code. You can find an [example in our engineering guidance and standards repository](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/.github/PULL_REQUEST_TEMPLATE.md).
 
 ### Support your code reviews with automation
 
