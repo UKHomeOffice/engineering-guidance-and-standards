@@ -51,7 +51,7 @@ jobs:
           SITE_ROOT: https://development-segas.staticsite.core.homeoffice.gov.uk/
 
       - name: Sync
-        uses: UKHomeOffice/core-cloud-static-sites-action@0.1.0
+        uses: UKHomeOffice/core-cloud-static-sites-action@0.2.0
         with:
           assume-role-arn: ${{ vars.ROLE_ARN }}
           cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
