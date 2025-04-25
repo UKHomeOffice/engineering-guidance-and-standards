@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Docs as code
-date: 2023-08-11
+date: 2025-04-25
 tags:
 - Ways of working
 - Source management
@@ -62,7 +62,7 @@ Comments
   The original GDS sponsored effort to create a gov.uk compliant docs as code pattern.
 
 Example of Home Office documentation using this option
-: [SRE monitoring as code](https://ho-cto.github.io/sre-monitoring-as-code/)
+: - [SRE monitoring as code](https://ho-cto.github.io/sre-monitoring-as-code/)
 
 #### Eleventy and x-gov Eleventy plugin
 
@@ -78,7 +78,10 @@ Comments
   
   A newer offering that also provides gov.uk styling and easy to configure search functionality.
 
+  The [Home Office docs-as-code template](https://github.com/UKHomeOffice/eleventy-docs-as-code-template) is a good starting point for a site with Home Office branding. It uses the base configuration and additional styles applied to this engineering guidance and standards site, resulting in a similar look and feel.
+
 Example of Home Office documentation using this option
-: [DECS developer documentation](https://ukhomeoffice.github.io/hocs/get-started/)
+: - [DECS developer documentation](https://ukhomeoffice.github.io/hocs/get-started/)
+  - [Developer healthcheck docs](https://ukhomeoffice.github.io/developer-healthcheck-docs/)
 
 ---
