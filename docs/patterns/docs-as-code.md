@@ -78,7 +78,7 @@ Comments
   
   A newer offering that also provides gov.uk styling and easy to configure search functionality.
 
-  The [Home Office docs-as-code template](https://github.com/UKHomeOffice/eleventy-docs-as-code-template) is a good starting point for a site with Home Office branding.
+  The [Home Office docs-as-code template](https://github.com/UKHomeOffice/eleventy-docs-as-code-template) is a good starting point for a site with Home Office branding. It replicates the base configuration and additional styles applied to this engineering guidance and standards site, resulting in a similar look and feel.
 
 Example of Home Office documentation using this option
 : - [DECS developer documentation](https://ukhomeoffice.github.io/hocs/get-started/)
