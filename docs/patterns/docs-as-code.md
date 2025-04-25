@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Docs as code
-date: 2023-08-11
+date: 2025-04-25
 tags:
 - Ways of working
 - Source management
