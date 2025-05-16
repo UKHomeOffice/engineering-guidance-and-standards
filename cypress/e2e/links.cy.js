@@ -33,8 +33,14 @@ function checkAllLinks() {
   })
 }
 
+function isPermalink(url) {
+  return url.match(/^https:\/\/github\.com\/UKHomeOffice\/engineering-guidance-and-standards\/blob\//)
+}
+
 function checkUrl(url) {
-  if (linkExceptionList.includes(url)) {
+  console.log('checking: ', url);
+  if (linkExceptionList.includes(url) || isPermalink(url)) {
+    console.log('excluded: ', url);
     return
   }
   if (visitedLinks.includes(url)) {
