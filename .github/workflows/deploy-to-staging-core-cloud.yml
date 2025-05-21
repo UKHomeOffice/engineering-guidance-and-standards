@@ -1,9 +1,9 @@
-name: Deploy to Core Cloud
+name: Deploy to Staging Core Cloud
 
 on:
   push:
     branches:
-      - main
+      - staging/*
 
 permissions:
   contents: read
@@ -22,7 +22,7 @@ jobs:
   s3-sync:
     name: Build, test, and sync to S3
     environment:
-      name: core-cloud
+      name: core-cloud-staging
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -48,7 +48,7 @@ jobs:
           CYPRESS_TEST_URL: ${{ env.CYPRESS_TEST_URL }}
           CYPRESS_TEST_PORT: ${{ env.CYPRESS_TEST_PORT }}
           GITHUB_COMMIT_SHA: ${{ github.event.push.after }}
-          SITE_ROOT: https://engineering.homeoffice.gov.uk/
+          SITE_ROOT: https://development-segas.staticsite.core.homeoffice.gov.uk/
 
       - name: Sync
         uses: UKHomeOffice/core-cloud-static-sites-action@0.2.0
@@ -57,4 +57,3 @@ jobs:
           cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
           bucket-name: ${{ vars.BUCKET_NAME }}
           working-directory: ./_site
-
