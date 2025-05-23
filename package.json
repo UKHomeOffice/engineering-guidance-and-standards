@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@x-govuk/govuk-eleventy-plugin": "^6.7.2",
+    "@x-govuk/govuk-eleventy-plugin": "^7.0.1",
     "luxon": "^3.6.1",
     "parse5": "^7.3.0"
   },
