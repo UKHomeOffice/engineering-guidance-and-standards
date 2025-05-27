@@ -10,6 +10,7 @@
     "eleventy-plugin"
   ],
   "homepage": "",
+  "type": "module",
   "bugs": {
     "url": "https://"
   },
