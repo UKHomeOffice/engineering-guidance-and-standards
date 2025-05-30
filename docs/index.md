@@ -10,6 +10,8 @@ startButton:
 options:
   header:
     productName: ''
+eleventyImport:
+  collections: ["homepageLinks"]
 ---
 <div class="govuk-grid-row">
 {% for item in collections.homepageLinks %}
