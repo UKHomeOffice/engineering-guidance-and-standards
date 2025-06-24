@@ -9,7 +9,7 @@ tags:
   
 ---
 
-![A diagram of a test pyramid showing bands getting wider from top to bottom: E2E testing, entegration testing, component integration testing,component testing, contract testing, and unit testing](/docs/assets/images/test-pyramid.png)
+![A diagram of a test pyramid showing bands getting wider from top to bottom: E2E testing, entegration testing, component integration testing,component testing, contract testing, and unit testing](/assets/images/test-pyramid.png)
 
 The Software Engineering Test Pyramid is a strategic model for software testing that emphasises an optimised approach to testing across different levels.  Each layer represents a different type of test, and the size of the layer indicating the recommended proportion of that test type. To ensure robust software quality and efficient development, follow the structured approach outlined by the test pyramid. Prioritise a large volume of unit tests, forming the foundation, to validate individual components effectively. Implement a smaller set of integration tests to verify interactions between these components. Limit end-to-end (E2E) tests to critical user flows and high-risk areas, due to their complexity and maintenance costs.
 
