@@ -28,7 +28,7 @@ Observability is essential for understanding how systems behave and perform. As 
 
 ## Solution
 
-OpenTelemetry (OTel) is a framework that standardizes how telemetry data—metrics, logs, and traces—is collected and exported to back-end platforms. It provides a consistent instrumentation format across all services and programming languages.
+OpenTelemetry (OTel) is a framework that standardised how telemetry data—metrics, logs, and traces—is collected and exported to back-end platforms. It provides a consistent instrumentation format across all services and programming languages.
 
 By offering a vendor-neutral approach, OpenTelemetry enables the Home Office to evaluate and switch between monitoring solutions more easily and cost-effectively. It empowers cross-functional teams to maintain reliable, consistent observability across diverse systems.
 
