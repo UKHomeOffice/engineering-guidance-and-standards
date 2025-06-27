@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Observability by OpenTelemetry
-date: 2024-06-20
+date: 2025-06-20
 tags:
   - SRE
   - Build, release and deploy
@@ -37,7 +37,7 @@ By offering a vendor-neutral approach, OpenTelemetry enables the Home Office to 
 ## Benefits
 
 - Instrument once, send anywhere — Write your telemetry code once and export it to any observability backend.
-- Standardized tooling — Teams use the same SDKs, naming conventions, and structure across services.
+- Standardised tooling — Teams use the same SDKs, naming conventions, and structure across services.
 - Unified telemetry — Collect metrics, traces, and logs in a connected, structured format for better insight and correlation.
 
 ---
