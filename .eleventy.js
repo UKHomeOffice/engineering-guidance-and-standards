@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
 
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
+    eleventyConfig.addPassthroughCopy({ "docs/assets/images": "assets/images"});
     // Register the plugins
     let govukPluginOptions = {
         scssSettingsPath: "/styles/_settings.scss",
