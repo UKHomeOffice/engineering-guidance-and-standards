@@ -1,59 +1,105 @@
 
 ---
-layout: post
-title: Content Analytics
-description: Track engagement with engineering guidance
-eleventyExcludeFromCollections: true
+layout: page
+title: Content Analytics Dashboard
+description: Monitor and track the performance of engineering guidance content
+eleventyExcludeFromCollections: false
 ---
 
-<div id="analytics-dashboard">
-  <h2>Content Engagement Overview</h2>
+# Content Analytics Dashboard
+
+This dashboard provides insights into the quality, usage, and maintenance status of our engineering guidance content.
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h2 class="govuk-panel__title">{{ collections.all.length }}</h2>
+      <div class="govuk-panel__body">Total Documents</div>
+    </div>
+  </div>
   
-  <div class="stats-grid">
-    <div class="stat-card">
-      <h3 id="total-principles">{{ collections.principles.length }}</h3>
-      <p>Total Principles</p>
-    </div>
-    <div class="stat-card">
-      <h3 id="total-standards">{{ collections.standards.length }}</h3>
-      <p>Total Standards</p>
-    </div>
-    <div class="stat-card">
-      <h3 id="total-patterns">{{ collections.patterns.length }}</h3>
-      <p>Total Patterns</p>
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h2 class="govuk-panel__title">{{ collections.getAllStandardsOrderedByID.length }}</h2>
+      <div class="govuk-panel__body">Standards</div>
     </div>
   </div>
-
-  <div class="content-breakdown">
-    <h3>Content by Topic</h3>
-    <div id="topic-chart"></div>
-  </div>
-
-  <div class="recent-updates">
-    <h3>Recently Updated Content</h3>
-    <div id="recent-content"></div>
+  
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h2 class="govuk-panel__title">{{ collections.getAllPrinciplesOrderedByTitle.length }}</h2>
+      <div class="govuk-panel__body">Principles</div>
+    </div>
   </div>
 </div>
 
-<style>
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-.stat-card {
-  background: #f3f2f1;
-  padding: 1.5rem;
-  text-align: center;
-  border-left: 4px solid #1d70b8;
-}
-.stat-card h3 {
-  font-size: 2.5rem;
-  margin: 0;
-  color: #1d70b8;
-}
-.content-breakdown, .recent-updates {
-  margin: 3rem 0;
-}
-</style>
+## Content Quality Metrics
+
+{% set contentReport = collections.all | generateContentReport %}
+
+<div class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Average Quality Score</dt>
+    <dd class="govuk-summary-list__value">{{ contentReport.averageScore }}/100</dd>
+  </div>
+  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Stale Content</dt>
+    <dd class="govuk-summary-list__value">{{ contentReport.staleCount }} documents</dd>
+  </div>
+  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Content with Issues</dt>
+    <dd class="govuk-summary-list__value">{{ contentReport.issueCount }} documents</dd>
+  </div>
+</div>
+
+## Recent Updates
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    {% set recentlyUpdated = collections.all | sort(false, true, 'data.date') | head(5) %}
+    
+    <h3>Recently Updated Content</h3>
+    <ul class="govuk-list">
+      {% for item in recentlyUpdated %}
+        <li>
+          <a href="{{ item.url }}" class="govuk-link">{{ item.data.title }}</a>
+          <span class="govuk-hint">Updated {{ item.data.date | postDate }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+## Content Categories
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Category</th>
+      <th scope="col" class="govuk-table__header">Count</th>
+      <th scope="col" class="govuk-table__header">Quality Score</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    {% for category, stats in contentReport.categories %}
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">{{ category | title }}</td>
+        <td class="govuk-table__cell">{{ stats.count }}</td>
+        <td class="govuk-table__cell">{{ stats.averageScore }}/100</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+// Add interactive charts here if needed
+document.addEventListener('DOMContentLoaded', function() {
+  // Quality score visualization
+  const qualityScore = {{ contentReport.averageScore }};
+  
+  // You could add Chart.js or similar for visualizations
+  console.log('Content analytics loaded. Quality score:', qualityScore);
+});
+</script>

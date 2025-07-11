@@ -1,30 +1,77 @@
 
-{% macro breadcrumbs(page) %}
-<nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/">Home</a>
-    </li>
+{% macro breadcrumbs(page, collections) %}
+  {% set breadcrumbItems = [] %}
+  
+  {# Home #}
+  {% set breadcrumbItems = (breadcrumbItems.push({
+    text: "Home",
+    href: "/",
+    isCurrentPage: false
+  }), breadcrumbItems) %}
+  
+  {# Category level #}
+  {% if page.data.tags %}
+    {% for tag in page.data.tags %}
+      {% if tag in ['principles', 'patterns', 'standards'] %}
+        {% set categoryPage = collections.all | selectattr('url', 'equalto', '/' + tag + '/') | first %}
+        {% if categoryPage %}
+          {% set breadcrumbItems = (breadcrumbItems.push({
+            text: categoryPage.data.title or (tag | title),
+            href: "/" + tag + "/",
+            isCurrentPage: false
+          }), breadcrumbItems) %}
+        {% endif %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  
+  {# Current page #}
+  {% if page.url != "/" %}
+    {% set breadcrumbItems = (breadcrumbItems.push({
+      text: page.data.title,
+      href: page.url,
+      isCurrentPage: true
+    }), breadcrumbItems) %}
+  {% endif %}
+
+  {# Only show breadcrumbs if there are multiple items #}
+  {% if breadcrumbItems.length > 1 %}
+    <nav aria-label="Breadcrumb" class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list" vocab="https://schema.org/" typeof="BreadcrumbList">
+        {% for item in breadcrumbItems %}
+          <li class="govuk-breadcrumbs__list-item" property="itemListElement" typeof="ListItem">
+            {% if not item.isCurrentPage %}
+              <a class="govuk-breadcrumbs__link" href="{{ item.href }}" property="item" typeof="WebPage">
+                <span property="name">{{ item.text }}</span>
+              </a>
+            {% else %}
+              <span class="govuk-breadcrumbs__current" property="name" aria-current="page">
+                {{ item.text }}
+              </span>
+            {% endif %}
+            <meta property="position" content="{{ loop.index }}">
+          </li>
+        {% endfor %}
+      </ol>
+    </nav>
     
-    {% if page.url.includes('/principles/') %}
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/principles/">Principles</a>
-    </li>
-    {% elif page.url.includes('/standards/') %}
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/standards/">Standards</a>
-    </li>
-    {% elif page.url.includes('/patterns/') %}
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/patterns/">Patterns</a>
-    </li>
-    {% endif %}
-    
-    {% if page.url != '/' and not page.url.endsWith('/principles/') and not page.url.endsWith('/standards/') and not page.url.endsWith('/patterns/') %}
-    <li class="govuk-breadcrumbs__list-item">
-      {{ page.data.title }}
-    </li>
-    {% endif %}
-  </ol>
-</nav>
+    {# Add structured data for better SEO #}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {% for item in breadcrumbItems %}
+        {
+          "@type": "ListItem",
+          "position": {{ loop.index }},
+          "name": "{{ item.text | safe }}",
+          {% if not item.isCurrentPage %}"item": "{{ (site.url or siteRoot) + item.href }}"{% endif %}
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+    </script>
+  {% endif %}
 {% endmacro %}
