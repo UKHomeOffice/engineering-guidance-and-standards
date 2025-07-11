@@ -3,7 +3,6 @@ import {DateTime} from "luxon";
 import childProcess from "child_process";
 import path from "path";
 import fs from "fs";
-import {md as markdownIt} from '@x-govuk/govuk-eleventy-plugin/markdown-it'
 import dlAsSummaryList from "./lib/markdown/dl-as-govuk-summary-list.js";
 
 function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
@@ -33,7 +32,6 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "docs/assets/images": "assets/images"});
     // Register the plugins
     let govukPluginOptions = {
-        scssSettingsPath: "/styles/_settings.scss",
         icons: {
             mask: '/assets/logos/ho-mask-icon.svg',
             shortcut: '/assets/logos/ho-favicon.ico',
@@ -41,6 +39,7 @@ export default async function(eleventyConfig) {
         },
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
+        titleSuffix: 'Engineering Guidance and Standards - Home Office',
         header: {
             logotype: {
                 html:
@@ -50,7 +49,6 @@ export default async function(eleventyConfig) {
                     '</span>'
             },
             productName: 'Engineering Guidance and Standards',
-            organisationName: 'Home Office',
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
@@ -89,11 +87,7 @@ export default async function(eleventyConfig) {
     // Customise markdown-it renderer provided by x-gov 11ty plugin. Plugin execution is
     // deferred, so this needs to be a plugin, and added after the x-gov plugin is.
     eleventyConfig.addPlugin((eleventyConfig) => {
-        const md = markdownIt(govukPluginOptions)
-
-        md.use(dlAsSummaryList);
-
-        eleventyConfig.setLibrary('md', md);
+        eleventyConfig.amendLibrary('md', md => md.use(dlAsSummaryList));
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {

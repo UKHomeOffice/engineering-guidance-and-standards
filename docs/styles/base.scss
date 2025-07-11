@@ -1,3 +1,13 @@
+$_font-family: roboto, system-ui, sans-serif;
+@use "pkg:govuk-frontend/dist/govuk" with (
+  $govuk-font-family: $_font-family,
+  $govuk-brand-colour: #8f23b3,
+  $govuk-page-width: 1100px
+);
+
+// Use GOV.UK Eleventy Plugin components
+@use "pkg:@x-govuk/govuk-eleventy-plugin";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
@@ -15,7 +25,7 @@ body, .govuk-template__body {
   color: #0b0c0c;
 }
 
-.govuk-header {
+.govuk-template--rebranded .govuk-header {
   background-color: #fff;
   color: #0b0c0c;
 
@@ -31,6 +41,10 @@ body, .govuk-template__body {
 
   .govuk-header__logo img {
     vertical-align: bottom;
+  }
+
+  .govuk-header__link--homepage {
+    background: transparent;
   }
 
   .app-site-search {
