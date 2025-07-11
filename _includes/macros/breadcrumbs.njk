@@ -1,0 +1,30 @@
+
+{% macro breadcrumbs(page) %}
+<nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Home</a>
+    </li>
+    
+    {% if page.url.includes('/principles/') %}
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/principles/">Principles</a>
+    </li>
+    {% elif page.url.includes('/standards/') %}
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/standards/">Standards</a>
+    </li>
+    {% elif page.url.includes('/patterns/') %}
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/patterns/">Patterns</a>
+    </li>
+    {% endif %}
+    
+    {% if page.url != '/' and not page.url.endsWith('/principles/') and not page.url.endsWith('/standards/') and not page.url.endsWith('/patterns/') %}
+    <li class="govuk-breadcrumbs__list-item">
+      {{ page.data.title }}
+    </li>
+    {% endif %}
+  </ol>
+</nav>
+{% endmacro %}
