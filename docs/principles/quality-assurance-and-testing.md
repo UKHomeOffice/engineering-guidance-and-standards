@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Quality assurance and testing
-date: 2024-11-25
+date: 2025-07-25
 tags:
 - Quality engineering
 ---
