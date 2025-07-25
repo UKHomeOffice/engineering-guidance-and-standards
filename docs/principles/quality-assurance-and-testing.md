@@ -21,56 +21,64 @@ Implementation of this approach will always be context-dependent, tailored and a
 
 ## Applications and Implications
 
-### 1. Provide fast feedback so things can be iterated quickly
-The primary goal of QA is to provide feedback about quality: Quality in the product, quality in the delivery, and quality in the process. If you aren't doing this fast, then you probably aren't doing it right, either. Consider practical techniques like pushing tests as far down the test pyramid as you can, and parallelisation of tests to achieve faster results in the field.
+### 1. Establish quality goals for your product that include the QAT Standards
 
-### 2. Establish the quality goals for your product, and test the product’s performance against them
-You need to make sure that there are clear quality goals for the product, service or platform so that you can more easily identify problems or risks. The goals could be in any form but typically include quality standards, acceptance criteria or requirements. The team can do this when user stories or requirements are first written or later on in the form of acceptance tests when your team starts development work.
+Use the QAT standards as a starting point for good practice, but don’t try to apply these as a rigid framework. The best quality approaches will adapt the standards to help meet the needs of the product team whilst remaining consistent with the aims of quality assurance and testing. Make sure that there are clear quality goals established for the product, service or platform, so that you can more easily identify problems or risks. The goals could be in any form but typically include quality standards, acceptance criteria or requirements.
 
-### 3. Aim to automate as much of your testing as possible (and automate the boring stuff)
-You should aim to automate as much of your testing as possible. Automate feature checking. Automate everything else if you can. Build trust in automation. You should expect an effective test automation approach for your project to call for automating tests at different levels combined across development and test effort, including a solid foundation of unit tests, some service level tests and very few larger UI or acceptance tests when everything is joined up end-to-end.
+### 2. Implement Quality Engineering Standards throughout the Test Pyramid
 
-### 4. Run your test suite as part of continuous integration
-If you're using Continuous Integration (CI) or Continuous Delivery (CD), you'll need to have a pipeline that runs automated tests every time you make a change to your software and enables continuous testing. In this way you can spot bugs before they develop into bigger problems that are more complicated and expensive to fix. Running tests as part of CI/CD also means the team need to have a clear branching and release strategy with relevant stages, jobs and infrastructure.
+When working with modern tech stacks and architecture, plan to automate tests at all levels of the test pyramid. Your approach to quality engineering should involve optimum test weightage – i.e. decreasing number of tests for higher order tests and vice-versa. Component Integration and API integration tests should be weighted more than UI driven E2E tests and in that order. Aim to measure code coverage, both technical and functional, while avoiding duplication of coverage across different levels of the pyramid. The Test Pyramid within the CI/CD pipeline should include other test types including automated accessibility tests and baseline performance tests. It may not be possible to follow all QE practices whilst working on legacy systems or older technology – you will need to explore approved tools and processes that enable test automation of user journeys and evaluate them in the context of the Return on Investment they can bring.
 
-### 5. Test the code automatically every time you make a change
-By testing your code automatically every time you make a change, you’ll be able to find bugs more quickly and write tests to mitigate them. When teams “shift left” they bring testing into their code development processes early. Instead of sending multiple changes to a separate test or QA team, a variety of tests are performed throughout the coding process so that developers can fix bugs or improve code quality while they work on the relevant section of the codebase.
+### 3. Update Regression tests regularly
 
-### 6. Test that the code works the way you expect it to
-You need to carry out tests on individual programs to demonstrate that the code executes as expected, validating the design and technical quality. These tests are usually automated by the developer but can sometimes be manually executed. For some tests, components can be replaced with stubs or simulators to simulate the behaviour of interfacing modules whilst allowing the inputs and outputs to be examined.
+Optimise your regression test suite to ensure that no new bugs have been introduced after changes to the system. Your regression suite should be modular, updated following each production release and take a risk-based approach to changes. Automate as much of your regression testing as possible, so tests are run frequently and added to the regression suite when new bugs are found. All quality engineering approaches should be consistent with The QAT QE standards and DDaT initiatives of technology convergence.
 
-### 7. Test that the product is accessible, secure and performant
-You must test that your product can be used by everyone who needs to use it, this includes users with a range of access needs and the most commonly used assistive technologies and browsers. This helps to ensure that the product can meet The Home Office Accessibility Standard and 2.2 AA of the Web Content Accessibility Guidelines as a minimum. You must also test for common vulnerabilities and security threats, and test that your product continues to work correctly with typical and unexpected or peak levels of traffic.
+### 4. Test that the product is Accessible
 
-### 8. Test that the product is resilient (including contingency, continuity and recovery)
-You should ensure that your product is resilient, so it continues to perform its core functions even when presented with challenges or disruption. You should also test any functions for recovery from disruptions in your software and test fail-safe capacities which avoid loss of data in case of crashes. Testing must be an integral and ongoing part of the product's 2C2R (Contingency, Continuity, Recovery, Resilience) approach.
+Test that your product can be used by everyone who needs to use it. This means checks against standards and with the target users commonly used assistive technologies and browsers. This helps to ensure that people with a range of access needs really can effectively use the product as well as legal compliance. You must also ensure the quality of a published accessibility statement for your product.
 
-### 9. Test that things work when they are joined up, including integration of components, APIs and services
-You need to understand how things work when they are integrated with other components and internal or external services. This is especially important if your product has adopted something like a micro-service architecture which is dependent on well-defined APIs. You'll need to think about testing APIs with approaches that maximise efficiency like contract or consumer-based contract testing.
+### 5. Test that the product is Resilient
 
-### 10. Test that iterating the code doesn’t break your product
-As well as helping to maintain the overall quality of the source code, running a regression test suite ensures that no new bugs have been introduced after changes to the system. Changes that require regression testing include bug fixes, enhancements and changes to configuration or infrastructure. You should try to automate as much of the regression testing as you can, so you can run the tests frequently and add to the regression suite when new bugs are found.
+Ensure that your product is resilient, including contingency, continuity and recovery, so it continues to perform its core functions even when presented with challenges or disruption. Ensure you include Operational Acceptance testing (OAT) to test functions for recovery from disruptions in your software and test fail-safe capacities which avoid loss of data in case of crashes. Testing must be an integral and ongoing part of the product's 2C2R (Contingency, Continuity, Recovery, Resilience) approach. If your project uses Infrastructure as Code to define the underlying infrastructure needed for a project, you must ensure your test pyramid includes automated testing (both static and dynamic testing of this infrastructure). You should test your system and infrastructure for scale (both horizontal and vertical). You must also test that your system is observable and that it is built to support good DevOps and Site Reliability Engineering (SRE) practices (where applicable).
 
-### 11. Test that the product meets service, technical and quality standards
-You should use the QAT standards as a starting point for good practice, but you need to avoid trying to apply these as a rigid framework. The best testing approaches will adapt the standards to help you meet the needs of the product team whilst remaining consistent with the aims of quality assurance and testing. 
+### 6. Test that the Product is Secure
 
-### 12. Define your approach for testing and assurance in production, in accordance with a risk assessment
-Just because you've pushed a new release into production doesn't mean testing has to be finished. You should agree with your stakeholders what level of assurance, test and risk assessment is required to produce an appropriate test approach, which ensures that tests in production are only conducted where they are necessary. This could include some important early live proving checks with users, for example.
+Ensure that your product implements and is compliant with Secure By Design policy via the implementation of the Home Office Security Testing Standard, and the related security testing frameworks set out by the QAT HOST team. You should endeavour to:
 
-### 13. Help to instrument the code so you can understand what's going on in production (even when you're not looking)
-Observability helps the product team find out what’s slow, what’s broken, and what can be done to improve performance and stability. Your testing approach should include how to work with engineers to identify and interpret data from metrics, traces, logs and user experience whilst helping to identify which code or custom events need to be instrumented to achieve the right level of feedback.
+ - Reduce vulnerabilities: through early identification and remediation of security flaws
+ - Enhance System Security by proactive testing and monitoring
+ - Improve Compliance with alignment to industry best practices and regulatory requirements
+ - Minimise Risk by reduced exposure to cyber threats and data breaches
+ - Lower cost using proactive security measures that can prevent costly incidents, reduce downtime, ensure efficient use of resources and reducing risk Information Technology Health Checks (ITHCs).
 
-### 14. Take useful measurements that help predict failures, improve decision-making and enhance the quality of the testing process
-You should be measuring things against quality goals which will help to identify problems or risks with how things are going. Some measurements will also help you to understand your testing progress and determine the effectiveness of your approach. Measurement is essential for success in some environments where software is developed, tested and deployed very quickly as part of a continuous deployment pipeline. The minimum set of measurements will include:
-- where bugs are captured, including production.
-- ‘failed’ builds or releases.
-- test efficiency, number of tests and execution time
-- functional code coverage of user stories/requirements.
+### 7. Ensure that your product/project area implements the QA Strategy
+You must support the design and implementation of 1st Line assurance, in-line with the QA Strategy independently from testing. This will involve:
+
+ - Identifying and managing risks and issues early
+ - Eliminating waste and avoiding rework cost
+ - Ensuring that Quality is everyone’s responsibility
+   
+Focus on product delivery and outcomes with collaborative working across teams (including third party products/projects) to build in quality early in the lifecycle. Build in quality controls and measure them to ensure that local DDaT policies, standards and wider legal compliance requirements (such as Accessibility and GDPR) are implemented. Actively monitor and measure quality goals and metrics, ensuring corrective actions are in place to address risk areas.
+
+### 8. Include End-to-End integration testing
+
+You should understand how things work when they are integrated with other components and internal or external services. You should however limit the use of E2E tests for Test Coverage in favour of lower order tests like contract and component Integration tests, where the system architecture and tech stack allows for this.
+
+### 9. Employ your knowledge and experience – test the product with real users
+
+Understanding user needs and as much of the context as possible gives you the best chance of meeting them. Whilst many user needs will have been turned into stories you should make sure that the product is tested by users during all delivery phases. You should agree with your stakeholders what level of assurance, test and risk assessment is required to produce an appropriate test approach, which ensures that tests in production are only conducted where they are necessary. Reliance solely on code-based testing will fail because it does not consider the human factor, and your product will likely be used by real people in the end. QAs can use exploratory test techniques based on their knowledge and experience of the product to fully investigate edge cases and help you write new automated tests to ensure that problems aren’t repeated.
+
+### 10. Take Useful Measurements
+
+You should be taking measurements that help predict failures, improve decision-making, and enhance the quality of the testing process against quality goals. This will help to identify problems or risks. Some measurements will also help you to understand your testing progress and determine the effectiveness of your approach. Measurement is essential in a continuous deployment pipeline. The minimum set of measurements will include:
+
+ - where bugs are captured, including production
+ - ‘failed’ builds or releases
+ - test efficiency, number of tests and execution time
+ - functional code coverage of user stories/requirements
+   
 Whilst measurements are a guide to overall quality, their collection should not obscure the primary goal of delivering working software.
 
-### 15. Test the product with real users whenever you can
-Understanding user needs and as much of the context as possible gives you the best chance of meeting their needs in a simple and cost-effective way. Whilst many user needs will have been turned into stories you should make sure that the product is tested by users during all delivery phases, from Discovery, through Alpha, Beta and Live to Close down.
+### 11. Ensure risk management is embedded in your product
 
-### 16. Don’t rely only on automated testing processes; use knowledge, experience and intuition where you need to
-Whilst you'll be aiming to automate much of the testing process, you should use QAs to perform functions that push an application in different directions. Reliance solely on code based testing will fail because it does not consider the human factor and your product will likely be used by real people in the end. QAs can use exploratory test techniques based on their knowledge and experience of the product. They can fully investigate edge cases, which may not have been foreseen during the design phase and may not have been thought possible during normal use of the product. 
-Furthermore, QA testers should tackle the bugs in customer workflows or in the full spectrum of application functionality that can be missed with developer-based code testing. Exploratory testing will also help you write new automated tests to ensure that problems aren’t repeated.
+You should have a defined risk management approach for your product/project area that involves identifying, evaluating and prioritising risks. You must ensure that risk is built into everyday quality assurance and is not just an additional activity. You must follow local risk management processes, ensuring that entries to local risk registers are accurate using the correct RAG scores and are reviewed regularly. Risks should be regularly discussed with stakeholders (Project Delivery Managers, Product Owners etc) and Principal Delivery Owners ensuring that they are controlled and mitigating actions are being completed. Where necessary, processes in the QAT Risk Handbook and QAT Risk And Assurance policy should be followed to ensure risks are escalated and managed on the correct register.
