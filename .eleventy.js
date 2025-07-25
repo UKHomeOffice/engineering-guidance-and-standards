@@ -1,8 +1,9 @@
-const govukEleventyPlugin  = require('@x-govuk/govuk-eleventy-plugin')
-const { DateTime } = require("luxon");
-const childProcess = require('child_process');
-const fs = require("fs");
-const path = require("path");
+import { govukEleventyPlugin } from "@x-govuk/govuk-eleventy-plugin";
+import {DateTime} from "luxon";
+import childProcess from "child_process";
+import path from "path";
+import fs from "fs";
+import dlAsSummaryList from "./lib/markdown/dl-as-govuk-summary-list.js";
 
 function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
     let latestGitCommitHash = process.env.GITHUB_COMMIT_SHA;
@@ -22,7 +23,7 @@ function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
     );
 }
 
-module.exports = function(eleventyConfig) {
+export default async function(eleventyConfig) {
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
     const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
 
@@ -31,7 +32,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "docs/assets/images": "assets/images"});
     // Register the plugins
     let govukPluginOptions = {
-        scssSettingsPath: "/styles/_settings.scss",
         icons: {
             mask: '/assets/logos/ho-mask-icon.svg',
             shortcut: '/assets/logos/ho-favicon.ico',
@@ -39,6 +39,7 @@ module.exports = function(eleventyConfig) {
         },
         opengraphImageUrl: '/assets/logos/ho-opengraph-image.png',
         homeKey: 'Home',
+        titleSuffix: 'Engineering Guidance and Standards - Home Office',
         header: {
             logotype: {
                 html:
@@ -48,7 +49,6 @@ module.exports = function(eleventyConfig) {
                     '</span>'
             },
             productName: 'Engineering Guidance and Standards',
-            organisationName: 'Home Office',
             search: {
                 label: 'Search site',
                 indexPath: '/search.json',
@@ -87,11 +87,7 @@ module.exports = function(eleventyConfig) {
     // Customise markdown-it renderer provided by x-gov 11ty plugin. Plugin execution is
     // deferred, so this needs to be a plugin, and added after the x-gov plugin is.
     eleventyConfig.addPlugin((eleventyConfig) => {
-        const md = require('@x-govuk/govuk-eleventy-plugin/lib/markdown-it.js')(govukPluginOptions)
-
-        md.use(require('./lib/markdown/dl-as-govuk-summary-list'));
-
-        eleventyConfig.setLibrary('md', md);
+        eleventyConfig.amendLibrary('md', md => md.use(dlAsSummaryList));
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
@@ -120,14 +116,16 @@ module.exports = function(eleventyConfig) {
       });
     });
 
-    fs.readdirSync(path.join(process.cwd(), path.join('lib', 'filters'))).map((file) => path.parse(file))
+    await Promise.all(
+        fs.readdirSync(path.join(process.cwd(), path.join('lib', 'filters'))).map((file) => path.parse(file))
         .filter(({ext}) => ext === '.js')
-        .forEach(({name, base}) =>
+        .map(async ({name, base}) =>
             eleventyConfig.addFilter(
                 name,
-                require(path.join(process.cwd(), 'lib', 'filters', base)),
+                (await import(path.join(process.cwd(), 'lib', 'filters', base))).default,
             )
-        );
+        )
+    );
 
     eleventyConfig.addCollection("homepageLinks", function(collectionApi) {
       return [
