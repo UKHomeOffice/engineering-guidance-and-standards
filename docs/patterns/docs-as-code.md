@@ -51,7 +51,7 @@ The Home Office software engineering Ways of Working guild has investigated some
 
 Links to documentation
 : - [Middleman](https://middlemanapp.com/)
-  - [Alpha-gov tech docs template](https://tdt-documentation.london.cloudapps.digital/)
+  - [Alpha-gov tech docs template](https://github.com/alphagov/tech-docs-template)
 
 Reviewed
 : Yes

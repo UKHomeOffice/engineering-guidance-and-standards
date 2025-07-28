@@ -1,4 +1,5 @@
-module.exports = {
+// noinspection JSUnusedGlobalSymbols included dynamically
+export default {
   tags: [],
   category: 'Pattern',
   eleventyComputed: {
@@ -7,4 +8,4 @@ module.exports = {
   eleventyNavigation: {
     parent: 'Patterns'
   }
-}
+};
