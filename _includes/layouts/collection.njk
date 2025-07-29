@@ -64,7 +64,7 @@ banner, the border should be on all pages, so hide that this is a collection pag
 
   <div class="govuk-grid-column-one-third-from-desktop">
     {% from "macros/navigationList.njk" import navigationList %}
-    {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }}
+    {{ navigationList(page.url, "Engineering guidance and standards", homepageLinks) }}
     {% if aside or related %}
       {% include "layouts/shared/related.njk" %}
     {% endif %}
