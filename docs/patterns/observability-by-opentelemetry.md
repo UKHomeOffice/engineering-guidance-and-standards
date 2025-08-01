@@ -9,7 +9,7 @@ tags:
   - Maintainability
   - Monitoring
   - Observability
-  - Releability
+  - Reliability
 related:
   sections:
     - title: Related links
@@ -28,7 +28,7 @@ Observability is essential for understanding how systems behave and perform. As 
 
 ## Solution
 
-OpenTelemetry (OTel) is a framework that standardised how telemetry data—metrics, logs, and traces—is collected and exported to back-end platforms. It provides a consistent instrumentation format across all services and programming languages.
+OpenTelemetry (OTel) is a framework that standardised how telemetry data (metrics, logs, and traces) are collected and exported to back-end platforms. It provides a consistent instrumentation format across all services and programming languages.
 
 By offering a vendor-neutral approach, OpenTelemetry enables the Home Office to evaluate and switch between monitoring solutions more easily and cost-effectively. It empowers cross-functional teams to maintain reliable, consistent observability across diverse systems.
 
@@ -37,8 +37,8 @@ By offering a vendor-neutral approach, OpenTelemetry enables the Home Office to 
 ## Benefits
 
 - Instrument once, send anywhere — Write your telemetry code once and export it to any observability backend.
-- Standardised tooling — Teams use the same SDKs, naming conventions, and structure across services.
-- Unified telemetry — Collect metrics, traces, and logs in a connected, structured format for better insight and correlation.
+- Standardised tooling — SDKs are available for most modern languages. Vendors are standardising on publishing observability data for their applications and frameworks using open telemetry standards.
+- Unified telemetry — Collect metrics, logs, and traces in a connected, structured format for better insight and correlation.
 
 ---
 
