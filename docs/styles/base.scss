@@ -1,7 +1,7 @@
 $_font-family: roboto, system-ui, sans-serif;
 @use "pkg:govuk-frontend/dist/govuk" with (
   $govuk-font-family: $_font-family,
-  $govuk-brand-colour: #8f23b3,
+  $govuk-brand-colour: #732282,
   $govuk-page-width: 1100px
 );
 
