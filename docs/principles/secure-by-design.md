@@ -9,6 +9,10 @@ tags:
   - Ways of working
 ---
 
+Delivery teams need to incorporate effective cyber security practices when building digital services and technical infrastructure.
+
+---
+
 ## Rationale
 Ensure that security is embedded from the start. Delivery teams should work to reduce vulnerabilities and improve cyber resilience while aligning with internal policy and cross government initiatives such as [Government Security Group (GSG) Secure by Design](https://www.security.gov.uk/policy-and-guidance/secure-by-design/) and [NCSC Cyber Assessment Framework (CAF)](https://www.ncsc.gov.uk/collection/cyber-assessment-framework).
 
