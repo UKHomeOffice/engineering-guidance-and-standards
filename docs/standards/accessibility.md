@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Accessibility
-date: 2025-01-17
+date: 2025-08-13
 id: SEGAS-00008
 tags:
   - Software design
@@ -27,6 +27,6 @@ To provide consistency for users and product teams, the Home Office Accessibilit
 
 ### Products MUST be developed to meet the Home Office Accessibility Standard
 
-The [Home Office Accessibility Standard is available on the Home Office design system website](https://design.homeoffice.gov.uk/accessibility/standard). Become familiar with the requirements, ensure that they are met, and [engage with the Home Office accessibility team](mailto:access@digital.homeoffice.gov.uk) when developing products.
+The [Home Office Accessibility Standard is available on the Home Office design system website](https://design.homeoffice.gov.uk/accessibility/standard). Become familiar with the requirements, ensure that they are met, and [engage with the Home Office accessibility team](mailto:accessibility@homeoffice.gov.uk) when developing products.
 
 ---
