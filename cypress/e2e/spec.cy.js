@@ -191,3 +191,29 @@ describe("Content category displays in correct listing pages", () => {
       .should("have.length", 0);
   });
 });
+
+describe("Engineering guidance and standards navigation", () => {
+  ["principles", "standards", "patterns"].forEach((category) => {
+    it(`links to top level categories on ${category} page`, () => {
+      cy.visit(testing_params.TEST_ROOT_URL);
+      cy.contains(`Read our ${category}`).click();
+
+      cy.get("nav[aria-labelledby='sub-navigation-heading-engineering-guidance-and-standards']")
+          .should('contain', 'Principles')
+          .and('contain', 'Standards')
+          .and('contain', 'Patterns');
+    });
+
+    it(`${category} have links to the top level categories`, () => {
+      cy.visit(testing_params.TEST_ROOT_URL);
+      cy.contains(`Read our ${category}`).click();
+
+      cy.get("ol.app-document-list h2.app-document-list__item-title a").first().click();
+
+      cy.get("nav[aria-labelledby='sub-navigation-heading-engineering-guidance-and-standards']")
+        .should('contain', 'Principles')
+        .and('contain', 'Standards')
+        .and('contain', 'Patterns');
+    });
+  });
+});
