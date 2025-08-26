@@ -7,6 +7,14 @@ tags:
   - Security
   - Software design
   - Ways of working
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Government Security Group (GSG) Secure by Design
+          href: https://www.security.gov.uk/policy-and-guidance/secure-by-design/
+        - text: NCSC Cyber Assessment Framework (CAF)
+          href: https://www.ncsc.gov.uk/collection/cyber-assessment-framework
 ---
 
 Delivery teams need to incorporate effective cyber security practices when building digital services and technical infrastructure.
