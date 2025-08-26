@@ -2,7 +2,7 @@
 layout: principle
 order: 5
 title: Security is everyone's responsibility
-date: 2023-07-13
+date: 2025-08-26
 tags:
 - Security
 - Ways of working
@@ -13,6 +13,8 @@ All members of the team, not just technical people, should collaborate to consid
 ---
 
 ## Rationale
+
+At the Home Office we build and operate systems in our own threat landscape, with particular vectors to consider, including motivated, well-funded and well-organised threat actors.
 
 Engaging with wider security communities, and integrating security thinking throughout the software delivery lifecycle, shortens feedback loops in teams. This allows for more efficient redress when concerns are identified. Teams that are collectively conscious of security, and embed security people when necessary, are more effective at implementing appropriate threat reduction measures.
 
