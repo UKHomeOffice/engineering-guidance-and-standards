@@ -2,10 +2,16 @@
 layout: principle
 order: 5
 title: Security is everyone's responsibility
-date: 2025-08-26
+date: 2025-08-27
 tags:
-- Security
-- Ways of working
+  - Security
+  - Ways of working
+related:
+  sections:
+    - title: Related links
+      items:
+        - text: Secure by design
+          href: /principles/secure-by-design/
 ---
 
 All members of the team, not just technical people, should collaborate to consider the security of the application or service they are delivering. Everyone should understand how their own behaviours affect the security of the Home Office.

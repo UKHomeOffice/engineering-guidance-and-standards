@@ -2,7 +2,7 @@
 layout: principle
 order: 1
 title: Secure by design
-date: 2025-08-26
+date: 2025-08-27
 tags:
   - Security
   - Software design
@@ -15,6 +15,8 @@ related:
           href: https://www.gov.uk/government/publications/home-office-2030-digital-strategy/home-office-2030-digital-strategy
         - text: Government Security Group (GSG) Secure by Design
           href: https://www.security.gov.uk/policy-and-guidance/secure-by-design/
+        - text: Security is everyone's responsibility
+          href: /principles/security-is-everyones-responsibility/
 ---
 
 Delivery teams need to incorporate effective cyber security practices when building digital services and technical infrastructure.
