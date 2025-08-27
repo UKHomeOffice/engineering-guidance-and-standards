@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Open source licensing
-date: 2023-05-24
+date: 2025-08-27
 id: SEGAS-00004
 tags:
 - Source management
