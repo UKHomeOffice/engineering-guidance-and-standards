@@ -10,7 +10,7 @@ tags:
 
 Open source code repositories maintained by the Home Office must be given an appropriate licence, this explains to users the terms under which that code can be used or modified.
 
-This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-way.cloudapps.digital/manuals/licensing.html#licensing) - it is in part based on that content, adopts the same convention on usage of the words 'license' and 'licence', and follows the [UK Government Licensing Framework](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/).
+This standard is broadly similar to the [GDS Licensing Guidelines](https://gds-way.digital.cabinet-office.gov.uk/manuals/licensing.html) - it is in part based on that content, adopts the same convention on usage of the words 'license' and 'licence', and follows the [UK Government Licensing Framework](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/).
 
 ---
 
