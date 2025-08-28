@@ -17,11 +17,9 @@ related:
           href: /patterns/securing-application-logging/ 
 ---
 
-Logging tools are one of the primary tools to debug application problems and identifying the root cause of incidents. However, logs need to be formatted in a standard way so that they are not only useful for the application's original developers, but also those supporting the application later in its life-cycle. 
+Logging tools are one of the primary tools to debug application problems and identifying the root cause of incidents. Logs need to be formatted in a standard way so that they are useful for the both application's developers and those supporting the application later in its life-cycle. 
 
-However, logs are sometimes relied on too heavily for problem detection, when this role would be better suited to purpose chosen monitoring tooling. 
-
-Therefore these standards provide guidance on both the proper format of application logs, as well as their proper usage.
+Logs are not a replacement for dedicated monitoring tooling. They should be used as part of a broader observabilty toolset. This standard provides guidance on a standard format for application logs, and suitable uses.
 
 ---
 
