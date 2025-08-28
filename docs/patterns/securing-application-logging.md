@@ -69,9 +69,9 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 
 Examples of combined PII include:
 * Passport number, Issuing Country, Expiry Dates
-* BRP/C number, Date of Birth
+* Biometric residence permit or card (BRP/C) number, Date of Birth
   
-With the examples above, the information by themselves do not mean very much. After all, a BRP/C number is just a "random" sequence of characters; but in combination with the date of birth it can be used to uniquely identify an individual.
+With the examples above, the information by themselves do not mean very much. After all, a BRP/C number is a random sequence of characters; but in combination with the date of birth it can be used to uniquely identify an individual.
   
 If you are unsure what is person identifiable information, consult with your security specialists.
   
