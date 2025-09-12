@@ -2,7 +2,7 @@
 layout: pattern
 order: 1
 title: Threat modelling
-date: 2023-09-13
+date: 2025-08-26
 tags:
   - Secure development
   - Security
@@ -11,13 +11,11 @@ related: # remove this section if you do not need related links on your page
   sections:
     - title: Related links
       items:
-        - text: Proportionate security
-          href: /principles/proportionate-security/
         - text: Design from evidence
           href: /principles/design-from-evidence/
 ---
 
-Effectively understanding and communicating the potential attack vectors for our systems enables the Home Office to develop more secure applications and implement [proportionate security](/principles/proportionate-security/). Threat modelling is an [approach to identifying threats to a system](https://owasp.org/www-community/Threat_Modeling) so that appropriate security controls can be prioritised for implementation to mitigate risks.
+Effectively understanding and communicating the potential attack vectors for our systems enables the Home Office to develop more secure applications and implement proportionate security controls. Threat modelling is an [approach to identifying threats to a system](https://owasp.org/www-community/Threat_Modeling) so that appropriate security controls can be prioritised for implementation to mitigate risks.
 
 There are a [number of approaches to threat modelling](https://shellsharks.com/threat-modeling) of varying scope and involvement. This pattern suggests a few ways that teams can start to incorporate threat modelling into their activities.
 

@@ -31,7 +31,7 @@ Infrastructure should be defined as code and treated in the same way as applicat
 
 You must store your [Infrastructure as Code (IaC)](https://www.ibm.com/topics/infrastructure-as-code), and store it in a source code repository. Specifically, you should:
 
-- define your cloud resources (e.g. [AWS](https://aws.amazon.com/)) in [Terraform](https://www.terraform.io/)
+- define your cloud resources (e.g. [AWS](https://aws.amazon.com/)) in [Terraform](https://developer.hashicorp.com/terraform)
 - define your Kubernetes resources in [k8s YAML](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) or [Helm charts](https://helm.sh/).
 
 You should deploy your infrastructure via a Continuous Deployment (CD) pipeline. Avoid making changes through CLI and cloud consoles (e.g. [AWS console](https://aws.amazon.com/console/) or [kubectl](https://kubernetes.io/docs/reference/kubectl/)).
