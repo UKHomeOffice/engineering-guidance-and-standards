@@ -11,7 +11,7 @@ tags:
 
 The Home Office [DDaT Strategy 2024 - Principle 2 - Create shared technology products](https://www.gov.uk/government/publications/home-office-digital-data-and-technology-strategy-2024/home-office-digital-data-and-technology-strategy-2024#create-shared-technology-products) provides direction for improved developer documentation.  
 
-> "We will implement a docs as code approach to documentation to ensure it develops in tandem with products"
+> We will implement a docs as code approach to documentation to ensure it develops in tandem with products
 
 Teams should document their services and technology using docs as code wherever possible, preferably with the input of dedicated technical writers. 
 

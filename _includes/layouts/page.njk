@@ -12,3 +12,41 @@
     {{ super() }}
   </nav>
 {% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    {{ appDocumentHeader({
+      caption: caption,
+      title: title,
+      description: description
+    }) }}
+  </div>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    {{ appProseScope(content) if content }}
+
+    {% if showPagination %}
+      {% set previous = collections.navigation | eleventyNavigation(sectionKey or options.homeKey) | getPreviousNavigationItem(page.url) %}
+      {% set next = collections.navigation | eleventyNavigation(sectionKey or options.homeKey) | getNextNavigationItem(page.url) %}
+      {{ govukPagination({
+        previous: {
+          labelText: previous.title,
+          href: previous.url
+        } if previous,
+        next: {
+          labelText: next.title,
+          href: next.url
+        } if next
+      }) }}
+    {% endif %}
+  </div>
+
+
+  <div class="govuk-grid-column-one-third-from-desktop">
+    {% include "layouts/shared/related.njk" %}
+    {% from "macros/navigationList.njk" import navigationList %}
+    {{ navigationList(page.url, "Engineering guidance and standards", homepageLinks) }}
+  </div>
+</div>
+{% endblock content %}

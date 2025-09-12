@@ -1,6 +1,5 @@
 ---
-eleventyExcludeFromCollections: true
-layout: post
+layout: page
 order: 1
 title: Accessibility statement 
 description:
