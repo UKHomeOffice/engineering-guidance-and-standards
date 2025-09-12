@@ -1,6 +1,6 @@
 import {testing_params} from "../support/testing_params";
 
-import pages from "../../_site/search.json"
+import pages from "../../_site/search-index.json"
 import linkExceptionList from "../support/link-exception-list.json"
 
 let visitedLinks = []; // allows the tests to not repeatedly test the same URLs

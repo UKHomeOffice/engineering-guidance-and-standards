@@ -34,7 +34,7 @@
   <div class="govuk-grid-column-one-third-from-desktop">
     {% block sidebar %}
       {% from "macros/navigationList.njk" import navigationList %}
-      {{ navigationList(page.url, "Engineering guidance and standards", collections.homepageLinks) }}
+      {{ navigationList(page.url, "Engineering guidance and standards", homepageLinks) }}
     {% endblock %}
   </div>
 </div>

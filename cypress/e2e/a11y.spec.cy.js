@@ -1,6 +1,6 @@
 import { testing_params } from "../support/testing_params";
 
-import pages from "../../_site/search.json";
+import pages from "../../_site/search-index.json";
 
 const axeConfig = {
   // There are occasional contrast false-positives if the page isn't fully loaded

@@ -24,7 +24,7 @@ function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
 }
 
 export default async function(eleventyConfig) {
-    const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost/';
+    const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost:8080/';
     const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
 
     // Pass assets through to final build directory
@@ -51,8 +51,8 @@ export default async function(eleventyConfig) {
             productName: 'Engineering Guidance and Standards',
             search: {
                 label: 'Search site',
-                indexPath: '/search.json',
-                sitemapPath: '/sitemap.html'
+                indexPath: '/search-index.json',
+                sitemapPath: '/sitemap/'
             }
         },
         footer: {
@@ -81,6 +81,9 @@ export default async function(eleventyConfig) {
             }
         },
         stylesheets: ['/styles/base.css'],
+        templates: {
+            searchIndex: true,
+        }
     };
     eleventyConfig.addPlugin(govukEleventyPlugin, govukPluginOptions)
 

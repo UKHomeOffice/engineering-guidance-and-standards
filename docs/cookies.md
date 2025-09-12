@@ -1,10 +1,9 @@
 ---
-eleventyExcludeFromCollections: true
-layout: post
+layout: page
 order: 1
 title: How we use cookies 
 description:
-tags:
+tags: []
 ---
 
 The Home Office Engineering Guidance and Standards site does not use cookies.
