@@ -192,16 +192,23 @@ describe("Content category displays in correct listing pages", () => {
   });
 });
 
+function assertConsistentNavigationElements() {
+  cy.get("nav[aria-labelledby='sub-navigation-heading-engineering-guidance-and-standards']")
+      .should('contain', 'Principles')
+      .and('contain', 'Standards')
+      .and('contain', 'Patterns');
+
+  // Consistent nav - always has a home breadcrumb
+  cy.get("nav[aria-label=Breadcrumb]").should('contain', 'Home');
+}
+
 describe("Engineering guidance and standards navigation", () => {
   ["principles", "standards", "patterns"].forEach((category) => {
     it(`links to top level categories on ${category} page`, () => {
       cy.visit(testing_params.TEST_ROOT_URL);
       cy.contains(`Read our ${category}`).click();
 
-      cy.get("nav[aria-labelledby='sub-navigation-heading-engineering-guidance-and-standards']")
-          .should('contain', 'Principles')
-          .and('contain', 'Standards')
-          .and('contain', 'Patterns');
+      assertConsistentNavigationElements();
     });
 
     it(`${category} have links to the top level categories`, () => {
@@ -210,10 +217,18 @@ describe("Engineering guidance and standards navigation", () => {
 
       cy.get("ol.app-document-list h2.app-document-list__item-title a").first().click();
 
-      cy.get("nav[aria-labelledby='sub-navigation-heading-engineering-guidance-and-standards']")
-        .should('contain', 'Principles')
-        .and('contain', 'Standards')
-        .and('contain', 'Patterns');
+      assertConsistentNavigationElements();
     });
   });
+
+  ["about", "accessibility-statement", "cookies", "provide-feedback", "standards-requirements"].forEach((page) => {
+    const label = page.replace("-", " ");
+    it(`${label} has expected navigation elements`, () => {
+      cy.visit(`${testing_params.TEST_ROOT_URL}/${page}/`);
+
+      assertConsistentNavigationElements();
+    });
+  })
 });
+
+

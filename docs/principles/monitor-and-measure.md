@@ -18,7 +18,7 @@ Proactive and effective monitoring is the key to observable systems. Ensure cons
 
 > Observability is the ability to measure the internal states of a system by examining its outputs… (it) is important in software development because it gives you greater control over complex systems
 
-[Splunk - What is observability?](https://www.splunk.com/en_us/data-insider/what-is-observability.html)
+> -- [Splunk - What is observability?](https://www.splunk.com/en_us/data-insider/what-is-observability.html)
 
 At the Home Office we follow the [GDS Service Manual guidance on how to measure and monitor](https://www.gov.uk/service-manual/technology/monitoring-the-status-of-your-service) the status of all aspects of the services we provide, including user experience, security, accounting, reliability and performance. We do this by building observability into our estate, which is highly complex and distributed. Using telemetry to provide deep visibility into systems enables our teams to cut through complexity to identify and resolve issues, and improve performance. In addition to this, high observability has other benefits:
 

@@ -1,10 +1,9 @@
 ---
-eleventyExcludeFromCollections: true
-layout: post
+layout: page
 order: 5
 title: Provide feedback
 description:
-tags:
+tags: []
 ---
 
 We welcome feedback on all content in the site, or on any other areas that we can improve. There are two ways that you can provide feedback to us.

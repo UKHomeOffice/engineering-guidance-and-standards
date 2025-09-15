@@ -1,13 +1,12 @@
 ---
-eleventyExcludeFromCollections: true
-layout: post
+layout: page
 order: 5
 title: About
 description: Find out more about what we are doing
 tags: []
 ---
 
-The Home Office Engineering Guidance and Standards site is a body of knowledge for software engineers. It is comprised of principles, patterns and standards that define how we do engineering at the Home Office, and that direct how we want to do engineering in the future. This guidance is created and curated by the Home Office engineering community. The project as a whole is led by the Home Office DDaT Engineering Profession team.
+The Home Office Engineering Guidance and Standards site is a body of knowledge for software engineers. It consists of principles, patterns and standards that define how we do engineering at the Home Office, and that direct how we want to do engineering in the future. This guidance is created and curated by the Home Office engineering community. The project as a whole is led by the Home Office DDaT Engineering Profession team.
 
 ## How you can contribute
 
@@ -92,7 +91,7 @@ This guidance was originally published on an internal content platform. We have 
 
 Proposed content for principles, standards and patterns go through a short process of collaborative creation, and require approval from Home Office engineering leadership to be merged into the site. This is managed via a process which will be familiar to users of GitHub - creating issues and branches for new content, and raising pull requests for review. We also have a small group of engineers committed to the ongoing maintenance and improvement of this site.
 
-You can find out more about how to contribute in our [CONTRIBUTING.md](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md) and you can [raise an issue directly onto the GitHub repository](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues).
+You can find out more about how to contribute in our [CONTRIBUTING.md](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md), and you can [raise an issue directly onto the GitHub repository](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues).
 
 ## Our roadmap
 
@@ -100,4 +99,4 @@ We have work on site and content improvements happening in parallel. The long te
 
 - Grow the body of guidance and standards, by continuing to engage our engineering community and supporting them to create new content
 - Build a self-assurance mechanism so that teams can easily assert compliance with the standards
-- Continue development of the site so that it is an examplar of conformance to our growing collection of standards
+- Continue development of the site so that it is an exemplar of conformance to our growing collection of standards
