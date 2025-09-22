@@ -36,6 +36,12 @@ jobs:
           node-version: 22
           cache: 'npm'
 
+      - name: Install
+        run: npm ci --ignore-scripts
+
+      - name: Audit
+        run: npm audit
+
       - name: Build site, run Cypress tests
         uses: cypress-io/github-action@v6
         with:
