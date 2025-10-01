@@ -43,7 +43,7 @@
   "devDependencies": {
     "@cfworker/json-schema": "4.1.1",
     "axe-core": "4.10.3",
-    "cypress": "15.2.0",
+    "cypress": "15.3.0",
     "cypress-axe": "1.7.0"
   }
 }
