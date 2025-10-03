@@ -1,4 +1,4 @@
-import { testing_params } from "../support/testing_params";
+import {testing_params} from "../support/testing_params";
 
 describe("Front page loaded test", () => {
   it("finds the front page describing the sections of the site", () => {
@@ -56,8 +56,8 @@ describe("Tag page loaded test", () => {
     cy.contains("Read our standards").click();
     cy.contains("Accessibility").click();
     cy.get(".tags").contains("Accessibility").click(); // this is the "tag" link
-    cy.title().should("include", 'Pages tagged with "Accessibility"');
-    cy.contains("h1", "Pages tagged with “Accessibility”"); // page renders with “ ” chars
+    cy.title().should("include", 'Pages tagged with ‘Accessibility’');
+    cy.contains("h1", "Pages tagged with ‘Accessibility’"); // page renders with “ ” chars
 
     cy.contains("li", "Write effective documentation");
     cy.contains("li", "Accessibility");
@@ -70,8 +70,8 @@ describe("All tags page loaded test", () => {
     cy.contains("Read our standards").click();
     cy.contains("Accessibility").click();
     cy.get(".tags").contains("Accessibility").click(); // this is the "tag" link
-    cy.title().should("include", 'Pages tagged with "Accessibility"');
-    cy.contains("h1", "Pages tagged with “Accessibility”"); // page renders with “ ” chars
+    cy.title().should("include", 'Pages tagged with ‘Accessibility’');
+    cy.contains("h1", "Pages tagged with ‘Accessibility’"); // page renders with “ ” chars
     cy.contains("See all tags");
 
     // Assert all tags link is functional
@@ -221,7 +221,15 @@ describe("Engineering guidance and standards navigation", () => {
     });
   });
 
-  ["about", "accessibility-statement", "cookies", "provide-feedback", "standards-requirements"].forEach((page) => {
+  [
+    "about",
+    "accessibility-statement",
+    "cookies",
+    "provide-feedback",
+    "standards-requirements",
+    "tags",
+    "tags/accessibility" // test an example tag page
+  ].forEach((page) => {
     const label = page.replace("-", " ");
     it(`${label} has expected navigation elements`, () => {
       cy.visit(`${testing_params.TEST_ROOT_URL}/${page}/`);

@@ -1,4 +1,5 @@
 {% extends "../../node_modules/@x-govuk/govuk-eleventy-plugin/src/layouts/tags.njk" %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
 {% block beforeContent %}
   {% if phaseBannerConfiguration %}
@@ -9,7 +10,10 @@
   {% endif %}
 
   <nav aria-label="Breadcrumbs">
-    {{ super() }}
+    {{ govukBreadcrumbs({
+      classes: "govuk-!-display-none-print",
+      items: [ {text: "Home", href: "/" | canonicalUrl} ]
+    }) }}
   </nav>
 {% endblock %}
 

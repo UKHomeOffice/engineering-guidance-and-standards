@@ -1,4 +1,14 @@
 {% extends "../../node_modules/@x-govuk/govuk-eleventy-plugin/src/layouts/tag.njk" %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{# Workaround for https://github.com/x-govuk/govuk-eleventy-plugin/issues/405 #}
+{% set title = "Pages tagged with ‘" + tag + "’" %}
+
+{# Don't include page X of Y in tag page titles #}
+{% block pageTitle %}
+  {{- title if title -}}
+  {{- " - " + options.titleSuffix if options.titleSuffix -}}
+{% endblock %}
 
 {% block beforeContent %}
   {% if phaseBannerConfiguration %}
@@ -9,7 +19,13 @@
   {% endif %}
 
   <nav aria-label="Breadcrumbs">
-    {{ super() }}
+    {{ govukBreadcrumbs({
+      classes: "govuk-!-display-none-print",
+      items: [
+        {text: "Home", href: "/" | canonicalUrl},
+        {text: caption, href: "/tags/" | canonicalUrl}
+      ]
+    }) }}
   </nav>
 {% endblock %}
 
@@ -17,7 +33,8 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     {{ appDocumentHeader({
-      title: title or ("Posts tagged ‘" + tag + "’")
+      caption: caption or "Tags",
+      title: title
     }) }}
 
     {% import "macros/contentDocumentList.njk" as documentList %}
@@ -29,6 +46,7 @@
     }) }}
 
     {{ appProseScope(content) if content }}
+    <p class="govuk-body">See <a class="govuk-link" href="/tags/">all tags</a></p>
 
   </div>
   <div class="govuk-grid-column-one-third-from-desktop">
