@@ -39,6 +39,11 @@ body, .govuk-template__body {
     color: #0b0c0c;
   }
 
+  .govuk-header__link:focus {
+    background-color: #ffdd00;
+    color: #0b0c0c;
+  }
+
   .govuk-header__logo img {
     vertical-align: bottom;
   }
