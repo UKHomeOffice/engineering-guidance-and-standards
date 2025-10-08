@@ -57,7 +57,7 @@ describe("Tag page loaded test", () => {
     cy.contains("Accessibility").click();
     cy.get(".tags").contains("Accessibility").click(); // this is the "tag" link
     cy.title().should("include", 'Pages tagged with ‘Accessibility’');
-    cy.contains("h1", "Pages tagged with ‘Accessibility’"); // page renders with “ ” chars
+    cy.contains("h1", "Pages tagged with ‘Accessibility’");
 
     cy.contains("li", "Write effective documentation");
     cy.contains("li", "Accessibility");
@@ -71,7 +71,7 @@ describe("All tags page loaded test", () => {
     cy.contains("Accessibility").click();
     cy.get(".tags").contains("Accessibility").click(); // this is the "tag" link
     cy.title().should("include", 'Pages tagged with ‘Accessibility’');
-    cy.contains("h1", "Pages tagged with ‘Accessibility’"); // page renders with “ ” chars
+    cy.contains("h1", "Pages tagged with ‘Accessibility’");
     cy.contains("See all tags");
 
     // Assert all tags link is functional
