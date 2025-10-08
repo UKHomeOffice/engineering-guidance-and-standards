@@ -88,6 +88,7 @@ export default async function(eleventyConfig) {
         stylesheets: ['/styles/base.css'],
         templates: {
             searchIndex: true,
+            tags: {title: "All page tags currently in use"}
         }
     };
     eleventyConfig.addPlugin(govukEleventyPlugin, govukPluginOptions)
