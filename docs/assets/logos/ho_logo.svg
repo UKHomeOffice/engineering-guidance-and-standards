@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg class="hods-header__logo-svg"  preserveAspectRatio="xMinYMin" version="1.1" viewBox="81.14 80.65 62 71.15" xmlns="http://www.w3.org/2000/svg">
  <g transform="">
-  <g id="Line">
-   <rect x="81.14" y="80.65" class="st2" width="4.25" height="71.15" fill="#732282"/>
+  <g class="hods-header__logo-svg__vertical-line">
+   <rect x="81.14" y="80.65" class="st2" width="4.25" height="71.15" />
   </g>
-  <g id="Simplified_Coat_of_Arms">
+  <g id="hods-header__logo-svg__coat-of-arms">
    <g>
     <g>
      <path d="M123.07,148.04c-0.39-0.86-1.86-0.35-1.58,0.51c1.75-0.58,0.56,2.19-0.72,1.43c-0.93-0.23-0.79-2.26,0.22-1.41

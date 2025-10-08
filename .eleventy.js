@@ -1,8 +1,8 @@
 import { govukEleventyPlugin } from "@x-govuk/govuk-eleventy-plugin";
 import {DateTime} from "luxon";
 import childProcess from "child_process";
-import path from "path";
-import fs from "fs";
+import path from "node:path";
+import fs from "node:fs/promises";
 import dlAsSummaryList from "./lib/markdown/dl-as-govuk-summary-list.js";
 
 function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
@@ -27,6 +27,11 @@ export default async function(eleventyConfig) {
     const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost:8080/';
     const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
 
+    // Inline logo SVG, allowing the logo elements to be targeted by CSS style rules.
+    // This is so that the purple vertical line can be switched to black when the header link has focus.
+    const svgContents = await fs.readFile('docs/assets/logos/ho_logo.svg', 'utf8');
+    const logoSvg = svgContents.replace('<?xml version="1.0" encoding="UTF-8"?>\n<svg ', '<svg height="34" aria-label="Home Office logo"');
+
     // Pass assets through to final build directory
     eleventyConfig.addPassthroughCopy({ "docs/assets/logos": "assets/logos"});
     eleventyConfig.addPassthroughCopy({ "docs/assets/images": "assets/images"});
@@ -44,7 +49,7 @@ export default async function(eleventyConfig) {
             logotype: {
                 html:
                     '<span class="govuk-header__logotype">' +
-                    '  <img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
+                    logoSvg +
                     '  <span class="govuk-header__logotype-text">Home Office</span>' +
                     '</span>'
             },
@@ -121,14 +126,15 @@ export default async function(eleventyConfig) {
     });
 
     await Promise.all(
-        fs.readdirSync(path.join(process.cwd(), path.join('lib', 'filters'))).map((file) => path.parse(file))
-        .filter(({ext}) => ext === '.js')
-        .map(async ({name, base}) =>
-            eleventyConfig.addFilter(
-                name,
-                (await import(path.join(process.cwd(), 'lib', 'filters', base))).default,
+        (await fs.readdir(path.join(process.cwd(), path.join('lib', 'filters'))))
+            .map((file) => path.parse(file))
+            .filter(({ext}) => ext === '.js')
+            .map(async ({name, base}) =>
+                eleventyConfig.addFilter(
+                    name,
+                    (await import(path.join(process.cwd(), 'lib', 'filters', base))).default,
+                )
             )
-        )
     );
 
     eleventyConfig.addCollection("getAllStandardsOrderedByID", function(collectionApi) {
