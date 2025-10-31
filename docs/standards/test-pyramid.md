@@ -2,7 +2,7 @@
 layout: standard
 order: 1
 title: Test pyramid
-date: 2025-06-13
+date: 2025-10-31
 id: SEGAS-00017
 tags:
 - Quality engineering
