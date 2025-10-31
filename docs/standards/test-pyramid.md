@@ -47,10 +47,10 @@ The top of the pyramid is the smallest, representing end-to-end (E2E) tests. The
 
 Capturing metrics is crucial for evaluating the effectiveness of your tests, especially when considering the test pyramid, which emphasises a large number of unit tests at the base, fewer integration tests in the middle, and even fewer end-to-end tests at the top. These metrics help identify gaps, measure performance, ensure reliability, and optimise resources, ultimately maintaining a balanced and effective test strategy that ensures robust and reliable software. Although not exhaustive - the following should be captured at a minimum across the pyramid:
 
- - Defect density
- - Test execution time
- - % of unreliable tests
- - Defect leakage across levels
- - Automation coverage
+ - defect density
+ - test execution time
+ - percentage of unreliable tests
+ - defect leakage across levels
+ - automation coverage
 
 ---
