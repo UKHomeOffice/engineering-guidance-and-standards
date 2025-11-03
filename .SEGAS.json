@@ -662,7 +662,7 @@
                     "title": "You MUST document information on rate limits",
                     "id": "#you-must-document-information-on-rate-limits",
                     "pass": "No",
-                    "comment": "Managed by cloud-cloud, there are not use cases for needing a high number of requests to the API that would hit rate limits."
+                    "comment": "Managed by core-cloud, there are not use cases for needing a high number of requests to the API that would hit rate limits."
                 },
                 {
                     "title": "You MUST document different versions of your API",
