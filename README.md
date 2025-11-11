@@ -53,17 +53,48 @@ http-server -p 8080
 
 Now you can preview the site on http://localhost:8080
 
-## Running Cypress tests
-To run the [Cypress](https://www.cypress.io/) tests locally, run the following command:
+## Running Playwright tests
+
+This project uses [Playwright](https://playwright.dev/) for end-to-end testing, accessibility testing, and link validation.
+
+### Running tests
+
+To run all tests in headless mode:
 
 ```
-npm run cypress:open
+npm run playwright:run
 ```
 
-This will open up the Cypress UI, which you can use to run the end-to-end tests locally.
+To run tests in headed mode (with visible browser):
+
+```
+npm run playwright:headed
+```
+
+To debug tests interactively:
+
+```
+npm run playwright:debug
+```
+
+To open the Playwright test generator:
+
+```
+npm run playwright:open
+```
+
+### Test suite
+
+The test suite includes:
+
+- **spec.spec.js** - Navigation and page content tests
+- **a11y.spec.js** - Accessibility tests using axe-core
+- **links.spec.js** - Link validation tests
+- **exports.spec.js** - JSON schema validation tests
 
 > **Note**
 > The site must be running on localhost for the tests to work. See [Preview your changes locally](#preview-your-changes-locally).
+
 ## Contributing
 
 See the [contributing page](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md) for details on how to contribute.
