@@ -26,8 +26,10 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "playwright:open": "playwright codegen",
+    "playwright:run": "playwright test",
+    "playwright:headed": "playwright test --headed",
+    "playwright:debug": "playwright test --debug",
     "docker:build": "docker build -t engineering-guidance-and-standards ."
   },
   "engines": {
@@ -42,8 +44,7 @@
   },
   "devDependencies": {
     "@cfworker/json-schema": "4.1.1",
-    "axe-core": "4.11.0",
-    "cypress": "15.6.0",
-    "cypress-axe": "1.7.0"
+    "@axe-core/playwright": "4.11.0",
+    "@playwright/test": "1.48.2"
   }
 }
