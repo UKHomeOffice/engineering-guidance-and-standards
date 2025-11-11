@@ -37,9 +37,9 @@ export default defineConfig({
     // },
   ],
 
-  webServer: process.env.PLAYWRIGHT_WEB_SERVER_URL ? undefined : {
-    command: 'npm run serve',
-    url: 'http://localhost:8080',
-    reuseExistingServer: !process.env.CI,
-  },
+  // webServer: process.env.PLAYWRIGHT_WEB_SERVER_URL ? undefined : {
+  //   command: 'npm run serve',
+  //   url: 'http://localhost:8080',
+  //   reuseExistingServer: !process.env.CI,
+  // },
 });
