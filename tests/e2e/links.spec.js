@@ -1,7 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { testing_params } from '../support/testing_params';
-import pages from '../../_site/search-index.json';
-import linkExceptionList from '../support/link-exception-list.json';
+import { readFileSync } from 'fs';
+
+const data_pages = readFileSync('./_site/search-index.json', 'utf8');
+const pages =JSON.parse(data_pages);
+
+const linkExceptionListAll = readFileSync('./tests/support/link-exception-list.json', 'utf8');
+const linkExceptionList = JSON.parse(linkExceptionListAll);
 
 let visitedLinks = []; // allows the tests to not repeatedly test the same URLs
 

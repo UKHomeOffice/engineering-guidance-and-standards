@@ -61,6 +61,12 @@ This project uses [Playwright](https://playwright.dev/) for end-to-end testing, 
 
 To run all tests in headless mode:
 
+Get Server running
+```
+npm run build
+npm run serve -- --port 8080
+```
+Invoke all tests headless
 ```
 npm run playwright:run
 ```
