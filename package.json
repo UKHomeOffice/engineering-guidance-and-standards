@@ -43,8 +43,8 @@
     "parse5": "8.0.0"
   },
   "devDependencies": {
-    "@cfworker/json-schema": "4.1.1",
     "@axe-core/playwright": "4.11.0",
-    "@playwright/test": "1.48.2"
+    "@cfworker/json-schema": "4.1.1",
+    "@playwright/test": "^1.56.1"
   }
 }
