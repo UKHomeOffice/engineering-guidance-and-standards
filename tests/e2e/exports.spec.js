@@ -12,7 +12,7 @@ test.describe("JSON exports validate against their schemas", () => {
 
         const jsonResponse = await page.request.get(`${testing_params.TEST_ROOT_URL}/standards.json`);
         const json = await jsonResponse.json();
-        
+
         const result = validator.validate(json);
 
         if (result.errors.length > 0) {
@@ -24,7 +24,7 @@ test.describe("JSON exports validate against their schemas", () => {
 
             console.table(tableData);
         }
-        
+
         expect(result.valid, "standards.json does not conform to standards.schema.json").toBe(true);
     });
 });

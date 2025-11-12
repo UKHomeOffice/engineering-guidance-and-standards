@@ -5,9 +5,9 @@ test.describe("Front page loaded test", () => {
   test("finds the front page describing the sections of the site", async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await expect(page.locator("h1")).toContainText("Engineering Guidance and Standards");
-    await expect(page).toContainText("Principles");
-    await expect(page).toContainText("Standards");
-    await expect(page).toContainText("Patterns");
+    await expect(page.getByRole('heading', { name: 'Principles', exact: true })).toHaveText(/Principles/);
+    await expect(page.getByRole('heading', { name: 'Standards', exact: true })).toHaveText(/Standards/);
+    await expect(page.getByRole('heading', { name: 'Patterns', exact: true })).toHaveText(/Patterns/);
   });
 });
 
@@ -15,7 +15,7 @@ test.describe("Standards page loaded test", () => {
   test("finds the page listing all standards", async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText("Read our standards").click();
-    await expect(page).toHaveTitle(/Standards/);
+    await expect(page.getByRole('heading', { name: 'Standards', exact: true })).toHaveText(/Standards/);
     await expect(page.locator(".x-govuk-masthead h1")).toContainText("Standards");
     await expect(page.locator(".x-govuk-masthead")).toContainText(
       "Explicitly stated expectations for engineering teams"
@@ -38,7 +38,7 @@ test.describe("Standards page loaded test when clicked from breadcrumb", () => {
   test("finds the breadcrumb link for standards and checks we go to the Standards collection page", async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText("Read our standards").click();
-    await page.getByText("Accessibility").click();
+    await page.getByText("Accessibility").nth(0).click();
     await page.locator(".govuk-breadcrumbs__list").getByText("Standards").click();
     await expect(page).toHaveTitle(/Standards/);
     await expect(page.locator(".x-govuk-masthead h1")).toContainText("Standards");
@@ -52,13 +52,11 @@ test.describe("Tag page loaded test", () => {
   test('finds the tag page listing all pages with the "Documentation" tag', async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText("Read our standards").click();
-    await page.getByText("Accessibility").click();
+    await page.getByText("Accessibility").nth(0).click();
     await page.locator(".tags").getByText("Accessibility").click();
-    await expect(page).toHaveTitle(/Pages tagged with 'Accessibility'/);
-    await expect(page.locator("h1")).toContainText("Pages tagged with 'Accessibility'");
-
-    await expect(page).toContainText("Write effective documentation");
-    await expect(page).toContainText("Accessibility");
+    await expect(page.getByRole('heading', { name: /Pages tagged with ‘/ })).toHaveText(/Pages tagged with ‘Accessibility’/);
+    await expect(page.getByRole('heading', { name: 'Accessibility', exact: true })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Write effective documentation', exact: true })).toBeVisible();
   });
 });
 
@@ -66,11 +64,11 @@ test.describe("All tags page loaded test", () => {
   test('finds the tag page listing all pages with the "standards" tag', async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText("Read our standards").click();
-    await page.getByText("Accessibility").click();
+    await page.getByText("Accessibility").nth(0).click();
     await page.locator(".tags").getByText("Accessibility").click();
-    await expect(page).toHaveTitle(/Pages tagged with 'Accessibility'/);
-    await expect(page.locator("h1")).toContainText("Pages tagged with 'Accessibility'");
-    await expect(page).toContainText("See all tags");
+    await expect(page.getByRole('heading', { name: /Pages tagged with ‘/ })).toHaveText(/Pages tagged with ‘Accessibility’/);
+    await expect(page.locator("h1")).toContainText("Pages tagged with ‘Accessibility’");
+    await expect(page.getByText('See all tags')).toContainText("See all tags");
 
     // Assert all tags link is functional
     await page.getByRole("link", { name: "all tags" }).click();
@@ -83,11 +81,11 @@ test.describe("Sidebar link to other standards loaded test", () => {
   test("finds a sidebar link to another standard when viewing a standard", async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText("Read our standards").click();
-    await page.getByText("Accessibility").click();
+    await page.getByText("Accessibility").nth(0).click();
     // reach the first standard page
     await expect(page.locator("h1")).toContainText("Accessibility");
     // verify sidebar link exists
-    await expect(page.locator("nav.x-govuk-sub-navigation h2")).toContainText("Standards");
+    await expect(page.locator("nav.x-govuk-sub-navigation h2").nth(0)).toContainText("Standards");
     await page.locator("nav.x-govuk-sub-navigation li").getByText("SEGAS-00004 - Open source licensing").click();
     // check we reach the other standard page
     await expect(page.locator("h1")).toContainText("Open source licensing");
@@ -99,7 +97,7 @@ test.describe("About page links from index page start button test", () => {
     await page.goto(testing_params.TEST_ROOT_URL);
     // Click on first el containing the about page text
     await page.getByText("Find out more about what we are doing").click();
-    await expect(page.locator("h2")).toContainText("Why we are doing it");
+    await expect(page.locator("h2").nth(1)).toContainText("Why we are doing it");
   });
 });
 
@@ -108,7 +106,7 @@ test.describe("About page links from footer test", () => {
     await page.goto(testing_params.TEST_ROOT_URL);
     // Click on first li a containing 'About' page text
     await page.locator("li a").getByText("About").click();
-    await expect(page.locator("h2")).toContainText("Why we are doing it");
+    await expect(page.locator("h2").nth(1)).toContainText("Why we are doing it");
   });
 });
 

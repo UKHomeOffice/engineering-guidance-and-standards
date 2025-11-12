@@ -12,8 +12,7 @@ pages = JSON.parse(data_pages);
 function reportViolations(violations) {
   const totalNodes = violations.reduce((acc, v) => acc + v.nodes.length, 0);
   console.log(
-    `${totalNodes} accessibility violation${totalNodes === 1 ? '' : 's'} ${
-      totalNodes === 1 ? 'was' : 'were'
+    `${totalNodes} accessibility violation${totalNodes === 1 ? '' : 's'} ${totalNodes === 1 ? 'was' : 'were'
     } detected.`
   );
   const violationData = violations.map(({ id, impact, description, nodes }) => ({
@@ -23,7 +22,7 @@ function reportViolations(violations) {
     count: nodes.length,
     exampleSelector: nodes[0]?.target,
   }));
-  if(totalNodes > 0) console.table(violationData);
+  if (totalNodes > 0) console.table(violationData);
 }
 
 
