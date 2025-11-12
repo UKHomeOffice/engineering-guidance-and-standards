@@ -57,18 +57,11 @@ jobs:
           GITHUB_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
 
 
-      - name: Upload Playwright HTML Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report
-          retention-days: 7
 
-      - name: Upload Playwright CTRF JSON Report
-        uses: actions/upload-artifact@v4
+      - name: Publish Playwright CTRF Report
         if: always()
+        uses: dorny/github-actions-ctrf@v2
         with:
-          name: playwright-ctrf-report
           path: playwright-report/test-results.json
-          retention-days: 7
+          name: Playwright CTRF Report
+          token: ${{ secrets.GITHUB_TOKEN }}
