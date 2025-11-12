@@ -55,6 +55,14 @@ async function checkUrl(url, page) {
     return;
   }
   visitedLinks.push(url);
+  // Adjust URL for in-page anchors and root path
+  // Playwright's request API needs full URLs
+  if (url.startsWith('#')) {
+    url = `${page.url()}${url}`;
+  }
+  if (url.match('/')) {
+    url = page.url();
+  }
   const response = await page.request.get(url);
   expect(response.status()).toBeLessThan(400);
 }
