@@ -46,6 +46,7 @@
   "devDependencies": {
     "@axe-core/playwright": "4.11.0",
     "@cfworker/json-schema": "4.1.1",
-    "@playwright/test": "^1.56.1"
+    "@playwright/test": "^1.56.1",
+    "playwright-ctrf-json-reporter": "^0.0.26"
   }
 }

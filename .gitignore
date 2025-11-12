@@ -9,3 +9,4 @@ _site
 /.vscode/
 test-results/
 playwright-report/
+ctrf/
