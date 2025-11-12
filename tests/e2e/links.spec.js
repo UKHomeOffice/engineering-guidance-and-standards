@@ -3,7 +3,7 @@ import { testing_params } from '../support/testing_params';
 import { readFileSync } from 'fs';
 
 const data_pages = readFileSync('./_site/search-index.json', 'utf8');
-const pages =JSON.parse(data_pages);
+const pages = JSON.parse(data_pages);
 
 const linkExceptionListAll = readFileSync('./tests/support/link-exception-list.json', 'utf8');
 const linkExceptionList = JSON.parse(linkExceptionListAll);
@@ -11,7 +11,7 @@ const linkExceptionList = JSON.parse(linkExceptionListAll);
 let visitedLinks = []; // allows the tests to not repeatedly test the same URLs
 
 test.describe('Check pages contain valid links', () => {
-  for(const page_data of pages) {
+  for (const page_data of pages) {
     test(`${page_data.title} (${page_data.url}) contains valid links`, async ({ page }) => {
       await page.goto(testing_params.TEST_ROOT_URL + page_data.url);
       await checkAllLinks(page);
@@ -19,9 +19,8 @@ test.describe('Check pages contain valid links', () => {
 
     // Only check content pages for version permalink
     if ((page_data.url.includes("principles") && !page_data.url.endsWith("principles/")) ||
-        (page_data.url.includes("standards") && !page_data.url.endsWith("standards/")) ||
-        (page_data.url.includes("patterns") && !page_data.url.endsWith("patterns/")))
-    {
+      (page_data.url.includes("standards") && !page_data.url.endsWith("standards/")) ||
+      (page_data.url.includes("patterns") && !page_data.url.endsWith("patterns/"))) {
       test(`${page_data.title} (${page_data.url}) contains version permalink`, async ({ page }) => {
         await page.goto(testing_params.TEST_ROOT_URL + page_data.url);
         await expect(page.locator(".version-permalink")).toContainText(
