@@ -58,10 +58,6 @@ jobs:
 
 
 
-      - name: Publish Playwright CTRF Report
+      - name: Publish CTRF Test Summary Results
+        run: npx github-actions-ctrf playwright-report/test-results.json
         if: always()
-        uses: dorny/github-actions-ctrf@v2
-        with:
-          path: playwright-report/test-results.json
-          name: Playwright CTRF Report
-          token: ${{ secrets.GITHUB_TOKEN }}
