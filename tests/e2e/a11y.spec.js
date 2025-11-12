@@ -23,7 +23,7 @@ function reportViolations(violations) {
     count: nodes.length,
     exampleSelector: nodes[0]?.target,
   }));
-  console.table(violationData);
+  if(totalNodes > 0) console.table(violationData);
 }
 
 
@@ -72,7 +72,7 @@ test.describe('Tag pages pass axe-core accessibility checks', () => {
   test('Tag page is accessible', async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText('Read our standards').click();
-    await page.getByText('Accessibility').click();
+    await page.getByText('Accessibility').nth(0).click();
     await page.locator('.tags').getByText('Accessibility').click();
     const results = await new AxeBuilder({ page })
       .withTags(['wcag21aaa'])
@@ -84,7 +84,7 @@ test.describe('Tag pages pass axe-core accessibility checks', () => {
   test('All tags page is accessible', async ({ page }) => {
     await page.goto(testing_params.TEST_ROOT_URL);
     await page.getByText('Read our standards').click();
-    await page.getByText('Accessibility').click();
+    await page.getByText('Accessibility').nth(0).click();
     await page.locator('.tags').getByText('Accessibility').click();
     await page.getByText('all tags').click();
     const results = await new AxeBuilder({ page })
