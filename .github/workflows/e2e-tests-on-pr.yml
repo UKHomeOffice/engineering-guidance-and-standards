@@ -56,8 +56,10 @@ jobs:
           TEST_PORT: ${{ env.TEST_PORT }}
           GITHUB_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
 
-
-
-      - name: Publish CTRF Test Summary Results
-        run: npx github-actions-ctrf ctrf/ctrf-report.json
+      - name: Upload Playwright Report Artifacts
         if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 3
