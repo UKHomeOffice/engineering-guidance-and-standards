@@ -5,8 +5,8 @@ export default defineConfig({
   outputDir: './test-results',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  retries: 2,
+  workers: 5,
   
   reporter: [
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
@@ -17,6 +17,7 @@ export default defineConfig({
     baseURL: process.env.TEST_URL ?? 'http://localhost',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
 
   projects: [

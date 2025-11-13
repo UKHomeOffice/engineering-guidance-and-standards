@@ -54,49 +54,9 @@ http-server -p 8080
 Now you can preview the site on http://localhost:8080
 
 ## Running Playwright tests
+Look at readme for [running tests](./tests/README.md)
 
-This project uses [Playwright](https://playwright.dev/) for end-to-end testing, accessibility testing, and link validation.
-
-### Running tests
-
-To run all tests in headless mode:
-
-Get Server running
-```
-npm run build
-npm run serve -- --port 8080
-```
-Invoke all tests headless
-```
-npm run playwright:run
-```
-
-To run tests in headed mode (with visible browser):
-
-```
-npm run playwright:headed
-```
-
-To debug tests interactively:
-
-```
-npm run playwright:debug
-```
-
-To open the Playwright test generator:
-
-```
-npm run playwright:open
-```
-
-### Test suite
-
-The test suite includes:
-
-- **spec.spec.js** - Navigation and page content tests
-- **a11y.spec.js** - Accessibility tests using axe-core
-- **links.spec.js** - Link validation tests
-- **exports.spec.js** - JSON schema validation tests
+NOTE: the cypressIO tests are replaced with playwright due to the tool being deprecated on Tech registar
 
 > **Note**
 > The site must be running on localhost for the tests to work. See [Preview your changes locally](#preview-your-changes-locally).
