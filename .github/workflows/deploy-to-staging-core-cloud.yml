@@ -42,17 +42,26 @@ jobs:
       - name: Audit
         run: npm audit
 
-      - name: Build site, run Cypress tests
-        uses: cypress-io/github-action@v6
+      - name: Build site
+        run: npm run build
+
+      - name: Start server
+        run: npm run serve -- --port 8080 &
+
+      - name: Wait for server
+        uses: jakejarvis/wait-action@v0.1.1
         with:
-          browser: chrome
-          build: npm run build
-          start: npm run serve -- --port ${{ env.CYPRESS_TEST_PORT }}
-          wait-on: 'http://${{ env.CYPRESS_TEST_URL }}:${{ env.CYPRESS_TEST_PORT }}'
-          config: 'video=false,screenshotOnRunFailure=false'
+          url: http://localhost:8080
+          timeout: 60
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright Tests
+        run: npm run playwright:run
         env:
-          CYPRESS_TEST_URL: ${{ env.CYPRESS_TEST_URL }}
-          CYPRESS_TEST_PORT: ${{ env.CYPRESS_TEST_PORT }}
+          TEST_URL: localhost
+          TEST_PORT: 8080
           GITHUB_COMMIT_SHA: ${{ github.event.push.after }}
           SITE_ROOT: https://development-segas.staticsite.core.homeoffice.gov.uk/
 
