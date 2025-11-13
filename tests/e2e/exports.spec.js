@@ -4,10 +4,11 @@ import { Validator } from '@cfworker/json-schema';
 
 test.describe("JSON exports validate against their schemas", () => {
     test("standards.json is valid", async ({ page }) => {
+        let urlToRun = testing_params.TEST_ROOT_URL;
         if(!testing_params.TEST_ROOT_URL.startsWith('http')) {
-            testing_params.TEST_ROOT_URL = `http://${testing_params.TEST_ROOT_URL}`;
+            urlToRun = `http://${testing_params.TEST_ROOT_URL}`;
         } 
-        const schemaUri = `${testing_params.TEST_ROOT_URL}/standards.schema.json`;
+        const schemaUri = `${urlToRun}/standards.schema.json`;
 
         const schemaResponse = await page.request.get(schemaUri);
         const schema = await schemaResponse.json();
