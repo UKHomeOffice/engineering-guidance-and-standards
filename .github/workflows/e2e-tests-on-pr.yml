@@ -11,7 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  TEST_ROOT_URL: http://localhost:8080
+  TEST_URL: localhost
+  TEST_PORT: 8080
 
 jobs:
   e2e-test:
