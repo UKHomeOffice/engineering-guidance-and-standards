@@ -14,7 +14,7 @@ test.describe("JSON exports validate against their schemas", () => {
         const schema = await schemaResponse.json();
         const validator = new Validator(schema);
 
-        const jsonResponse = await page.request.get(`${testing_params.TEST_ROOT_URL}/standards.json`);
+        const jsonResponse = await page.request.get(`${urlToRun}/standards.json`);
         const json = await jsonResponse.json();
 
         const result = validator.validate(json);
