@@ -1,0 +1,713 @@
+{
+    "standards": [
+        {
+            "id": "SEGAS-00001",
+            "title": "Writing a standard",
+            "url": "https://engineering.homeoffice.gov.uk/standards/writing-a-standard/",
+            "date": "2023-08-04",
+            "tags": [],
+            "requirements": [
+                {
+                    "title": "A standard MUST have an ID",
+                    "id": "#a-standard-must-have-an-id"
+                },
+                {
+                    "title": "A standard MUST have a Title",
+                    "id": "#a-standard-must-have-a-title"
+                },
+                {
+                    "title": "A standard MUST have a Description",
+                    "id": "#a-standard-must-have-a-description"
+                },
+                {
+                    "title": "A standard MUST have one or more Requirements",
+                    "id": "#a-standard-must-have-one-or-more-requirements"
+                },
+                {
+                    "title": "A standard MUST have Tags",
+                    "id": "#a-standard-must-have-tags"
+                },
+                {
+                    "title": "A standard MUST show when it was Last Updated",
+                    "id": "#a-standard-must-show-when-it-was-last-updated"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00002",
+            "title": "Writing a principle",
+            "url": "https://engineering.homeoffice.gov.uk/standards/writing-a-principle/",
+            "date": "2024-11-28",
+            "tags": [],
+            "requirements": [
+                {
+                    "title": "A principle MUST have a title",
+                    "id": "#a-principle-must-have-a-title"
+                },
+                {
+                    "title": "A principle MUST have a description",
+                    "id": "#a-principle-must-have-a-description"
+                },
+                {
+                    "title": "A principle MUST have a rationale",
+                    "id": "#a-principle-must-have-a-rationale"
+                },
+                {
+                    "title": "A principle MUST state expected applications and implications",
+                    "id": "#a-principle-must-include-applications-and-implications"
+                },
+                {
+                    "title": "A principle MUST have tags",
+                    "id": "#a-principle-must-have-tags"
+                },
+                {
+                    "title": "A principle MUST show when it was last updated",
+                    "id": "#a-principle-must-show-when-it-was-last-updated"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00003",
+            "title": "Minimal documentation set for a product",
+            "url": "https://engineering.homeoffice.gov.uk/standards/minimal-documentation-set-for-a-product/",
+            "date": "2024-03-14",
+            "tags": [
+                "Documentation",
+                "Ways of working"
+            ],
+            "requirements": [
+                {
+                    "title": "Product documentation MUST include a description of the product and what it is for",
+                    "id": "#product-documentation-must-include-a-description-of-the-product-and-what-it-is-for",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "Product documentation MUST include key architectural views",
+                    "id": "#product-documentation-must-include-key-architectural-views",
+                    "pass": "No",
+                    "comment": "Some details in decision log, but needs more info\nhttps://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/609"
+                },
+                {
+                    "title": "Product documentation MUST include a decision log",
+                    "id": "#product-documentation-must-include-a-decision-log",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "Product documentation MUST include runbooks for expected tasks",
+                    "id": "#product-documentation-must-include-runbooks-for-expected-tasks",
+                    "pass": "Yes",
+                    "comment": "- Deployment is automated.\n- See CONTRIBUTING.md https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md for deployment\n- See https://github.com/UKHomeOffice/engineering-guidance-and-standards/tree/main/technical-docs/accessibility for accessibility checks\n- See https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/.github/PULL_REQUEST_TEMPLATE.md for pull request guidance"
+                },
+                {
+                    "title": "Product documentation MUST include information about observability",
+                    "id": "#product-documentation-must-include-information-about-observability",
+                    "pass": "No",
+                    "comment": "https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/73\nhttps://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/74"
+                },
+                {
+                    "title": "Product documentation MUST include build, release and deployment processes",
+                    "id": "#product-documentation-must-include-build%2C-release-and-deployment-processes",
+                    "pass": "Yes",
+                    "comment": "See https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/CONTRIBUTING.md"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00004",
+            "title": "Open source licensing",
+            "url": "https://engineering.homeoffice.gov.uk/standards/open-source-licensing/",
+            "date": "2023-05-24",
+            "tags": [
+                "Source management"
+            ],
+            "requirements": [
+                {
+                    "title": "Open source repositories MUST contain a licence file",
+                    "id": "#open-source-repositories-must-contain-a-licence-file",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "Open source repositories MUST have a licence that adheres to the Open Source Definition",
+                    "id": "#open-source-repositories-must-have-a-licence-that-adheres-to-the-open-source-definition",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "Open source repositories MUST state who owns the copyright",
+                    "id": "#open-source-repositories-must-state-who-owns-the-copyright",
+                    "pass": "Yes"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00005",
+            "title": "Infrastructure as code",
+            "url": "https://engineering.homeoffice.gov.uk/standards/infrastructure-as-code/",
+            "date": "2023-08-03",
+            "tags": [
+                "Source management",
+                "Build, release and deploy",
+                "Infrastructure",
+                "CI/CD"
+            ],
+            "requirements": [
+                {
+                    "title": "Infrastructure definitions MUST be stored as code",
+                    "id": "#infrastructure-definitions-must-be-stored-as-code",
+                    "pass": "N/A",
+                    "comment": "Infrastructure is managed by core-cloud, who do use infrastructure as code"
+                },
+                {
+                    "title": "Infrastructure definitions MUST be validated",
+                    "id": "#infrastructure-definitions-must-be-validated",
+                    "pass": "N/A",
+                    "comment": "Infrastructure is managed by core-cloud"
+                },
+                {
+                    "title": "Secrets MUST NOT be stored in infrastructure definitions",
+                    "id": "#secrets-must-not-be-stored-in-infrastructure-definitions",
+                    "pass": "No",
+                    "comment": "Secrets stored in GitHub secrets and variables"
+                },
+                {
+                    "title": "Source management best practices MUST be followed for infrastructure definitions",
+                    "id": "#source-management-best-practices-must-be-followed-for-infrastructure-definitions",
+                    "pass": "N/A",
+                    "comment": "Infrastructure is managed by core-cloud"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00006",
+            "title": "Managing secrets",
+            "url": "https://engineering.homeoffice.gov.uk/standards/managing-secrets/",
+            "date": "2023-08-08",
+            "tags": [
+                "Source management",
+                "Build, release and deploy",
+                "Secure development"
+            ],
+            "requirements": [
+                {
+                    "title": "Secrets MUST be generated in accordance with the Home Office Password Policy",
+                    "id": "#secrets-must-be-generated-in-accordance-with-the-home-office-password-policy",
+                    "pass": "N/A",
+                    "comment": "Deployment is via assuming a role based on AWS / GitHub trust relationship"
+                },
+                {
+                    "title": "You MUST only store secrets in an approved secret management system",
+                    "id": "#you-must-only-store-secrets-in-an-approved-secret-management-system",
+                    "pass": "N/A"
+                },
+                {
+                    "title": "You MUST proactively manage access to secrets",
+                    "id": "#you-must-proactively-manage-access-to-secrets",
+                    "pass": "N/A"
+                },
+                {
+                    "title": "You MUST implement secret scanning",
+                    "id": "#you-must-implement-secret-scanning",
+                    "pass": "Yes",
+                    "comment": "Secrets are scanned for with GitHub Advanced Security setup in the repo."
+                },
+                {
+                    "title": "You MUST ensure that secrets are not exported into monitoring systems",
+                    "id": "#you-must-ensure-that-secrets-are-not-exported-into-monitoring-systems",
+                    "pass": "N/A"
+                },
+                {
+                    "title": "You MUST document how secrets are managed",
+                    "id": "#you-must-document-how-secrets-are-managed",
+                    "pass": "Yes",
+                    "comment": "Mentioned in technical decision log, could be more explicitly documented"
+                },
+                {
+                    "title": "You MUST monitor the usage of secrets to identify suspicious behaviour",
+                    "id": "#you-must-monitor-the-usage-of-secrets-to-identify-suspicious-behaviour",
+                    "pass": "N/A",
+                    "comment": "Managed by core-cloud"
+                },
+                {
+                    "title": "You MUST have a response plan ready to enact if you have an incident",
+                    "id": "#you-must-have-a-response-plan-ready-to-enact-if-you-have-an-incident",
+                    "pass": "Yes",
+                    "comment": "See SECURITY.md"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00007",
+            "title": "Managing the security of software dependencies",
+            "url": "https://engineering.homeoffice.gov.uk/standards/managing-security-software-dependencies/",
+            "date": "2023-09-08",
+            "tags": [
+                "Secure development",
+                "Software design",
+                "CI/CD",
+                "Source management",
+                "Build, release and deploy",
+                "Security",
+                "Dependencies"
+            ],
+            "requirements": [
+                {
+                    "title": "You MUST assess the security of external components before introducing them into software designs",
+                    "id": "#you-must-assess-the-security-of-external-components-before-introducing-them-into-software-designs",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST maintain a discoverable dependency tree for your systems",
+                    "id": "#you-must-maintain-a-discoverable-dependency-tree-for-your-systems",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST proactively identify vulnerabilities in dependencies with scanning and other tools",
+                    "id": "#you-must-proactively-identify-vulnerabilities-in-dependencies-with-scanning-and-other-tools",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST regularly update, replace and remove dependencies",
+                    "id": "#you-must-regularly-update%2C-replace-and-remove-dependencies",
+                    "pass": "Yes"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00008",
+            "title": "Accessibility",
+            "url": "https://engineering.homeoffice.gov.uk/standards/accessibility/",
+            "date": "2025-08-13",
+            "tags": [
+                "Software design",
+                "Accessibility"
+            ],
+            "requirements": [
+                {
+                    "title": "Products MUST be developed to meet the Home Office Accessibility Standard",
+                    "id": "#products-must-be-developed-to-meet-the-home-office-accessibility-standard",
+                    "pass": "Yes"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00009",
+            "title": "Signing code commits",
+            "url": "https://engineering.homeoffice.gov.uk/standards/signing-code-commits/",
+            "date": "2024-11-26",
+            "tags": [
+                "Source management",
+                "Secure development",
+                "Ways of working"
+            ],
+            "requirements": [
+                {
+                    "title": "All code commits MUST be cryptographically signed by the author of that commit",
+                    "id": "#all-code-commits-must-be-cryptographically-signed-by-the-author-of-that-commit",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "All Source code repositories MUST require all commits be signed",
+                    "id": "#all-source-code-repositories-must-require-all-commits-be-signed",
+                    "pass": "Yes"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00010",
+            "title": "Encrypting data at rest and in transit",
+            "url": "https://engineering.homeoffice.gov.uk/standards/encrypting-data-rest-transit/",
+            "date": "2023-09-08",
+            "tags": [
+                "Secure development",
+                "Encryption",
+                "Security"
+            ],
+            "requirements": [
+                {
+                    "title": "Data at rest MUST be encrypted",
+                    "id": "#data-at-rest-must-be-encrypted",
+                    "pass": "N/A",
+                    "comment": "No data stored at rest"
+                },
+                {
+                    "title": "Data in transit MUST be encrypted",
+                    "id": "#data-in-transit-must-be-encrypted",
+                    "pass": "Yes",
+                    "comment": "Only data transferred is page content, done over HTTPS"
+                },
+                {
+                    "title": "Cryptographic keys MUST be protected",
+                    "id": "#cryptographic-keys-must-be-protected",
+                    "pass": "N/A",
+                    "comment": "Managed by core-cloud/AWS who manage these securely"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00011",
+            "title": "Infrastructure utilisation monitoring",
+            "url": "https://engineering.homeoffice.gov.uk/standards/infrastructure-utilisation-monitoring/",
+            "date": "2023-09-20",
+            "tags": [
+                "Observability",
+                "Monitoring",
+                "Infrastructure",
+                "SRE"
+            ],
+            "requirements": [
+                {
+                    "title": "Infrastructure MUST be observable relative to defined service level expectations",
+                    "id": "#infrastructure-must-be-observable-relative-to-defined-service-level-expectations",
+                    "pass": "No",
+                    "comment": "This is managed by core-cloud, but we should have visibility / alerting"
+                },
+                {
+                    "title": "CPU utilisation MUST be observable",
+                    "id": "#cpu-utilisation-must-be-observable",
+                    "pass": "N/A",
+                    "comment": "Static site served from S3 via CloudFront - monitoring and managing CPU is AWS's responsibility."
+                },
+                {
+                    "title": "Memory utilisation MUST be observable",
+                    "id": "#memory-utilisation-must-be-observable",
+                    "pass": "N/A",
+                    "comment": "Static site served from S3 via CloudFront - monitoring and managing memory is AWS's responsibility."
+                },
+                {
+                    "title": "Disk utilisation MUST be observable",
+                    "id": "#disk-utilisation-must-be-observable",
+                    "pass": "N/A",
+                    "comment": "Static site served from S3 via CloudFront - monitoring and managing disk space is AWS's responsibility."
+                },
+                {
+                    "title": "Network utilisation MUST be observable",
+                    "id": "#network-utilisation-must-be-observable",
+                    "pass": "N/A",
+                    "comment": "Static site served from S3 via CloudFront - monitoring and managing network is AWS's responsibility."
+                },
+                {
+                    "title": "Historical infrastructure monitoring metrics MUST be retained for analysis",
+                    "id": "#historical-infrastructure-monitoring-metrics-must-be-retained-for-analysis",
+                    "pass": "No",
+                    "comment": "This is managed by core-cloud, but we should have visibility / alerting"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00012",
+            "title": "Low code workflow naming",
+            "url": "https://engineering.homeoffice.gov.uk/standards/low-code-workflow-naming/",
+            "date": "2023-11-15",
+            "tags": [
+                "Low code",
+                "Software design"
+            ],
+            "requirements": [
+                {
+                    "title": "Naming conventions MUST be consistent",
+                    "id": "#naming-conventions-must-be-consistent",
+                    "pass": "N/A",
+                    "comment": "Not a low code implementation"
+                },
+                {
+                    "title": "Acronyms or uncommon abbreviations MUST be defined in a central or project glossary",
+                    "id": "#acronyms-or-uncommon-abbreviations-must-be-defined-in-a-central-or-project-glossary",
+                    "pass": "N/A",
+                    "comment": "Not a low code implementation"
+                },
+                {
+                    "title": "Workflow, action step and scope block names MUST be descriptive and convey the purpose or objective",
+                    "id": "#workflow%2C-action-step-and-scope-block-names-must-be-descriptive-and-convey-the-purpose-or-objective",
+                    "pass": "N/A",
+                    "comment": "Not a low code implementation"
+                },
+                {
+                    "title": "Workflow, action step and scope block names MUST begin with a verb to describe the function, followed by the subject of the verb",
+                    "id": "#workflow%2C-action-step-and-scope-block-names-must-begin-with-a-verb-to-describe-the-function%2C-followed-by-the-subject-of-the-verb",
+                    "pass": "N/A",
+                    "comment": "Not a low code implementation"
+                },
+                {
+                    "title": "Words in a workflow name MUST be separated by a space where possible",
+                    "id": "#words-in-a-workflow-name-must-be-separated-by-a-space-where-possible",
+                    "pass": "N/A",
+                    "comment": "Not a low code implementation"
+                },
+                {
+                    "title": "Scope blocks that are used for error handling MUST be prefixed with the word ‘Try’ or ‘Catch’",
+                    "id": "#scope-blocks-that-are-used-for-error-handling-must-be-prefixed-with-the-word-%E2%80%98try%E2%80%99-or-%E2%80%98catch%E2%80%99",
+                    "pass": "N/A",
+                    "comment": "Not a low code implementation"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00013",
+            "title": "Developer Testing",
+            "url": "https://engineering.homeoffice.gov.uk/standards/developer-testing/",
+            "date": "2024-01-05",
+            "tags": [
+                "Software design",
+                "Ways of working",
+                "Quality engineering"
+            ],
+            "requirements": [
+                {
+                    "title": "You MUST test early and often",
+                    "id": "#you-must-test-early-and-often",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST automate tests",
+                    "id": "#you-must-automate-tests",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST make tests repeatable",
+                    "id": "#you-must-make-tests-repeatable",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST have a way of measuring the effectiveness of testing",
+                    "id": "#you-must-have-a-way-of-measuring-the-effectiveness-of-testing",
+                    "pass": "No",
+                    "comment": "https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/615"
+                },
+                {
+                    "title": "Tests MUST have a purpose and explicit result",
+                    "id": "#tests-must-have-a-purpose-and-explicit-result",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST think about the edge cases",
+                    "id": "#you-must-think-about-the-edge-cases",
+                    "pass": "Yes"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00014",
+            "title": "Service reliability",
+            "url": "https://engineering.homeoffice.gov.uk/standards/service-reliability/",
+            "date": "2024-04-26",
+            "tags": [
+                "Reliability",
+                "Infrastructure",
+                "SRE"
+            ],
+            "requirements": [
+                {
+                    "title": "Service reliability MUST be observable relative to defined service level expectations",
+                    "id": "#service-reliability-must-be-observable-relative-to-defined-service-level-expectations",
+                    "pass": "No",
+                    "comment": "Managed by core-cloud https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/614"
+                },
+                {
+                    "title": "Service MUST be tolerant to expected and unexpected failure of a data centre",
+                    "id": "#service-must-be-tolerant-to-expected-and-unexpected-failure-of-a-data-centre",
+                    "pass": "Yes",
+                    "comment": "S3 and CloudFront have this tolerance built in"
+                },
+                {
+                    "title": "Service MUST be tolerant to expected and unexpected failure of physical or virtualised hardware as well as network",
+                    "id": "#service-must-be-tolerant-to-expected-and-unexpected-failure-of-physical-or-virtualised-hardware-as-well-as-network",
+                    "pass": "Yes",
+                    "comment": "S3 and CloudFront have this tolerance built in"
+                },
+                {
+                    "title": "Service MUST be tolerant to expected and unexpected failure of upstream services such as databases",
+                    "id": "#service-must-be-tolerant-to-expected-and-unexpected-failure-of-upstream-services-such-as-databases",
+                    "pass": "Yes",
+                    "comment": "S3 and CloudFront have this tolerance built in"
+                },
+                {
+                    "title": "Service MUST be sized appropriately for normal operations and MUST be able to automatically scale as appropriate based on metrics",
+                    "id": "#service-must-be-sized-appropriately-for-normal-operations-and-must-be-able-to-automatically-scale-as-appropriate-based-on-metrics",
+                    "pass": "N/A",
+                    "comment": "Managed by AWS"
+                },
+                {
+                    "title": "Service MUST be able to handle requests to protect the overall service",
+                    "id": "#service-must-be-able-to-handle-requests-to-protect-the-overall-service",
+                    "pass": "Yes",
+                    "comment": "S3 and CloudFront have this built in"
+                },
+                {
+                    "title": "Service MUST be able to tolerate expected load",
+                    "id": "#service-must-be-able-to-tolerate-expected-load",
+                    "pass": "Yes",
+                    "comment": "S3 and CloudFront have this tolerance built in"
+                },
+                {
+                    "title": "Service MUST be able to tolerate expected stress",
+                    "id": "#service-must-be-able-to-tolerate-expected-stress",
+                    "pass": "Yes",
+                    "comment": "S3 and CloudFront have this tolerance built in"
+                },
+                {
+                    "title": "Service MUST be soak tested",
+                    "id": "#service-must-be-soak-tested",
+                    "pass": "N/A",
+                    "comment": "Managed and tested by AWS"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00015",
+            "title": "Designing and Maintaining an API",
+            "url": "https://engineering.homeoffice.gov.uk/standards/designing-and-maintaining-an-api/",
+            "date": "2024-10-14",
+            "tags": [
+                "Software design",
+                "API Design"
+            ],
+            "requirements": [
+                {
+                    "title": "You MUST include a form of versioning to your API",
+                    "id": "#you-must-include-a-form-of-versioning-to-your-api",
+                    "pass": "No",
+                    "comment": "Version can be included in url when there is a breaking change to the current API"
+                },
+                {
+                    "title": "You MUST return appropriate status codes from each endpoint",
+                    "id": "#you-must-return-appropriate-status-codes-from-each-endpoint",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST use appropriate nouns for resource names",
+                    "id": "#you-must-use-appropriate-nouns-for-resource-names",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST include some way to observe your API",
+                    "id": "#you-must-include-some-way-to-observe-your-api",
+                    "pass": "No",
+                    "comment": "https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/614"
+                },
+                {
+                    "title": "You MUST apply security best practices",
+                    "id": "#you-must-apply-security-best-practices",
+                    "pass": "N/A",
+                    "comment": "Only API is public data. Site is served over HTTPS."
+                },
+                {
+                    "title": "You MUST validate inputs",
+                    "id": "#you-must-validate-inputs",
+                    "pass": "N/A",
+                    "comment": "API is read only"
+                },
+                {
+                    "title": "You MUST consider authentication and authorisation",
+                    "id": "#you-must-consider-authentication-and-authorisation",
+                    "pass": "N/A",
+                    "comment": "API is public data"
+                },
+                {
+                    "title": "You MUST test your API",
+                    "id": "#you-must-test-your-api",
+                    "pass": "Yes",
+                    "comment": "JSON schema definition verified by cypress tests"
+                },
+                {
+                    "title": "You MUST consider scalability of your API",
+                    "id": "#you-must-consider-scalability-of-your-api",
+                    "pass": "Yes",
+                    "comment": "Scaling managed by AWS S3/CloudFront"
+                },
+                {
+                    "title": "You MUST use an API Specification",
+                    "id": "#you-must-use-an-api-specification",
+                    "pass": "Yes"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00016",
+            "title": "Documenting an API",
+            "url": "https://engineering.homeoffice.gov.uk/standards/documenting-an-api/",
+            "date": "2025-03-21",
+            "tags": [
+                "Software design",
+                "API Design"
+            ],
+            "requirements": [
+                {
+                    "title": "You MUST include your API on the relevant registers if your API is public",
+                    "id": "#you-must-include-your-api-on-the-relevant-registers-if-your-api-is-public",
+                    "pass": "No"
+                },
+                {
+                    "title": "You MUST have documentation on requests and responses of all endpoints",
+                    "id": "#you-must-have-documentation-on-requests-and-responses-of-all-endpoints",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST provide specific feedback in error responses",
+                    "id": "#you-must-provide-specific-feedback-in-error-responses",
+                    "pass": "N/A",
+                    "comment": "Static json file generated at build time"
+                },
+                {
+                    "title": "You MUST document how to connect to your API",
+                    "id": "#you-must-document-how-to-connect-to-your-api",
+                    "pass": "No",
+                    "comment": "https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/620"
+                },
+                {
+                    "title": "You MUST document how to raise an issue with your API if your API has external consumers",
+                    "id": "#you-must-document-how-to-raise-an-issue-with-your-api-if-your-api-has-external-consumers",
+                    "pass": "Yes",
+                    "comment": "Same issue reporting as rest of site https://engineering.homeoffice.gov.uk/provide-feedback/"
+                },
+                {
+                    "title": "You MUST document information on rate limits",
+                    "id": "#you-must-document-information-on-rate-limits",
+                    "pass": "No",
+                    "comment": "Managed by core-cloud, there are not use cases for needing a high number of requests to the API that would hit rate limits."
+                },
+                {
+                    "title": "You MUST document different versions of your API",
+                    "id": "#you-must-document-different-versions-of-your-api",
+                    "pass": "No",
+                    "comment": "https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/620"
+                }
+            ]
+        },
+        {
+            "id": "SEGAS-00017",
+            "title": "Test pyramid",
+            "url": "https://engineering.homeoffice.gov.uk/standards/test-pyramid/",
+            "date": "2025-06-13",
+            "tags": [
+                "Quality engineering"
+            ],
+            "requirements": [
+                {
+                    "title": "You MUST prioritise early testing",
+                    "id": "#you-must-prioritise-early-testing",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST validate the integration of your components",
+                    "id": "#you-must-validate-the-integration-of-your-components",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST automate where practical to do so",
+                    "id": "#you-must-automate-where-practical-to-do-so",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST avoid large numbers of end-to-end tests",
+                    "id": "#you-must-avoid-large-numbers-of-end-to-end-tests",
+                    "pass": "Yes"
+                },
+                {
+                    "title": "You MUST capture metrics to provide evidence of the efficiency of your tests",
+                    "id": "#you-must-capture-metrics-to-provide-evidence-of-the-efficiency-of-your-tests",
+                    "pass": "No",
+                    "comment": "https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues/615"
+                }
+            ]
+        }
+    ]
+}
