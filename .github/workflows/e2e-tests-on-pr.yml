@@ -40,14 +40,32 @@ jobs:
         run: npm run serve -- --port ${{ env.TEST_PORT }} &
 
       - name: Wait for server
-        uses: jakejarvis/wait-action@v0.1.1
+        shell: bash
+        env:
+          TIMEOUT_SECS: 60
+        run: |
+          elapsed=0
+          
+          while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://${{ env.TEST_URL }}:${{ env.TEST_PORT }})" != "200" ]]; do
+            sleep 1
+            ((elapsed++))
+          
+            if [[ $elapsed -ge ${{ env.TIMEOUT_SECS }} ]]; then
+              echo "Timeout waiting for http://${{ env.TEST_URL }}:${{ env.TEST_PORT }})"
+              exit 1
+            fi
+          done
+
+      - name: Cache Playwright Browsers
+        uses: actions/cache@v4
         with:
-          url: http://${{ env.TEST_URL }}:${{ env.TEST_PORT }}
-          timeout: 60
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            playwright-browsers-${{ runner.os }}-
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-
+        run: npm run playwright:init
 
       - name: Run Playwright Tests
         run: npm run playwright:run
@@ -65,5 +83,5 @@ jobs:
           retention-days: 3
 
       - name: Publish CTRF Test Summary Results
-        run: npx github-actions-ctrf ctrf/ctrf-report.json
+        run: npm run playwright:publish-github-ctrf-report
         if: always()
