@@ -104,3 +104,27 @@ The test suite includes:
 - [Playwright Documentation](https://playwright.dev/docs/intro)
 - [Playwright Test API](https://playwright.dev/docs/test-api)
 - [Playwright CLI](https://playwright.dev/docs/test-cli)
+
+## How to migrate from Cypress to playwright 
+
+Here are the simple steps to migrate your tests:
+
+1. **Uninstall Cypress and related plugins:**
+    ```
+    npm uninstall cypress cypress-axe
+    ```
+2. **Install Playwright and axe-core for Playwright:**
+    ```
+    npm install --save-dev @playwright/test @axe-core/playwright
+    npx playwright install --with-deps
+    ```
+3. **Update your test scripts in `package.json`:**
+    Replace `cypress:open` and `cypress:run` with Playwright equivalents:
+    - `playwright:run`, `playwright:headed`, `playwright:debug`, `playwright:open`
+4. **Convert your test files:**
+    - Change Cypress commands (`cy.visit`, `cy.get`, `cy.contains`, etc.) to Playwright equivalents (`page.goto`, `page.locator`, `page.getByRole`, etc.).
+    - Update accessibility tests to use `AxeBuilder` from `@axe-core/playwright`.
+5. **Update CI workflows:**
+    - Replace Cypress steps with Playwright steps in your GitHub Actions workflows.
+6. **Run and verify:**
+    - Run your Playwright tests locally and in CI to ensure everything works.
