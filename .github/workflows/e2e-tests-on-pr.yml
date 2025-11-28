@@ -17,7 +17,6 @@ env:
 jobs:
   e2e-test:
     runs-on: ubuntu-24.04
-    container: cypress/browsers:node-20.5.0-chrome-114.0.5735.133-1-ff-114.0.2-edge-114.0.1823.51-1
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -34,15 +33,55 @@ jobs:
       - name: Audit
         run: npm audit
 
-      - name: Run Cypress Tests
-        uses: cypress-io/github-action@v6
-        with:
-          browser: chrome
-          build: npm run build
-          start: npm run serve -- --port ${{ env.TEST_PORT }}
-          wait-on: 'http://${{ env.TEST_URL }}:${{ env.TEST_PORT }}'
-          config: 'video=false,screenshotOnRunFailure=false'
+      - name: Build site
+        run: npm run build
+
+      - name: Start server
+        run: npm run serve -- --port ${{ env.TEST_PORT }} &
+
+      - name: Wait for server
+        shell: bash
         env:
-          CYPRESS_TEST_URL: ${{ env.TEST_URL }}
-          CYPRESS_TEST_PORT: ${{ env.TEST_PORT }}
+          TIMEOUT_SECS: 60
+        run: |
+          elapsed=0
+          
+          while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://${{ env.TEST_URL }}:${{ env.TEST_PORT }})" != "200" ]]; do
+            sleep 1
+            ((elapsed++))
+          
+            if [[ $elapsed -ge ${{ env.TIMEOUT_SECS }} ]]; then
+              echo "Timeout waiting for http://${{ env.TEST_URL }}:${{ env.TEST_PORT }})"
+              exit 1
+            fi
+          done
+
+      - name: Cache Playwright Browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            playwright-browsers-${{ runner.os }}-
+
+      - name: Install Playwright Browsers
+        run: npm run playwright:init
+
+      - name: Run Playwright Tests
+        run: npm run playwright:run
+        env:
+          TEST_URL: ${{ env.TEST_URL }}
+          TEST_PORT: ${{ env.TEST_PORT }}
           GITHUB_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+
+      - name: Upload Playwright Report Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 3
+
+      - name: Publish CTRF Test Summary Results
+        run: npm run playwright:publish-github-ctrf-report
+        if: always()
