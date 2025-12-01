@@ -26,8 +26,12 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "playwright:init": "playwright install --with-deps",
+    "playwright:open": "playwright codegen",
+    "playwright:run": "playwright test",
+    "playwright:headed": "playwright test --headed",
+    "playwright:debug": "playwright test --debug",
+    "playwright:publish-github-ctrf-report": "github-actions-ctrf ctrf/ctrf-report.json",
     "docker:build": "docker build -t engineering-guidance-and-standards ."
   },
   "engines": {
@@ -36,14 +40,17 @@
   "dependencies": {
     "@11ty/eleventy": "3.1.2",
     "@x-govuk/govuk-eleventy-plugin": "8.1.1",
+    "github-actions-ctrf": "^0.0.58",
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
     "parse5": "8.0.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
     "@cfworker/json-schema": "4.1.1",
     "axe-core": "4.11.0",
-    "cypress": "15.7.0",
-    "cypress-axe": "1.7.0"
+    "@playwright/test": "^1.56.1",
+    "playwright-ctrf-json-reporter": "^0.0.26",
+    "github-actions-ctrf": "^0.0.58"
   }
 }

@@ -7,7 +7,6 @@ _site
 /.idea/
 .dccache
 /.vscode/
-cypress.env.json
-cypress/screenshots/
-cypress/videos/
-cypress/downloads/
+test-results/
+playwright-report/
+ctrf/
