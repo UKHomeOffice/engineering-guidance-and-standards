@@ -39,17 +39,16 @@ A working product is more important than documentation, but good documentation i
 
 Every repository should include:
 
-- **README.md**: Project overview, purpose, and links to service standard evidence.
+- **README.md**: Project and repository overview, purpose, and links to further documentation
 - **Architecture**:
-  - High-level diagrams (system context, dependencies).
-  - Database and class diagrams (only if useful and maintained).
-- **Folder Structure**: Clear organisation for docs-as-code (e.g., GovUK Eleventy).
-- **Security Policy**: How vulnerabilities are handled and compliance references.
-- **Coding Conventions**: Language-specific standards and commenting guidelines for your project.
-- **Change Log & Versioning**:
-  - All production releases documented.
-  - Release notes and version history aligned with supported versions.
-- A short description with an overview of the service/project/repo
+  - High-level diagrams (system context, dependencies)
+  - Database and class diagrams (only if useful and maintained)
+- **Project structure**: Document how to navigate the source code, especially where folder structure is significant to the working of the code
+- **Security policy**: How vulnerabilities are handled and compliance references
+- **Coding conventions**: Language-specific standards and commenting guidelines for your project
+- **Change log & versioning**:
+  - All production releases documented
+  - Release notes and version history aligned with supported versions
 
 
 ### Recommended Practices
