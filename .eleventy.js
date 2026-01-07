@@ -58,6 +58,13 @@ export default async function(eleventyConfig) {
                 label: 'Search site',
                 indexPath: '/search-index.json',
                 sitemapPath: '/sitemap/'
+            },
+            phaseBanner: {
+                tag: {text: 'New service'},
+                html:
+                    'This is a new service – your' +
+                    ' <a class="govuk-link" href="/provide-feedback/" target="_blank" rel="noopener">feedback (opens in a new tab)</a>' +
+                    ' will help us to improve it'
             }
         },
         footer: {
@@ -159,19 +166,6 @@ export default async function(eleventyConfig) {
       return collectionApi.getFilteredByGlob("**/patterns/*.md").sort(function(a, b) {
         return a.data.title.localeCompare(b.data.title); // sort by title ascending
       });
-    });
-
-    eleventyConfig.addGlobalData("phaseBannerConfiguration", () => {
-      return {
-        tag: {
-          text: "New Service"
-        },
-        html: 'This is a new service – your ' +
-            '<a class="govuk-link" href="/provide-feedback/" target="_blank" rel="noopener">' +
-            'feedback (opens in a new tab)' +
-            '</a> ' +
-            'will help us to improve it.'
-      }
     });
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);

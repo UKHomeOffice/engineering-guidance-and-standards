@@ -8,12 +8,6 @@ banner, the border should be on all pages, so hide that this is a collection pag
 {%- set layout="prevent-layout-specific-styling" -%}
 
 {% block main %}
-  {% if phaseBannerConfiguration %}
-  <div class="govuk-width-container" data-axe-exclude="It is acceptable that this is outside a landmark region">
-    {% import "macros/feedbackBanner.njk" as feedback %}
-    {{ feedback.phaseBanner(phaseBannerConfiguration) }}
-  </div>
-  {% endif %}
   <section role="region" aria-label="Collection description masthead">
     {{ xGovukMasthead({
       title: {
