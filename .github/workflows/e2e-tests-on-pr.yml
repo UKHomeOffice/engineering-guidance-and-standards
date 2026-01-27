@@ -83,5 +83,9 @@ jobs:
           retention-days: 3
 
       - name: Publish CTRF Test Summary Results
-        run: npm run playwright:publish-github-ctrf-report
+        uses: actions/upload-artifact@v4
+        with:
+          name: ctrf-report
+          path: ctrf/ctrf-report.json
+          retention-days: 14
         if: always()
