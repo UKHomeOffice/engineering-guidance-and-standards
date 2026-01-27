@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  pull-requests: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -83,9 +86,12 @@ jobs:
           retention-days: 3
 
       - name: Publish CTRF Test Summary Results
-        uses: actions/upload-artifact@v4
+        uses: ctrf-io/github-test-reporter@v1
         with:
-          name: ctrf-report
-          path: ctrf/ctrf-report.json
-          retention-days: 14
+          report-path: './ctrf/*.json'
+          status-check: true
+          status-check-name: 'GitHub Test Reporter Results'
+          upload-artifact: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: always()
