@@ -5,11 +5,10 @@ title: Infrastructure as code testing
 date: 2025-10-03
 id: SEGAS-00015
 tags:
-	- Infrastructure
-	- CI/CD
-	- Infrastructure as code
-	- Quality engineering
-  
+    - Infrastructure
+    - CI/CD
+    - Infrastructure as code
+    - Quality engineering
 ---
 
 Infrastructure as Code (IaC) testing is a critical practice for ensuring the security, compliance, and functionality of infrastructure configurations before deployment. It encompasses a range of testing methodologies, including syntax validation, security scanning, compliance checks, and functional testing, applied to technologies like AWS Cloud Formation, IAM security, and Kubernetes manifests. Leveraging test-driven development (TDD) for IaC modules and automating tests within CI/CD pipelines ensures rapid feedback and continuous validation.

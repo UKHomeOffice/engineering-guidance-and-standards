@@ -5,9 +5,8 @@ title: Test coverage
 date: 2025-10-03
 id: SEGAS-00017
 tags:
-	- Developer testing
-	- Quality engineering
-  
+    - Developer testing
+    - Quality engineering
 ---
 
 Appropriate test coverage is a fundamental practice in Quality Engineering that goes beyond simply measuring the percentage of code lines executed by tests.
