@@ -1,15 +1,15 @@
 ---
 layout: standard
 order: 1
-title: automated accessibility testing
+title: Automated accessibility testing
 date: 2025-10-03
 id: SEGAS-00019
 tags:
-- Accessibility
-- Accessibility Standards
-- CI/CD Pipeline
-- Infrastructure as code
-- Quality engineering
+	- Accessibility
+	- Accessibility standards
+	- CI/CD pipeline
+	- Infrastructure as code
+	- Quality engineering
   
 ---
 
@@ -19,11 +19,11 @@ Automated accessibility testing, integrated into the CI/CD pipeline, shifts acce
 
 ## Requirements
 
-- [You MUST explore use of static checks](#You-MUST-explore-use-of-static-checks).
-- [You MUST automate scanning with established tools](#You-MUST-automate-scanning-with-established-tools).
-- [You MUST integrate your tools into the CI/CD pipeline](#You-MUST-integrate-your-tools-into-the-CI/CD-pipeline).
-- [You MUST configure your tools for relevant accessibility standards](#You-MUST-configure-your-tools-for-relevant-accessibility-standards).
-- [You MUST apply regular updates](#You-MUST-apply-regular-updates).
+- [You MUST use static checks](#you-must-use-static-checks)
+- [You MUST automate scanning with established tools](#you-must-automate-scanning-with-established-tools)
+- [You MUST integrate your tools into the CI/CD pipeline](#you-must-integrate-your-tools-into-the-cicd-pipeline)
+- [You MUST configure your tools for relevant accessibility standards](#you-must-configure-your-tools-for-relevant-accessibility-standards)
+- [You MUST apply regular updates to your accessibility tooling](#you-must-apply-regular-updates-to-your-accessibility-tooling)
 
 ### You MUST use static checks
 

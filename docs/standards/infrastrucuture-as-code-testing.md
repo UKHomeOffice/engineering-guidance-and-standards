@@ -1,14 +1,14 @@
 ---
 layout: standard
 order: 1
-title: infrastructure as code testing
+title: Infrastructure as code testing
 date: 2025-10-03
 id: SEGAS-00015
 tags:
-- Infrastructure
-- CI/CD
-- Infrastructure as code
-- Quality engineering
+	- Infrastructure
+	- CI/CD
+	- Infrastructure as code
+	- Quality engineering
   
 ---
 
@@ -20,12 +20,12 @@ Maintaining a dedicated testing environment and continuously updating testing to
 
 ## Requirements
 
-- [You MUST do static code analysis](#You-MUST-do-static-code-analysis).
-- [You MUST do component and integration tests of individual components](#You-MUST-do-component-and-integration-tests-of-individual-components).
-- [You MUST do functional and regression testing](#You-MUST-do-functional-and-regression-testing).
-- [You MUST do security and compliance checks](#You-MUST-do-security-and-compliance-checks).
-- [You MUST do performance testing](#You-MUST-do-performance-testing).
-- [You MUST do operational acceptance testing](#You-MUST-do-operational-acceptance-testing).
+- [You MUST do static code analysis](#you-must-do-static-code-analysis)
+- [You MUST do component and integration tests of individual components](#you-must-do-component-and-integration-tests-of-individual-components)
+- [You MUST do functional and regression testing](#you-must-do-functional-and-regression-testing)
+- [You MUST do security and compliance checks](#you-must-do-security-and-compliance-checks)
+- [You MUST do performance testing](#you-must-do-performance-testing)
+- [You MUST do operational acceptance testing](#you-must-do-operational-acceptance-testing)
 
 ### You MUST do static code analysis
 

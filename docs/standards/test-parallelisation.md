@@ -1,13 +1,13 @@
 ---
 layout: standard
 order: 1
-title: test parallelisation
+title: Test parallelisation
 date: 2025-10-03
 id: SEGAS-00016
 tags:
-- Test coverage
-- CI/CD pipelines
-- Quality engineering
+	- Test coverage
+	- CI/CD pipelines
+	- Quality engineering
   
 ---
 
@@ -21,12 +21,12 @@ To effectively implement parallelisation and maximize its benefits, adherence to
 
 ## Requirements
 
--	[You MUST split tests based on criticality, execution time, complexity, and dependencies](#You-MUST-split-tests-based-on-criticality,execution-time,-complexity,-and-dependencies).
--	[You MUST Isolate test data for each parallel test run](#You-MUST-isolate-test-data-for-each-parallel-test-run).
--	[You MUST adopt parallelisation, when running same test suite across multiple environments (cross environments)](#You-MUST-adopt-parallelisation,-when-running-same-test-suite-across-multiple-environments-(cross-environments)).
--	[You MUST implement parallelisation to reduce waiting time for CI/CD pipeline](#You-MUST-implement-parallelisation-to-reduce-waiting-time-for-CI/CD-pipeline).
-- [You MUST ensure that acceptance tests should finish as quickly as the code compiles and builds](#You-MUST-ensure-that-acceptance-tests-should-finish-as-quickly-as-the-code-compiles-and-builds).
-- [You MUST adopt parallelisation when frequent deployments are required](#You-MUST-adopt-parallelisation-when-frequent-deployments-are-required).
+- [You MUST split tests based on criticality, execution time, complexity, and dependencies](#you-must-split-tests-based-on-criticality-execution-time-complexity-and-dependencies)
+- [You MUST isolate test data for each parallel test run](#you-must-isolate-test-data-for-each-parallel-test-run)
+- [You MUST adopt parallelisation when running same test suite across multiple environments (cross environments)](#you-must-adopt-parallelisation-when-running-same-test-suite-across-multiple-environments-cross-environments)
+- [You MUST implement parallelisation to reduce waiting time for CI/CD pipeline](#you-must-implement-parallelisation-to-reduce-waiting-time-for-cicd-pipeline)
+- [You MUST ensure that acceptance tests should finish as quickly as the code compiles and builds](#you-must-ensure-that-acceptance-tests-should-finish-as-quickly-as-the-code-compiles-and-builds)
+- [You MUST adopt parallelisation when frequent deployments are required](#you-must-adopt-parallelisation-when-frequent-deployments-are-required)
 
 
 

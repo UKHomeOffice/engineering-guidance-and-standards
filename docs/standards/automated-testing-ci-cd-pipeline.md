@@ -5,20 +5,21 @@ title: Automated testing in CI/CD pipelines
 date: 2025-10-03
 id: SEGAS-00020
 tags:
-- Infrastructure
-- CI/CD
-- Infrastructure as code
-- Quality engineering
-- Build and Deploy
+	- Infrastructure
+	- CI/CD
+	- Infrastructure as code
+	- Quality engineering
+	- Build and deploy
 ---
 CI/CD pipelines automate software integration and deployment for fast, reliable releases. They provide fast feedback to identify and address issues early, using stages like code commits, builds, testing, and deployments. Effective pipelines use branching strategies, code linting, and package management. Comprehensive testing and continuous monitoring with tools like SonarQube ensure quality and performance. This approach enables rapid development, improved reliability, and faster releases.
 
 ## Requirements
-- 	[You MUST automate code integration and building](#You-MUST-automate-code-integration-and-building).
-- 	[You MUST automate testing at multiple levels](#You-MUST-automate-testing-at-multiple-levels).
-- 	[You MUST use product pipeline to run tests](#You-MUST-use-product-pipeline-to-run-tests).
-- 	[You MUST automate feedback and reporting](#You-MUST-automate-feedback-and-reporting).
-- 	[You MUST advocate continuous monitoring and logging](#You-MUST-advocate-continuous-monitoring-and-logging).
+
+- [You MUST automate code integration and building](#you-must-automate-code-integration-and-building)
+- [You MUST automate testing at multiple levels](#you-must-automate-testing-at-multiple-levels)
+- [You MUST use product pipeline to run tests](#you-must-use-product-pipeline-to-run-tests)
+- [You MUST automate feedback and reporting](#you-must-automate-feedback-and-reporting)
+- [You MUST advocate continuous monitoring and logging](#you-must-advocate-continuous-monitoring-and-logging)
 
 
 ### 	You MUST automate code integration and building

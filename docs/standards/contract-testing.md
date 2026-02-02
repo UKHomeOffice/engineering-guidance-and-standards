@@ -28,11 +28,11 @@ The tests not only ensure that the provider's API outputs the expected values ba
 
 ---
 
-## Requirement
+## Requirements
 
 - [You MUST define clear contracts](#you-must-define-clear-contracts)
 - [You MUST automate contract validation](#you-must-automate-contract-validation)
-- [You MUST embed Contract Testing into CI/CD pipelines](#you-must-embed-contract-testing-into-cicd-pipelines)
+- [You MUST embed contract testing into CI/CD pipelines](#you-must-embed-contract-testing-into-cicd-pipelines)
 - [You MUST implement mock dependencies](#you-must-implement-mock-dependencies)
 - [You MUST implement effective contract sharing and versioning](#you-must-implement-effective-contract-sharing-and-versioning)
 
