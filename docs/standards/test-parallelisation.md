@@ -5,10 +5,9 @@ title: Test parallelisation
 date: 2025-10-03
 id: SEGAS-00016
 tags:
-	- Test coverage
-	- CI/CD pipelines
-	- Quality engineering
-  
+    - Test coverage
+    - CI/CD pipelines
+    - Quality engineering
 ---
 
 Test parallelisation is an essential strategy for optimising automated testing, particularly as test suites expand and threaten to impede release velocity. 
