@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Contract testing
-date: 2025-12-10
-id: SEGAS-00020
+date: 2026-02-02
+id: SEGAS-00023
 tags:
   - Quality engineering
   - Infrastructure

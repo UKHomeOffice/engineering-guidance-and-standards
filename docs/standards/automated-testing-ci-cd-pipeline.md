@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Automated testing in CI/CD pipelines
-date: 2025-10-03
-id: SEGAS-00020
+date: 2026-02-02
+id: SEGAS-00022
 tags:
     - Infrastructure
     - CI/CD

@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Infrastructure as code testing
-date: 2025-10-03
-id: SEGAS-00015
+date: 2026-02-02
+id: SEGAS-00024
 tags:
     - Infrastructure
     - CI/CD

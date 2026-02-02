@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Test parallelisation
-date: 2025-10-03
-id: SEGAS-00016
+date: 2026-02-02
+id: SEGAS-00026
 tags:
     - Test coverage
     - CI/CD pipelines

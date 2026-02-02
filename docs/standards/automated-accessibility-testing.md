@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Automated accessibility testing
-date: 2025-10-03
-id: SEGAS-00019
+date: 2026-02-02
+id: SEGAS-00021
 tags:
     - Accessibility
     - Accessibility standards
