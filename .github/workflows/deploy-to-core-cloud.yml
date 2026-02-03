@@ -92,7 +92,14 @@ jobs:
           retention-days: 3
 
       - name: Publish CTRF Test Summary Results
-        run: npm run playwright:publish-github-ctrf-report
+        uses: ctrf-io/github-test-reporter@v1
+        with:
+          report-path: './ctrf/*.json'
+          status-check: true
+          status-check-name: 'Playwright tests'
+          upload-artifact: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: always()
 
       - name: Sync
