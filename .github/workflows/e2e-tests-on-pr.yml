@@ -91,7 +91,7 @@ jobs:
         with:
           report-path: './ctrf/*.json'
           status-check: true
-          status-check-name: 'GitHub Test Reporter Results'
+          status-check-name: 'Playwright tests'
           upload-artifact: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
