@@ -7,7 +7,7 @@ tags:
 - Automation
 - Ways of working
 - Operations
-- Sre
+- SRE
 - Quality engineering
 related:
 - /standards/writing-a-principle/
