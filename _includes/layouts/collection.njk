@@ -1,4 +1,4 @@
-{% extends "../../node_modules/@x-govuk/govuk-eleventy-plugin/src/layouts/base.njk" %}
+{% extends "../../node_modules/@x-govuk/govuk-eleventy-plugin/src/layouts/collection.njk" %}
 {#-
 https://github.com/x-govuk/govuk-eleventy-plugin/blob/main/components/header/template.njk#L4-L6
 
@@ -6,25 +6,6 @@ The govuk header uses the layout name to remove the border for collection and pr
 banner, the border should be on all pages, so hide that this is a collection page.
 -#}
 {%- set layout="prevent-layout-specific-styling" -%}
-
-{% block main %}
-  <section role="region" aria-label="Collection description masthead">
-    {{ xGovukMasthead({
-      title: {
-        html: title | smart
-      } if title,
-      description: {
-        html: description | markdown("inline") | noOrphans
-      } if description,
-      breadcrumbs: {
-        classes: "govuk-!-display-none-print govuk-!-margin-bottom-0",
-        items: breadcrumbItems
-      } if showBreadcrumbs
-    }) }}
-  </section>
-
-  {{ super() }}
-{% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
