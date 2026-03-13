@@ -153,6 +153,17 @@ Using the tool helps reduce manual effort and keeps repositories aligned as stan
 Where multiple repositories represent the same system or share the same compliance posture, a single .SEGAS.json file may be reused.
 Teams should ensure that any known repository‑specific differences are documented where relevant.
 
+You can use the following syntax:
+
+```JSON
+{
+  "extends": "https://github.com/repo/main/.segas.json",
+  "standards" [
+    {...}
+  ]
+}
+```
+
 --- 
 
 ## Guidance
