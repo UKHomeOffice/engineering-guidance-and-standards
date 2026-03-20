@@ -61,7 +61,7 @@ Parts of this change were generated with the assistance of an AI coding tool and
 
 ### You MUST test your code
 
-All AI‑assisted changes must be tested in line with existing engineering standards such as the Office [Developer Testing standard](https://engineering.homeoffice.gov.uk/standards/developer-testing/) and the [QAT principles](https://engineering.homeoffice.gov.uk/principles/quality-assurance-and-testing/) before being merged or deployed. This ensures that AI‑generated code behaves as expected, does not introduce defects or regressions, and continues to meet quality, security and reliability expectations.
+All AI‑assisted changes must be tested in line with existing engineering standards such as the [Developer Testing standard](https://engineering.homeoffice.gov.uk/standards/developer-testing/) and the [QAT principles](https://engineering.homeoffice.gov.uk/principles/quality-assurance-and-testing/) before being merged or deployed. This ensures that AI‑generated code behaves as expected, does not introduce defects or regressions, and continues to meet quality, security and reliability expectations.
 
 ### You MUST follow the guardrails
 
