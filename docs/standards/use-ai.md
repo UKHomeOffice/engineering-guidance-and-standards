@@ -91,4 +91,8 @@ Teams must assess and manage risks introduced by AI‑suggested dependencies, li
 
 Teams must regularly review and adapt their use of AI as guidance, standards, risks, and organisational guardrails change. AI usage should not remain static where expectations or controls have been updated.
 
+### You MUST only use approved tools
+
+Teams use AI tools that are explicitly approved on the Technology Register by the organisation and configured in line with published guidance. Unapproved AI tools are not used for software development activities unless formal approval has been granted.
+
 ---
