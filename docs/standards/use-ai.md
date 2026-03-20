@@ -17,7 +17,7 @@ Teams should use AI where it demonstrably improves developer productivity, code 
 The Home Office has departmental policies and guidance on the use of AI and AI tooling. They set out the key responsibilities and guardrails for people working at the Home Office to follow.
 This standard sets the specific expectations for the safe, responsible and consistent use of AI coding assistants engineers at the Home Office. It ensures that AI‑assisted work remains subject to appropriate human oversight, aligns with existing engineering, security and quality standards, and supports teams to realise the benefits of AI without compromising trust, maintainability or accountability.
 
-References to “teams” in this standard mean human teams responsible for the design, development, and operation of software; AI systems are treated as tools and are not considered to be team members.
+References to "teams" in this standard mean human teams responsible for the design, development, and operation of software; AI systems are treated as tools and are not considered to be team members.
 
 Developed with assistance from Copilot
 
