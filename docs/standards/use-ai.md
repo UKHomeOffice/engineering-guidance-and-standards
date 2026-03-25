@@ -94,6 +94,6 @@ Teams must regularly review and adapt their use of AI as guidance, standards, ri
 
 ### You MUST only use approved tools
 
-Teams use AI tools that are explicitly approved on the Technology Register by the organisation and configured in line with published guidance. Unapproved AI tools are not used for software development activities unless formal approval has been granted.
+Teams must only use AI tools that are explicitly approved on the Technology Register by the organisation and configured in line with published guidance. Unapproved AI tools are not to be used for software development activities.
 
 ---
