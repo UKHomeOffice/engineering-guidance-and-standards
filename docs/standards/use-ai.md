@@ -34,6 +34,7 @@ Developed with assistance from Copilot
 - [AI‑assisted code MUST meet the same security expectations as human‑written code](#aiassisted-code-must-meet-the-same-security-expectations-as-humanwritten-code)
 - [Teams MUST understand and manage the risks of AI‑introduced dependencies, libraries, or code patterns](#teams-must-understand-and-manage-the-risks-of-aiintroduced-dependencies-libraries-or-code-patterns)
 - [AI usage MUST evolve in line with updated guidance, standards, and organisational guardrails](#ai-usage-must-evolve-in-line-with-updated-guidance-standards-and-organisational-guardrails)
+- [You MUST only use approved tools](#you-must-only-use-approved-tools)
 
 ### AI‑assisted outputs MUST have a human in the loop to approve before reaching production
 
