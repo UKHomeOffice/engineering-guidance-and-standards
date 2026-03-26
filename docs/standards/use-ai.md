@@ -40,7 +40,9 @@ Developed with assistance from Copilot
 
 Teams must always be in the loop before deploying any AI-assisted code, usually this would be done through a code review.
 
-Teams will retain full accountability for all AI‑assisted outputs. AI tools cannot replace human judgement, ownership, or responsibility for decisions, designs, or changes made to systems.
+Teams will retain full accountability for all AI‑assisted outputs. AI tools cannot replace human judgement, understanding, ownership, or responsibility for decisions, designs, or changes made to systems.
+
+Your team needs to be confident that they understand what they are running and can assert its security and maintainability.
 
 ### AI‑assisted changes MUST be traceable through engineering processes
 
