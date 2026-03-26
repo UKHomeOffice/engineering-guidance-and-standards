@@ -15,7 +15,7 @@ tags:
 Teams should use AI where it improves developer productivity, code quality, accessibility, or service outcomes. AI can be used to support good engineering practices, such as writing documentation, increasing test coverage, refactoring legacy code, and addressing defects.
 
 The Home Office has departmental policies and guidance on the use of AI and AI tooling. They set out the key responsibilities and guardrails for people working at the Home Office to follow.
-This standard sets the specific expectations for the safe, responsible and consistent use of AI coding assistants engineers at the Home Office. It ensures that AI‑assisted work remains subject to appropriate human oversight, aligns with existing engineering, security and quality standards, and supports teams to realise the benefits of AI without compromising trust, maintainability or accountability.
+This standard sets expectations to help engineers at the Home Office use AI coding assistants in safe, responsible and consistent ways. It makes sure that AI‑assisted work is done with human oversight and meets existing engineering, security and quality standards.
 
 References to "teams" in this standard mean human teams responsible for the design, development, and operation of software; AI systems are treated as tools and are not considered to be team members.
 
