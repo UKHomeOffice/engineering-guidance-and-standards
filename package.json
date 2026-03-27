@@ -31,7 +31,8 @@
     "playwright:run": "playwright test",
     "playwright:headed": "playwright test --headed",
     "playwright:debug": "playwright test --debug",
-    "docker:build": "docker build -t engineering-guidance-and-standards ."
+    "docker:build": "docker build -t engineering-guidance-and-standards .",
+    "audit-ci": "npx audit-ci@^7 --config ./audit-ci.jsonc"
   },
   "engines": {
     "node": ">=22.0.0 <23.0.0"
@@ -47,6 +48,7 @@
     "@axe-core/playwright": "4.11.1",
     "@cfworker/json-schema": "4.1.1",
     "@playwright/test": "^1.58.2",
+    "audit-ci": "^7.1.0",
     "axe-core": "4.11.1",
     "playwright-ctrf-json-reporter": "^0.0.29"
   }

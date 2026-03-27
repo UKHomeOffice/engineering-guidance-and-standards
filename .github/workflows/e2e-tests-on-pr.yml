@@ -29,13 +29,13 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: 'npm'
+          cache: "npm"
+
+      - name: Audit for vulnerabilities
+        run: npm run audit-ci
 
       - name: Install
         run: npm ci --ignore-scripts
-
-      - name: Audit
-        run: npm audit
 
       - name: Build site
         run: npm run build
@@ -49,11 +49,11 @@ jobs:
           TIMEOUT_SECS: 60
         run: |
           elapsed=0
-          
+
           while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://${{ env.TEST_URL }}:${{ env.TEST_PORT }})" != "200" ]]; do
             sleep 1
             ((elapsed++))
-          
+
             if [[ $elapsed -ge ${{ env.TIMEOUT_SECS }} ]]; then
               echo "Timeout waiting for http://${{ env.TEST_URL }}:${{ env.TEST_PORT }})"
               exit 1
@@ -89,9 +89,9 @@ jobs:
       - name: Publish CTRF Test Summary Results
         uses: ctrf-io/github-test-reporter@v1
         with:
-          report-path: './ctrf/*.json'
+          report-path: "./ctrf/*.json"
           status-check: true
-          status-check-name: 'Playwright tests'
+          status-check-name: "Playwright tests"
           upload-artifact: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
