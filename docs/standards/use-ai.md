@@ -25,7 +25,7 @@ Developed with assistance from Copilot
 
 ## Requirement(s)
 
-- [AI‑assisted outputs MUST have a human in the loop to approve before reaching production](#aiassisted-outputs-must-have-a-human-in-the-loop-to-approve-before-reaching-production)
+- [AI‑assisted outputs MUST be reviewed and approved by a human before reaching production](#aiassisted-outputs-must-be-reviewed-and-approved-by-a-human-before-reaching-production)
 - [AI‑assisted changes MUST be traceable through engineering processes](#aiassisted-changes-must-be-traceable-through-engineering-processes)
 - [You MUST test your code](#you-must-test-your-code)
 - [You MUST follow the guardrails](#you-must-follow-the-guardrails)
@@ -36,13 +36,13 @@ Developed with assistance from Copilot
 - [AI usage MUST evolve in line with updated guidance, standards, and organisational guardrails](#ai-usage-must-evolve-in-line-with-updated-guidance-standards-and-organisational-guardrails)
 - [You MUST only use approved tools](#you-must-only-use-approved-tools)
 
-### AI‑assisted outputs MUST have a human in the loop to approve before reaching production
+### AI‑assisted outputs MUST be reviewed and approved by a human before reaching production
 
-Teams must always be in the loop before deploying any AI-assisted code, usually this would be done through a code review.
+Teams must ensure any AI-assisted code or outputs are reviewed and approved by suitably qualified and experienced people. This must happen before code reaches production. Usually this would be done through a code review and testing.
 
-Teams will retain full accountability for all AI‑assisted outputs. AI tools cannot replace human judgement, understanding, ownership, or responsibility for decisions, designs, or changes made to systems.
+Teams will retain full accountability for all AI‑assisted code and outputs. AI tools cannot replace human judgement, understanding, ownership, or responsibility for decisions, designs, or changes made to systems.
 
-Your team needs to be confident that they understand what they are running and can assert its security and maintainability.
+Teams need to be confident that they understand what they are running and can assert its security and maintainability.
 
 ### AI‑assisted changes MUST be traceable through engineering processes
 
