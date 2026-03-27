@@ -31,7 +31,8 @@
     "playwright:run": "playwright test",
     "playwright:headed": "playwright test --headed",
     "playwright:debug": "playwright test --debug",
-    "docker:build": "docker build -t engineering-guidance-and-standards ."
+    "docker:build": "docker build -t engineering-guidance-and-standards .",
+    "audit-ci": "npx audit-ci@^7 --config ./audit-ci.jsonc"
   },
   "engines": {
     "node": ">=22.0.0 <23.0.0"
