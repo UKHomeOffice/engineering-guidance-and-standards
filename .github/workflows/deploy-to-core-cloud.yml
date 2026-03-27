@@ -34,13 +34,13 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: 'npm'
+          cache: "npm"
+
+      - name: Audit for vulnerabilities
+        run: npx audit-ci@^7 --config ./audit-ci.jsonc
 
       - name: Install
         run: npm ci --ignore-scripts
-
-      - name: Audit
-        run: npm audit
 
       - name: Build site
         run: npm run build
@@ -94,9 +94,9 @@ jobs:
       - name: Publish CTRF Test Summary Results
         uses: ctrf-io/github-test-reporter@v1
         with:
-          report-path: './ctrf/*.json'
+          report-path: "./ctrf/*.json"
           status-check: true
-          status-check-name: 'Playwright tests'
+          status-check-name: "Playwright tests"
           upload-artifact: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -109,4 +109,3 @@ jobs:
           cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
           bucket-name: ${{ vars.BUCKET_NAME }}
           working-directory: ./_site
-
