@@ -32,7 +32,7 @@ jobs:
           cache: "npm"
 
       - name: Audit for vulnerabilities
-        run: npx audit-ci@^7 --config ./audit-ci.jsonc
+        run: npm run audit-ci
 
       - name: Install
         run: npm ci --ignore-scripts
