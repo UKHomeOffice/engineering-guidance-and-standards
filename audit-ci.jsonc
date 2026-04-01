@@ -6,5 +6,4 @@
   "moderate": true,
   "low": true,
   "report-type": "summary",
-  "allowlist": ["GHSA-f886-m6hf-6m8v"],
 }
