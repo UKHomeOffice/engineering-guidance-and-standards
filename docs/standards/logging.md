@@ -2,8 +2,8 @@
 layout: standard
 order: 1
 title: Logging for services with centralised logging aggregation
-date: 2024-01-24
-id: SEGAS-00015
+date: 2026-04-10
+id: SEGAS-00019
 tags:
   - SRE
   - Monitoring
