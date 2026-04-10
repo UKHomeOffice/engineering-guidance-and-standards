@@ -29,7 +29,7 @@ Logs are not a replacement for dedicated monitoring tooling. They should be used
 - [Service logs MUST be forwarded to log aggregators](#service-logs-must-be-forwarded-to-log-aggregators)
 - [Service logs MUST be rotated daily and no more than 100 MB of logs to be retained](#service-logs-must-be-rotated-daily-and-no-more-than-100-mb-of-logs-to-be-retained)
 - [Service logs MUST have an identifiable source in the log aggregator](#service-logs-must-have-an-identifiable-source-in-the-log-aggregator)
-- [Service log messages should only be used for metrics, dashboarding and alerting as a last resort](#service-log-messages-should-only-be-used-for-metrics%2C-dashboarding-and-alerting-as-a-last-resort)
+- [Service log messages MUST only be used for metrics, dashboarding and alerting as a last resort](#service-log-messages-must-only-be-used-for-metrics%2C-dashboarding-and-alerting-as-a-last-resort)
 - [There MUST be no DEBUG / TRACE level messages in Production environments](#there-must-be-no-debug-%2F-trace-level-messages-in-production-environments)
 - [Service log messages MUST not reveal any sensitive information or person identifiable information](#service-log-messages-must-not-reveal-any-sensitive-information-or-person-identifiable-information)
 
@@ -54,7 +54,7 @@ Where log files are persisted locally, log files must be rotated to prevent fill
 
 Services can have a variety of logs, including application, error, and access logs; so it must be possible to identify the source of the log data in the log aggregation tooling.
 
-### Service log messages should only be used for metrics, dashboarding and alerting as a last resort
+### Service log messages MUST only be used for metrics, dashboarding and alerting as a last resort
 
 Although acceptable in some cases, it is strongly recommended that you do not use information contained in log messages as the primary method by which you report on application health, performance and business metrics. Information in logs can be difficult to parse, aggregate and quite brittle.
 
