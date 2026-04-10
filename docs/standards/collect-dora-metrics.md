@@ -21,6 +21,8 @@ Collecting metrics is an important part of any project, metrics can be the first
 
 - [You MUST collect these metrics](#you-must-collect-these-metrics)
 - [You MUST continuously monitor these metrics over time](#You-must-continuously-monitor-these-metrics-over-time)
+- [You MUST understand what these metrics mean for your team](#you-must-understand-what-these-metrics-mean-for-your-team)
+- [You MUST have an action plan/procedure to improve metrics when they drop](#you-must-have-an-action-planprocedure-to-improve-metrics-when-they-drop)
 
 ### You MUST collect these metrics
 
