@@ -35,12 +35,17 @@ Logs are not a replacement for dedicated monitoring tooling. They should be used
 
 ### Service logs MUST have the minimum required fields
 
-| Information | Description                                                                                                                                                                                   |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Date / Time | Each log message must include date and time (millisecond accuracy) (UTC). The time source for all service logs must be consistent so that messages can be viewed & sorted easily.             |
-| Service     | Each log message must be attributed to an service (i.e. hostname).                                                                                                                            |
-| Log level   | Each log message must have an appropriate log level (INFO, WARN, ERROR, etc.)                                                                                                                 |
-| Log Message | Each log message must have a log message. Log messages must follow a consistent log messaging format for all log types to allow for easy processing and translation of logs to other formats. |
+Date / Time
+: Each log message must include date and time (millisecond accuracy) (UTC). The time source for all service logs must be consistent so that messages can be viewed & sorted easily.
+
+Service
+: Each log message must be attributed to an service (i.e. hostname).
+
+Log level
+: Each log message must have an appropriate log level (INFO, WARN, ERROR, etc.)
+
+Log Message
+: Each log message must have a log message. Log messages must follow a consistent log messaging format for all log types to allow for easy processing and translation of logs to other formats.
 
 ### Service logs MUST be forwarded to log aggregators
 
