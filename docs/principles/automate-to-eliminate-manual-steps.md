@@ -10,7 +10,6 @@ tags:
 - SRE
 - Quality engineering
 - Build, release and deploy
-related:
 ---
  
 ## Description
