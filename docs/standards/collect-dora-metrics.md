@@ -20,7 +20,7 @@ Collecting metrics is an important part of any project, metrics can be the first
 ## Requirements
 
 - [You MUST collect these metrics](#you-must-collect-these-metrics)
-- [You MUST continuously monitor these metrics overtime](#You-must-continuously-monitor-these-metrics-overtime)
+- [You MUST continuously monitor these metrics over time](#You-must-continuously-monitor-these-metrics-over-time)
 
 ### You MUST collect these metrics
 
