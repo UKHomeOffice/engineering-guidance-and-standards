@@ -33,7 +33,7 @@ The 4 metrics that must be collected are as follows:
 
 To begin to understand the strengths and pitfalls of a project we must collect these metrics first.
 
-### You MUST continuously monitor these metrics overtime
+### You MUST continuously monitor these metrics over time
 
 When we collect the DORA metrics we must have consistent references to check against overtime and therefore we must have a procedure in place to constantly capture the metrics.
 
