@@ -9,8 +9,8 @@ tags:
 - Operations
 - SRE
 - Quality engineering
+- Build, release and deploy
 related:
-- /standards/writing-a-principle/
 ---
  
 ## Description
@@ -36,4 +36,4 @@ Eliminating toil is a core concept of Site Reliability Engineering, enabling mor
 ### Implications
 - Teams may need to make upfront investments in automation to reduce longer‑term operational costs.
 - Some services may require improved tooling or refactoring to minimise manual administration.
-**- Automation should be treated as a core requirement, not an optional enhancement.**orking, Operations, SRE, Quality engineering
+- Automation should be treated as a core requirement, not an optional enhancement.
