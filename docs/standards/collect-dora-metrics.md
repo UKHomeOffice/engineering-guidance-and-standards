@@ -35,7 +35,7 @@ To begin to understand the strengths and pitfalls of a project we must collect t
 
 ### You MUST continuously monitor these metrics over time
 
-When we collect the DORA metrics we must have consistent references to check against overtime and therefore we must have a procedure in place to constantly capture the metrics.
+When we collect the DORA metrics we must have consistent references to check against over time and therefore we must have a procedure in place to constantly capture the metrics.
 
 This is done for the purpose of improving our deployment pipelines and these metrics help us understand the performance impact on the project they are relevant to.
 
