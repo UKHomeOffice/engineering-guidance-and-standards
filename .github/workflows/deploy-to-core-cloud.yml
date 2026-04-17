@@ -103,9 +103,10 @@ jobs:
         if: always()
 
       - name: Sync
-        uses: UKHomeOffice/core-cloud-static-sites-action@1.0.1
+        uses: UKHomeOffice/core-cloud-static-sites-action@1.1.0
         with:
           assume-role-arn: ${{ vars.ROLE_ARN }}
           cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
           bucket-name: ${{ vars.BUCKET_NAME }}
           working-directory: ./_site
+          extra-excludes: compliance/**

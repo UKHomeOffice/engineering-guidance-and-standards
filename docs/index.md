@@ -23,5 +23,11 @@ options:
       </a>
     </p>
   </section>
+  <section>
+  <a class="govuk-link govuk-!-font-weight-bold" href="/compliance">
+    Check out the compliance tool here
+  </a>
+
+  </section>
 {% endfor %}
 </div>
