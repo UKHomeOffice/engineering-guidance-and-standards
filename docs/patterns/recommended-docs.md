@@ -54,7 +54,7 @@ Every repository should include:
 ### Recommended Practices
 
 - **Docs as Code**: Use tools like [Gov.UK eleventy plugin](https://govuk-eleventy-plugin.x-govuk.org/) for automation where possible. You can find more guidance in the [docs-as-code pattern]({{ '/patterns/docs-as-code/' | url }}).
-- **Version Control**: Documentation should live alongside code in source control and follow the same versioning as your code. Using Confluence or SharePoint will also enable versioning, updates should be recorded in the platforms file history.```
+- **Version Control**: Documentation should live alongside code in source control and follow the same versioning as your code. When this is not possible, use tools such as Confluence or SharePoint that keep previous versions of files.```
 - **Minimum repository standard**:
   - README
   - Architecture overview
