@@ -3,7 +3,7 @@ name: Deploy to Staging Core Cloud
 on:
   push:
     branches:
-      - staging/*
+      - staging/latest
 
 permissions:
   contents: read
