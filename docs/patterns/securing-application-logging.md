@@ -3,13 +3,13 @@ layout: pattern
 order: 1
 title: Securing application logging
 date: 2023-08-11
-tags: 
+tags:
   - Logging
   - Observability
   - Secure development
   - SRE
   - Security
-  - Software design   
+  - Software design
 related:
   sections:
     - title: Related links
@@ -65,7 +65,21 @@ Logging full payloads should be avoided. However, logging full payloads can be u
 
 ## Considerations
 
+### Consider how information can combine to form PII
+
+Examples of combined PII include:
+
+- Passport number, Issuing Country, Expiry Dates
+- Biometric residence permit or card (BRP/C) number, Date of Birth
+
+With the examples above, the information by themselves do not mean very much. After all, a BRP/C number is a random sequence of characters; but in combination with the date of birth it can be used to uniquely identify an individual.
+
+If you are unsure what is person identifiable information, consult with your security specialists.
+
+Information and data sets that contain sensitive information should not be output to logs regardless of log level.
+
 ### Consider whether logging statements are necessary
+
 Sometimes logging is used for fast-feedback loops when prototyping application functionality, but eventually become redundant, or the application they provide does not provide additional operational or debugging value for an operator searching through logs.
 
 Consider removing logging statements that do not produce value. Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing. Most of these cases can be replaced with unit or integration testing instead, as appropriate.
