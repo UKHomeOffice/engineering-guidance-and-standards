@@ -25,3 +25,7 @@ options:
   </section>
 {% endfor %}
 </div>
+<div class="govuk-inset-text govuk-!-margin-top-2">
+  Need to check your delivery against the standards?
+  <a class="govuk-link govuk-!-font-weight-bold" href="/compliance/">Open the compliance tool</a>.
+</div>
