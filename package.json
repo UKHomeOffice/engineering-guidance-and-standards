@@ -45,7 +45,7 @@
     "parse5": "8.0.1"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.11.1",
+    "@axe-core/playwright": "4.11.2",
     "@cfworker/json-schema": "4.1.1",
     "@playwright/test": "^1.59.1",
     "audit-ci": "^7.1.0",
