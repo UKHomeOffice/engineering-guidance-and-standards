@@ -2,7 +2,16 @@ import { test, expect } from '@playwright/test';
 import { testing_params } from '../support/testing_params';
 
 async function getJson(page, path) {
-  const response = await page.request.get(`${testing_params.TEST_ROOT_URL}${path}`);
+  const requestUrl = `${testing_params.TEST_ROOT_URL}${path}`;
+  const response = await page.request.get(requestUrl);
+
+  if (!response.ok()) {
+    const body = await response.text();
+    throw new Error(
+      `GET ${requestUrl} failed with ${response.status()} ${response.statusText()}\n${body.slice(0, 500)}`
+    );
+  }
+
   expect(response.ok()).toBeTruthy();
   expect(response.headers()['content-type']).toContain('application/json');
   return response.json();
