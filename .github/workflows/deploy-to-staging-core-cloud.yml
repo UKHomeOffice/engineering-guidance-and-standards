@@ -3,7 +3,7 @@ name: Deploy to Staging Core Cloud
 on:
   push:
     branches:
-      - staging/latest
+      - staging/*
 
 permissions:
   contents: read
@@ -106,7 +106,7 @@ jobs:
         if: always()
 
       - name: Sync
-        uses: UKHomeOffice/core-cloud-static-sites-action@1.1.0
+        uses: Home-Office-Digital/core-cloud-static-sites-action@1.1.0
         with:
           assume-role-arn: ${{ vars.ROLE_ARN }}
           cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
