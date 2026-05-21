@@ -48,7 +48,7 @@ When you have applied for a GitHub Copilot license, a member of the engineering 
 
 You will receive an email inviting you to join the [Home Office enterprise](https://github.com/enterprises/ukhomeoffice) on GitHub. This should arrive within 24 hours, but if it doesn’t, contact the CoPilot Enterprise Users SAS team on the Home Office enterprise.
 
-When you have joined the Home Office enterprise on GitHub, a member of the engineering team will add you to the “copilot-enterprise-users-sas”  team on the Home Office enterprise.
+When you have joined the Home Office enterprise on GitHub, a member of the engineering team will add you to the relevant team on the Home Office enterprise.
 
 You will receive an email confirming your access to GitHub Copilot. The email will give you links to Getting Started guides on how to install the GitHub Copilot extension for Visual Studio Code, Visual Studio, JetBrains, Vim or Neovim, Eclipse and Xcode.
 
