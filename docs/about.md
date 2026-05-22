@@ -41,19 +41,6 @@ Low Code
 
   [Pages tagged with low code](/tags/low-code/)
 
-Quality Engineering
-: Items to be covered to include Quality Engineering.
-
-  [**Slack**: #segas-quality-engineering](https://homeoffice.enterprise.slack.com/archives/C08HUEHDBGF)
-
-  [Pages tagged with quality engineering](/tags/quality-engineering/)
-
-Observability
-: Topics relating to the ongoing monitoring of applications and services, including Logging, Analytics and Performance.
-
-  [**Slack**: #segas-observability](https://homeoffice.enterprise.slack.com/archives/C02BJSXJ0QK)
-
-  [Pages tagged with observability](/tags/observability/)
 Observability
 : Topics relating to the ongoing monitoring of applications and services, including Logging, Analytics and Performance.
 
@@ -67,6 +54,7 @@ Quality Engineering
   [**Slack**: #segas-quality-engineering](https://homeoffice.enterprise.slack.com/archives/C08HUEHDBGF)
 
   [Pages tagged with quality engineering](/tags/quality-engineering/)
+
 Security
 : Articles in this section relate to subjects such as Secure Development, Identity & Access and Vulnerability Scanning.
 
