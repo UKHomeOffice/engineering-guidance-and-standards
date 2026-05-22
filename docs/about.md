@@ -20,6 +20,13 @@ The guilds meet regularly to discuss topics relating to their areas and contribu
 
 On Home Office Slack you'll find more information for each guild in their respective channels along with when they meet, and who to contact to join.
 
+AI guild
+: Topics related to the AI including guidance, guardrails, AI coding assistants, prompt engineering and AI in services
+
+  [**Slack**: #segas-ai](https://homeoffice.enterprise.slack.com/archives/C07RBP39YCU)
+
+  [Pages tagged with Artificial intelligence (AI)](/tags/artificial-intelligence-ai/)
+
 Build, release and deployment guild
 : Topics related to the release and deployment pipeline including CI/CD, Feature Toggling and Artefact Management.
 
