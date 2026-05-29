@@ -20,6 +20,13 @@ The guilds meet regularly to discuss topics relating to their areas and contribu
 
 On Home Office Slack you'll find more information for each guild in their respective channels along with when they meet, and who to contact to join.
 
+AI guild
+: Topics related to the AI including guidance, guardrails, AI coding assistants, prompt engineering and AI in services
+
+  [**Slack**: #segas-ai](https://homeoffice.enterprise.slack.com/archives/C07RBP39YCU)
+
+  [Pages tagged with Artificial intelligence (AI)](/tags/artificial-intelligence-ai/)
+
 Build, release and deployment guild
 : Topics related to the release and deployment pipeline including CI/CD, Feature Toggling and Artefact Management.
 
@@ -40,6 +47,13 @@ Observability
   [**Slack**: #segas-observability](https://homeoffice.enterprise.slack.com/archives/C02BJSXJ0QK)
 
   [Pages tagged with observability](/tags/observability/)
+
+Quality Engineering
+: Items to be covered to include Quality Engineering.
+
+  [**Slack**: #segas-quality-engineering](https://homeoffice.enterprise.slack.com/archives/C08HUEHDBGF)
+
+  [Pages tagged with quality engineering](/tags/quality-engineering/)
 
 Security
 : Articles in this section relate to subjects such as Secure Development, Identity & Access and Vulnerability Scanning.
@@ -69,12 +83,6 @@ Ways of Working
 
   [Pages tagged with ways of working](/tags/ways-of-working/)
 
-Quality Engineering
-: Items to be covered to include Quality Engineering.
-
-  [**Slack**: #segas-quality-engineering](https://homeoffice.enterprise.slack.com/archives/C08HUEHDBGF)
-
-  [Pages tagged with quality engineering](/tags/quality-engineering/)
 ## Why we are doing it
 
 In 2021 we conducted a discovery across a wide range of our engineering teams, including suppliers and civil servants, and encompassing all of our delivery portfolios. We found that there were a number of key areas that we should prioritise for centralised guidance. Since then we have been running guilds and other working groups to identify the more specific needs of our engineers, and develop guidance to meet those needs.
