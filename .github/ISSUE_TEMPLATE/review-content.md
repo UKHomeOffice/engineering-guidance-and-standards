@@ -10,16 +10,20 @@ We welcome feedback on all of the content on the site. Please let us know what y
 
 **Which content do you think should be reviewed?**
 Please provide urls so we can quickly identify the page in question
+<!-- CONTENT_REVIEW_PAGE_URL -->
 
 **Why do you think we should review this?**
 Please provide a brief description of your rationale for a review
+<!-- CONTENT_REVIEW_REASON -->
 
 **Do you have a suggestion for how this could be improved?**
 If you want to suggest an improvement then please outline it here
 
 **Additional information**
 Add any other information you think would be useful here
+<!-- CONTENT_REVIEW_SOURCE_FILE -->
 
 **Please confirm the below**
 
 - [ ] I have checked through the issues on the repository and don't think this has already been suggested
+<!-- CONTENT_REVIEW_KEY -->

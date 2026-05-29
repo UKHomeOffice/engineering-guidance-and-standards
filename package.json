@@ -26,6 +26,7 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
+    "content-review:scan": "node scripts/content-review-scan.mjs",
     "test:unit": "node --test \"tests/unit/**/*.test.js\"",
     "playwright:init": "playwright install --with-deps",
     "playwright:open": "playwright codegen",
@@ -43,6 +44,7 @@
     "@x-govuk/govuk-eleventy-plugin": "9.0.1",
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
+    "node-fetch": "^3.3.2",
     "parse5": "8.0.1"
   },
   "devDependencies": {
