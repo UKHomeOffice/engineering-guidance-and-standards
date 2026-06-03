@@ -74,7 +74,7 @@ Some use cases include using GitHub Copilot to:
 -	use Copilot to review code and feed its review back to an engineer who supervises
 -	work with a business analyst (BA) to create and iterate wireframes together, rather than an engineer having to send changes to a wireframe back to a business analyst to work on alone
 -	test Jira cards to find defects and help create actions to fix problems, as well as checking acceptance criteria across all stories in an epic to see how they relate to each other
--	write a simple agentic AI tool  to connect to Jira and summarise tickets
+-	write a simple agentic AI tool to connect to Jira and summarise tickets
 
 You can find more suggestions of ways to code with GitHub Copilot by:
 - reading [GitHub’s code suggestions for using it in your IDE](https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions?tool=vscode)
