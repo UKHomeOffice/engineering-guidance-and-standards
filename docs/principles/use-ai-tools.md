@@ -61,7 +61,7 @@ You will receive an email confirming your access to GitHub Copilot. The email wi
 
 Engineers across Home Office Digital and the wider Home Office are using GitHub Copilot in many ways, from simple, everyday additions to the way they already work, to experimental projects.
 
-At the moment, most Home Office Digital engineers use GitHub Copilot in their integrated development environment (IDE).
+At the moment, most Home Office Digital engineers use GitHub Copilot in their code editor.
 
 Some use cases include using GitHub Copilot to:
 
