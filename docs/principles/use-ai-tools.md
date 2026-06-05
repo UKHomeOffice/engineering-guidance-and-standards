@@ -8,7 +8,7 @@ tags:
 - Ways of working
 ---
 
-When you design and build products in Home Office Digital, you should use generative AI to save time, be more efficient and test your code for bugs and errors.
+When you design and build products in Home Office Digital, you should [use generative AI](https://engineering.homeoffice.gov.uk/standards/use-ai/) to save time, be more efficient and test your code for bugs and errors.
 
 ---
 
