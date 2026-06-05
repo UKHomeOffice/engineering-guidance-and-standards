@@ -30,8 +30,12 @@ You should experiment with the most effective ways you can use AI in your work.
 
 ### Use GitHub Copilot in your code editor
 
+To use GitHub Copilot for Home Office Digital projects, you need:
 
+- a GitHub account that is suitable to use in the Home Office,
+- to apply for a Github Copilot License
 
+Find out how to do these things by [reading Home Office Digital documentation](https://homeoffice.enterprise.slack.com/docs/T03TJ3P61/F0B81PEBFDG).
 ### Ways you can use GitHub Copilot
 
 Engineers across Home Office Digital and the wider Home Office are using GitHub Copilot in many ways, from simple, everyday additions to the way they already work, to experimental projects.
