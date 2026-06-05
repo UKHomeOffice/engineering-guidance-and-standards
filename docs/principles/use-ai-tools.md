@@ -56,6 +56,7 @@ Some use cases include using GitHub Copilot to:
 -	write a simple agentic AI tool to connect to Jira and summarise tickets
 
 To find out more suggestions of ways to code with GitHub Copilot, you can:
+
 - read [GitHub’s code suggestions for using it in your code editor](https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions?tool=vscode)
 - visit the [AI.GOV.UK Knowledge Hub](https://ai.gov.uk/knowledge-hub/)
 - join the [cross-government AI Knowledgehub site](https://khub.net/welcome?p_p_state=maximized&p_p_mode=view&refererPlid=723528807&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Flogin&saveLastPath=false&p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&_com_liferay_login_web_portlet_LoginPortlet_redirect=%2Fgroup%2Fai-engineering-lab%2Fgroup-home)  
