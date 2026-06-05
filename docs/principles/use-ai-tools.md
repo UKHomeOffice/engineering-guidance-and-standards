@@ -14,7 +14,7 @@ When you design and build products in Home Office Digital, you should use genera
 
 ## Rationale
 
-The main ways Home Office Digital product teams are already using generative AI as tooling assistants are to:
+The main ways Home Office Digital product teams are already using generative AI as coding assistants are to:
 
 -	automatically complete code they write manually
 -	write small pieces of code for specific functions, manually reviewing the code that generative AI helps to create
