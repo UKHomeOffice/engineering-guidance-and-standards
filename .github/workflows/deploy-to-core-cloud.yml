@@ -95,7 +95,7 @@ jobs:
           retention-days: 3
 
       - name: Publish CTRF Test Summary Results
-        uses: ctrf-io/github-test-reporter@v1
+        uses: ctrf-io/github-test-reporter@v1.0.28
         with:
           report-path: "./ctrf/*.json"
           status-check: true
