@@ -69,7 +69,7 @@ jobs:
           done
 
       - name: Cache Playwright Browsers
-        uses: actions/cache@v5.0.5
+        uses: actions/cache@v6.0.0
         with:
           path: ~/.cache/ms-playwright
           key: playwright-browsers-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
