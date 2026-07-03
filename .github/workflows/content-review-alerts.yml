@@ -1,0 +1,60 @@
+name: Content review alerts
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run in dry-run mode without creating issues"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+      review_window_days:
+        description: "Minimum age in days before content is considered overdue"
+        required: true
+        default: "180"
+        type: string
+      max_issues_per_run:
+        description: "Maximum number of new issues to create in one run (0 = no cap)"
+        required: true
+        default: "10"
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  scan-content-review-dates:
+    name: Scan content and create review issues
+    runs-on: ubuntu-latest
+    env:
+      SITE_ROOT: https://engineering.homeoffice.gov.uk
+      ISSUE_LABELS: content
+      REVIEW_WINDOW_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.review_window_days || '180' }}
+      # Automated runs default to dry-run unless explicitly overridden via repository variable.
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.CONTENT_REVIEW_DRY_RUN || 'true' }}
+      MAX_ISSUES_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.max_issues_per_run || '10' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.4.0
+        with:
+          node-version: 22
+
+      - name: Scan content dates and create issues
+        run: npm run content-review:scan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
