@@ -16,7 +16,7 @@ on:
       review_window_days:
         description: "Minimum age in days before content is considered overdue"
         required: true
-        default: "180"
+        default: "730"
         type: string
       max_issues_per_run:
         description: "Maximum number of new issues to create in one run (0 = no cap)"
