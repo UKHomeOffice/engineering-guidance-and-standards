@@ -34,7 +34,7 @@ function parseCliConfig(env) {
   return {
     dryRun: parseBoolean(env.DRY_RUN, true),
     reviewWindowDays: (() => {
-      const parsed = Number(env.REVIEW_WINDOW_DAYS ?? "730");
+      const parsed = Number(String(env.REVIEW_WINDOW_DAYS ?? "").trim() || "730");
       return Number.isFinite(parsed) && parsed >= 0 ? parsed : 730;
     })(),
     siteRoot: env.SITE_ROOT || "https://engineering.homeoffice.gov.uk",
