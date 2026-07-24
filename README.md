@@ -75,7 +75,7 @@ This repository includes a scheduled workflow to detect stale content and raise 
 
 - `dry_run`: `true` or `false`
   - `true` logs what would be created without opening issues
-- `review_window_days`: minimum age before content is considered overdue (default `180`)
+- `review_window_days`: minimum age before content is considered overdue (default `730`)
 - `max_issues_per_run`: safety cap on issue creation per run (default `10`, set `0` for no cap)
 
 ### Automated run defaults
@@ -88,7 +88,7 @@ This repository includes a scheduled workflow to detect stale content and raise 
 You can run the scanner locally before using the workflow:
 
 ```bash
-DRY_RUN=true REVIEW_WINDOW_DAYS=180 npm run content-review:scan
+DRY_RUN=true REVIEW_WINDOW_DAYS=730 npm run content-review:scan
 ```
 
 ### Safe rollout sequence

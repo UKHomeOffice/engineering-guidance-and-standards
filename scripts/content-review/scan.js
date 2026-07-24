@@ -20,7 +20,7 @@ export async function findMarkdownFiles(dirPath) {
 
 export async function scanRepository({
   repoRoot = process.cwd(),
-  reviewWindowDays = 180,
+  reviewWindowDays = 730,
   siteRoot = "https://engineering.homeoffice.gov.uk",
   now = new Date(),
   buildIssuePayload
