@@ -39,7 +39,6 @@ jobs:
     env:
       SITE_ROOT: https://engineering.homeoffice.gov.uk
       ISSUE_LABELS: content
-      REVIEW_WINDOW_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.review_window_days || '180' }}
       # Automated runs default to dry-run unless explicitly overridden via repository variable.
       DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.CONTENT_REVIEW_DRY_RUN || 'true' }}
       MAX_ISSUES_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.max_issues_per_run || '10' }}
@@ -62,3 +61,4 @@ jobs:
         run: npm run content-review:scan
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEW_WINDOW_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.review_window_days || '730' }}

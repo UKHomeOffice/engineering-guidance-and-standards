@@ -171,3 +171,40 @@ Old`
   assert.match(lines.join("\n"), /\*\*Which content do you think should be reviewed\?\*\*/);
   assert.match(lines.join("\n"), /https:\/\/engineering\.homeoffice\.gov\.uk\/principles\/old-page\//);
 });
+
+test("runCli defaults to a 730 day review window", async () => {
+  const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), "content-review-cli-default-"));
+  const originalCwd = process.cwd();
+
+  await fs.mkdir(path.join(tempRoot, "docs", "principles"), { recursive: true });
+  await fs.mkdir(path.join(tempRoot, "docs", "standards"), { recursive: true });
+  await fs.mkdir(path.join(tempRoot, "docs", "patterns"), { recursive: true });
+
+  await fs.writeFile(
+    path.join(tempRoot, "docs", "standards", "accessibility.md"),
+    `---
+title: Accessibility
+date: 2025-08-13
+---
+Accessibility`
+  );
+
+  const lines = [];
+
+  process.chdir(tempRoot);
+
+  try {
+    await runCli({
+      env: {
+        DRY_RUN: "true",
+        NOW: "2026-07-20T00:00:00.000Z"
+      },
+      stdout: (line) => lines.push(line)
+    });
+  } finally {
+    process.chdir(originalCwd);
+  }
+
+  assert.match(lines.join("\n"), /Found 0 overdue content pages\./);
+  assert.doesNotMatch(lines.join("\n"), /docs\/standards\/accessibility\.md/);
+});
