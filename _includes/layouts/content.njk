@@ -36,6 +36,16 @@
         {% endif %}
       </p>
 
+      {% if status == "deprecated" and replacedBy %}
+        <div class="govuk-inset-text">
+          This page has been deprecated{% if deprecatedOn %} on {{ deprecatedOn | postDate }}{% endif %}.{% if deprecationReason %} {{ deprecationReason }}{% endif %}
+          {% if replacedBy %}
+            Read the replacement guidance:
+            <a class="govuk-link" href="{{ replacedBy }}">{{ replacedBy }}</a>.
+          {% endif %}
+        </div>
+      {% endif %}
+
       {{ appProseScope(content) if content }}
 
       {% if gitHashPath %}

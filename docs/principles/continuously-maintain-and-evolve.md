@@ -14,7 +14,7 @@ related:
     - title: Related links
       items:
         - text: Write maintainable, reusable and evolutionary code
-          href: /principles/write-maintainable-reusable-and-evolutionary-code/
+          href: /principles/write-maintainable-reusable-and-evolutionary-code-archived/
         - text: Well managed code
           href: /principles/well-managed-code/
         - text: GOV.UK Service Standard - Iterate and improve frequently

@@ -1,9 +1,9 @@
 import { govukEleventyPlugin } from "@x-govuk/govuk-eleventy-plugin";
-import {DateTime} from "luxon";
 import childProcess from "child_process";
 import path from "node:path";
 import fs from "node:fs/promises";
 import dlAsSummaryList from "./lib/markdown/dl-as-govuk-summary-list.js";
+import postDate from "./lib/filters/postDate.js";
 
 function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
     let latestGitCommitHash = process.env.GITHUB_COMMIT_SHA;
@@ -106,9 +106,7 @@ export default async function(eleventyConfig) {
         eleventyConfig.amendLibrary('md', md => md.use(dlAsSummaryList));
     });
 
-    eleventyConfig.addFilter("postDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toFormat('d MMMM yyyy');
-    });
+    eleventyConfig.addFilter("postDate", postDate);
 
     // Used for tag page generation
     eleventyConfig.addFilter("getAllTags", collection => {
