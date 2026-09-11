@@ -6,9 +6,5 @@
   "moderate": true,
   "low": true,
   "report-type": "summary",
-  "allowlist": [
-    // https://github.com/advisories/GHSA-mh99-v99m-4gvg is used during build and would cause the build to fail on a
-    // malicious PR, but does not enable DOS attacks on the site.
-    "GHSA-mh99-v99m-4gvg"
-  ]
+  "allowlist": []
 }
