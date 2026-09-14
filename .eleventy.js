@@ -24,7 +24,7 @@ function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
 }
 
 export default async function(eleventyConfig) {
-    const _siteRoot = process.env.SITE_ROOT ?? 'http://localhost:8080/';
+    const _siteRoot = process.env.SITE_ROOT || 'http://localhost:8080/';
     const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
 
     // Inline logo SVG, allowing the logo elements to be targeted by CSS style rules.

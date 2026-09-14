@@ -2,12 +2,17 @@ import { test, expect } from '@playwright/test';
 import { testing_params } from '../support/testing_params';
 import { Validator } from '@cfworker/json-schema';
 
+function getTestRootUrl() {
+    if(testing_params.TEST_ROOT_URL.startsWith('http')) {
+        return testing_params.TEST_ROOT_URL;
+    }
+
+    return `http://${testing_params.TEST_ROOT_URL}`;
+}
+
 test.describe("JSON exports validate against their schemas", () => {
     test("standards.json is valid", async ({ page }) => {
-        let urlToRun = testing_params.TEST_ROOT_URL;
-        if(!testing_params.TEST_ROOT_URL.startsWith('http')) {
-            urlToRun = `http://${testing_params.TEST_ROOT_URL}`;
-        } 
+        const urlToRun = getTestRootUrl();
         const schemaUri = `${urlToRun}/standards.schema.json`;
 
         const schemaResponse = await page.request.get(schemaUri);
@@ -30,5 +35,30 @@ test.describe("JSON exports validate against their schemas", () => {
         }
 
         expect(result.valid, "standards.json does not conform to standards.schema.json").toBe(true);
+    });
+});
+
+test.describe("XML exports are generated", () => {
+    test("sitemap.xml lists published content pages", async ({ page }) => {
+        const urlToRun = getTestRootUrl();
+        const siteRoot = process.env.SITE_ROOT || urlToRun;
+        const sitemapResponse = await page.request.get(`${urlToRun}/sitemap.xml`);
+
+        expect(sitemapResponse.ok()).toBe(true);
+
+        const sitemap = await sitemapResponse.text();
+        const absoluteUrl = (path) => new URL(path, siteRoot).toString();
+
+        expect(sitemap).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/')}</loc>`);
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/principles/')}</loc>`);
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/principles/design-for-success/')}</loc>`);
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/standards/')}</loc>`);
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/standards/developer-testing/')}</loc>`);
+        expect(sitemap).toContain('<lastmod>2024-01-05</lastmod>');
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/patterns/')}</loc>`);
+        expect(sitemap).toContain(`<loc>${absoluteUrl('/patterns/monitoring-as-code/')}</loc>`);
+        expect(sitemap).not.toContain('/standards.json');
+        expect(sitemap).not.toContain('/search-index.json');
     });
 });

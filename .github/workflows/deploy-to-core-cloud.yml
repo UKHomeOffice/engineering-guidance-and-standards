@@ -17,6 +17,7 @@ concurrency:
 env:
   TEST_URL: localhost
   TEST_PORT: 8080
+  SITE_ROOT: https://engineering.homeoffice.gov.uk/
 
 jobs:
   s3-sync:
