@@ -6,10 +6,5 @@
   "moderate": true,
   "low": true,
   "report-type": "summary",
-  "allowlist": [
-    // https://github.com/advisories/GHSA-h67p-54hq-rp68 is used in frontmatter processing and requires
-    // specifically crafted YAML. This would require malicious frontmatter being committed to the
-    // repo which is not a viable attack surface.
-    "GHSA-h67p-54hq-rp68"
-  ]
+  "allowlist": []
 }
