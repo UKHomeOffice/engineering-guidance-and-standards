@@ -60,5 +60,8 @@ test.describe("XML exports are generated", () => {
         expect(sitemap).toContain(`<loc>${absoluteUrl('/patterns/monitoring-as-code/')}</loc>`);
         expect(sitemap).not.toContain('/standards.json');
         expect(sitemap).not.toContain('/search-index.json');
+        expect(sitemap).not.toContain('/standards/standard.template/');
+        expect(sitemap).not.toContain('/principles/principle.template/');
+        expect(sitemap).not.toContain('/patterns/pattern.template/');
     });
 });
