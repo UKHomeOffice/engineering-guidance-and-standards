@@ -4,6 +4,7 @@ import childProcess from "child_process";
 import path from "node:path";
 import fs from "node:fs/promises";
 import dlAsSummaryList from "./lib/markdown/dl-as-govuk-summary-list.js";
+import normalizeSiteRoot from "./lib/normalizeSiteRoot.js";
 
 function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
     let latestGitCommitHash = process.env.GITHUB_COMMIT_SHA;
@@ -24,7 +25,7 @@ function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
 }
 
 export default async function(eleventyConfig) {
-    const _siteRoot = process.env.SITE_ROOT || 'http://localhost:8080/';
+    const _siteRoot = normalizeSiteRoot(process.env.SITE_ROOT || 'http://localhost:8080/');
     const gitHubRepositoryUrl = "https://github.com/UKHomeOffice/engineering-guidance-and-standards";
 
     // Inline logo SVG, allowing the logo elements to be targeted by CSS style rules.
