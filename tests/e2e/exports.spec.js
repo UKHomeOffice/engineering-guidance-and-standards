@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { testing_params } from '../support/testing_params';
 import { Validator } from '@cfworker/json-schema';
+import normalizeSiteRoot from '../../lib/normalizeSiteRoot.js';
 
 function getTestRootUrl() {
     if(testing_params.TEST_ROOT_URL.startsWith('http')) {
@@ -47,7 +48,7 @@ test.describe("XML exports are generated", () => {
         expect(sitemapResponse.ok()).toBe(true);
 
         const sitemap = await sitemapResponse.text();
-        const absoluteUrl = (path) => new URL(path, siteRoot).toString();
+        const absoluteUrl = (path) => new URL(path.replace(/^\//, ''), normalizeSiteRoot(siteRoot)).toString();
 
         expect(sitemap).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
         expect(sitemap).toContain(`<loc>${absoluteUrl('/')}</loc>`);
