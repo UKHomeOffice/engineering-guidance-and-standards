@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 layout: pattern
 order: 1
 title: Pattern title

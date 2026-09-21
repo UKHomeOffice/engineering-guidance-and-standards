@@ -23,6 +23,8 @@ jobs:
     name: Build, test, and sync to S3
     environment:
       name: core-cloud
+    env:
+      SITE_ROOT: ${{ vars.SITE_ROOT }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -44,6 +46,12 @@ jobs:
 
       - name: Run JS Unit Tests
         run: npm run test:unit
+
+      - name: Validate site root
+        if: ${{ env.SITE_ROOT == '' }}
+        run: |
+          echo "SITE_ROOT must be configured for the core-cloud environment"
+          exit 1
 
       - name: Build site
         run: npm run build

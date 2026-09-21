@@ -53,6 +53,14 @@ http-server -p 8080
 
 Now you can preview the site on http://localhost:8080
 
+### Sitemap XML
+
+The Eleventy build generates `_site/sitemap.xml` at the site root. The sitemap is built from the published Markdown pages in the Eleventy sitemap collection, which includes content pages such as principles, standards, patterns and supporting pages. Entries include a last-modified date when the page defines `date` metadata. Generated exports are excluded from the sitemap.
+
+Sitemap URLs use the `SITE_ROOT` environment variable. Local builds default to `http://localhost:8080/`.
+
+The production and staging deployments read `SITE_ROOT` from their `core-cloud` and `core-cloud-staging` GitHub environments. Configure each environment variable with its public site URL before deploying.
+
 ## Running Playwright tests
 
 Look at readme for [running tests](./tests/README.md)
