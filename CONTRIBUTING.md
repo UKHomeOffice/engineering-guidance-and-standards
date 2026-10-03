@@ -156,3 +156,14 @@ You can use the following templates when creating content:
 - [Pattern template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/patterns/pattern.template.md)
 - [Principle template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/principles/principle.template.md)
 - [Standard template](https://github.com/UKHomeOffice/engineering-guidance-and-standards/blob/main/docs/standards/standard.template.md)
+
+## Redirecting deprecated content
+
+When a page is replaced by newer guidance, use the redirects mechanism documented in [README.md](README.md#redirects-and-deprecated-content).
+
+Contributor workflow:
+
+1. Add a redirect mapping entry to `_data/redirects.json`.
+2. Add deprecation metadata to the old content front matter (`status`, `deprecatedOn`, `deprecationReason`, `replacedBy`).
+3. If the old URL should redirect, move the old content to a new permalink (for example `-archived`) so the redirect can be generated at the legacy path.
+4. Add or update end-to-end tests covering the redirect.
