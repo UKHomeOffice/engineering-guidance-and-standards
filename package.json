@@ -54,5 +54,9 @@
     "audit-ci": "^7.1.0",
     "axe-core": "4.13.0",
     "playwright-ctrf-json-reporter": "^0.0.29"
+  },
+  "overrides": {
+    "chokidar@^3": "^4.0.3",
+    "argparse@^1.0.7": "^2.0.1"
   }
 }
