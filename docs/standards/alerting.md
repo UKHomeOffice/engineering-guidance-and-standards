@@ -25,6 +25,7 @@ This standard applies to alerts raised by any part of a service, including appli
 ---
 
 ## Requirement
+
 - [Alerts MUST be actionable](#alerts-must-be-actionable)
 - [Alerts that need an incident response MUST be raised in an incident management system](#alerts-that-need-an-incident-response-MUST-be-raised-in-an-incident-management-system)
 - [Teams communication channels MUST NOT be used as the primary method to manage or record incidents](#team-communication-channels-must-not-be-used-as-the-primary-method-to-manage-or-record-incidents)
@@ -32,11 +33,13 @@ This standard applies to alerts raised by any part of a service, including appli
 - [Alerts that are not acted on MUST be removed, rerouted or retuned](#alerts-that-are-not-acted-on-must-be-removed-rerouted-or-retuned)
 
 ### Alerts must be actionable
+
 An alert must tell the recipient what is wrong, why it matters and where to find the action to take, linking to a runbook where one exists.
 
 Alerts on the symptoms that affect users, as described by your service level objectives (SLO's), rather than on every underlying cause. Where there is no action for a recipient to take, the signal belongs on a dashboard or in a report, not in an alert.
 
 ### Alerts that need an incident response MUST be raised in an incident management system
+
 Where an alert indicates an incident, it must create or update a record in the incident management system used by your service. This keeps ownership, severity, timeline, escalation and resolution in one auditable place. This means incidents are still picked up outside working hours if required.
 
 Routing must be automated, relying on a person to notice an alert and re-enter it somewhere else can only introduce delay and loss of detail.
