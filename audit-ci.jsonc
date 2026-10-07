@@ -6,19 +6,5 @@
   "moderate": true,
   "low": true,
   "report-type": "summary",
-  "allowlist": [
-    /**
-     * sprintf-js vulnerable to denial of service through unbounded precision specifiers
-     *
-     * Used parsing frontmatter of repo committed files at build time. No untrusted input is passed to this package.
-     */
-    "GHSA-hp3w-g68c-fv3c",
-    /**
-     * braces vulnerable to stack-exhaustion denial of service through deeply nested patterns
-     *
-     * Used parsing Nunjucks templates in repo committed files at build time. No untrusted input is passed to this
-     * package.
-     */
-    "GHSA-vfj7-8cjw-p6xm"
-  ]
+  "allowlist": []
 }
