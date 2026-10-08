@@ -4,7 +4,7 @@ order: 1
 title: Use AI tools in Home Office Digital product teams
 date: 2026-05-18
 tags:
-- Artifical intelligence (AI)
+- Artificial intelligence (AI)
 - Ways of working
 ---
 
