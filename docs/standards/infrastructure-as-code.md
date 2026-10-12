@@ -5,10 +5,10 @@ title: Infrastructure as code
 date: 2023-08-03
 id: SEGAS-00005
 tags:
-- Source management
-- Build, release and deploy
-- Infrastructure
-- CI/CD
+    - Source management
+    - Build, release and deploy
+    - Infrastructure
+    - CI/CD
 ---
 
 Infrastructure should be defined as code and treated in the same way as application code. Storing infrastructure definitions in a source code repository protects them as an asset and means we can apply many of our best practices for managing code. This ensures you know how you are running your applications, allows changes to be traced and audited, and allows rolling back to a previous state. Other benefits include:
