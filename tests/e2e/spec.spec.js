@@ -124,10 +124,11 @@ test.describe("Related links", () => {
     await page.goto(testing_params.TEST_ROOT_URL);
     // Click through to standard page that has a related link
     await page.getByText("Read our standards").click();
-    await page.getByText("Infrastructure utilisation monitoring").click();
+    await page.getByText("Encrypting data at rest and in transit").scrollIntoViewIfNeeded();
+    await page.getByText("Encrypting data at rest and in transit").click();
     // Use the related link
-    await page.locator(".x-govuk-related-navigation a").getByText("Monitor and measure proactively").click();
-    await expect(page.locator("h1")).toContainText("Monitor and measure proactively");
+    await page.locator(".x-govuk-related-navigation a").getByText("Managing secrets").nth(1).click();
+    await expect(page.locator("h1")).toContainText("Managing secrets");
   });
 });
 
