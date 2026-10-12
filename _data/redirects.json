@@ -1,0 +1,9 @@
+[
+  {
+    "from": "/principles/write-maintainable-reusable-and-evolutionary-code/",
+    "to": "/principles/continuously-maintain-and-evolve/",
+    "statusCode": 301,
+    "reason": "Superseded by more comprehensive guidance",
+    "replacementTitle": "Continuously maintain and evolve"
+  }
+]
