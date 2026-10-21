@@ -52,8 +52,8 @@
     "@cfworker/json-schema": "4.1.1",
     "@playwright/test": "^1.63.0",
     "audit-ci": "^7.1.0",
-    "axe-core": "4.13.0",
-    "playwright-ctrf-json-reporter": "^0.0.29"
+    "axe-core": "4.14.0",
+    "playwright-ctrf-json-reporter": "^0.1.0"
   },
   "overrides": {
     "chokidar": "^4.0.3",
