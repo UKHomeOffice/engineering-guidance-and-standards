@@ -20,7 +20,7 @@ related:
 ---
 An alert exists to prompt someone to act. Where alerts are duplicated, too sensitive or have no action attached to them, teams stop trusting them and real failures get missed.
 
-This standard applies to alerts raised by any part of a service, including applications, infrastructre, platforms and support tooling.
+This standard applies to alerts raised by any part of a service, including applications, infrastructure, platforms and support tooling.
 
 ---
 
@@ -36,7 +36,7 @@ This standard applies to alerts raised by any part of a service, including appli
 
 An alert must tell the recipient what is wrong, why it matters and where to find the action to take, linking to a runbook where one exists.
 
-Alerts on the symptoms that affect users, as described by your service level objectives (SLO's), rather than on every underlying cause. Where there is no action for a recipient to take, the signal belongs on a dashboard or in a report, not in an alert.
+Alerts on the symptoms that affect users, as described by your service level objectives (SLOs), rather than on every underlying cause. Where there is no action for a recipient to take, the signal belongs on a dashboard or in a report, not in an alert.
 
 ### Alerts that need an incident response MUST be raised in an incident management system
 
@@ -59,7 +59,7 @@ They can still be useful alongside an incident management system, for example to
 
 ### Alerts must be reviewed regularly
 
-Teams must review their alerts at an agreed frequency, and after any incident (as part of the post incident review) and in response to any material changes to the service. Noting where alerts helped, hindered or were absent from the incident response. Record the outcome of the review so changes are traceable.
+Teams must review their alerts at an agreed frequency, and after any incident (as part of the post-incident review) and in response to any material changes to the service. Noting where alerts helped, hindered or were absent from the incident response. Record the outcome of the review so changes are traceable.
 
 A review should consider the following for each alert:
 - How often it fired, and how often it led to action. If it is firing often without action, or resolving on its own, the thresholds and sample periods should be reviewed
@@ -71,7 +71,7 @@ A review should consider the following for each alert:
 ### Alerts that are not acted on MUST be removed, rerouted or retuned
 
 Where a review finds an alert is not earning its place, take one of the following actions:
-- Remove it where it duplicates another alert or no longer reflects the services health
+- Remove it where it duplicates another alert or no longer reflects the service's health
 - Reroute it to a lower priority destination such as a dashboard or a team channel, where it has value for spotting trends but needs no incident response
 - Retune it by adjusting thresholds and reviewing the durations/sample periods, etc
 
