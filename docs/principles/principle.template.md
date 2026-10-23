@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 layout: principle
 order: 1
 title: Principle title

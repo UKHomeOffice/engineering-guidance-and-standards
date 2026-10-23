@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 layout: standard
 order: 1
 title: Standard title
