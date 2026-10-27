@@ -174,6 +174,7 @@ export default async function(eleventyConfig) {
     });
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);
+    eleventyConfig.addGlobalData('gitHubRepositoryUrl', gitHubRepositoryUrl);
 
     injectGitSha(eleventyConfig, gitHubRepositoryUrl);
 

@@ -13,6 +13,8 @@ eleventyExcludeFromCollections: true
 
 This site is maintained by the Home Office. Each page below links to a clean Markdown version of its content.
 
+The source for this site, including the Markdown behind every page, is on GitHub: {{ gitHubRepositoryUrl }}
+
 ## Principles
 {% for item in collections.getAllPrinciplesOrderedByTitle %}
 {{ mdLink(item) }}
