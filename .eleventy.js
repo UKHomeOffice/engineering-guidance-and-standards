@@ -4,6 +4,7 @@ import childProcess from "child_process";
 import path from "node:path";
 import fs from "node:fs/promises";
 import dlAsSummaryList from "./lib/markdown/dl-as-govuk-summary-list.js";
+import hasMarkdownTwin from "./lib/collections/hasMarkdownTwin.js";
 
 function injectGitSha(eleventyConfig, gitHubRepositoryUrl) {
     let latestGitCommitHash = process.env.GITHUB_COMMIT_SHA;
@@ -166,6 +167,10 @@ export default async function(eleventyConfig) {
       return collectionApi.getFilteredByGlob("**/patterns/*.md").sort(function(a, b) {
         return a.data.title.localeCompare(b.data.title); // sort by title ascending
       });
+    });
+
+    eleventyConfig.addCollection("markdownTwinPages", function(collectionApi) {
+      return collectionApi.getAll().filter(hasMarkdownTwin);
     });
 
     eleventyConfig.addGlobalData('siteRoot', _siteRoot);

@@ -1,0 +1,37 @@
+---
+# /llms.txt index (https://llmstxt.org/): a link-first map of the site, linking
+# to each page's Markdown twin.
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{%- macro mdLink(item) -%}
+- [{% if item.data.id %}{{ item.data.id }} — {% endif %}{{ item.data.title }}]({{ (item.url + "index.md") | prefixWithRoot(siteRoot) }}){% if item.data.description %}: {{ item.data.description }}{% endif %}
+{%- endmacro -%}
+# Engineering Guidance and Standards
+
+> Home Office engineering principles, standards and patterns. Principles guide the behaviour and decisions of engineering teams; standards are explicitly stated expectations; patterns are recommended approaches to solving common problems.
+
+This site is maintained by the Home Office. Each page below links to a clean Markdown version of its content.
+
+## Principles
+{% for item in collections.getAllPrinciplesOrderedByTitle %}
+{{ mdLink(item) }}
+{% endfor %}
+## Standards
+{% for item in collections.getAllStandardsOrderedByID %}
+{{ mdLink(item) }}
+{% endfor %}
+## Patterns
+{% for item in collections.getAllPatternsOrderedByTitle %}
+{{ mdLink(item) }}
+{% endfor %}
+
+## Machine-readable data
+
+- [Standards as JSON]({{ "/standards.json" | prefixWithRoot(siteRoot) }}): all standards with their requirements
+- [Standards as CSV]({{ "/standards.csv" | prefixWithRoot(siteRoot) }}): one row per standard requirement
+
+## About
+
+- [About this site]({{ "/about/index.md" | prefixWithRoot(siteRoot) }}): what this service is and who maintains it
+- [Accessibility statement]({{ "/accessibility-statement/index.md" | prefixWithRoot(siteRoot) }})
