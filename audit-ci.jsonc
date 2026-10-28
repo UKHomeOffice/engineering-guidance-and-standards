@@ -6,5 +6,9 @@
   "moderate": true,
   "low": true,
   "report-type": "summary",
-  "allowlist": []
+  "allowlist": [
+    // https://github.com/advisories/GHSA-gcqx-w48m-w2h4 is only used during build to merge objects provided in
+    // the repository, which can only be modified by trusted contributors, so is not a viable attack vector.
+    "GHSA-gcqx-w48m-w2h4"
+  ]
 }
