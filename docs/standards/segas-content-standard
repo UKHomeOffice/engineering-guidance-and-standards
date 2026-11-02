@@ -1,0 +1,74 @@
+---
+layout: standard
+order: 1
+title: Contributing content to SEGAS
+date: 2026-11-02
+id: SEGAS-00021
+tags:
+  - Ways of working
+  - Documentation
+---
+
+Follow this standard to help you create or contribute content which is sourced, structured and developed to be as useful as possible to Home Office engineers and the wider public sector.
+
+The standard will help you make sure you make full use of the Home Office engineering community to help you create or contribute content, and to reduce duplication in your work across Home Office content platforms.
+
+It will help you make sure your content is signed off properly and to allow you to publish it.
+
+---
+
+## Requirements
+
+- [You MUST check SEGAS for similar content before suggesting new content](#you-must-check-segas-for-similar-content-before-suggesting-new-content)
+- [You MUST raise an issue on the Home Office GitHub repository before creating content](#you-must-raise-an-issue-on-the-home-office-github-repository-before-creating-content)
+- [You MUST engage with relevant SEGAS guilds about your content](you-must-engage-with-relevant-segas-guilds-about-your-content)
+- [You MUST follow SEGAS standards](#you-must-follow-segas-standards]
+- [Your content MUST be signed off by SEGAS guilds and principal colleagues][your-content-must-be-signed-off-by-segas-guilds-and-principal colleagues]
+
+
+### You MUST check SEGAS for similar content before suggesting new content
+
+An idea for new standards, principles or patterns that could be suitable for SEGAS can come from lots of places. You might:
+
+- see a standard somebody is using inside or outside government, and feel it is something other people could benefit from
+- be a member of a SEGAS guild already and come up with an idea through a group conversation
+- have an idea as an individual contributor, and wish to develop it with the help of the SEGAS guild communities
+
+Any source of a content idea is good. However, you should check the SEGAS site carefully to make sure:
+
+- your idea will not repeat content that SEGAS already has
+- apply to too niche an area of work, or in language or references colleagues may not understand
+
+Content and SEGAS should apply to as wide an engineering community as possible, to help us share and learn from one another.
+
+### You MUST raise an issue on the Home Office GitHub repository
+
+When you are sure your idea is new and will benefit the community, you should [raise it as an issue on Engineering Guidance and Standards in the Home Office GitHub repository](https://github.com/UKHomeOffice/engineering-guidance-and-standards/issues).
+
+To raise an issue, you need a GitHub account that is suitable to use in the Home Office. You can find out how to do this by [reading Home Office Digital documentation](https://homeoffice.enterprise.slack.com/docs/T03TJ3P61/F0B81PEBFDG).
+
+Your issue will be triaged and discussed in the next SEGAS guild meeting that suits your idea. You can find out more about SEGAS guilds, how to communicate with and meet them by [reading the About SEGAS page](https://engineering.homeoffice.gov.uk/about/).
+
+You can contact the SEGAS team at [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk) for assistance on the triage step, to help make sure you are put in contact with the right guild.
+
+### You MUST engage with relevant SEGAS guilds about your content
+
+You need to attend a guild meeting to discuss your idea with guild members as they triage it.
+
+Once your issue has been successfully triaged, you will start to receive comments on your issue on GitHub. You can develop your content by engaging with guild members through GitHub, or you are welcome to keep attending guild meetings to discuss your content face to face with the guild.
+
+Your content needs to be reviewed and agreed upon by sufficient representatives from across Home Office portfolios, engineers who work across the portfolios, grades of seniority and a mix of civil servants and suppliers.
+
+There is no specific set of rules for this mix, but the guild you work with can help you decide on a suitable review group.
+
+### You MUST follow SEGAS standards
+
+As well as following the SEGAS content standard, you must also follow other SEGAS standards and principles. SEGAS standards around [writing a standard](https://engineering.homeoffice.gov.uk/standards/writing-a-standard/), [writing a principle](https://engineering.homeoffice.gov.uk/standards/writing-a-principle/) and [working in the open](https://engineering.homeoffice.gov.uk/principles/work-in-the-open/) are particularly useful to follow as you develop your content.
+
+### Your content MUST be signed off by SEGAS guilds and principal colleagues
+
+The guild you work with will sign off your content when they are satisfied it is ready to be used by the engineering community.
+
+When you have placed your content draft in the Home Office GitHub repository, it will be signed off for publishing by two senior or principal people from SEGAS.
+
+If you are new to using GitHub or uncertain about SEGAS templates or publishing requirements, you can contact the SEGAS team at [segas@digital.homeoffice.gov.uk](mailto:segas@digital.homeoffice.gov.uk). Our developer and technical writing team will be able to assist you.
