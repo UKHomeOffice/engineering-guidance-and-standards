@@ -1,0 +1,16 @@
+---
+# Emits a clean Markdown twin of each content page
+# (e.g. /standards/foo/ -> /standards/foo/index.md)
+# for the pages in the markdownTwinPages collection.
+pagination:
+  data: collections.markdownTwinPages
+  size: 1
+  alias: doc
+permalink: "{{ doc.url }}index.md"
+eleventyExcludeFromCollections: true
+---
+# {% if doc.data.id %}{{ doc.data.id }} — {% endif %}{{ doc.data.title }}
+{% if doc.data.description %}
+{{ doc.data.description }}
+{% endif %}
+{{ doc.rawInput | safe }}

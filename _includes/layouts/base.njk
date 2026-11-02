@@ -1,1 +1,9 @@
 {% extends "../../node_modules/@x-govuk/govuk-eleventy-plugin/src/layouts/base.njk" %}
+
+{% block head %}
+  {{ super() }}
+  <link rel="describedby" href="{{ "/llms.txt" | canonicalUrl }}">
+  {% if page.inputPath.endsWith(".md") and content %}
+  <link rel="alternate" type="text/markdown" href="{{ (page.url + "index.md") | canonicalUrl }}">
+  {% endif %}
+{% endblock %}
