@@ -57,6 +57,8 @@
   },
   "overrides": {
     "chokidar": "^4.0.3",
-    "argparse": "^2.0.1"
+    "argparse": "^2.0.1",
+    "glob": "^14.0.2",
+    "minimatch": "^11.0.1"
   }
 }
