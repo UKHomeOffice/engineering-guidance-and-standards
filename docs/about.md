@@ -113,4 +113,4 @@ The SEGAS site and contents are always changing and developing. Over time, we in
 
 - increase the number of standards, principles and patterns we host by working with the engineering community
 - build a self-assurance mechanism so that teams can easily assert compliance with our standards
-- continue developing the site so make sure it stays a good example of how to follow our own standards and guidance
+- continue developing the site to make sure it stays a good example of how to follow our own standards and guidance
