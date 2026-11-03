@@ -17,7 +17,7 @@ The Home Office has a lot of teams who work on a lot of technology products. Thi
 
 This experience helps us to deliver technology that is secure, reliable and meets user needs.
 
-In Home Office Engineering, we offer our communities of practice where people can meet together, share knowledge, ideas and experience. We call these communities guilds.
+In Home Office Engineering, we have communities of practice where people can meet together, share knowledge, ideas and experience. We call these communities guilds.
 
 Guilds are open to anyone in the Home Office who are interested in the subject areas they discuss. Practitioners who lead engineering projects and casual, interested observers from other areas of the organisation are all welcome in our guilds.
 
