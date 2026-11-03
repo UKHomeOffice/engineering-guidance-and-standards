@@ -5,7 +5,7 @@ title: About
 tags: []
 ---
 
-The Home Office Engineering Guidance and Standards site is a collection of knowledge for software engineers working in the Home Office, and across government and the public sector.
+The Home Office Engineering Guidance and Standards site is a collection of knowledge for engineers working in the Home Office, across government and the public sector.
 
 This content is created and curated by the Home Office engineering community. The project as a whole is led by the Home Office Digital Engineering Profession team.
 
