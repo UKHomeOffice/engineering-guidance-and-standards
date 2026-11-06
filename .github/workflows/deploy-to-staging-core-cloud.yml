@@ -47,7 +47,9 @@ jobs:
 
       - name: Build site
         run: npm run build
-
+        env:
+          GITHUB_COMMIT_SHA: ${{ github.event.push.after }}
+          SITE_ROOT: https://development-segas.staticsite.core.homeoffice.gov.uk/
       - name: Start server
         run: npm run serve -- --port ${{ env.TEST_PORT }} &
 
