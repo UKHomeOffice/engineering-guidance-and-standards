@@ -47,6 +47,9 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          GITHUB_COMMIT_SHA: ${{ github.sha }}
+          SITE_ROOT: https://engineering.homeoffice.gov.uk/
 
       - name: Start server
         run: npm run serve -- --port ${{ env.TEST_PORT }} &
@@ -84,7 +87,7 @@ jobs:
         env:
           TEST_URL: ${{ env.TEST_URL }}
           TEST_PORT: ${{ env.TEST_PORT }}
-          GITHUB_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+          GITHUB_COMMIT_SHA: ${{ github.sha }}
 
       - name: Upload Playwright Report Artifacts
         if: always()
