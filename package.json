@@ -40,7 +40,7 @@
     "node": ">=22.23.4 <23.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.1.7",
+    "@11ty/eleventy": "3.1.8",
     "@x-govuk/govuk-eleventy-plugin": "9.0.2",
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
