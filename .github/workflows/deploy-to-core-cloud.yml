@@ -109,7 +109,7 @@ jobs:
         if: always()
 
       - name: Sync
-        uses: Home-Office-Digital/core-cloud-static-sites-action@1.1.0
+        uses: Home-Office-Digital/core-cloud-static-sites-action@1.2.2
         with:
           assume-role-arn: ${{ vars.ROLE_ARN }}
           cloudfront-distribution: ${{ vars.CLOUDFRONT_DISTRIBUTION }}
