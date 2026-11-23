@@ -52,7 +52,7 @@
     "@cfworker/json-schema": "4.1.6",
     "@playwright/test": "^1.65.0",
     "audit-ci": "^7.1.0",
-    "axe-core": "4.14.0",
+    "axe-core": "4.14.1",
     "playwright-ctrf-json-reporter": "^0.2.0"
   },
   "overrides": {
